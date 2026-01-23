@@ -1,0 +1,45 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Counter from '../../components/Counter.vue';
+import { useTranslations } from '../../i18n/utils';
+
+const t = useTranslations('es');
+---
+
+<BaseLayout title={t.home.title}>
+  <div class="space-y-8">
+    <div class="text-center">
+      <h1 class="text-4xl font-bold tracking-tight text-gray-900 sm:text-5xl">
+        {t.home.title}
+      </h1>
+      <p class="mt-4 text-lg text-gray-600">
+        {t.home.description}
+      </p>
+    </div>
+
+    <div class="flex justify-center">
+      <Counter client:load label={t.counter.label} />
+    </div>
+
+    <div class="rounded-lg bg-white p-6 shadow-sm">
+      <h2 class="text-xl font-semibold text-gray-900">Características del proyecto</h2>
+      <ul class="mt-4 space-y-2 text-gray-600">
+        <li class="flex items-center gap-2">
+          <span class="text-green-500">✓</span> Astro con renderizado híbrido
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="text-green-500">✓</span> Vue 3 para componentes interactivos
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="text-green-500">✓</span> Tailwind CSS 4 con plugin de Vite
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="text-green-500">✓</span> Internacionalización (ES/EN)
+        </li>
+        <li class="flex items-center gap-2">
+          <span class="text-green-500">✓</span> Content Collections para Markdown
+        </li>
+      </ul>
+    </div>
+  </div>
+</BaseLayout>

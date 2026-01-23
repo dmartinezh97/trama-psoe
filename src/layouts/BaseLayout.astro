@@ -1,0 +1,71 @@
+---
+import '../styles/global.css';
+import { getLocaleFromUrl, useTranslations, getLocalizedPath } from '../i18n/utils';
+import type { Locale } from '../i18n/translations';
+
+interface Props {
+  title: string;
+}
+
+const { title } = Astro.props;
+const locale = getLocaleFromUrl(Astro.url) as Locale;
+const t = useTranslations(locale);
+const otherLocale: Locale = locale === 'es' ? 'en' : 'es';
+---
+
+<!doctype html>
+<html lang={locale}>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="generator" content={Astro.generator} />
+    <title>{title}</title>
+  </head>
+  <body class="min-h-screen bg-gray-50 text-gray-900">
+    <header class="bg-white shadow-sm">
+      <nav class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="flex h-16 items-center justify-between">
+          <div class="flex items-center space-x-8">
+            <a href={`/${locale}`} class="text-lg font-semibold text-gray-900">
+              Trama PSOE
+            </a>
+            <div class="hidden sm:flex sm:space-x-4">
+              <a
+                href={`/${locale}`}
+                class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+              >
+                {t.nav.home}
+              </a>
+              <a
+                href={`/${locale}/resources`}
+                class="rounded-md px-3 py-2 text-sm font-medium text-gray-700 hover:bg-gray-100 hover:text-gray-900"
+              >
+                {t.nav.resources}
+              </a>
+            </div>
+          </div>
+          <div class="flex items-center">
+            <a
+              href={getLocalizedPath(Astro.url.pathname, otherLocale)}
+              class="rounded-md border border-gray-300 px-3 py-1.5 text-sm font-medium text-gray-700 hover:bg-gray-50"
+            >
+              {otherLocale.toUpperCase()}
+            </a>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <main class="mx-auto max-w-7xl px-4 py-8 sm:px-6 lg:px-8">
+      <slot />
+    </main>
+
+    <footer class="mt-auto border-t border-gray-200 bg-white">
+      <div class="mx-auto max-w-7xl px-4 py-6 sm:px-6 lg:px-8">
+        <p class="text-center text-sm text-gray-500">
+          &copy; {new Date().getFullYear()} Trama PSOE
+        </p>
+      </div>
+    </footer>
+  </body>
+</html>

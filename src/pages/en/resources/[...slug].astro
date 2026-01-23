@@ -1,0 +1,41 @@
+---
+import BaseLayout from '../../../layouts/BaseLayout.astro';
+import { getCollection, render } from 'astro:content';
+
+export async function getStaticPaths() {
+  const resources = await getCollection('resources', ({ data }) => data.locale === 'en');
+  return resources.map((resource) => ({
+    params: { slug: resource.id.replace('en/', '') },
+    props: { resource },
+  }));
+}
+
+const { resource } = Astro.props;
+const { Content } = await render(resource);
+---
+
+<BaseLayout title={resource.data.title}>
+  <article class="prose prose-gray mx-auto max-w-3xl">
+    <header class="mb-8 not-prose">
+      <h1 class="text-3xl font-bold text-gray-900">{resource.data.title}</h1>
+      {resource.data.description && (
+        <p class="mt-2 text-lg text-gray-600">{resource.data.description}</p>
+      )}
+      {resource.data.date && (
+        <p class="mt-4 text-sm text-gray-400">
+          {resource.data.date.toLocaleDateString('en-US')}
+        </p>
+      )}
+      {resource.data.tags && (
+        <div class="mt-4 flex flex-wrap gap-2">
+          {resource.data.tags.map((tag) => (
+            <span class="rounded-full bg-gray-100 px-3 py-1 text-xs font-medium text-gray-600">
+              {tag}
+            </span>
+          ))}
+        </div>
+      )}
+    </header>
+    <Content />
+  </article>
+</BaseLayout>
