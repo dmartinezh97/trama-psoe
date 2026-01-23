@@ -1,0 +1,46 @@
+---
+interface Props {
+  name: string;
+  role: string;
+  initials: string;
+  status?: string;
+  pena?: string;
+  class?: string;
+}
+
+const { name, role, initials, status, pena, class: className = '' } = Astro.props;
+---
+
+<div class:list={['w-[320px] h-[280px] bg-trama-red rounded-xl overflow-hidden relative', className]}>
+  <!-- Initials (large background text) -->
+  <div class="absolute left-[60px] top-[80px] font-secondary text-[180px] font-black text-trama-red-dark leading-none select-none">
+    {initials}
+  </div>
+
+  <!-- Content (top-left) -->
+  <div class="absolute left-5 top-5 flex flex-col gap-1">
+    <h3 class="font-secondary text-lg font-extrabold text-white">
+      {name}
+    </h3>
+    <p class="text-xs font-normal text-trama-red-light">
+      {role}
+    </p>
+  </div>
+
+  <!-- Status badge (bottom-left) -->
+  {status && (
+    <div class="absolute left-5 top-[220px] inline-flex items-center gap-2 px-4 py-2 bg-black rounded-full">
+      <span class="w-2 h-2 rounded-full bg-trama-red"></span>
+      <span class="text-[11px] font-bold text-white uppercase" style="letter-spacing: 1px;">
+        {status}
+      </span>
+    </div>
+  )}
+
+  <!-- Pena (bottom-right) -->
+  {pena && (
+    <div class="absolute left-[180px] top-[230px] text-sm font-bold text-white uppercase" style="letter-spacing: 1px;">
+      {pena}
+    </div>
+  )}
+</div>

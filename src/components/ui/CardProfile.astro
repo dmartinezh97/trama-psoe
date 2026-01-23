@@ -1,0 +1,47 @@
+---
+interface Props {
+  initials?: string;
+  name?: string;
+  role?: string;
+  status?: string;
+  class?: string;
+}
+
+const {
+  initials = "AB",
+  name = "NOMBRE\nAPELLIDO",
+  role = "Cargo o descripción",
+  status = "ESTADO",
+  class: className = ""
+} = Astro.props;
+
+const nameLines = name.split('\n');
+---
+
+<div
+  class:list={[
+    "relative w-80 h-[280px] bg-trama-red overflow-hidden",
+    className
+  ]}
+>
+  <!-- Initials Background -->
+  <span class="absolute right-[-40px] top-[80px] text-[200px] font-black text-trama-red-dark leading-none select-none">
+    {initials}
+  </span>
+
+  <!-- Content -->
+  <div class="absolute top-6 left-6 flex flex-col gap-2">
+    <div class="w-[250px]">
+      {nameLines.map((line) => (
+        <span class="block text-white font-black text-[28px] tracking-[-1px] leading-none">{line}</span>
+      ))}
+    </div>
+    <span class="text-trama-red-light text-[12px]">{role}</span>
+  </div>
+
+  <!-- Status Badge -->
+  <div class="absolute bottom-6 left-6 inline-flex items-center gap-2 px-4 py-2 bg-trama-950">
+    <span class="w-2 h-2 rounded-full bg-white"></span>
+    <span class="text-white font-bold text-[11px] tracking-[1px]">{status}</span>
+  </div>
+</div>

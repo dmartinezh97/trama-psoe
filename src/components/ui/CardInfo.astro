@@ -1,0 +1,36 @@
+---
+interface Props {
+  tag?: string;
+  title?: string;
+  description?: string;
+  linkText?: string;
+  href?: string;
+  class?: string;
+}
+
+const {
+  tag = "INFO",
+  title = "Título de la tarjeta",
+  description = "Descripción del contenido de la tarjeta informativa con más detalles.",
+  linkText = "VER MÁS",
+  href = "#",
+  class: className = ""
+} = Astro.props;
+---
+
+<div
+  class:list={[
+    "w-80 p-6 bg-white border border-trama-200 flex flex-col gap-4",
+    className
+  ]}
+>
+  <span class="text-trama-red font-bold text-[11px] tracking-[2px]">{tag}</span>
+  <span class="text-black font-extrabold text-[18px]">{title}</span>
+  <p class="text-trama-500 text-[14px] leading-[1.5] w-[272px]">{description}</p>
+  <a href={href} class="inline-flex items-center gap-2 text-trama-red font-bold text-[12px] tracking-[1px] hover:text-trama-red-dark transition-colors">
+    <span>{linkText}</span>
+    <svg xmlns="http://www.w3.org/2000/svg" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+    </svg>
+  </a>
+</div>

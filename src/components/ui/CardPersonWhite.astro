@@ -1,0 +1,28 @@
+---
+interface Props {
+  name: string;
+  role: string;
+  image?: string;
+  class?: string;
+}
+
+const { name, role, image, class: className = '' } = Astro.props;
+---
+
+<div class:list={['w-[320px] h-[280px] bg-white rounded-xl overflow-hidden flex flex-col border border-trama-200', className]}>
+  <div class="flex-1 flex items-center justify-center bg-trama-100">
+    {image ? (
+      <img src={image} alt={name} class="w-full h-full object-cover" />
+    ) : (
+      <span class="material-symbols-outlined text-6xl text-trama-300">person</span>
+    )}
+  </div>
+  <div class="p-4">
+    <h3 class="font-primary text-lg font-semibold text-trama-900">
+      {name}
+    </h3>
+    <p class="text-sm text-trama-500">
+      {role}
+    </p>
+  </div>
+</div>

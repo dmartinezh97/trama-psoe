@@ -1,0 +1,23 @@
+---
+interface Props {
+  number?: string;
+  label?: string;
+  class?: string;
+}
+
+const {
+  number = "5",
+  label = "delitos investigados",
+  class: className = ""
+} = Astro.props;
+---
+
+<div
+  class:list={[
+    "inline-flex items-end gap-2",
+    className
+  ]}
+>
+  <span class="text-trama-red text-[32px] font-black leading-none">{number}</span>
+  <span class="text-trama-500 font-medium text-[14px]">{label}</span>
+</div>

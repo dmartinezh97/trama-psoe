@@ -1,0 +1,19 @@
+---
+interface Props {
+  text?: string;
+  showDot?: boolean;
+  class?: string;
+}
+
+const { text = "EN CURSO", showDot = true, class: className = "" } = Astro.props;
+---
+
+<span
+  class:list={[
+    "inline-flex items-center gap-2 px-4 py-2 bg-trama-red text-white font-bold text-[11px] tracking-[1px]",
+    className
+  ]}
+>
+  {showDot && <span class="w-2 h-2 rounded-full bg-white"></span>}
+  <span>{text}</span>
+</span>

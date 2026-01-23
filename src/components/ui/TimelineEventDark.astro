@@ -1,0 +1,26 @@
+---
+interface Props {
+  date?: string;
+  title?: string;
+  description?: string;
+  class?: string;
+}
+
+const {
+  date = "NOV 2025",
+  title = "Evento importante",
+  description = "Descripción breve del evento",
+  class: className = ""
+} = Astro.props;
+---
+
+<div
+  class:list={[
+    "w-[220px] p-5 pt-6 bg-trama-950 flex flex-col gap-3",
+    className
+  ]}
+>
+  <span class="text-trama-red font-bold text-[11px] tracking-[1px]">{date}</span>
+  <span class="text-white font-extrabold text-[18px] leading-[1.2] w-[180px]">{title}</span>
+  <p class="text-trama-500 text-[12px] leading-[1.4] w-[180px]">{description}</p>
+</div>

@@ -1,0 +1,23 @@
+---
+interface Props {
+  number?: string;
+  label?: string;
+  class?: string;
+}
+
+const {
+  number = "+30",
+  label = "IMPUTADOS",
+  class: className = ""
+} = Astro.props;
+---
+
+<div
+  class:list={[
+    "w-[200px] py-4 border-b border-trama-200 flex flex-col gap-2",
+    className
+  ]}
+>
+  <span class="text-black text-[56px] font-black tracking-[-2px] leading-none">{number}</span>
+  <span class="text-trama-500 font-semibold text-[12px] tracking-[2px]">{label}</span>
+</div>

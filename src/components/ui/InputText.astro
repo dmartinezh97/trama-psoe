@@ -1,0 +1,28 @@
+---
+interface Props {
+  label?: string;
+  placeholder?: string;
+  name?: string;
+  value?: string;
+  class?: string;
+}
+
+const {
+  label = "CAMPO",
+  placeholder = "Introduce texto...",
+  name = "field",
+  value = "",
+  class: className = ""
+} = Astro.props;
+---
+
+<div class:list={["w-80 flex flex-col gap-2", className]}>
+  <label class="text-trama-500 font-bold text-[11px] tracking-[2px]">{label}</label>
+  <input
+    type="text"
+    name={name}
+    value={value}
+    placeholder={placeholder}
+    class="w-full px-5 py-4 bg-white border border-trama-200 text-[14px] text-black placeholder:text-trama-400 focus:outline-none focus:border-trama-red transition-colors"
+  />
+</div>

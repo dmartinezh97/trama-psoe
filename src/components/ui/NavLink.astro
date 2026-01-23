@@ -1,0 +1,29 @@
+---
+interface Props {
+  text?: string;
+  href?: string;
+  showLine?: boolean;
+  class?: string;
+}
+
+const {
+  text = "VER CRONOLOGÍA COMPLETA",
+  href = "#",
+  showLine = true,
+  class: className = ""
+} = Astro.props;
+---
+
+<a
+  href={href}
+  class:list={[
+    "inline-flex items-center gap-4 text-black hover:text-trama-red transition-colors",
+    className
+  ]}
+>
+  {showLine && <span class="w-[100px] h-0.5 bg-current"></span>}
+  <span class="font-bold text-[12px] tracking-[1px]">{text}</span>
+  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M5 12h14"/><path d="m12 5 7 7-7 7"/>
+  </svg>
+</a>

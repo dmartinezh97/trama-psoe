@@ -1,0 +1,440 @@
+---
+import '../styles/global.css';
+
+// Buttons
+import ButtonPrimary from '../components/ui/ButtonPrimary.astro';
+import ButtonSecondary from '../components/ui/ButtonSecondary.astro';
+import ButtonOutline from '../components/ui/ButtonOutline.astro';
+import ButtonGhost from '../components/ui/ButtonGhost.astro';
+
+// Badges (new)
+import BadgePrimary from '../components/ui/BadgePrimary.astro';
+import BadgeDark from '../components/ui/BadgeDark.astro';
+import BadgeLight from '../components/ui/BadgeLight.astro';
+import BadgeOutline from '../components/ui/BadgeOutline.astro';
+
+// TagLine (new)
+import TagLine from '../components/ui/TagLine.astro';
+
+// Cards
+import CardProfile from '../components/ui/CardProfile.astro';
+import CardCase from '../components/ui/CardCase.astro';
+import CardInfo from '../components/ui/CardInfo.astro';
+
+// Stats (new)
+import StatLarge from '../components/ui/StatLarge.astro';
+import StatMedium from '../components/ui/StatMedium.astro';
+import StatSmall from '../components/ui/StatSmall.astro';
+
+// Inputs (new)
+import InputText from '../components/ui/InputText.astro';
+import InputSearch from '../components/ui/InputSearch.astro';
+import InputSelect from '../components/ui/InputSelect.astro';
+
+// Timeline (new)
+import TimelineEvent from '../components/ui/TimelineEvent.astro';
+import TimelineEventDark from '../components/ui/TimelineEventDark.astro';
+
+// Navigation
+import TopBar from '../components/ui/TopBar.astro';
+import NavLink from '../components/ui/NavLink.astro';
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Design System - La Trama PSOE</title>
+  </head>
+  <body class="min-h-screen">
+    <header class="bg-trama-900 text-white py-16 px-8">
+      <div class="max-w-6xl mx-auto">
+        <h1 class="text-5xl font-bold mb-4">Design System</h1>
+        <p class="text-xl text-trama-400">La Trama PSOE - UI Kit</p>
+        <div class="mt-6">
+          <TagLine text="ACTUALIZADO ENERO 2026" />
+        </div>
+      </div>
+    </header>
+
+    <main class="max-w-6xl mx-auto px-8 py-12 space-y-16">
+
+      <!-- Colors Section -->
+      <section>
+        <h2 class="text-3xl font-bold mb-8 text-trama-900">Colores</h2>
+
+        <div class="space-y-6">
+          <div>
+            <h3 class="text-lg font-semibold mb-4 text-trama-700">Primary</h3>
+            <div class="flex gap-4 flex-wrap">
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-trama-red mb-2"></div>
+                <p class="text-xs text-trama-500">Red</p>
+                <p class="text-xs font-mono text-trama-400">#DC2626</p>
+              </div>
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-trama-red-dark mb-2"></div>
+                <p class="text-xs text-trama-500">Red Dark</p>
+                <p class="text-xs font-mono text-trama-400">#B91C1C</p>
+              </div>
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-trama-red-light mb-2"></div>
+                <p class="text-xs text-trama-500">Red Light</p>
+                <p class="text-xs font-mono text-trama-400">#FCA5A5</p>
+              </div>
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4 text-trama-700">Neutrals</h3>
+            <div class="flex gap-4 flex-wrap">
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-trama-950 mb-2"></div>
+                <p class="text-xs text-trama-500">950</p>
+                <p class="text-xs font-mono text-trama-400">#0A0A0A</p>
+              </div>
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-trama-900 mb-2"></div>
+                <p class="text-xs text-trama-500">900</p>
+                <p class="text-xs font-mono text-trama-400">#111111</p>
+              </div>
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-trama-850 mb-2"></div>
+                <p class="text-xs text-trama-500">850</p>
+                <p class="text-xs font-mono text-trama-400">#1A1A1A</p>
+              </div>
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-trama-800 mb-2"></div>
+                <p class="text-xs text-trama-500">800</p>
+                <p class="text-xs font-mono text-trama-400">#222222</p>
+              </div>
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-trama-700 mb-2"></div>
+                <p class="text-xs text-trama-500">700</p>
+                <p class="text-xs font-mono text-trama-400">#333333</p>
+              </div>
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-trama-500 mb-2"></div>
+                <p class="text-xs text-trama-500">500</p>
+                <p class="text-xs font-mono text-trama-400">#666666</p>
+              </div>
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-trama-400 mb-2"></div>
+                <p class="text-xs text-trama-500">400</p>
+                <p class="text-xs font-mono text-trama-400">#999999</p>
+              </div>
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-trama-200 mb-2"></div>
+                <p class="text-xs text-trama-500">200</p>
+                <p class="text-xs font-mono text-trama-400">#E5E5E5</p>
+              </div>
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-trama-50 border border-trama-200 mb-2"></div>
+                <p class="text-xs text-trama-500">50</p>
+                <p class="text-xs font-mono text-trama-400">#F5F5F5</p>
+              </div>
+              <div class="text-center">
+                <div class="w-20 h-20 rounded-xl bg-white border border-trama-200 mb-2"></div>
+                <p class="text-xs text-trama-500">White</p>
+                <p class="text-xs font-mono text-trama-400">#FFFFFF</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Typography Section -->
+      <section>
+        <h2 class="text-3xl font-bold mb-8 text-trama-900">Tipografia</h2>
+
+        <div class="space-y-8">
+          <div class="p-6 bg-white rounded-xl border border-trama-200">
+            <p class="text-sm text-trama-500 mb-2">Primary - Newsreader (Serif)</p>
+            <p class="font-primary text-4xl text-trama-900">La corrupcion politica documentada</p>
+          </div>
+
+          <div class="p-6 bg-white rounded-xl border border-trama-200">
+            <p class="text-sm text-trama-500 mb-2">Secondary - Inter (Sans-serif)</p>
+            <p class="font-secondary text-lg text-trama-900">Texto de cuerpo con la tipografia Inter para maxima legibilidad en interfaces digitales.</p>
+          </div>
+
+          <div class="p-6 bg-white rounded-xl border border-trama-200">
+            <p class="text-sm text-trama-500 mb-2">Mono - JetBrains Mono</p>
+            <p class="font-mono text-sm text-trama-900">const data = &#123; casos: 127, implicados: 342 &#125;;</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Buttons Section -->
+      <section>
+        <h2 class="text-3xl font-bold mb-8 text-trama-900">Buttons</h2>
+
+        <div class="flex flex-wrap gap-4 items-center">
+          <ButtonPrimary>Primary Button</ButtonPrimary>
+          <ButtonSecondary>Secondary Button</ButtonSecondary>
+          <ButtonOutline>Outline Button</ButtonOutline>
+          <ButtonGhost text="GHOST LINK" />
+        </div>
+
+        <div class="mt-6 flex flex-wrap gap-4 items-center">
+          <ButtonPrimary>
+            Con icono
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>
+          </ButtonPrimary>
+          <ButtonSecondary>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/><polyline points="7 10 12 15 17 10"/><line x1="12" x2="12" y1="15" y2="3"/></svg>
+            Descargar
+          </ButtonSecondary>
+        </div>
+      </section>
+
+      <!-- Badges Section (NEW) -->
+      <section>
+        <h2 class="text-3xl font-bold mb-8 text-trama-900">Badges</h2>
+
+        <div class="flex flex-wrap gap-4 items-center">
+          <BadgePrimary text="EN CURSO" />
+          <BadgeDark text="PRISION" />
+          <BadgeLight text="IMPUTADO" />
+          <BadgeOutline text="JUICIO" />
+        </div>
+
+        <div class="mt-6 flex flex-wrap gap-4 items-center">
+          <BadgePrimary text="SENTENCIA FIRME" />
+          <BadgeDark text="INVESTIGADO" showDot={false} />
+          <BadgeLight text="ABSUELTO" />
+          <BadgeOutline text="PENDIENTE" />
+        </div>
+      </section>
+
+      <!-- TagLine Section (NEW) -->
+      <section>
+        <h2 class="text-3xl font-bold mb-8 text-trama-900">TagLine</h2>
+
+        <div class="space-y-4">
+          <TagLine text="ACTUALIZADO ENERO 2026" />
+          <TagLine text="ULTIMA REVISION: 15 ENE 2026" />
+        </div>
+      </section>
+
+      <!-- Stats Section (NEW) -->
+      <section>
+        <h2 class="text-3xl font-bold mb-8 text-trama-900">Stats</h2>
+
+        <div class="space-y-8">
+          <div>
+            <h3 class="text-lg font-semibold mb-4 text-trama-700">Large</h3>
+            <div class="flex flex-wrap gap-6">
+              <StatLarge number="24" unit="ANOS" label="PENA SOLICITADA" />
+              <StatLarge number="127" unit="CASOS" label="DOCUMENTADOS" />
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4 text-trama-700">Medium</h3>
+            <div class="flex flex-wrap gap-6">
+              <StatMedium number="+30" label="IMPUTADOS" />
+              <StatMedium number="2.3B" label="EUROS DESVIADOS" />
+              <StatMedium number="15" label="CASOS ABIERTOS" />
+            </div>
+          </div>
+
+          <div>
+            <h3 class="text-lg font-semibold mb-4 text-trama-700">Small</h3>
+            <div class="flex flex-wrap gap-8">
+              <StatSmall number="5" label="delitos investigados" />
+              <StatSmall number="12" label="testimonios recogidos" />
+              <StatSmall number="3" label="sentencias firmes" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Cards - Profile Section (NEW) -->
+      <section>
+        <h2 class="text-3xl font-bold mb-8 text-trama-900">Cards - Profile</h2>
+
+        <div class="flex flex-wrap gap-6">
+          <CardProfile
+            initials="JLA"
+            name={"JOSE LUIS\nABALOS"}
+            role="Ex Ministro de Transportes"
+            status="INVESTIGADO"
+          />
+          <CardProfile
+            initials="KC"
+            name={"KOLDO\nGARCIA"}
+            role="Ex asesor"
+            status="PRISION"
+          />
+          <CardProfile
+            initials="AB"
+            name={"ALDAMA\nVICTOR"}
+            role="Empresario"
+            status="PRISION"
+          />
+        </div>
+      </section>
+
+      <!-- Cards - Case Section (NEW) -->
+      <section>
+        <h2 class="text-3xl font-bold mb-8 text-trama-900">Cards - Case</h2>
+
+        <div class="flex flex-wrap gap-6">
+          <CardCase
+            number="01"
+            title="Caso Koldo"
+            description="Trama de corrupcion en contratos de mascarillas durante la pandemia."
+            status="EN JUICIO"
+          />
+          <CardCase
+            number="02"
+            title="Caso ERE"
+            description="Fraude en los fondos para prejubilaciones en Andalucia."
+            status="SENTENCIA"
+          />
+          <CardCase
+            number="03"
+            title="Caso Punica"
+            description="Red de corrupcion politica en Madrid."
+            status="INVESTIGACION"
+          />
+        </div>
+      </section>
+
+      <!-- Cards - Info Section (NEW) -->
+      <section>
+        <h2 class="text-3xl font-bold mb-8 text-trama-900">Cards - Info</h2>
+
+        <div class="flex flex-wrap gap-6">
+          <CardInfo
+            tag="METODOLOGIA"
+            title="Como investigamos"
+            description="Todas las fuentes documentales utilizadas en este proyecto son publicas y verificables."
+            linkText="VER FUENTES"
+          />
+          <CardInfo
+            tag="ACTUALIZACION"
+            title="Ultimas novedades"
+            description="El proyecto se actualiza semanalmente con los ultimos desarrollos judiciales."
+            linkText="VER CHANGELOG"
+          />
+          <CardInfo
+            tag="COLABORA"
+            title="Enviar informacion"
+            description="Si tienes documentos o informacion relevante, contacta de forma segura."
+            linkText="CONTACTAR"
+          />
+        </div>
+      </section>
+
+      <!-- Inputs Section (NEW) -->
+      <section>
+        <h2 class="text-3xl font-bold mb-8 text-trama-900">Inputs</h2>
+
+        <div class="flex flex-wrap gap-6 items-start">
+          <InputText label="NOMBRE" placeholder="Introduce tu nombre..." />
+          <InputSearch placeholder="Buscar casos, imputados..." />
+          <InputSelect
+            placeholder="Seleccionar estado"
+            options={[
+              { value: "investigado", label: "Investigado" },
+              { value: "imputado", label: "Imputado" },
+              { value: "condenado", label: "Condenado" },
+              { value: "absuelto", label: "Absuelto" }
+            ]}
+          />
+        </div>
+      </section>
+
+      <!-- Timeline Section (NEW) -->
+      <section>
+        <h2 class="text-3xl font-bold mb-8 text-trama-900">Timeline</h2>
+
+        <div class="flex flex-wrap gap-4">
+          <TimelineEvent
+            date="FEB 2024"
+            title="Arresto de Koldo Garcia"
+            description="Detencion en operacion de la UCO"
+          />
+          <TimelineEventDark
+            date="MAR 2024"
+            title="Primeras declaraciones"
+            description="Comparecencias ante el juez"
+          />
+          <TimelineEvent
+            date="ABR 2024"
+            title="Nuevas imputaciones"
+            description="Se amplia el circulo de investigados"
+          />
+          <TimelineEventDark
+            date="NOV 2025"
+            title="Inicio del juicio"
+            description="Vista oral en la Audiencia Nacional"
+          />
+        </div>
+      </section>
+
+      <!-- Navigation Section -->
+      <section>
+        <h2 class="text-3xl font-bold mb-8 text-trama-900">Navigation</h2>
+
+        <div class="space-y-6">
+          <div class="rounded-xl overflow-hidden border border-trama-200">
+            <TopBar />
+          </div>
+
+          <div class="p-6 bg-white rounded-xl border border-trama-200">
+            <h3 class="text-lg font-semibold mb-4 text-trama-700">Nav Links</h3>
+            <div class="flex flex-col gap-4">
+              <NavLink text="VER CRONOLOGIA COMPLETA" />
+              <NavLink text="EXPLORAR TODOS LOS CASOS" />
+              <NavLink text="VER DOCUMENTOS" showLine={false} />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Border Radius Section -->
+      <section>
+        <h2 class="text-3xl font-bold mb-8 text-trama-900">Border Radius</h2>
+
+        <div class="flex flex-wrap gap-6 items-end">
+          <div class="text-center">
+            <div class="w-16 h-16 bg-trama-red rounded-sm mb-2"></div>
+            <p class="text-xs text-trama-500">sm</p>
+            <p class="text-xs font-mono text-trama-400">4px</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-trama-red rounded-md mb-2"></div>
+            <p class="text-xs text-trama-500">md</p>
+            <p class="text-xs font-mono text-trama-400">6px</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-trama-red rounded-lg mb-2"></div>
+            <p class="text-xs text-trama-500">lg</p>
+            <p class="text-xs font-mono text-trama-400">8px</p>
+          </div>
+          <div class="text-center">
+            <div class="w-16 h-16 bg-trama-red rounded-xl mb-2"></div>
+            <p class="text-xs text-trama-500">xl</p>
+            <p class="text-xs font-mono text-trama-400">12px</p>
+          </div>
+          <div class="text-center">
+            <div class="w-24 h-10 bg-trama-red rounded-full mb-2"></div>
+            <p class="text-xs text-trama-500">full</p>
+            <p class="text-xs font-mono text-trama-400">pill</p>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="bg-trama-900 text-white py-8 px-8 mt-16">
+      <div class="max-w-6xl mx-auto text-center">
+        <p class="text-trama-400">Design System - La Trama PSOE</p>
+      </div>
+    </footer>
+  </body>
+</html>

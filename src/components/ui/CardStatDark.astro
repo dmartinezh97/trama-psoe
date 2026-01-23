@@ -1,0 +1,18 @@
+---
+interface Props {
+  number: string | number;
+  label: string;
+  class?: string;
+}
+
+const { number, label, class: className = '' } = Astro.props;
+---
+
+<div class:list={['w-[300px] px-8 py-10 bg-trama-900 rounded-xl', className]}>
+  <div class="font-primary text-stat-number text-white">
+    {number}
+  </div>
+  <div class="text-sm text-trama-400 font-medium uppercase tracking-wide mt-2">
+    {label}
+  </div>
+</div>
