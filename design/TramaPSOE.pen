@@ -9149,8 +9149,8 @@
     {
       "type": "frame",
       "id": "4o0vS",
-      "x": 8526,
-      "y": 65,
+      "x": 7037,
+      "y": 0,
       "name": "Page - Cronología Completa",
       "width": 1440,
       "fill": "$bg-light",
@@ -10386,8 +10386,8 @@
     {
       "type": "frame",
       "id": "5NNHJ",
-      "x": 10115,
-      "y": 65,
+      "x": 9626,
+      "y": 0,
       "name": "Page - Imputados",
       "width": 1440,
       "fill": "$bg-dark",
@@ -11906,8 +11906,8 @@
     {
       "type": "frame",
       "id": "jfAoC",
-      "x": 11671,
-      "y": 65,
+      "x": 11152,
+      "y": 0,
       "name": "Page - Documentos",
       "width": 1440,
       "fill": "$bg-light",
