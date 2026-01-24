@@ -182,6 +182,7 @@ export const translations = {
         updateText: 'Información actualizada a enero 2026',
         casesText: 'VER TODOS LOS CASOS',
         accusedText: 'VER IMPUTADOS',
+        documentsText: 'VER DOCUMENTOS',
       },
     },
     casesPage: {
@@ -461,6 +462,7 @@ export const translations = {
         updateText: 'Information updated January 2026',
         casesText: 'VIEW ALL CASES',
         accusedText: 'VIEW ACCUSED',
+        documentsText: 'VIEW DOCUMENTS',
       },
     },
     casesPage: {

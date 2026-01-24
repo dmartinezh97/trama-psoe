@@ -1,15 +1,15 @@
 ---
-import ButtonOutline from '../ui/ButtonOutline.astro';
-
 interface Props {
   updateText: string;
   casesHref: string;
   casesText: string;
   accusedHref: string;
   accusedText: string;
+  documentsHref: string;
+  documentsText: string;
 }
 
-const { updateText, casesHref, casesText, accusedHref, accusedText } = Astro.props;
+const { updateText, casesHref, casesText, accusedHref, accusedText, documentsHref, documentsText } = Astro.props;
 ---
 
 <section
@@ -49,6 +49,26 @@ const { updateText, casesHref, casesText, accusedHref, accusedText } = Astro.pro
         class="inline-flex items-center gap-2 px-6 py-3 border-2 border-white text-white font-secondary text-sm font-bold tracking-[1px] hover:bg-white hover:text-trama-red transition-colors"
       >
         {accusedText}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M5 12h14" />
+          <path d="m12 5 7 7-7 7" />
+        </svg>
+      </a>
+      <a
+        href={documentsHref}
+        class="inline-flex items-center gap-2 px-6 py-3 border-2 border-white text-white font-secondary text-sm font-bold tracking-[1px] hover:bg-white hover:text-trama-red transition-colors"
+      >
+        {documentsText}
         <svg
           xmlns="http://www.w3.org/2000/svg"
           width="16"
