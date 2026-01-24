@@ -1,0 +1,74 @@
+---
+import BadgeLight from './BadgeLight.astro';
+import BadgePrimary from './BadgePrimary.astro';
+
+interface Props {
+  name: string;
+  role?: string;
+  badge?: string;
+  badgeType?: 'light' | 'primary';
+  description?: string;
+  highlight?: boolean;
+  variant?: 'implicado' | 'archivado';
+  class?: string;
+}
+
+const {
+  name,
+  role,
+  badge,
+  badgeType = 'light',
+  description,
+  highlight = false,
+  variant = 'implicado',
+  class: className = '',
+} = Astro.props;
+
+const variantStyles = {
+  implicado: {
+    container: 'bg-trama-950 p-6 gap-4',
+    border: highlight ? 'border-2 border-trama-red' : '',
+    name: 'text-white text-xl font-extrabold',
+    role: 'text-trama-500 text-[13px]',
+    description: highlight ? 'text-trama-red-light' : 'text-trama-500',
+  },
+  archivado: {
+    container: 'bg-trama-900 p-6 gap-3 border border-trama-700',
+    border: '',
+    name: 'text-white text-lg font-bold',
+    role: 'text-trama-500 text-[13px]',
+    description: 'text-trama-500',
+  },
+};
+
+const styles = variantStyles[variant];
+---
+
+<div
+  class:list={[
+    "flex flex-col",
+    styles.container,
+    styles.border,
+    className
+  ]}
+  data-imputados-card
+>
+  <!-- Header: Name + Badge -->
+  <div class="flex items-center justify-between gap-4 w-full">
+    <span class={styles.name}>{name}</span>
+    {badge && badgeType === 'light' && <BadgeLight text={badge} />}
+    {badge && badgeType === 'primary' && <BadgePrimary text={badge} showDot={false} />}
+  </div>
+
+  <!-- Role -->
+  {role && (
+    <span class={styles.role}>{role}</span>
+  )}
+
+  <!-- Description -->
+  {description && (
+    <p class:list={["text-[13px] font-medium leading-relaxed", styles.description]}>
+      {description}
+    </p>
+  )}
+</div>

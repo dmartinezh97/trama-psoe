@@ -1,0 +1,78 @@
+---
+import ImputadoCardSmall from '../ui/ImputadoCardSmall.astro';
+
+interface Person {
+  name: string;
+  role: string;
+  badge: string;
+  dato: string;
+  highlight?: boolean;
+}
+
+interface Props {
+  title: string;
+  aldama: Person;
+  pardo: Person;
+  barrabes: Person;
+}
+
+const { title, aldama, pardo, barrabes } = Astro.props;
+---
+
+<section
+  class="bg-trama-850 px-14 py-14 w-full"
+  data-imputados-section
+>
+  <!-- Section Header -->
+  <div class="flex items-center gap-4 mb-8" data-imputados-section-title>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="text-trama-red"
+    >
+      <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+      <circle cx="9" cy="7" r="4"></circle>
+      <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+      <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+    </svg>
+    <span class="text-white text-sm font-bold tracking-widest">
+      {title}
+    </span>
+  </div>
+
+  <!-- Cards Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <ImputadoCardSmall
+      name={aldama.name}
+      role={aldama.role}
+      badge={aldama.badge}
+      badgeType="primary"
+      description={aldama.dato}
+      highlight={aldama.highlight}
+      variant="implicado"
+    />
+    <ImputadoCardSmall
+      name={pardo.name}
+      role={pardo.role}
+      badge={pardo.badge}
+      badgeType="light"
+      description={pardo.dato}
+      variant="implicado"
+    />
+    <ImputadoCardSmall
+      name={barrabes.name}
+      role={barrabes.role}
+      badge={barrabes.badge}
+      badgeType="light"
+      description={barrabes.dato}
+      variant="implicado"
+    />
+  </div>
+</section>

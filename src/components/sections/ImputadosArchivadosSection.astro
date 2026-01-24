@@ -1,0 +1,82 @@
+---
+import ImputadoCardSmall from '../ui/ImputadoCardSmall.astro';
+
+interface Person {
+  name: string;
+  role: string;
+  motivo: string;
+}
+
+interface Props {
+  title: string;
+  description: string;
+  bolanos: Person;
+  francisco: Person;
+  goyache: Person;
+  guemes: Person;
+}
+
+const { title, description, bolanos, francisco, goyache, guemes } = Astro.props;
+---
+
+<section
+  class="bg-trama-950 px-14 py-14 w-full"
+  data-imputados-section
+>
+  <!-- Section Header -->
+  <div class="flex items-center gap-4 mb-4" data-imputados-section-title>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="text-trama-500"
+    >
+      <path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"></path>
+      <path d="M14 2v4a2 2 0 0 0 2 2h4"></path>
+      <path d="m14.5 12.5-5 5"></path>
+      <path d="m9.5 12.5 5 5"></path>
+    </svg>
+    <span class="text-trama-500 text-sm font-bold tracking-widest">
+      {title}
+    </span>
+  </div>
+
+  <!-- Description -->
+  <p class="text-trama-500 text-base leading-relaxed mb-8">
+    {description}
+  </p>
+
+  <!-- Cards Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
+    <ImputadoCardSmall
+      name={bolanos.name}
+      role={bolanos.role}
+      description={bolanos.motivo}
+      variant="archivado"
+    />
+    <ImputadoCardSmall
+      name={francisco.name}
+      role={francisco.role}
+      description={francisco.motivo}
+      variant="archivado"
+    />
+    <ImputadoCardSmall
+      name={goyache.name}
+      role={goyache.role}
+      description={goyache.motivo}
+      variant="archivado"
+    />
+    <ImputadoCardSmall
+      name={guemes.name}
+      role={guemes.role}
+      description={guemes.motivo}
+      variant="archivado"
+    />
+  </div>
+</section>

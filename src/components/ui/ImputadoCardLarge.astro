@@ -1,0 +1,111 @@
+---
+interface Props {
+  initials: string;
+  name: string;
+  role: string;
+  pena: string;
+  penaLabel?: string;
+  delitosLabel?: string;
+  delitos: string;
+  datoLabel?: string;
+  dato: string;
+  variant?: 'dark' | 'dark-alt';
+  class?: string;
+}
+
+const {
+  initials,
+  name,
+  role,
+  pena,
+  penaLabel = 'PENA SOLICITADA:',
+  delitosLabel = 'DELITOS',
+  delitos,
+  datoLabel = 'DATO CLAVE',
+  dato,
+  variant = 'dark',
+  class: className = '',
+} = Astro.props;
+
+const variantStyles = {
+  dark: {
+    bg: 'bg-trama-950',
+    initials: 'text-trama-900',
+  },
+  'dark-alt': {
+    bg: 'bg-trama-900',
+    initials: 'text-trama-850',
+  },
+};
+
+const styles = variantStyles[variant];
+
+// Split name by newline for multi-line display
+const nameLines = name.split('\n');
+---
+
+<div
+  class:list={[
+    "relative overflow-hidden h-[400px]",
+    styles.bg,
+    className
+  ]}
+  data-imputados-card
+>
+  <!-- Background Initials -->
+  <span
+    class:list={[
+      "absolute text-[200px] font-black select-none pointer-events-none",
+      styles.initials
+    ]}
+    style="right: -20px; bottom: -40px; line-height: 1;"
+  >
+    {initials}
+  </span>
+
+  <!-- Content - Name & Role -->
+  <div class="relative z-10 flex flex-col gap-3 p-6 w-[300px]">
+    <div class="flex flex-col leading-none">
+      {nameLines.map((line) => (
+        <span class="text-[32px] font-black text-white">
+          {line}
+        </span>
+      ))}
+    </div>
+    <p class="text-[13px] text-trama-500 leading-snug whitespace-pre-line w-[280px]">
+      {role}
+    </p>
+  </div>
+
+  <!-- Pena Badge -->
+  <div
+    class="absolute left-6 top-[180px] z-10 flex items-center gap-2 bg-trama-red px-4 py-3"
+  >
+    <span class="text-[11px] font-semibold tracking-wider text-trama-red-light">
+      {penaLabel}
+    </span>
+    <span class="text-[11px] font-bold tracking-wider text-white">
+      {pena}
+    </span>
+  </div>
+
+  <!-- Delitos -->
+  <div class="absolute left-6 top-[260px] z-10 flex flex-col gap-2 max-w-[280px]">
+    <span class="text-[11px] font-semibold tracking-wider text-trama-500">
+      {delitosLabel}
+    </span>
+    <p class="text-xs font-medium text-white leading-snug">
+      {delitos}
+    </p>
+  </div>
+
+  <!-- Dato Clave -->
+  <div class="absolute left-6 top-[350px] z-10 flex flex-col gap-1 max-w-[280px]">
+    <span class="text-[11px] font-semibold tracking-wider text-trama-red">
+      {datoLabel}
+    </span>
+    <p class="text-xs font-medium text-white">
+      {dato}
+    </p>
+  </div>
+</div>

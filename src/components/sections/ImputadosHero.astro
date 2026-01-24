@@ -1,0 +1,53 @@
+---
+import TagLine from '../ui/TagLine.astro';
+
+interface Stat {
+  number: string;
+  label: string;
+}
+
+interface Props {
+  tag: string;
+  title: string;
+  stats: Stat[];
+}
+
+const { tag, title, stats } = Astro.props;
+---
+
+<section
+  class="bg-trama-950 px-14 py-20 w-full mt-20"
+  data-imputados-hero
+>
+  <div class="flex flex-col gap-6">
+    <!-- TagLine -->
+    <div data-imputados-hero-item>
+      <TagLine text={tag} />
+    </div>
+
+    <!-- Title -->
+    <h1
+      class="text-white font-secondary text-[96px] font-black tracking-[-4px] leading-none"
+      data-imputados-hero-item
+    >
+      {title}
+    </h1>
+
+    <!-- Stats -->
+    <div class="flex items-end gap-12" data-imputados-hero-item>
+      {stats.map((stat) => (
+        <div class="flex items-end gap-2">
+          <span
+            class="text-trama-red font-secondary text-5xl font-black"
+            data-imputados-stat-number
+          >
+            {stat.number}
+          </span>
+          <span class="text-trama-500 font-secondary text-base font-medium pb-1">
+            {stat.label}
+          </span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

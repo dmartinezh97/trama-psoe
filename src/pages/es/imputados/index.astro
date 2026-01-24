@@ -1,10 +1,73 @@
 ---
 import LandingLayout from '../../../layouts/LandingLayout.astro';
+import ImputadosHero from '../../../components/sections/ImputadosHero.astro';
+import ImputadosPrisionSection from '../../../components/sections/ImputadosPrisionSection.astro';
+import ImputadosMainSection from '../../../components/sections/ImputadosMainSection.astro';
+import ImputadosOtrosSection from '../../../components/sections/ImputadosOtrosSection.astro';
+import ImputadosArchivadosSection from '../../../components/sections/ImputadosArchivadosSection.astro';
+import ImputadosFooter from '../../../components/sections/ImputadosFooter.astro';
+import { translations } from '../../../i18n/translations';
+
+const t = translations.es.imputadosPage;
 ---
 
 <LandingLayout title="Imputados - Trama PSOE">
-  <div class="space-y-6">
-    <h1 class="text-3xl font-bold">Imputados</h1>
-    <!-- Contenido pendiente -->
-  </div>
+  <ImputadosHero
+    tag={t.hero.tag}
+    title={t.hero.title}
+    stats={t.hero.stats}
+  />
+
+  <ImputadosPrisionSection
+    title={t.prision.title}
+    abalos={t.prision.abalos}
+    koldo={t.prision.koldo}
+  />
+
+  <ImputadosMainSection
+    title={t.principales.title}
+    begona={t.principales.begona}
+    david={t.principales.david}
+    santos={t.principales.santos}
+  />
+
+  <ImputadosOtrosSection
+    title={t.otros.title}
+    aldama={t.otros.aldama}
+    pardo={t.otros.pardo}
+    barrabes={t.otros.barrabes}
+  />
+
+  <ImputadosArchivadosSection
+    title={t.archivados.title}
+    description={t.archivados.description}
+    bolanos={t.archivados.bolanos}
+    francisco={t.archivados.francisco}
+    goyache={t.archivados.goyache}
+    guemes={t.archivados.guemes}
+  />
+
+  <ImputadosFooter
+    disclaimer={t.footer.disclaimer}
+    links={t.footer.links}
+  />
 </LandingLayout>
+
+<script>
+  import { initImputadosPageAnimations, cleanupAnimations } from '../../../scripts/animations';
+
+  // Initialize animations on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    initImputadosPageAnimations();
+  });
+
+  // Cleanup on page navigation (for View Transitions)
+  document.addEventListener('astro:before-swap', () => {
+    cleanupAnimations();
+  });
+
+  // Re-initialize on page navigation
+  document.addEventListener('astro:after-swap', () => {
+    initImputadosPageAnimations();
+  });
+</script>
