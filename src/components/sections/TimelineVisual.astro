@@ -34,51 +34,53 @@ const variantStyles = {
 };
 ---
 
-<section id="timeline" data-timeline class="relative h-auto lg:h-[500px] bg-white overflow-hidden">
+<section id="timeline" data-timeline class="relative min-h-[560px] lg:h-[500px] bg-white overflow-hidden pb-24 lg:pb-0">
   <!-- Background Text -->
-  <span data-timeline-bg class="absolute left-[100px] bottom-[-40px] font-secondary text-[100px] md:text-[150px] lg:text-[200px] font-black text-trama-50 select-none pointer-events-none tracking-[-10px]">
+  <span data-timeline-bg class="absolute left-4 md:left-[100px] bottom-[-20px] md:bottom-[-40px] font-secondary text-[80px] md:text-[150px] lg:text-[200px] font-black text-trama-50 select-none pointer-events-none tracking-[-5px] md:tracking-[-10px]">
     2024—2026
   </span>
 
   <!-- Header -->
-  <div class="absolute top-8 md:top-14 left-8 md:left-14 flex flex-col gap-2">
-    <span class="font-secondary text-xs font-bold tracking-[2px] text-trama-red">
+  <div class="relative z-10 pt-8 md:pt-14 px-5 md:px-14 flex flex-col gap-2">
+    <span class="font-secondary text-[10px] md:text-xs font-bold tracking-[2px] text-trama-red">
       {t.timeline.tag}
     </span>
-    <h2 class="font-secondary text-4xl md:text-[56px] font-black tracking-[-3px] leading-none text-black whitespace-pre-line">
+    <h2 class="font-secondary text-[36px] md:text-[56px] font-black tracking-[-2px] md:tracking-[-3px] leading-[0.95] text-black whitespace-pre-line">
       {t.timeline.title}
     </h2>
   </div>
 
   <!-- Events Row -->
-  <div class="absolute right-8 md:right-14 top-8 md:top-14 flex flex-col lg:flex-row gap-4 w-full lg:w-auto max-w-full lg:max-w-[900px] overflow-x-auto pb-4 lg:pb-0">
-    {events.map((event) => {
-      const styles = variantStyles[event.variant];
-      return (
-        <div data-timeline-event class={`${styles.bg} p-5 md:p-6 flex flex-col gap-3 min-w-[200px] w-[220px] shrink-0`}>
-          <span class={`font-secondary text-[11px] font-bold tracking-[1px] ${styles.date}`}>
-            {event.date}
-          </span>
-          <h3 class={`font-secondary text-base md:text-lg font-extrabold leading-tight ${styles.title}`}>
-            {event.title}
-          </h3>
-          <p class={`font-secondary text-xs font-normal leading-relaxed ${styles.description}`}>
-            {event.description}
-          </p>
-        </div>
-      );
-    })}
+  <div class="relative z-10 mt-6 md:mt-0 md:absolute md:right-14 md:top-14 px-5 md:px-0">
+    <div class="flex flex-col lg:flex-row gap-3 md:gap-4 w-full lg:w-auto lg:max-w-[900px]">
+      {events.map((event) => {
+        const styles = variantStyles[event.variant];
+        return (
+          <div data-timeline-event class={`${styles.bg} p-4 md:p-6 flex flex-col gap-2 md:gap-3 w-full lg:w-[220px] lg:shrink-0`}>
+            <span class={`font-secondary text-[10px] md:text-[11px] font-bold tracking-[1px] ${styles.date}`}>
+              {event.date}
+            </span>
+            <h3 class={`font-secondary text-sm md:text-lg font-extrabold leading-tight ${styles.title}`}>
+              {event.title}
+            </h3>
+            <p class={`font-secondary text-[11px] md:text-xs font-normal leading-relaxed ${styles.description}`}>
+              {event.description}
+            </p>
+          </div>
+        );
+      })}
+    </div>
   </div>
 
   <!-- Link Arrow -->
-  <div class="absolute bottom-8 md:bottom-[80px] left-8 md:left-14 flex items-center gap-4">
-    <div class="w-[100px] md:w-[200px] h-0.5 bg-black"></div>
+  <div class="absolute bottom-6 md:bottom-[80px] left-5 md:left-14 flex items-center gap-3 md:gap-4 z-10">
+    <div class="w-[60px] md:w-[200px] h-0.5 bg-black"></div>
     <a
       href={locale === 'es' ? '/es/cronologia' : '/en/timeline'}
-      class="font-secondary text-xs font-bold tracking-[1px] text-black hover:text-trama-red transition-colors flex items-center gap-2"
+      class="font-secondary text-[10px] md:text-xs font-bold tracking-[1px] text-black hover:text-trama-red transition-colors flex items-center gap-2"
     >
       {t.timeline.linkText}
-      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <svg class="w-3 h-3 md:w-4 md:h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
         <line x1="5" y1="12" x2="19" y2="12"></line>
         <polyline points="12 5 19 12 12 19"></polyline>
       </svg>

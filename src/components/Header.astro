@@ -7,7 +7,7 @@ const t = useTranslations(locale);
 const otherLocale: Locale = locale === 'es' ? 'en' : 'es';
 ---
 
-<header class="fixed top-0 left-0 w-full h-20 bg-trama-red flex items-center justify-between px-8 md:px-14 z-50">
+<header class="fixed top-0 left-0 w-full h-20 bg-trama-red hidden md:flex items-center justify-between px-8 md:px-14 z-50">
   <a href={`/${locale}`} class="flex items-center gap-3">
     <img src="/img/version_transparente.png" alt="La Trama PSOE" class="h-14" />
   </a>

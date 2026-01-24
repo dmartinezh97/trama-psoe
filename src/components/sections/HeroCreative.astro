@@ -1,5 +1,6 @@
 ---
 import ScrollHint from '../ui/ScrollHint.astro';
+import MobileMenu from '../ui/MobileMenu.vue';
 import { getLocaleFromUrl, useTranslations } from '../../i18n/utils';
 import type { Locale } from '../../i18n/translations';
 
@@ -7,58 +8,69 @@ const locale = getLocaleFromUrl(Astro.url) as Locale;
 const t = useTranslations(locale);
 ---
 
-<section data-hero class="relative h-[900px] bg-white overflow-hidden">
+<section data-hero class="relative h-[650px] md:h-[900px] bg-white overflow-hidden">
+  <!-- Mobile Top Bar -->
+  <div class="absolute top-0 left-0 right-0 flex md:hidden items-center justify-between px-5 py-4 z-20">
+    <a href={`/${locale}`} class="flex items-center gap-2">
+      <img src="/img/version_transparente.png" alt="La Trama PSOE" class="h-10" />
+    </a>
+    <MobileMenu locale={locale} client:load />
+  </div>
+
   <!-- Background Year -->
   <span data-hero-bg class="absolute right-[-100px] top-[-150px] font-secondary text-[400px] md:text-[600px] lg:text-[800px] font-black text-trama-50 select-none pointer-events-none tracking-[-40px] leading-none">
     26
   </span>
 
   <!-- Main Content -->
-  <div class="absolute top-[180px] left-8 md:left-14 right-8 md:right-14 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-8 lg:gap-0">
+  <div class="absolute top-[100px] md:top-[180px] left-5 md:left-14 right-5 md:right-14 flex flex-col lg:flex-row lg:items-end lg:justify-between gap-6 lg:gap-0">
     <!-- Left Column -->
-    <div class="flex flex-col gap-8 max-w-[700px]">
+    <div class="flex flex-col gap-4 md:gap-8 max-w-[700px]">
       <!-- Tagline -->
-      <div class="flex items-center gap-4">
-        <span class="w-3 h-3 rounded-full bg-trama-red"></span>
-        <span class="font-secondary text-xs font-semibold tracking-[2px] text-trama-400">
+      <div class="flex items-center gap-3 md:gap-4">
+        <span class="w-2 h-2 md:w-3 md:h-3 rounded-full bg-trama-red"></span>
+        <span class="font-secondary text-[10px] md:text-xs font-semibold tracking-[2px] text-trama-400">
           {t.hero.tagline}
         </span>
       </div>
 
       <!-- Title Block -->
       <div class="flex flex-col">
-        <span data-hero-title class="font-secondary text-[80px] md:text-[120px] lg:text-[180px] font-black tracking-[-4px] md:tracking-[-8px] leading-[0.85] text-black">
+        <span data-hero-title class="font-secondary text-[48px] md:text-[120px] lg:text-[180px] font-black tracking-[-2px] md:tracking-[-8px] leading-[0.85] text-black">
           {t.hero.titleLine1}
         </span>
-        <span data-hero-title class={`font-secondary text-[80px] md:text-[120px] lg:text-[180px] font-black tracking-[-4px] md:tracking-[-8px] leading-[0.85] ${locale === 'en' ? 'text-trama-red' : 'text-black'}`}>
+        <span data-hero-title class={`font-secondary text-[64px] md:text-[120px] lg:text-[180px] font-black tracking-[-3px] md:tracking-[-8px] leading-[0.85] ${locale === 'en' ? 'text-trama-red' : 'text-black'}`}>
           {t.hero.titleLine2}
         </span>
-        <span data-hero-title class={`font-secondary text-[80px] md:text-[120px] lg:text-[180px] font-black tracking-[-4px] md:tracking-[-8px] leading-[0.85] ${locale === 'es' ? 'text-trama-red' : 'text-black'}`}>
+        <span data-hero-title class={`font-secondary text-[64px] md:text-[120px] lg:text-[180px] font-black tracking-[-3px] md:tracking-[-8px] leading-[0.85] ${locale === 'es' ? 'text-trama-red' : 'text-black'}`}>
           {t.hero.titleLine3}
         </span>
       </div>
 
+      <!-- Decorative Line (Mobile) -->
+      <div class="block md:hidden w-[100px] h-1 bg-trama-red"></div>
+
       <!-- Subtitle -->
-      <p class="font-secondary text-base md:text-lg font-medium tracking-[1px] leading-relaxed text-trama-500 max-w-[500px] whitespace-pre-line">
+      <p class="font-secondary text-sm md:text-lg font-medium tracking-[0.5px] md:tracking-[1px] leading-relaxed text-trama-500 max-w-[280px] md:max-w-[500px] whitespace-pre-line">
         {t.hero.subtitle}
       </p>
     </div>
 
     <!-- Right Column -->
-    <div class="flex flex-col items-end gap-8">
-      <!-- Stats Grid -->
-      <div class="flex flex-col">
-        <div data-hero-stat class="flex items-center gap-4 py-4 border-b border-trama-200 w-[300px] md:w-[350px]">
-          <span class="font-secondary text-4xl md:text-5xl font-black text-trama-red">{t.hero.stat1.number}</span>
-          <span class="font-secondary text-xs font-semibold tracking-[1px] text-trama-500">{t.hero.stat1.label}</span>
+    <div class="flex flex-col items-start md:items-center gap-6 md:gap-8 xl:me-8">
+      <!-- Stats Grid - Mobile: row of 3, Desktop: column -->
+      <div class="flex flex-row md:flex-col gap-4 md:gap-0 w-full md:w-auto">
+        <div data-hero-stat class="flex flex-col md:flex-row md:items-start gap-1 md:gap-4 md:py-4 md:border-b md:border-trama-200 flex-1 md:flex-none md:w-[350px]">
+          <span class="font-secondary text-2xl md:text-7xl font-black text-trama-red">{t.hero.stat1.number}</span>
+          <span class="font-secondary text-[10px] md:text-xs font-semibold tracking-[0.5px] md:tracking-[1px] text-trama-500">{t.hero.stat1.label}</span>
         </div>
-        <div data-hero-stat class="flex items-center gap-4 py-4 border-b border-trama-200 w-[300px] md:w-[350px]">
-          <span class="font-secondary text-4xl md:text-5xl font-black text-trama-red">{t.hero.stat2.number}</span>
-          <span class="font-secondary text-xs font-semibold tracking-[1px] text-trama-500">{t.hero.stat2.label}</span>
+        <div data-hero-stat class="flex flex-col md:flex-row md:items-start gap-1 md:gap-4 md:py-4 md:border-b md:border-trama-200 flex-1 md:flex-none md:w-[350px]">
+          <span class="font-secondary text-2xl md:text-7xl font-black text-black">{t.hero.stat2.number}</span>
+          <span class="font-secondary text-[10px] md:text-xs font-semibold tracking-[0.5px] md:tracking-[1px] text-trama-500">{t.hero.stat2.label}</span>
         </div>
-        <div data-hero-stat class="flex items-center gap-4 py-4 w-[300px] md:w-[350px]">
-          <span class="font-secondary text-4xl md:text-5xl font-black text-trama-red">{t.hero.stat3.number}</span>
-          <span class="font-secondary text-xs font-semibold tracking-[1px] text-trama-500">{t.hero.stat3.label}</span>
+        <div data-hero-stat class="flex flex-col md:flex-row md:items-start gap-1 md:gap-4 md:py-4 flex-1 md:flex-none md:w-[350px]">
+          <span class="font-secondary text-2xl md:text-7xl font-black text-black">{t.hero.stat3.number}</span>
+          <span class="font-secondary text-[10px] md:text-xs font-semibold tracking-[0.5px] md:tracking-[1px] text-trama-500">{t.hero.stat3.label}</span>
         </div>
       </div>
 
@@ -66,10 +78,10 @@ const t = useTranslations(locale);
       <a
         data-hero-cta
         href={locale === 'es' ? '/es/casos' : '/en/cases'}
-        class="bg-trama-red text-white px-8 py-5 flex items-center gap-3 hover:bg-trama-red-dark transition-colors"
+        class="bg-trama-red text-white px-6 md:px-8 py-4 md:py-5 flex items-center gap-3 hover:bg-trama-red-dark transition-colors w-full md:w-auto justify-center md:justify-start"
       >
-        <span class="font-secondary text-[13px] font-bold tracking-[1px]">{t.hero.cta}</span>
-        <svg class="w-[18px] h-[18px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <span class="font-secondary text-[12px] md:text-[13px] font-bold tracking-[1px]">{t.hero.cta}</span>
+        <svg class="w-4 h-4 md:w-[18px] md:h-[18px]" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <line x1="5" y1="12" x2="19" y2="12"></line>
           <polyline points="12 5 19 12 12 19"></polyline>
         </svg>
@@ -77,11 +89,11 @@ const t = useTranslations(locale);
     </div>
   </div>
 
-  <!-- Decorative Line -->
-  <div data-hero-line class="absolute bottom-[50px] left-8 md:left-14 w-[200px] h-1 bg-trama-red"></div>
+  <!-- Decorative Line (Desktop) -->
+  <div data-hero-line class="hidden md:block absolute bottom-[50px] left-8 md:left-14 w-[200px] h-1 bg-trama-red"></div>
 
   <!-- Scroll Hint -->
-  <div class="absolute bottom-[60px] left-1/2 -translate-x-1/2">
+  <div class="absolute bottom-[40px] md:bottom-[60px] left-1/2 -translate-x-1/2">
     <ScrollHint text={t.hero.scroll} />
   </div>
 </section>

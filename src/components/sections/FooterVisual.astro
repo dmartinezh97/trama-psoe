@@ -6,75 +6,75 @@ const locale = getLocaleFromUrl(Astro.url) as Locale;
 const t = useTranslations(locale);
 ---
 
-<footer data-footer class="relative h-auto lg:h-[400px] bg-trama-red overflow-hidden">
+<footer data-footer class="relative min-h-[450px] lg:h-[400px] bg-trama-red overflow-hidden">
   <!-- Background Text -->
-  <span class="absolute left-[-50px] bottom-[-80px] font-secondary text-[150px] md:text-[200px] lg:text-[250px] font-black text-trama-red-dark select-none pointer-events-none tracking-[-10px]">
+  <span class="absolute left-[-30px] md:left-[-50px] bottom-[-40px] md:bottom-[-80px] font-secondary text-[100px] md:text-[200px] lg:text-[250px] font-black text-trama-red-dark select-none pointer-events-none tracking-[-5px] md:tracking-[-10px]">
     LA TRAMA
   </span>
 
   <!-- Footer Content -->
-  <div class="relative z-10 flex flex-col lg:flex-row lg:justify-between px-8 md:px-14 py-12 lg:py-14">
+  <div class="relative z-10 flex flex-col lg:flex-row lg:justify-between px-5 md:px-14 pt-8 pb-6 lg:py-14">
     <!-- Left Column -->
-    <div data-footer-content class="flex flex-col gap-6 max-w-[500px]">
+    <div data-footer-content class="flex flex-col gap-4 md:gap-6 max-w-[500px]">
       <!-- Logo -->
-      <div class="flex items-center gap-4">
-        <div class="w-12 h-12 bg-white flex items-center justify-center">
-          <span class="font-secondary text-2xl font-black text-trama-red">T</span>
+      <div class="flex items-center gap-3 md:gap-4">
+        <div class="w-10 h-10 md:w-12 md:h-12 bg-white flex items-center justify-center">
+          <span class="font-secondary text-xl md:text-2xl font-black text-trama-red">T</span>
         </div>
-        <span class="font-secondary text-2xl font-black tracking-[-1px] text-white">
+        <span class="font-secondary text-xl md:text-2xl font-black tracking-[-1px] text-white">
           {t.footer.brand}
         </span>
       </div>
 
       <!-- Description -->
-      <p class="font-secondary text-sm font-normal leading-relaxed text-trama-red-light">
+      <p class="font-secondary text-xs md:text-sm font-normal leading-relaxed text-trama-red-light">
         {t.footer.description}
       </p>
 
       <!-- Disclaimer -->
-      <div class="bg-black px-5 py-3 inline-block">
-        <span class="font-secondary text-xs font-semibold tracking-[0.5px] text-white">
+      <div class="bg-black px-4 md:px-5 py-2 md:py-3 inline-block self-start">
+        <span class="font-secondary text-[10px] md:text-xs font-semibold tracking-[0.5px] text-white">
           {t.footer.disclaimer}
         </span>
       </div>
     </div>
 
     <!-- Right Column - Navigation -->
-    <nav data-footer-content class="flex gap-16 mt-8 lg:mt-0">
+    <nav data-footer-content class="flex gap-8 md:gap-16 mt-6 lg:mt-0">
       <!-- Cases Column -->
-      <div class="flex flex-col gap-4">
-        <span class="font-secondary text-xs font-bold tracking-[2px] text-white">
+      <div class="flex flex-col gap-3 md:gap-4">
+        <span class="font-secondary text-[10px] md:text-xs font-bold tracking-[2px] text-white">
           {t.footer.casesTitle}
         </span>
-        <a href={locale === 'es' ? '/es/casos' : '/en/cases'} class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
+        <a href={locale === 'es' ? '/es/casos' : '/en/cases'} class="font-secondary text-xs md:text-sm font-normal text-trama-red-light hover:text-white transition-colors">
           {t.footer.caseKoldo}
         </a>
-        <a href={locale === 'es' ? '/es/casos' : '/en/cases'} class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
+        <a href={locale === 'es' ? '/es/casos' : '/en/cases'} class="font-secondary text-xs md:text-sm font-normal text-trama-red-light hover:text-white transition-colors">
           {t.footer.caseBegona}
         </a>
-        <a href={locale === 'es' ? '/es/casos' : '/en/cases'} class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
+        <a href={locale === 'es' ? '/es/casos' : '/en/cases'} class="font-secondary text-xs md:text-sm font-normal text-trama-red-light hover:text-white transition-colors">
           {t.footer.caseHidro}
         </a>
-        <a href={locale === 'es' ? '/es/casos' : '/en/cases'} class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
+        <a href={locale === 'es' ? '/es/casos' : '/en/cases'} class="font-secondary text-xs md:text-sm font-normal text-trama-red-light hover:text-white transition-colors">
           {t.footer.caseDavid}
         </a>
       </div>
 
       <!-- Info Column -->
-      <div class="flex flex-col gap-4">
-        <span class="font-secondary text-xs font-bold tracking-[2px] text-white">
+      <div class="flex flex-col gap-3 md:gap-4">
+        <span class="font-secondary text-[10px] md:text-xs font-bold tracking-[2px] text-white">
           {t.footer.infoTitle}
         </span>
-        <a href={locale === 'es' ? '/es/cronologia' : '/en/timeline'} class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
+        <a href={locale === 'es' ? '/es/cronologia' : '/en/timeline'} class="font-secondary text-xs md:text-sm font-normal text-trama-red-light hover:text-white transition-colors">
           {t.footer.infoTimeline}
         </a>
-        <a href={locale === 'es' ? '/es/imputados' : '/en/defendants'} class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
+        <a href={locale === 'es' ? '/es/imputados' : '/en/defendants'} class="font-secondary text-xs md:text-sm font-normal text-trama-red-light hover:text-white transition-colors">
           {t.footer.infoAccused}
         </a>
-        <a href={locale === 'es' ? '/es/documentos' : '/en/documents'} class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
+        <a href={locale === 'es' ? '/es/documentos' : '/en/documents'} class="font-secondary text-xs md:text-sm font-normal text-trama-red-light hover:text-white transition-colors">
           {t.footer.infoDocs}
         </a>
-        <a href={locale === 'es' ? '/es/documentos' : '/en/documents'} class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
+        <a href={locale === 'es' ? '/es/documentos' : '/en/documents'} class="font-secondary text-xs md:text-sm font-normal text-trama-red-light hover:text-white transition-colors">
           {t.footer.infoSources}
         </a>
       </div>
@@ -82,11 +82,11 @@ const t = useTranslations(locale);
   </div>
 
   <!-- Footer Bottom -->
-  <div class="relative z-10 flex flex-col sm:flex-row sm:justify-between items-center px-8 md:px-14 pb-8 lg:absolute lg:bottom-8 lg:left-14 lg:right-14">
-    <span class="font-secondary text-xs font-medium text-trama-red-light">
+  <div class="relative z-10 flex flex-col sm:flex-row sm:justify-between items-start sm:items-center px-5 md:px-14 pb-6 lg:absolute lg:bottom-8 lg:left-14 lg:right-14 gap-1 sm:gap-0">
+    <span class="font-secondary text-[10px] md:text-xs font-medium text-trama-red-light">
       {t.footer.copyright}
     </span>
-    <span class="font-secondary text-xs font-medium text-trama-red-light mt-2 sm:mt-0">
+    <span class="font-secondary text-[10px] md:text-xs font-medium text-trama-red-light">
       {t.footer.lastUpdate}
     </span>
   </div>
