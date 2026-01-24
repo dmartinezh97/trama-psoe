@@ -445,3 +445,113 @@ function initCasesFooterAnimations(): void {
     });
   }
 }
+
+// Cronología Page Animations
+export function initCronoPageAnimations(): void {
+  if (prefersReducedMotion()) {
+    gsap.set('[data-crono-hero-item], [data-crono-event], [data-crono-year-title], [data-crono-footer-item]', {
+      opacity: 1,
+      clearProps: 'all',
+    });
+    return;
+  }
+
+  initCronoHeroAnimations();
+  initCronoYearAnimations();
+  initCronoFooterAnimations();
+}
+
+function initCronoHeroAnimations(): void {
+  const hero = document.querySelector('[data-crono-hero]');
+  if (!hero) return;
+
+  // Background text parallax
+  const bgText = hero.querySelector('[data-crono-hero-bg]');
+  if (bgText) {
+    gsap.to(bgText, {
+      y: -80,
+      ease: 'none',
+      scrollTrigger: {
+        trigger: hero,
+        start: 'top top',
+        end: 'bottom top',
+        scrub: true,
+      },
+    });
+  }
+
+  // Hero items stagger animation
+  const items = hero.querySelectorAll('[data-crono-hero-item]');
+  if (items.length) {
+    gsap.from(items, {
+      y: 40,
+      opacity: 0,
+      duration: 0.7,
+      stagger: 0.15,
+      ease: 'power3.out',
+      force3D: true,
+    });
+  }
+}
+
+function initCronoYearAnimations(): void {
+  const sections = document.querySelectorAll('[data-crono-year]');
+
+  sections.forEach((section) => {
+    // Year title animation
+    const yearTitle = section.querySelector('[data-crono-year-title]');
+    if (yearTitle) {
+      gsap.from(yearTitle, {
+        x: -50,
+        opacity: 0,
+        duration: 0.6,
+        ease: 'power3.out',
+        force3D: true,
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 80%',
+          once: true,
+        },
+      });
+    }
+
+    // Events fade in with stagger
+    const events = section.querySelectorAll('[data-crono-event]');
+    if (events.length) {
+      gsap.from(events, {
+        y: 30,
+        opacity: 0,
+        duration: 0.5,
+        stagger: 0.1,
+        ease: 'power2.out',
+        force3D: true,
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 70%',
+          once: true,
+        },
+      });
+    }
+  });
+}
+
+function initCronoFooterAnimations(): void {
+  const footer = document.querySelector('[data-crono-footer]');
+  if (!footer) return;
+
+  const items = footer.querySelectorAll('[data-crono-footer-item]');
+  if (items.length) {
+    gsap.from(items, {
+      y: 30,
+      opacity: 0,
+      duration: 0.6,
+      stagger: 0.15,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: footer,
+        start: 'top 85%',
+        once: true,
+      },
+    });
+  }
+}

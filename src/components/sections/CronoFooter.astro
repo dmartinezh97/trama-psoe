@@ -1,0 +1,69 @@
+---
+import ButtonOutline from '../ui/ButtonOutline.astro';
+
+interface Props {
+  updateText: string;
+  casesHref: string;
+  casesText: string;
+  accusedHref: string;
+  accusedText: string;
+}
+
+const { updateText, casesHref, casesText, accusedHref, accusedText } = Astro.props;
+---
+
+<section
+  class="w-full bg-trama-red"
+  data-crono-footer
+>
+  <div class="max-w-[1440px] mx-auto px-14 py-14 flex flex-col items-center gap-6">
+    <span
+      class="font-secondary text-sm font-medium text-trama-red-light"
+      data-crono-footer-item
+    >
+      {updateText}
+    </span>
+    <div class="flex gap-6" data-crono-footer-item>
+      <a
+        href={casesHref}
+        class="inline-flex items-center gap-2 px-6 py-3 border-2 border-white text-white font-secondary text-sm font-bold tracking-[1px] hover:bg-white hover:text-trama-red transition-colors"
+      >
+        {casesText}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M5 12h14" />
+          <path d="m12 5 7 7-7 7" />
+        </svg>
+      </a>
+      <a
+        href={accusedHref}
+        class="inline-flex items-center gap-2 px-6 py-3 border-2 border-white text-white font-secondary text-sm font-bold tracking-[1px] hover:bg-white hover:text-trama-red transition-colors"
+      >
+        {accusedText}
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="16"
+          height="16"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          stroke-linecap="round"
+          stroke-linejoin="round"
+        >
+          <path d="M5 12h14" />
+          <path d="m12 5 7 7-7 7" />
+        </svg>
+      </a>
+    </div>
+  </div>
+</section>

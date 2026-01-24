@@ -139,6 +139,51 @@ export const translations = {
       copyright: '© 2026 La Trama PSOE',
       lastUpdate: 'Última actualización: Enero 2026',
     },
+    timelinePage: {
+      hero: {
+        bgText: '2024—2026',
+        tag: 'CRONOLOGÍA COMPLETA',
+        title: 'Del estallido\na los juicios',
+        subtitle: 'Todos los acontecimientos clave desde febrero de 2024',
+      },
+      year2024: {
+        year: '2024',
+        events: [
+          { date: 'FEBRERO', title: 'Operación Delorme', description: '20 detenidos, incluidos Koldo García y Víctor de Aldama. Se destapa la trama de las mascarillas.' },
+          { date: 'ABRIL', title: 'Se abre investigación a Begoña Gómez', description: 'Tras denuncia de Manos Limpias, se inicia la investigación judicial contra la esposa del presidente.' },
+          { date: 'JULIO', title: 'Primera declaración de Begoña Gómez', description: 'Begoña Gómez declara por primera vez ante el juez Peinado en el Juzgado de Instrucción nº 41 de Madrid.' },
+          { date: 'OCTUBRE', title: 'El Tribunal Supremo imputa a José Luis Ábalos', description: 'El exministro de Transportes es formalmente imputado por el Alto Tribunal.' },
+          { date: 'NOVIEMBRE', title: 'Aldama se convierte en colaborador', description: 'Víctor de Aldama colabora con la justicia y acusa directamente a dirigentes del PSOE de haber recibido comisiones.' },
+        ],
+      },
+      year2025: {
+        year: '2025',
+        events: [
+          { date: 'FEBRERO', title: 'David Sánchez renuncia', description: 'El hermano del presidente renuncia a su cargo en la Diputación de Badajoz tras el estallido del escándalo.' },
+          { date: 'JUNIO', title: 'Santos Cerdán dimite e ingresa en prisión', description: 'El Secretario de Organización del PSOE dimite y entra en prisión provisional. El TSJ Extremadura rechaza el aforamiento de Gallardo por "fraude de ley".' },
+          { date: 'JULIO', title: 'Imputación de Isabel Pardo de Vera', description: 'La expresidenta de ADIF es imputada. El Supremo rechaza imputar a Félix Bolaños por falta de indicios.' },
+          { date: 'SEPTIEMBRE', title: 'Propuesta de juicio con jurado popular', description: 'El juez Peinado propone juicio con jurado popular para Begoña Gómez.' },
+          { date: 'NOVIEMBRE', title: 'Ábalos y Koldo ingresan en prisión', description: 'El exministro y su asesor ingresan en prisión preventiva sin fianza. Santos Cerdán sale de prisión tras casi 6 meses.' },
+          { date: 'DICIEMBRE', title: 'Archivo de imputación a Francisco Martín', description: 'La Audiencia Provincial de Madrid archiva la imputación del Delegado del Gobierno por basarse en "meras suposiciones".' },
+        ],
+      },
+      year2026: {
+        year: '2026',
+        events: [
+          { date: '20 ENERO', title: 'Patricia Uriz declara como imputada', description: 'La expareja de Koldo García declarará por blanqueo de capitales.' },
+          { date: '28 ENERO', title: 'Díaz Bidart declara como testigo', description: 'El jefe de gabinete de Reyes Maroto declarará en el caso hidrocarburos.' },
+          { date: 'FEBRERO', title: 'Audiencia preliminar juicio Ábalos-Koldo', description: 'Vista previa del juicio oral en el Tribunal Supremo.' },
+          { date: 'ABRIL', title: 'JUICIO ORAL: ÁBALOS Y KOLDO', description: 'Juicio en el Tribunal Supremo. Pena solicitada: hasta 30 años para Ábalos, hasta 19,5 años para Koldo.', highlighted: true },
+          { date: '28 MAY-4 JUN', title: 'JUICIO: DAVID SÁNCHEZ Y 10 ACUSADOS', description: 'Juicio en la Audiencia Provincial de Badajoz por el puesto a medida.', highlighted: true },
+          { date: '27 SEPT', title: 'Jubilación del juez Peinado', description: 'El instructor del caso Begoña Gómez se jubilará. La causa deberá resolverse o transferirse.' },
+        ],
+      },
+      footer: {
+        updateText: 'Información actualizada a enero 2026',
+        casesText: 'VER TODOS LOS CASOS',
+        accusedText: 'VER IMPUTADOS',
+      },
+    },
     casesPage: {
       hero: {
         tagline: '4 INVESTIGACIONES INTERCONECTADAS',
@@ -372,6 +417,51 @@ export const translations = {
       infoSources: 'Sources',
       copyright: '© 2026 The PSOE Scandal',
       lastUpdate: 'Last update: January 2026',
+    },
+    timelinePage: {
+      hero: {
+        bgText: '2024—2026',
+        tag: 'FULL TIMELINE',
+        title: 'From the outbreak\nto the trials',
+        subtitle: 'All key events since February 2024',
+      },
+      year2024: {
+        year: '2024',
+        events: [
+          { date: 'FEBRUARY', title: 'Operation Delorme', description: '20 arrested, including Koldo García and Víctor de Aldama. The mask scheme is uncovered.' },
+          { date: 'APRIL', title: 'Investigation opened against Begoña Gómez', description: 'Following a complaint from Manos Limpias, judicial investigation begins against the president\'s wife.' },
+          { date: 'JULY', title: 'Begoña Gómez\'s first statement', description: 'Begoña Gómez testifies for the first time before Judge Peinado at Court of Instruction No. 41 of Madrid.' },
+          { date: 'OCTOBER', title: 'Supreme Court indicts José Luis Ábalos', description: 'The former Transport Minister is formally indicted by the High Court.' },
+          { date: 'NOVEMBER', title: 'Aldama becomes collaborator', description: 'Víctor de Aldama cooperates with justice and directly accuses PSOE leaders of receiving commissions.' },
+        ],
+      },
+      year2025: {
+        year: '2025',
+        events: [
+          { date: 'FEBRUARY', title: 'David Sánchez resigns', description: 'The president\'s brother resigns from his position at the Badajoz Provincial Council after the scandal breaks.' },
+          { date: 'JUNE', title: 'Santos Cerdán resigns and enters prison', description: 'The PSOE Organization Secretary resigns and enters provisional prison. TSJ Extremadura rejects Gallardo\'s immunity for "fraud of law".' },
+          { date: 'JULY', title: 'Isabel Pardo de Vera indicted', description: 'The former ADIF president is indicted. The Supreme Court refuses to indict Félix Bolaños due to lack of evidence.' },
+          { date: 'SEPTEMBER', title: 'Jury trial proposal', description: 'Judge Peinado proposes a jury trial for Begoña Gómez.' },
+          { date: 'NOVEMBER', title: 'Ábalos and Koldo enter prison', description: 'The former minister and his advisor enter preventive detention without bail. Santos Cerdán is released after almost 6 months.' },
+          { date: 'DECEMBER', title: 'Francisco Martín charges dropped', description: 'The Provincial Court of Madrid dismisses charges against the Government Delegate for being based on "mere assumptions".' },
+        ],
+      },
+      year2026: {
+        year: '2026',
+        events: [
+          { date: 'JAN 20', title: 'Patricia Uriz testifies as defendant', description: 'Koldo García\'s ex-partner will testify for money laundering.' },
+          { date: 'JAN 28', title: 'Díaz Bidart testifies as witness', description: 'Reyes Maroto\'s chief of staff will testify in the hydrocarbons case.' },
+          { date: 'FEBRUARY', title: 'Preliminary hearing Ábalos-Koldo trial', description: 'Pre-trial hearing at the Supreme Court.' },
+          { date: 'APRIL', title: 'ORAL TRIAL: ÁBALOS AND KOLDO', description: 'Trial at the Supreme Court. Sentence requested: up to 30 years for Ábalos, up to 19.5 years for Koldo.', highlighted: true },
+          { date: 'MAY 28-JUN 4', title: 'TRIAL: DAVID SÁNCHEZ AND 10 DEFENDANTS', description: 'Trial at the Badajoz Provincial Court for the tailor-made position.', highlighted: true },
+          { date: 'SEPT 27', title: 'Judge Peinado\'s retirement', description: 'The instructor of the Begoña Gómez case will retire. The case must be resolved or transferred.' },
+        ],
+      },
+      footer: {
+        updateText: 'Information updated January 2026',
+        casesText: 'VIEW ALL CASES',
+        accusedText: 'VIEW ACCUSED',
+      },
     },
     casesPage: {
       hero: {

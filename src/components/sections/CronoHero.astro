@@ -1,0 +1,46 @@
+---
+interface Props {
+  bgText: string;
+  tag: string;
+  title: string;
+  subtitle: string;
+}
+
+const { bgText, tag, title, subtitle } = Astro.props;
+---
+
+<section
+  class="relative w-full h-[400px] bg-white overflow-hidden mt-20"
+  data-crono-hero
+>
+  <!-- Background Text -->
+  <span
+    class="absolute text-[200px] font-secondary font-black text-trama-50 tracking-[-10px] select-none pointer-events-none"
+    style="left: 100px; top: 200px;"
+    data-crono-hero-bg
+  >
+    {bgText}
+  </span>
+
+  <!-- Content -->
+  <div class="relative max-w-[1440px] mx-auto px-14 py-20 flex flex-col gap-4">
+    <span
+      class="font-secondary text-xs font-bold tracking-[2px] text-trama-red"
+      data-crono-hero-item
+    >
+      {tag}
+    </span>
+    <h1
+      class="font-secondary text-6xl md:text-7xl font-black text-black tracking-[-3px] leading-[0.95] whitespace-pre-line max-w-[500px]"
+      data-crono-hero-item
+    >
+      {title}
+    </h1>
+    <p
+      class="font-secondary text-lg font-medium text-trama-500"
+      data-crono-hero-item
+    >
+      {subtitle}
+    </p>
+  </div>
+</section>

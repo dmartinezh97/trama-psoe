@@ -1,0 +1,74 @@
+---
+import CronoEvent from '../ui/CronoEvent.astro';
+
+interface TimelineEvent {
+  date: string;
+  title: string;
+  description: string;
+  highlighted?: boolean;
+}
+
+interface Props {
+  year: string;
+  variant: 'light' | 'light-alt' | 'dark';
+  events: TimelineEvent[];
+}
+
+const { year, variant, events } = Astro.props;
+
+const variantStyles = {
+  light: {
+    bg: 'bg-white',
+    yearColor: 'text-trama-red',
+    lineColor: 'bg-trama-100',
+    eventVariant: 'light' as const,
+  },
+  'light-alt': {
+    bg: 'bg-trama-50',
+    yearColor: 'text-trama-red',
+    lineColor: 'bg-trama-100',
+    eventVariant: 'light' as const,
+  },
+  dark: {
+    bg: 'bg-trama-850',
+    yearColor: 'text-trama-red',
+    lineColor: 'bg-trama-700',
+    eventVariant: 'dark' as const,
+  },
+};
+
+const styles = variantStyles[variant];
+---
+
+<section
+  class:list={["w-full", styles.bg]}
+  data-crono-year
+>
+  <div class="max-w-[1440px] mx-auto px-14 py-14">
+    <!-- Year Title -->
+    <div class="flex items-center gap-6 mb-8" data-crono-year-title>
+      <span
+        class:list={[
+          "font-secondary text-6xl font-black tracking-[-3px]",
+          styles.yearColor,
+        ]}
+      >
+        {year}
+      </span>
+      <div class:list={["flex-1 h-0.5", styles.lineColor]}></div>
+    </div>
+
+    <!-- Events -->
+    <div class="flex flex-col gap-6">
+      {events.map((event) => (
+        <CronoEvent
+          date={event.date}
+          title={event.title}
+          description={event.description}
+          highlighted={event.highlighted}
+          variant={styles.eventVariant}
+        />
+      ))}
+    </div>
+  </div>
+</section>

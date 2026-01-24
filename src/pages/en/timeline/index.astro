@@ -1,10 +1,63 @@
 ---
 import LandingLayout from '../../../layouts/LandingLayout.astro';
+import CronoHero from '../../../components/sections/CronoHero.astro';
+import CronoYearSection from '../../../components/sections/CronoYearSection.astro';
+import CronoFooter from '../../../components/sections/CronoFooter.astro';
+import { translations } from '../../../i18n/translations';
+
+const t = translations.en.timelinePage;
 ---
 
-<LandingLayout title="Timeline - Trama PSOE">
-  <div class="space-y-6">
-    <h1 class="text-3xl font-bold">Timeline</h1>
-    <!-- Content pending -->
-  </div>
+<LandingLayout title="Timeline - The PSOE Scandal">
+  <CronoHero
+    bgText={t.hero.bgText}
+    tag={t.hero.tag}
+    title={t.hero.title}
+    subtitle={t.hero.subtitle}
+  />
+
+  <CronoYearSection
+    year={t.year2024.year}
+    variant="light"
+    events={t.year2024.events}
+  />
+
+  <CronoYearSection
+    year={t.year2025.year}
+    variant="light-alt"
+    events={t.year2025.events}
+  />
+
+  <CronoYearSection
+    year={t.year2026.year}
+    variant="dark"
+    events={t.year2026.events}
+  />
+
+  <CronoFooter
+    updateText={t.footer.updateText}
+    casesHref="/en/cases"
+    casesText={t.footer.casesText}
+    accusedHref="/en/accused"
+    accusedText={t.footer.accusedText}
+  />
 </LandingLayout>
+
+<script>
+  import { initCronoPageAnimations, cleanupAnimations } from '../../../scripts/animations';
+
+  // Initialize animations on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    initCronoPageAnimations();
+  });
+
+  // Cleanup on page navigation (for View Transitions)
+  document.addEventListener('astro:before-swap', () => {
+    cleanupAnimations();
+  });
+
+  // Re-initialize on page navigation
+  document.addEventListener('astro:after-swap', () => {
+    initCronoPageAnimations();
+  });
+</script>

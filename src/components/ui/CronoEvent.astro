@@ -1,0 +1,76 @@
+---
+interface Props {
+  date: string;
+  title: string;
+  description: string;
+  highlighted?: boolean;
+  variant?: 'light' | 'dark';
+  class?: string;
+}
+
+const {
+  date,
+  title,
+  description,
+  highlighted = false,
+  variant = 'light',
+  class: className = '',
+} = Astro.props;
+
+const isDark = variant === 'dark';
+
+// Styles based on variant and highlighted state
+const containerStyles = highlighted
+  ? 'bg-trama-red px-8 py-6'
+  : '';
+
+const dateStyles = highlighted
+  ? 'text-white'
+  : 'text-trama-red';
+
+const titleStyles = highlighted
+  ? 'text-white'
+  : isDark
+    ? 'text-white'
+    : 'text-black';
+
+const descStyles = highlighted
+  ? 'text-trama-red-light'
+  : 'text-trama-500';
+---
+
+<div
+  class:list={[
+    "flex gap-8 w-full",
+    containerStyles,
+    className,
+  ]}
+  data-crono-event
+>
+  <span
+    class:list={[
+      "font-secondary text-xs font-bold tracking-[2px] shrink-0 w-28",
+      dateStyles,
+    ]}
+  >
+    {date}
+  </span>
+  <div class="flex flex-col gap-2 flex-1">
+    <span
+      class:list={[
+        "font-secondary text-2xl font-extrabold",
+        titleStyles,
+      ]}
+    >
+      {title}
+    </span>
+    <p
+      class:list={[
+        "font-secondary text-sm leading-relaxed max-w-[600px]",
+        descStyles,
+      ]}
+    >
+      {description}
+    </p>
+  </div>
+</div>
