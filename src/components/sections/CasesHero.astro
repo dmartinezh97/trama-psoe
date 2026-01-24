@@ -1,0 +1,31 @@
+---
+import TagLine from '../ui/TagLine.astro';
+
+interface Props {
+  tagline: string;
+  title: string;
+  subtitle: string;
+}
+
+const { tagline, title, subtitle } = Astro.props;
+---
+
+<section class="bg-trama-950 w-full mt-20" data-cases-hero>
+  <div class="max-w-[1440px] mx-auto px-14 py-20 flex flex-col gap-6">
+    <div data-cases-hero-item>
+      <TagLine text={tagline} />
+    </div>
+    <h1
+      class="font-secondary text-7xl md:text-[96px] font-black text-white tracking-[-4px]"
+      data-cases-hero-item
+    >
+      {title}
+    </h1>
+    <p
+      class="font-secondary text-lg font-medium text-trama-500 tracking-[1px]"
+      data-cases-hero-item
+    >
+      {subtitle}
+    </p>
+  </div>
+</section>

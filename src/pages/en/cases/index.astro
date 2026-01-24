@@ -1,10 +1,104 @@
 ---
 import LandingLayout from '../../../layouts/LandingLayout.astro';
+import CasesHero from '../../../components/sections/CasesHero.astro';
+import CaseSection from '../../../components/sections/CaseSection.astro';
+import CasesFooter from '../../../components/sections/CasesFooter.astro';
+import { translations } from '../../../i18n/translations';
+
+const t = translations.en.casesPage;
+const labels = t.labels;
 ---
 
-<LandingLayout title="Cases - Trama PSOE">
-  <div class="space-y-6">
-    <h1 class="text-3xl font-bold">Cases</h1>
-    <!-- Content pending -->
-  </div>
+<LandingLayout title="Cases - The PSOE Scandal">
+  <CasesHero
+    tagline={t.hero.tagline}
+    title={t.hero.title}
+    subtitle={t.hero.subtitle}
+  />
+
+  <!-- Koldo Case -->
+  <CaseSection
+    caseNumber="01"
+    variant="primary"
+    height="800px"
+    tag={t.koldo.tag}
+    title={t.koldo.title}
+    subtitle={t.koldo.subtitle}
+    description={t.koldo.description}
+    stats={t.koldo.stats}
+    defendants={t.koldo.defendants}
+    trialInfo={{ icon: 'scale', text: t.koldo.trial }}
+    labels={{ defendants: labels.mainDefendants }}
+  />
+
+  <!-- Begoña Case -->
+  <CaseSection
+    caseNumber="02"
+    variant="light"
+    height="800px"
+    tag={t.begona.tag}
+    title={t.begona.title}
+    subtitle={t.begona.subtitle}
+    description={t.begona.description}
+    crimes={t.begona.crimes}
+    defendants={t.begona.defendants}
+    trialInfo={{ icon: 'gavel', text: t.begona.trial }}
+    labels={{
+      defendants: labels.defendantsInCase,
+      crimes: `5 ${labels.crimesInvestigated}`,
+    }}
+  />
+
+  <!-- Hydrocarbons Case -->
+  <CaseSection
+    caseNumber="03"
+    variant="dark"
+    height="700px"
+    tag={t.hidrocarburos.tag}
+    title={t.hidrocarburos.title}
+    subtitle={t.hidrocarburos.subtitle}
+    description={t.hidrocarburos.description}
+    stats={t.hidrocarburos.stats}
+    ministries={t.hidrocarburos.ministries}
+    labels={{ ministries: labels.ministriesAffected }}
+  />
+
+  <!-- David Sánchez Case -->
+  <CaseSection
+    caseNumber="04"
+    variant="dark-alt"
+    height="700px"
+    tag={t.david.tag}
+    title={t.david.title}
+    subtitle={t.david.subtitle}
+    description={t.david.description}
+    stats={t.david.stats}
+    crimes={t.david.crimes}
+    trialInfo={{ icon: 'calendar', text: t.david.trial }}
+    labels={{ crimes: `4 ${labels.crimes}` }}
+  />
+
+  <CasesFooter
+    title={t.footer.title}
+    links={t.footer.links}
+  />
 </LandingLayout>
+
+<script>
+  import { initCasesPageAnimations, cleanupAnimations } from '../../../scripts/animations';
+
+  // Initialize animations on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    initCasesPageAnimations();
+  });
+
+  // Cleanup on page navigation (for View Transitions)
+  document.addEventListener('astro:before-swap', () => {
+    cleanupAnimations();
+  });
+
+  // Re-initialize on page navigation
+  document.addEventListener('astro:after-swap', () => {
+    initCasesPageAnimations();
+  });
+</script>

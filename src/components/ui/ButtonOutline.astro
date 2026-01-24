@@ -2,11 +2,18 @@
 interface Props {
   href?: string;
   type?: 'button' | 'submit' | 'reset';
+  variant?: 'default' | 'white';
   class?: string;
 }
 
-const { href, type = 'button', class: className = '' } = Astro.props;
-const baseClasses = 'inline-flex items-center justify-center gap-3 px-8 py-5 bg-transparent border-2 border-trama-red text-trama-red font-bold text-sm tracking-button rounded-lg hover:bg-trama-red hover:text-white transition-colors duration-200 cursor-pointer';
+const { href, type = 'button', variant = 'default', class: className = '' } = Astro.props;
+
+const variantStyles = {
+  default: 'border-trama-red text-trama-red hover:bg-trama-red hover:text-white',
+  white: 'border-white text-white hover:bg-white hover:text-trama-red',
+};
+
+const baseClasses = `inline-flex items-center justify-center gap-3 px-8 py-5 bg-transparent border-2 font-bold text-sm tracking-button rounded-lg transition-colors duration-200 cursor-pointer ${variantStyles[variant]}`;
 ---
 
 {href ? (

@@ -290,3 +290,158 @@ function initFooterAnimations(): void {
     });
   }
 }
+
+// Cases Page Animations
+export function initCasesPageAnimations(): void {
+  if (prefersReducedMotion()) {
+    gsap.set('[data-cases-hero-item], [data-case-content], [data-case-chip], [data-cases-footer-item]', {
+      opacity: 1,
+      clearProps: 'all',
+    });
+    return;
+  }
+
+  initCasesHeroAnimations();
+  initCaseSectionAnimations();
+  initCasesFooterAnimations();
+}
+
+function initCasesHeroAnimations(): void {
+  const hero = document.querySelector('[data-cases-hero]');
+  if (!hero) return;
+
+  const items = hero.querySelectorAll('[data-cases-hero-item]');
+  if (items.length) {
+    gsap.from(items, {
+      y: 40,
+      opacity: 0,
+      duration: 0.7,
+      stagger: 0.15,
+      ease: 'power3.out',
+      force3D: true,
+    });
+  }
+}
+
+function initCaseSectionAnimations(): void {
+  const sections = document.querySelectorAll('[data-case-section]');
+
+  sections.forEach((section) => {
+    // Parallax on background number
+    const bgNumber = section.querySelector('[data-case-bg-number]');
+    if (bgNumber) {
+      gsap.to(bgNumber, {
+        y: -80,
+        ease: 'none',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top bottom',
+          end: 'bottom top',
+          scrub: true,
+        },
+      });
+    }
+
+    // Content fade in
+    const content = section.querySelector('[data-case-content]');
+    if (content) {
+      gsap.from(content, {
+        y: 60,
+        opacity: 0,
+        duration: 0.8,
+        ease: 'power3.out',
+        force3D: true,
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 70%',
+          once: true,
+        },
+      });
+    }
+
+    // Chips scale in with stagger
+    const chips = section.querySelectorAll('[data-case-chip]');
+    if (chips.length) {
+      gsap.from(chips, {
+        scale: 0.8,
+        opacity: 0,
+        duration: 0.5,
+        stagger: 0.08,
+        ease: 'back.out(1.4)',
+        force3D: true,
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 60%',
+          once: true,
+        },
+      });
+    }
+
+    // Stats number count up
+    const statNumbers = section.querySelectorAll('[data-case-stat-number]');
+    statNumbers.forEach((numEl) => {
+      const element = numEl as HTMLElement;
+      const text = element.textContent || '0';
+      const numericMatch = text.match(/[\d.,]+/);
+      if (!numericMatch) return;
+
+      const originalText = text;
+      const numericStr = numericMatch[0].replace(/\./g, '').replace(',', '.');
+      const endValue = parseFloat(numericStr);
+      const prefix = text.slice(0, text.indexOf(numericMatch[0]));
+      const suffix = text.slice(text.indexOf(numericMatch[0]) + numericMatch[0].length);
+      const useThousandSeparator = numericMatch[0].includes('.');
+
+      gsap.fromTo(
+        element,
+        { textContent: prefix + '0' + suffix },
+        {
+          duration: 1.5,
+          ease: 'power2.out',
+          scrollTrigger: {
+            trigger: element,
+            start: 'top 85%',
+            once: true,
+          },
+          onUpdate: function () {
+            const progress = this.progress();
+            const current = Math.floor(endValue * progress);
+            let formatted: string;
+
+            if (useThousandSeparator) {
+              formatted = current.toLocaleString('es-ES');
+            } else {
+              formatted = current.toString();
+            }
+
+            element.textContent = prefix + formatted + suffix;
+          },
+          onComplete: function () {
+            element.textContent = originalText;
+          },
+        }
+      );
+    });
+  });
+}
+
+function initCasesFooterAnimations(): void {
+  const footer = document.querySelector('[data-cases-footer]');
+  if (!footer) return;
+
+  const items = footer.querySelectorAll('[data-cases-footer-item]');
+  if (items.length) {
+    gsap.from(items, {
+      y: 30,
+      opacity: 0,
+      duration: 0.6,
+      stagger: 0.15,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: footer,
+        start: 'top 85%',
+        once: true,
+      },
+    });
+  }
+}

@@ -1,0 +1,39 @@
+---
+interface Props {
+  number: string;
+  label: string;
+  variant?: 'light' | 'dark' | 'primary';
+  class?: string;
+}
+
+const { number, label, variant = 'light', class: className = '' } = Astro.props;
+
+const variantStyles = {
+  light: {
+    number: 'text-white',
+    label: 'text-trama-red-light',
+  },
+  dark: {
+    number: 'text-trama-red',
+    label: 'text-trama-500',
+  },
+  primary: {
+    number: 'text-white',
+    label: 'text-trama-red-light',
+  },
+};
+
+const styles = variantStyles[variant];
+---
+
+<div class:list={["flex flex-col gap-1", className]} data-case-stat>
+  <span
+    class:list={["font-secondary text-5xl font-black", styles.number]}
+    data-case-stat-number
+  >
+    {number}
+  </span>
+  <span class:list={["font-secondary text-xs font-medium", styles.label]}>
+    {label}
+  </span>
+</div>

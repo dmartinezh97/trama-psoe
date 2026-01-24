@@ -1,0 +1,25 @@
+---
+interface Props {
+  text: string;
+  variant?: 'dark' | 'primary';
+  class?: string;
+}
+
+const { text, variant = 'dark', class: className = '' } = Astro.props;
+
+const variantStyles = {
+  dark: 'bg-trama-950 text-white',
+  primary: 'bg-trama-red text-white',
+};
+---
+
+<span
+  class:list={[
+    "inline-flex px-4 py-2 font-secondary text-xs font-semibold",
+    variantStyles[variant],
+    className
+  ]}
+  data-case-chip
+>
+  {text}
+</span>

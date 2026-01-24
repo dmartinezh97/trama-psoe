@@ -1,0 +1,230 @@
+---
+import StatInline from '../ui/StatInline.astro';
+import DefendantChip from '../ui/DefendantChip.astro';
+import CrimeChip from '../ui/CrimeChip.astro';
+import MinistryChip from '../ui/MinistryChip.astro';
+import TrialBadge from '../ui/TrialBadge.astro';
+
+interface Stat {
+  number: string;
+  label: string;
+}
+
+interface Defendant {
+  name: string;
+  status: string;
+}
+
+interface Props {
+  caseNumber: string;
+  variant?: 'primary' | 'light' | 'dark' | 'dark-alt';
+  height?: string;
+  tag: string;
+  title: string;
+  subtitle: string;
+  description: string;
+  stats?: Stat[];
+  defendants?: Defendant[];
+  crimes?: string[];
+  ministries?: string[];
+  trialInfo?: {
+    icon?: 'scale' | 'gavel' | 'calendar';
+    text: string;
+  };
+  labels?: {
+    defendants?: string;
+    crimes?: string;
+    ministries?: string;
+  };
+}
+
+const {
+  caseNumber,
+  variant = 'primary',
+  height = '800px',
+  tag,
+  title,
+  subtitle,
+  description,
+  stats = [],
+  defendants = [],
+  crimes = [],
+  ministries = [],
+  trialInfo,
+  labels = {},
+} = Astro.props;
+
+const defaultLabels = {
+  defendants: variant === 'light' ? 'IMPUTADOS EN ESTE CASO' : 'PRINCIPALES IMPUTADOS',
+  crimes: `${crimes.length} DELITOS${variant === 'light' ? ' INVESTIGADOS' : ''}`,
+  ministries: 'MINISTERIOS AFECTADOS',
+};
+
+const finalLabels = {
+  defendants: labels.defendants || defaultLabels.defendants,
+  crimes: labels.crimes || defaultLabels.crimes,
+  ministries: labels.ministries || defaultLabels.ministries,
+};
+
+const variantStyles = {
+  primary: {
+    bg: 'bg-trama-red',
+    bgNumber: 'text-trama-red-dark',
+    text: 'text-white',
+    tagColor: 'text-white',
+    subtitleColor: 'text-trama-red-light',
+    descColor: 'text-white',
+    statVariant: 'light' as const,
+    defendantVariant: 'dark' as const,
+    crimeVariant: 'dark' as const,
+    trialVariant: 'dark' as const,
+  },
+  light: {
+    bg: 'bg-white',
+    bgNumber: 'text-trama-50',
+    text: 'text-black',
+    tagColor: 'text-trama-red',
+    subtitleColor: 'text-trama-500',
+    descColor: 'text-black',
+    statVariant: 'dark' as const,
+    defendantVariant: 'light' as const,
+    crimeVariant: 'dark' as const,
+    trialVariant: 'primary' as const,
+  },
+  dark: {
+    bg: 'bg-trama-950',
+    bgNumber: 'text-trama-900',
+    text: 'text-white',
+    tagColor: 'text-trama-red',
+    subtitleColor: 'text-trama-500',
+    descColor: 'text-white',
+    statVariant: 'dark' as const,
+    defendantVariant: 'dark' as const,
+    crimeVariant: 'dark' as const,
+    trialVariant: 'primary' as const,
+  },
+  'dark-alt': {
+    bg: 'bg-trama-850',
+    bgNumber: 'text-trama-800',
+    text: 'text-white',
+    tagColor: 'text-trama-red',
+    subtitleColor: 'text-trama-500',
+    descColor: 'text-white',
+    statVariant: 'dark' as const,
+    defendantVariant: 'dark' as const,
+    crimeVariant: 'dark' as const,
+    trialVariant: 'primary' as const,
+  },
+};
+
+const styles = variantStyles[variant];
+---
+
+<section
+  class:list={["relative w-full overflow-hidden", styles.bg]}
+  style={`min-height: ${height};`}
+  data-case-section
+>
+  <!-- Background Number -->
+  <span
+    class:list={[
+      "absolute font-secondary text-[500px] font-black leading-none select-none pointer-events-none",
+      styles.bgNumber
+    ]}
+    style="right: -50px; top: 150px;"
+    data-case-bg-number
+  >
+    {caseNumber}
+  </span>
+
+  <div class="relative max-w-[1440px] mx-auto px-14 py-14" data-case-content>
+    <!-- Content -->
+    <div class="flex flex-col gap-6 max-w-[700px]">
+      <span class:list={["font-secondary text-xs font-bold tracking-[2px]", styles.tagColor]}>
+        {tag}
+      </span>
+      <h2 class:list={["font-secondary text-5xl md:text-6xl lg:text-7xl font-black tracking-[-3px]", styles.text]}>
+        {title}
+      </h2>
+      <p class:list={["font-secondary text-2xl font-semibold", styles.subtitleColor]}>
+        {subtitle}
+      </p>
+      <p class:list={["font-secondary text-base leading-relaxed max-w-[600px]", styles.descColor]}>
+        {description}
+      </p>
+    </div>
+
+    <!-- Stats -->
+    {stats.length > 0 && (
+      <div class="flex gap-8 mt-16">
+        {stats.map((stat) => (
+          <StatInline
+            number={stat.number}
+            label={stat.label}
+            variant={styles.statVariant}
+          />
+        ))}
+      </div>
+    )}
+
+    <!-- Defendants Section -->
+    {defendants.length > 0 && (
+      <div class="flex flex-col gap-4 mt-10">
+        <span class:list={["font-secondary text-xs font-bold tracking-[2px]", styles.text]}>
+          {finalLabels.defendants}
+        </span>
+        <div class="flex flex-wrap gap-4">
+          {defendants.map((defendant) => (
+            <DefendantChip
+              name={defendant.name}
+              status={defendant.status}
+              variant={styles.defendantVariant}
+            />
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Crimes Section -->
+    {crimes.length > 0 && (
+      <div class="flex flex-col gap-4 mt-10">
+        <span class:list={["font-secondary text-xs font-bold tracking-[2px]", styles.tagColor]}>
+          {finalLabels.crimes}
+        </span>
+        <div class="flex flex-wrap gap-3">
+          {crimes.map((crime, index) => (
+            <CrimeChip
+              text={crime}
+              variant={index === crimes.length - 1 ? 'primary' : styles.crimeVariant}
+            />
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Ministries Section -->
+    {ministries.length > 0 && (
+      <div class="flex flex-col gap-4 mt-10">
+        <span class:list={["font-secondary text-xs font-bold tracking-[2px]", styles.text]}>
+          {finalLabels.ministries}
+        </span>
+        <div class="flex flex-wrap gap-3">
+          {ministries.map((ministry) => (
+            <MinistryChip text={ministry} />
+          ))}
+        </div>
+      </div>
+    )}
+
+    <!-- Trial Badge -->
+    {trialInfo && (
+      <div class="mt-10">
+        <TrialBadge
+          icon={trialInfo.icon || 'scale'}
+          text={trialInfo.text}
+          variant={styles.trialVariant}
+        />
+      </div>
+    )}
+  </div>
+</section>
