@@ -1,4 +1,14 @@
 ---
 // Redirigir a la versión localizada por defecto (español)
+// En Vercel, la redirección se maneja en vercel.json (instantánea)
+// Este archivo sirve como fallback para desarrollo local
 return Astro.redirect('/es');
 ---
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="refresh" content="0;url=/es" />
+</head>
+<body></body>
+</html>
