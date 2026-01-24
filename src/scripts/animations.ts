@@ -715,7 +715,7 @@ function initDocumentosHeroAnimations(): void {
   }
 
   // Title slide from left
-  const title = hero.querySelector('h1');
+  const title = hero.querySelector('[data-documentos-title]');
   if (title) {
     gsap.from(title, {
       x: -100,
