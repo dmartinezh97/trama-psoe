@@ -1,10 +1,63 @@
 ---
 import LandingLayout from '../../../layouts/LandingLayout.astro';
+import DocumentosHero from '../../../components/sections/DocumentosHero.astro';
+import DocumentosFuentesSection from '../../../components/sections/DocumentosFuentesSection.astro';
+import DocumentosTribunalesSection from '../../../components/sections/DocumentosTribunalesSection.astro';
+import DocumentosDisclaimerSection from '../../../components/sections/DocumentosDisclaimerSection.astro';
+import DocumentosFooter from '../../../components/sections/DocumentosFooter.astro';
+import { translations } from '../../../i18n/translations';
+
+const t = translations.en.documentosPage;
+
+const sources = [
+  { icon: 'shield', ...t.fuentes.uco },
+  { icon: 'scale', ...t.fuentes.autos },
+  { icon: 'file-search', ...t.fuentes.igae },
+  { icon: 'mic', ...t.fuentes.testimonios },
+];
+
+const tribunales = [
+  { icon: 'building-2', ...t.tribunales.supremo },
+  { icon: 'building-2', ...t.tribunales.audiencia },
+  { icon: 'gavel', ...t.tribunales.ji41 },
+  { icon: 'gavel', ...t.tribunales.badajoz },
+  { icon: 'globe', ...t.tribunales.fiscalia },
+];
 ---
 
-<LandingLayout title="Documents - Trama PSOE">
-  <div class="space-y-6">
-    <h1 class="text-3xl font-bold">Documents</h1>
-    <!-- Content pending -->
-  </div>
+<LandingLayout title="Documents - PSOE Scandal">
+  <DocumentosHero
+    tag={t.hero.tag}
+    title={t.hero.title}
+    subtitle={t.hero.subtitle}
+  />
+
+  <DocumentosFuentesSection
+    title={t.fuentes.title}
+    sources={sources}
+  />
+
+  <DocumentosTribunalesSection
+    title={t.tribunales.title}
+    tribunales={tribunales}
+  />
+
+  <DocumentosDisclaimerSection
+    title={t.disclaimer.title}
+    text={t.disclaimer.text}
+    date={t.disclaimer.date}
+  />
+
+  <DocumentosFooter
+    text={t.footer.text}
+    links={t.footer.links}
+  />
 </LandingLayout>
+
+<script>
+  import { initDocumentosPageAnimations } from '../../../scripts/animations';
+
+  document.addEventListener('astro:page-load', () => {
+    initDocumentosPageAnimations();
+  });
+</script>

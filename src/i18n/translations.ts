@@ -398,6 +398,68 @@ export const translations = {
         ],
       },
     },
+    documentosPage: {
+      hero: {
+        tag: 'FUENTES Y DOCUMENTACIÓN',
+        title: 'Documentos',
+        subtitle: 'Todo el contenido procede de fuentes públicas: informes policiales, autos judiciales, declaraciones ante tribunales y cobertura periodística.',
+      },
+      fuentes: {
+        title: 'ORIGEN DE LA INFORMACIÓN',
+        uco: {
+          title: 'Informes UCO',
+          description: 'Unidad Central Operativa de la Guardia Civil. Investigaciones oficiales sobre la trama.',
+        },
+        autos: {
+          title: 'Autos Judiciales',
+          description: 'Autos del Tribunal Supremo, Juzgado de Instrucción nº 41 de Madrid y Juzgado de Instrucción nº 3 de Badajoz.',
+        },
+        igae: {
+          title: 'Informe IGAE',
+          description: 'Intervención General del Estado. 303 páginas de análisis sobre contratos irregulares.',
+        },
+        testimonios: {
+          title: 'Testimonios',
+          description: 'Declaraciones de Aldama, Koldo García y otros implicados ante los tribunales.',
+        },
+      },
+      tribunales: {
+        title: 'TRIBUNALES IMPLICADOS',
+        supremo: {
+          name: 'Tribunal Supremo',
+          description: 'Caso Ábalos (aforado)',
+        },
+        audiencia: {
+          name: 'Audiencia Nacional',
+          description: 'Caso Hidrocarburos',
+        },
+        ji41: {
+          name: 'Juzgado Instrucción nº 41 Madrid',
+          description: 'Caso Begoña Gómez',
+        },
+        badajoz: {
+          name: 'Audiencia Provincial Badajoz',
+          description: 'Caso David Sánchez',
+        },
+        fiscalia: {
+          name: 'Fiscalía Europea',
+          description: 'Contratos Barrabés fondos UE',
+        },
+      },
+      disclaimer: {
+        title: 'Sobre esta web',
+        text: 'Esta página recopila información pública sobre los casos judiciales conocidos como "Trama PSOE". No se realizan juicios de valor ni se prejuzga la culpabilidad de ningún imputado. Todos los acusados gozan de presunción de inocencia hasta que exista sentencia firme.',
+        date: 'Última actualización: Enero 2026',
+      },
+      footer: {
+        text: 'Información basada en fuentes judiciales y periodísticas públicas',
+        links: [
+          { text: 'VER CASOS', href: '/es/casos' },
+          { text: 'VER IMPUTADOS', href: '/es/imputados' },
+          { text: 'VER CRONOLOGÍA', href: '/es/cronologia' },
+        ],
+      },
+    },
   },
   en: {
     nav: {
@@ -795,6 +857,68 @@ export const translations = {
         links: [
           { text: 'VIEW TIMELINE', href: '/en/timeline' },
           { text: 'VIEW DOCUMENTS', href: '/en/documents' },
+        ],
+      },
+    },
+    documentosPage: {
+      hero: {
+        tag: 'SOURCES AND DOCUMENTATION',
+        title: 'Documents',
+        subtitle: 'All content comes from public sources: police reports, court orders, testimonies before courts, and press coverage.',
+      },
+      fuentes: {
+        title: 'SOURCE OF INFORMATION',
+        uco: {
+          title: 'UCO Reports',
+          description: 'Central Operative Unit of the Civil Guard. Official investigations into the scheme.',
+        },
+        autos: {
+          title: 'Court Orders',
+          description: 'Orders from the Supreme Court, Court of Instruction No. 41 of Madrid, and Court of Instruction No. 3 of Badajoz.',
+        },
+        igae: {
+          title: 'IGAE Report',
+          description: 'General State Intervention. 303 pages of analysis on irregular contracts.',
+        },
+        testimonios: {
+          title: 'Testimonies',
+          description: 'Statements by Aldama, Koldo García, and other implicated individuals before the courts.',
+        },
+      },
+      tribunales: {
+        title: 'COURTS INVOLVED',
+        supremo: {
+          name: 'Supreme Court',
+          description: 'Ábalos Case (immunity)',
+        },
+        audiencia: {
+          name: 'National Court',
+          description: 'Hydrocarbons Case',
+        },
+        ji41: {
+          name: 'Court of Instruction No. 41 Madrid',
+          description: 'Begoña Gómez Case',
+        },
+        badajoz: {
+          name: 'Badajoz Provincial Court',
+          description: 'David Sánchez Case',
+        },
+        fiscalia: {
+          name: 'European Public Prosecutor',
+          description: 'Barrabés EU funds contracts',
+        },
+      },
+      disclaimer: {
+        title: 'About this website',
+        text: 'This page compiles public information about the judicial cases known as the "PSOE Scandal". No value judgments are made nor is the guilt of any defendant prejudged. All accused are presumed innocent until final conviction.',
+        date: 'Last update: January 2026',
+      },
+      footer: {
+        text: 'Information based on public judicial and press sources',
+        links: [
+          { text: 'VIEW CASES', href: '/en/cases' },
+          { text: 'VIEW ACCUSED', href: '/en/accused' },
+          { text: 'VIEW TIMELINE', href: '/en/timeline' },
         ],
       },
     },

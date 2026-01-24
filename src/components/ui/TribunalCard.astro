@@ -1,0 +1,26 @@
+---
+interface Props {
+  icon: string;
+  name: string;
+  description: string;
+}
+
+const { icon, name, description } = Astro.props;
+
+const iconMap: Record<string, string> = {
+  'building-2': `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 22V4a2 2 0 0 1 2-2h8a2 2 0 0 1 2 2v18Z"/><path d="M6 12H4a2 2 0 0 0-2 2v6a2 2 0 0 0 2 2h2"/><path d="M18 9h2a2 2 0 0 1 2 2v9a2 2 0 0 1-2 2h-2"/><path d="M10 6h4"/><path d="M10 10h4"/><path d="M10 14h4"/><path d="M10 18h4"/></svg>`,
+  gavel: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m14.5 12.5-8 8a2.119 2.119 0 1 1-3-3l8-8"/><path d="m16 16 6-6"/><path d="m8 8 6-6"/><path d="m9 7 8 8"/><path d="m21 11-8-8"/></svg>`,
+  globe: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg>`,
+};
+---
+
+<div
+  class="bg-trama-900 p-5 rounded-lg flex items-center gap-6"
+  data-documentos-card
+>
+  <div class="text-trama-red flex-shrink-0" set:html={iconMap[icon] || iconMap['building-2']} />
+  <div class="flex flex-col gap-1">
+    <h3 class="font-secondary text-base font-bold text-white">{name}</h3>
+    <p class="text-trama-400 text-sm">{description}</p>
+  </div>
+</div>

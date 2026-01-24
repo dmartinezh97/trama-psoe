@@ -682,3 +682,114 @@ function initImputadosFooterAnimations(): void {
     });
   }
 }
+
+// Documentos Page Animations
+export function initDocumentosPageAnimations(): void {
+  if (prefersReducedMotion()) {
+    gsap.set('[data-documentos-hero-item], [data-documentos-card], [data-documentos-section-title], [data-documentos-footer-item]', {
+      opacity: 1,
+      clearProps: 'all',
+    });
+    return;
+  }
+
+  initDocumentosHeroAnimations();
+  initDocumentosSectionAnimations();
+  initDocumentosFooterAnimations();
+}
+
+function initDocumentosHeroAnimations(): void {
+  const hero = document.querySelector('[data-documentos-hero]');
+  if (!hero) return;
+
+  const items = hero.querySelectorAll('[data-documentos-hero-item]');
+  if (items.length) {
+    gsap.from(items, {
+      y: 40,
+      opacity: 0,
+      duration: 0.7,
+      stagger: 0.15,
+      ease: 'power3.out',
+      force3D: true,
+    });
+  }
+}
+
+function initDocumentosSectionAnimations(): void {
+  const sections = document.querySelectorAll('[data-documentos-section]');
+
+  sections.forEach((section) => {
+    // Section title animation
+    const title = section.querySelector('[data-documentos-section-title]');
+    if (title) {
+      gsap.from(title, {
+        x: -30,
+        opacity: 0,
+        duration: 0.6,
+        ease: 'power3.out',
+        force3D: true,
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 80%',
+          once: true,
+        },
+      });
+    }
+
+    // Cards scale in with stagger
+    const cards = section.querySelectorAll('[data-documentos-card]');
+    if (cards.length) {
+      gsap.from(cards, {
+        scale: 0.9,
+        opacity: 0,
+        duration: 0.5,
+        stagger: 0.1,
+        ease: 'back.out(1.2)',
+        force3D: true,
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 70%',
+          once: true,
+        },
+      });
+    }
+
+    // Disclaimer items animation
+    const disclaimerItems = section.querySelectorAll('[data-documentos-hero-item]');
+    if (disclaimerItems.length) {
+      gsap.from(disclaimerItems, {
+        y: 30,
+        opacity: 0,
+        duration: 0.6,
+        stagger: 0.1,
+        ease: 'power2.out',
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 80%',
+          once: true,
+        },
+      });
+    }
+  });
+}
+
+function initDocumentosFooterAnimations(): void {
+  const footer = document.querySelector('[data-documentos-footer]');
+  if (!footer) return;
+
+  const items = footer.querySelectorAll('[data-documentos-footer-item]');
+  if (items.length) {
+    gsap.from(items, {
+      y: 30,
+      opacity: 0,
+      duration: 0.6,
+      stagger: 0.15,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: footer,
+        start: 'top 85%',
+        once: true,
+      },
+    });
+  }
+}
