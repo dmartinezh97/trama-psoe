@@ -74,7 +74,7 @@ const variantStyles = {
   <div class="absolute bottom-8 md:bottom-[80px] left-8 md:left-14 flex items-center gap-4">
     <div class="w-[100px] md:w-[200px] h-0.5 bg-black"></div>
     <a
-      href="#"
+      href={locale === 'es' ? '/es/cronologia' : '/en/timeline'}
       class="font-secondary text-xs font-bold tracking-[1px] text-black hover:text-trama-red transition-colors flex items-center gap-2"
     >
       {t.timeline.linkText}

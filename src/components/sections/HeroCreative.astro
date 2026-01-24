@@ -65,7 +65,7 @@ const t = useTranslations(locale);
       <!-- CTA Button -->
       <a
         data-hero-cta
-        href="#cases"
+        href={locale === 'es' ? '/es/casos' : '/en/cases'}
         class="bg-trama-red text-white px-8 py-5 flex items-center gap-3 hover:bg-trama-red-dark transition-colors"
       >
         <span class="font-secondary text-[13px] font-bold tracking-[1px]">{t.hero.cta}</span>

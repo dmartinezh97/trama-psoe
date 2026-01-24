@@ -46,16 +46,16 @@ const t = useTranslations(locale);
         <span class="font-secondary text-xs font-bold tracking-[2px] text-white">
           {t.footer.casesTitle}
         </span>
-        <a href="#" class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
+        <a href={locale === 'es' ? '/es/casos' : '/en/cases'} class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
           {t.footer.caseKoldo}
         </a>
-        <a href="#" class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
+        <a href={locale === 'es' ? '/es/casos' : '/en/cases'} class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
           {t.footer.caseBegona}
         </a>
-        <a href="#" class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
+        <a href={locale === 'es' ? '/es/casos' : '/en/cases'} class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
           {t.footer.caseHidro}
         </a>
-        <a href="#" class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
+        <a href={locale === 'es' ? '/es/casos' : '/en/cases'} class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
           {t.footer.caseDavid}
         </a>
       </div>
@@ -65,16 +65,16 @@ const t = useTranslations(locale);
         <span class="font-secondary text-xs font-bold tracking-[2px] text-white">
           {t.footer.infoTitle}
         </span>
-        <a href="#" class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
+        <a href={locale === 'es' ? '/es/cronologia' : '/en/timeline'} class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
           {t.footer.infoTimeline}
         </a>
-        <a href="#" class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
+        <a href={locale === 'es' ? '/es/imputados' : '/en/defendants'} class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
           {t.footer.infoAccused}
         </a>
-        <a href="#" class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
+        <a href={locale === 'es' ? '/es/documentos' : '/en/documents'} class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
           {t.footer.infoDocs}
         </a>
-        <a href="#" class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
+        <a href={locale === 'es' ? '/es/documentos' : '/en/documents'} class="font-secondary text-sm font-normal text-trama-red-light hover:text-white transition-colors">
           {t.footer.infoSources}
         </a>
       </div>
