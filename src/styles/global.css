@@ -142,3 +142,8 @@ code, pre {
     transition-duration: 0.01ms !important;
   }
 }
+
+/* Compensar header fijo en navegación con anclas */
+html {
+  scroll-padding-top: 5rem; /* 96px - header 80px + 16px de margen */
+}
