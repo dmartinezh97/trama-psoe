@@ -702,6 +702,31 @@ function initDocumentosHeroAnimations(): void {
   const hero = document.querySelector('[data-documentos-hero]');
   if (!hero) return;
 
+  // Header fade down
+  const header = document.querySelector('header');
+  if (header) {
+    gsap.from(header, {
+      y: -30,
+      opacity: 0,
+      duration: 0.8,
+      ease: 'power2.out',
+      force3D: true,
+    });
+  }
+
+  // Title slide from left
+  const title = hero.querySelector('h1');
+  if (title) {
+    gsap.from(title, {
+      x: -100,
+      opacity: 0,
+      duration: 0.8,
+      ease: 'power3.out',
+      force3D: true,
+    });
+  }
+
+  // Other items fade up with stagger
   const items = hero.querySelectorAll('[data-documentos-hero-item]');
   if (items.length) {
     gsap.from(items, {
@@ -709,6 +734,7 @@ function initDocumentosHeroAnimations(): void {
       opacity: 0,
       duration: 0.7,
       stagger: 0.15,
+      delay: 0.2,
       ease: 'power3.out',
       force3D: true,
     });
