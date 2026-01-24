@@ -8,14 +8,14 @@ const t = useTranslations(locale);
 const otherLocale: Locale = locale === 'es' ? 'en' : 'es';
 ---
 
-<section class="relative h-[900px] bg-white overflow-hidden">
+<section data-hero class="relative h-[900px] bg-white overflow-hidden">
   <!-- Background Year -->
-  <span class="absolute right-[-100px] top-[-150px] font-secondary text-[400px] md:text-[600px] lg:text-[800px] font-black text-trama-50 select-none pointer-events-none tracking-[-40px] leading-none">
+  <span data-hero-bg class="absolute right-[-100px] top-[-150px] font-secondary text-[400px] md:text-[600px] lg:text-[800px] font-black text-trama-50 select-none pointer-events-none tracking-[-40px] leading-none">
     26
   </span>
 
   <!-- TopBar -->
-  <header class="absolute top-0 left-0 w-full h-20 bg-trama-red flex items-center justify-between px-8 md:px-14 z-10">
+  <header data-hero-topbar class="absolute top-0 left-0 w-full h-20 bg-trama-red flex items-center justify-between px-8 md:px-14 z-10">
     <div class="flex items-center gap-3">
       <div class="w-8 h-8 bg-white flex items-center justify-center">
         <span class="font-secondary text-xl font-black text-trama-red">T</span>
@@ -60,13 +60,13 @@ const otherLocale: Locale = locale === 'es' ? 'en' : 'es';
 
       <!-- Title Block -->
       <div class="flex flex-col">
-        <span class="font-secondary text-[80px] md:text-[120px] lg:text-[180px] font-black tracking-[-4px] md:tracking-[-8px] leading-[0.85] text-black">
+        <span data-hero-title class="font-secondary text-[80px] md:text-[120px] lg:text-[180px] font-black tracking-[-4px] md:tracking-[-8px] leading-[0.85] text-black">
           {t.hero.titleLine1}
         </span>
-        <span class="font-secondary text-[80px] md:text-[120px] lg:text-[180px] font-black tracking-[-4px] md:tracking-[-8px] leading-[0.85] text-black">
+        <span data-hero-title class="font-secondary text-[80px] md:text-[120px] lg:text-[180px] font-black tracking-[-4px] md:tracking-[-8px] leading-[0.85] text-black">
           {t.hero.titleLine2}
         </span>
-        <span class="font-secondary text-[80px] md:text-[120px] lg:text-[180px] font-black tracking-[-4px] md:tracking-[-8px] leading-[0.85] text-trama-red">
+        <span data-hero-title class="font-secondary text-[80px] md:text-[120px] lg:text-[180px] font-black tracking-[-4px] md:tracking-[-8px] leading-[0.85] text-trama-red">
           {t.hero.titleLine3}
         </span>
       </div>
@@ -81,15 +81,15 @@ const otherLocale: Locale = locale === 'es' ? 'en' : 'es';
     <div class="flex flex-col items-end gap-8">
       <!-- Stats Grid -->
       <div class="flex flex-col">
-        <div class="flex items-center gap-4 py-4 border-b border-trama-200 w-[300px] md:w-[350px]">
+        <div data-hero-stat class="flex items-center gap-4 py-4 border-b border-trama-200 w-[300px] md:w-[350px]">
           <span class="font-secondary text-4xl md:text-5xl font-black text-trama-red">{t.hero.stat1.number}</span>
           <span class="font-secondary text-xs font-semibold tracking-[1px] text-trama-500">{t.hero.stat1.label}</span>
         </div>
-        <div class="flex items-center gap-4 py-4 border-b border-trama-200 w-[300px] md:w-[350px]">
+        <div data-hero-stat class="flex items-center gap-4 py-4 border-b border-trama-200 w-[300px] md:w-[350px]">
           <span class="font-secondary text-4xl md:text-5xl font-black text-trama-red">{t.hero.stat2.number}</span>
           <span class="font-secondary text-xs font-semibold tracking-[1px] text-trama-500">{t.hero.stat2.label}</span>
         </div>
-        <div class="flex items-center gap-4 py-4 w-[300px] md:w-[350px]">
+        <div data-hero-stat class="flex items-center gap-4 py-4 w-[300px] md:w-[350px]">
           <span class="font-secondary text-4xl md:text-5xl font-black text-trama-red">{t.hero.stat3.number}</span>
           <span class="font-secondary text-xs font-semibold tracking-[1px] text-trama-500">{t.hero.stat3.label}</span>
         </div>
@@ -97,6 +97,7 @@ const otherLocale: Locale = locale === 'es' ? 'en' : 'es';
 
       <!-- CTA Button -->
       <a
+        data-hero-cta
         href="#cases"
         class="bg-trama-red text-white px-8 py-5 flex items-center gap-3 hover:bg-trama-red-dark transition-colors"
       >
@@ -110,7 +111,7 @@ const otherLocale: Locale = locale === 'es' ? 'en' : 'es';
   </div>
 
   <!-- Decorative Line -->
-  <div class="absolute bottom-[50px] left-8 md:left-14 w-[200px] h-1 bg-trama-red"></div>
+  <div data-hero-line class="absolute bottom-[50px] left-8 md:left-14 w-[200px] h-1 bg-trama-red"></div>
 
   <!-- Scroll Hint -->
   <div class="absolute bottom-[60px] left-1/2 -translate-x-1/2">

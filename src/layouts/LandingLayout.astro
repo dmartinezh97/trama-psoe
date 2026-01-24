@@ -22,5 +22,14 @@ const locale = getLocaleFromUrl(Astro.url) as Locale;
   </head>
   <body class="min-h-screen bg-trama-950 text-trama-white">
     <slot />
+    <script>
+      import { initScrollAnimations, cleanupAnimations } from '../scripts/animations';
+
+      // Initialize animations on page load
+      document.addEventListener('DOMContentLoaded', initScrollAnimations);
+
+      // Cleanup on page navigation (for SPA/View Transitions)
+      document.addEventListener('astro:before-swap', cleanupAnimations);
+    </script>
   </body>
 </html>

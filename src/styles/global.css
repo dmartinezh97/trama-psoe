@@ -123,3 +123,22 @@ code, pre {
 .tracking-tag {
   letter-spacing: 1px;
 }
+
+/* Animation Base Styles */
+[data-animate] {
+  opacity: 0;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  [data-animate] {
+    opacity: 1 !important;
+    transform: none !important;
+  }
+
+  /* Disable all GSAP animations for reduced motion */
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

@@ -34,9 +34,9 @@ const variantStyles = {
 };
 ---
 
-<section id="timeline" class="relative h-auto lg:h-[500px] bg-white overflow-hidden">
+<section id="timeline" data-timeline class="relative h-auto lg:h-[500px] bg-white overflow-hidden">
   <!-- Background Text -->
-  <span class="absolute left-[100px] bottom-[-40px] font-secondary text-[100px] md:text-[150px] lg:text-[200px] font-black text-trama-50 select-none pointer-events-none tracking-[-10px]">
+  <span data-timeline-bg class="absolute left-[100px] bottom-[-40px] font-secondary text-[100px] md:text-[150px] lg:text-[200px] font-black text-trama-50 select-none pointer-events-none tracking-[-10px]">
     2024—2026
   </span>
 
@@ -55,7 +55,7 @@ const variantStyles = {
     {events.map((event) => {
       const styles = variantStyles[event.variant];
       return (
-        <div class={`${styles.bg} p-5 md:p-6 flex flex-col gap-3 min-w-[200px] w-[220px] shrink-0`}>
+        <div data-timeline-event class={`${styles.bg} p-5 md:p-6 flex flex-col gap-3 min-w-[200px] w-[220px] shrink-0`}>
           <span class={`font-secondary text-[11px] font-bold tracking-[1px] ${styles.date}`}>
             {event.date}
           </span>

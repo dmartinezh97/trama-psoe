@@ -7,7 +7,7 @@ const locale = getLocaleFromUrl(Astro.url) as Locale;
 const t = useTranslations(locale);
 ---
 
-<section class="h-auto md:h-[400px] bg-trama-red">
+<section data-stats class="h-auto md:h-[400px] bg-trama-red">
   <div class="grid grid-cols-1 md:grid-cols-3 h-full">
     <StatBlock
       number={t.stats.stat1.number}
