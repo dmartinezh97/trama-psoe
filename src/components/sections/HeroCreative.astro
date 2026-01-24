@@ -63,10 +63,10 @@ const otherLocale: Locale = locale === 'es' ? 'en' : 'es';
         <span data-hero-title class="font-secondary text-[80px] md:text-[120px] lg:text-[180px] font-black tracking-[-4px] md:tracking-[-8px] leading-[0.85] text-black">
           {t.hero.titleLine1}
         </span>
-        <span data-hero-title class="font-secondary text-[80px] md:text-[120px] lg:text-[180px] font-black tracking-[-4px] md:tracking-[-8px] leading-[0.85] text-black">
+        <span data-hero-title class={`font-secondary text-[80px] md:text-[120px] lg:text-[180px] font-black tracking-[-4px] md:tracking-[-8px] leading-[0.85] ${locale === 'en' ? 'text-trama-red' : 'text-black'}`}>
           {t.hero.titleLine2}
         </span>
-        <span data-hero-title class="font-secondary text-[80px] md:text-[120px] lg:text-[180px] font-black tracking-[-4px] md:tracking-[-8px] leading-[0.85] text-trama-red">
+        <span data-hero-title class={`font-secondary text-[80px] md:text-[120px] lg:text-[180px] font-black tracking-[-4px] md:tracking-[-8px] leading-[0.85] ${locale === 'es' ? 'text-trama-red' : 'text-black'}`}>
           {t.hero.titleLine3}
         </span>
       </div>
