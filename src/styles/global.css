@@ -57,6 +57,13 @@
   --font-size-4xl: 64px;
   --font-size-5xl: 72px;
   --font-size-display: 180px;
+  --font-size-hero: 120px;
+  --font-size-year: 800px;
+
+  /* Letter Spacing */
+  --tracking-hero: -6px;
+  --tracking-tight: -8px;
+  --tracking-display: -10px;
 
   /* Spacing (from .pen design system) */
   --spacing-xs: 4px;

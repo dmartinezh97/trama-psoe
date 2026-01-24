@@ -1,0 +1,94 @@
+---
+interface Props {
+  number: string;
+  title: string;
+  description: string;
+  status: string;
+  variant?: 'red' | 'white' | 'black' | 'dark';
+  size?: 'large' | 'small';
+}
+
+const { number, title, description, status, variant = 'red', size = 'small' } = Astro.props;
+
+const variantStyles = {
+  red: {
+    bg: 'bg-trama-red',
+    numberBg: 'text-trama-red-dark',
+    title: 'text-white',
+    description: 'text-trama-red-light',
+    statusBg: 'bg-black',
+    statusText: 'text-white',
+  },
+  white: {
+    bg: 'bg-white',
+    numberBg: 'text-trama-100',
+    title: 'text-black',
+    description: 'text-trama-500',
+    statusBg: 'bg-black',
+    statusText: 'text-white',
+  },
+  black: {
+    bg: 'bg-trama-850',
+    numberBg: 'text-trama-800',
+    title: 'text-white',
+    description: 'text-trama-500',
+    statusBg: 'bg-trama-red',
+    statusText: 'text-white',
+  },
+  dark: {
+    bg: 'bg-trama-900',
+    numberBg: 'text-trama-850',
+    title: 'text-white',
+    description: 'text-trama-500',
+    statusBg: 'bg-trama-red',
+    statusText: 'text-white',
+  },
+};
+
+const styles = variantStyles[variant];
+const isLarge = size === 'large';
+---
+
+<div class={`${styles.bg} relative h-full overflow-hidden`}>
+  <!-- Number Background -->
+  <span
+    class:list={[
+      "absolute font-secondary font-black select-none pointer-events-none",
+      styles.numberBg,
+      isLarge ? "text-[300px] md:text-[400px] right-[-50px] top-[-80px]" : "text-[150px] md:text-[200px] right-[-20px] top-[-30px]"
+    ]}
+  >
+    {number}
+  </span>
+
+  <!-- Content -->
+  <div class={`absolute ${isLarge ? 'top-8 left-8' : 'top-6 left-6'} flex flex-col gap-4`}>
+    <div class="flex flex-col gap-2">
+      <h3
+        class:list={[
+          "font-secondary font-black tracking-[-1px]",
+          styles.title,
+          isLarge ? "text-3xl md:text-4xl" : "text-xl md:text-2xl"
+        ]}
+      >
+        {title}
+      </h3>
+      <p
+        class:list={[
+          "font-secondary font-normal leading-relaxed",
+          styles.description,
+          isLarge ? "text-sm md:text-base max-w-[350px]" : "text-xs md:text-sm max-w-[200px]"
+        ]}
+      >
+        {description}
+      </p>
+    </div>
+  </div>
+
+  <!-- Status Badge -->
+  <div class={`absolute ${isLarge ? 'bottom-8 left-8' : 'bottom-6 left-6'} ${styles.statusBg} px-4 py-2 flex items-center gap-2`}>
+    <span class={`font-secondary text-[11px] font-bold tracking-[1px] ${styles.statusText}`}>
+      {status}
+    </span>
+  </div>
+</div>

@@ -1,0 +1,48 @@
+---
+interface Props {
+  number: string;
+  unit: string;
+  label: string;
+  variant?: 'red' | 'black' | 'dark';
+}
+
+const { number, unit, label, variant = 'red' } = Astro.props;
+
+const variantStyles = {
+  red: {
+    bg: 'bg-trama-red',
+    border: 'border-trama-red-dark',
+    numberColor: 'text-white',
+    unitColor: 'text-white',
+    labelColor: 'text-trama-red-light',
+  },
+  black: {
+    bg: 'bg-black',
+    border: 'border-transparent',
+    numberColor: 'text-white',
+    unitColor: 'text-white',
+    labelColor: 'text-trama-500',
+  },
+  dark: {
+    bg: 'bg-trama-900',
+    border: 'border-transparent',
+    numberColor: 'text-trama-red',
+    unitColor: 'text-white',
+    labelColor: 'text-trama-500',
+  },
+};
+
+const styles = variantStyles[variant];
+---
+
+<div class={`${styles.bg} h-full flex flex-col justify-end p-8 md:p-10 ${variant === 'red' ? 'border-r border-trama-red-dark' : ''}`}>
+  <span class={`font-secondary text-[120px] md:text-[180px] font-black tracking-[-8px] leading-none ${styles.numberColor}`}>
+    {number}
+  </span>
+  <span class={`font-secondary text-xl md:text-2xl font-bold tracking-[2px] ${styles.unitColor}`}>
+    {unit}
+  </span>
+  <p class={`font-secondary text-xs md:text-[13px] font-medium tracking-[1px] leading-relaxed mt-2 whitespace-pre-line ${styles.labelColor}`}>
+    {label}
+  </p>
+</div>

@@ -1,0 +1,16 @@
+---
+interface Props {
+  text?: string;
+}
+
+const { text = 'SCROLL' } = Astro.props;
+---
+
+<div class="flex items-center gap-3">
+  <svg class="w-5 h-5 text-trama-300 animate-bounce" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+    <polyline points="6 9 12 15 18 9"></polyline>
+  </svg>
+  <span class="font-secondary text-[11px] font-semibold tracking-[2px] text-trama-300">
+    {text}
+  </span>
+</div>

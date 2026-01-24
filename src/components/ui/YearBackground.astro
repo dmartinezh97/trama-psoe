@@ -1,0 +1,18 @@
+---
+interface Props {
+  year: string;
+  class?: string;
+}
+
+const { year, class: className = '' } = Astro.props;
+---
+
+<span
+  class:list={[
+    "font-secondary text-[400px] md:text-[600px] lg:text-[800px] font-black text-trama-50 select-none pointer-events-none leading-none",
+    "tracking-[-40px]",
+    className
+  ]}
+>
+  {year}
+</span>

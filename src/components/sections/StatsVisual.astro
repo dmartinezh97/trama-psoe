@@ -1,0 +1,31 @@
+---
+import StatBlock from '../ui/StatBlock.astro';
+import { getLocaleFromUrl, useTranslations } from '../../i18n/utils';
+import type { Locale } from '../../i18n/translations';
+
+const locale = getLocaleFromUrl(Astro.url) as Locale;
+const t = useTranslations(locale);
+---
+
+<section class="h-auto md:h-[400px] bg-trama-red">
+  <div class="grid grid-cols-1 md:grid-cols-3 h-full">
+    <StatBlock
+      number={t.stats.stat1.number}
+      unit={t.stats.stat1.unit}
+      label={t.stats.stat1.label}
+      variant="red"
+    />
+    <StatBlock
+      number={t.stats.stat2.number}
+      unit={t.stats.stat2.unit}
+      label={t.stats.stat2.label}
+      variant="black"
+    />
+    <StatBlock
+      number={t.stats.stat3.number}
+      unit={t.stats.stat3.unit}
+      label={t.stats.stat3.label}
+      variant="dark"
+    />
+  </div>
+</section>

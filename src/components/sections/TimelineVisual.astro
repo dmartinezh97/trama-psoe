@@ -1,0 +1,87 @@
+---
+import { getLocaleFromUrl, useTranslations } from '../../i18n/utils';
+import type { Locale } from '../../i18n/translations';
+
+const locale = getLocaleFromUrl(Astro.url) as Locale;
+const t = useTranslations(locale);
+
+const events = [
+  { ...t.timeline.event1, variant: 'red' as const },
+  { ...t.timeline.event2, variant: 'black' as const },
+  { ...t.timeline.event3, variant: 'dark' as const },
+  { ...t.timeline.event4, variant: 'red' as const },
+];
+
+const variantStyles = {
+  red: {
+    bg: 'bg-trama-red',
+    date: 'text-white',
+    title: 'text-white',
+    description: 'text-trama-red-light',
+  },
+  black: {
+    bg: 'bg-black',
+    date: 'text-trama-red',
+    title: 'text-white',
+    description: 'text-trama-500',
+  },
+  dark: {
+    bg: 'bg-trama-850',
+    date: 'text-trama-red',
+    title: 'text-white',
+    description: 'text-trama-500',
+  },
+};
+---
+
+<section id="timeline" class="relative h-auto lg:h-[500px] bg-white overflow-hidden">
+  <!-- Background Text -->
+  <span class="absolute left-[100px] bottom-[-40px] font-secondary text-[100px] md:text-[150px] lg:text-[200px] font-black text-trama-50 select-none pointer-events-none tracking-[-10px]">
+    2024—2026
+  </span>
+
+  <!-- Header -->
+  <div class="absolute top-8 md:top-14 left-8 md:left-14 flex flex-col gap-2">
+    <span class="font-secondary text-xs font-bold tracking-[2px] text-trama-red">
+      {t.timeline.tag}
+    </span>
+    <h2 class="font-secondary text-4xl md:text-[56px] font-black tracking-[-3px] leading-none text-black whitespace-pre-line">
+      {t.timeline.title}
+    </h2>
+  </div>
+
+  <!-- Events Row -->
+  <div class="absolute right-8 md:right-14 top-8 md:top-14 flex flex-col lg:flex-row gap-4 w-full lg:w-auto max-w-full lg:max-w-[900px] overflow-x-auto pb-4 lg:pb-0">
+    {events.map((event) => {
+      const styles = variantStyles[event.variant];
+      return (
+        <div class={`${styles.bg} p-5 md:p-6 flex flex-col gap-3 min-w-[200px] w-[220px] shrink-0`}>
+          <span class={`font-secondary text-[11px] font-bold tracking-[1px] ${styles.date}`}>
+            {event.date}
+          </span>
+          <h3 class={`font-secondary text-base md:text-lg font-extrabold leading-tight ${styles.title}`}>
+            {event.title}
+          </h3>
+          <p class={`font-secondary text-xs font-normal leading-relaxed ${styles.description}`}>
+            {event.description}
+          </p>
+        </div>
+      );
+    })}
+  </div>
+
+  <!-- Link Arrow -->
+  <div class="absolute bottom-8 md:bottom-[80px] left-8 md:left-14 flex items-center gap-4">
+    <div class="w-[100px] md:w-[200px] h-0.5 bg-black"></div>
+    <a
+      href="#"
+      class="font-secondary text-xs font-bold tracking-[1px] text-black hover:text-trama-red transition-colors flex items-center gap-2"
+    >
+      {t.timeline.linkText}
+      <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <line x1="5" y1="12" x2="19" y2="12"></line>
+        <polyline points="12 5 19 12 12 19"></polyline>
+      </svg>
+    </a>
+  </div>
+</section>
