@@ -9,12 +9,7 @@ const otherLocale: Locale = locale === 'es' ? 'en' : 'es';
 
 <header class="fixed top-0 left-0 w-full h-20 bg-trama-red flex items-center justify-between px-8 md:px-14 z-50">
   <a href={`/${locale}`} class="flex items-center gap-3">
-    <div class="w-8 h-8 bg-white flex items-center justify-center">
-      <span class="font-secondary text-xl font-black text-trama-red">T</span>
-    </div>
-    <span class="font-secondary text-sm font-extrabold tracking-[2px] text-white">
-      {t.hero.brand}
-    </span>
+    <img src="/img/version_transparente.png" alt="La Trama PSOE" class="h-14" />
   </a>
   <nav class="hidden md:flex items-center gap-8">
     <a href={locale === 'es' ? '/es/casos' : '/en/cases'} class="font-secondary text-xs font-semibold tracking-[1px] text-trama-red-light hover:text-white transition-colors">
