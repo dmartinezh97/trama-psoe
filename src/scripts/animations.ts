@@ -54,10 +54,10 @@ function initHeroAnimations(): void {
     });
   }
 
-  // TopBar fade down
-  const topbar = hero.querySelector('[data-hero-topbar]');
-  if (topbar) {
-    gsap.from(topbar, {
+  // Header fade down (now global, not inside hero)
+  const header = document.querySelector('header');
+  if (header) {
+    gsap.from(header, {
       y: -30,
       opacity: 0,
       duration: 0.8,

@@ -2,6 +2,7 @@
 import '../styles/global.css';
 import { getLocaleFromUrl } from '../i18n/utils';
 import type { Locale } from '../i18n/translations';
+import Header from '../components/Header.astro';
 
 interface Props {
   title: string;
@@ -21,6 +22,7 @@ const locale = getLocaleFromUrl(Astro.url) as Locale;
     <title>{title}</title>
   </head>
   <body class="min-h-screen bg-trama-950 text-trama-white">
+    <Header />
     <slot />
     <script>
       import { initScrollAnimations, cleanupAnimations } from '../scripts/animations';
