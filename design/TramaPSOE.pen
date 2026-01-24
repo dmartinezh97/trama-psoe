@@ -4,8 +4,8 @@
     {
       "type": "frame",
       "id": "gAl3y",
-      "x": 1600,
-      "y": 0,
+      "x": 3092,
+      "y": 3988,
       "name": "La Trama PSOE - Creative Layout",
       "width": 1440,
       "fill": "#0A0A0A",
@@ -4254,7 +4254,7 @@
     {
       "type": "frame",
       "id": "bj6xx",
-      "x": 4632,
+      "x": 573,
       "y": 0,
       "name": "🎨 DESIGN SYSTEM",
       "width": 2400,
@@ -7567,6 +7567,5141 @@
                       ]
                     }
                   ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "8hrSe",
+      "x": 4632,
+      "y": 0,
+      "name": "Page - Todos los Casos",
+      "width": 1440,
+      "fill": "$bg-dark",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "deZvu",
+          "type": "ref",
+          "ref": "yjGZC",
+          "width": "fill_container",
+          "name": "casosHeader",
+          "descendants": {
+            "QkDw2": {
+              "fill": "$text-white"
+            },
+            "xxEpb": {
+              "content": "CASOS",
+              "fill": "$text-white"
+            },
+            "C4FCl": {
+              "content": "IMPUTADOS",
+              "fill": "$primary-light"
+            },
+            "jtL4Y": {
+              "content": "CRONOLOGÍA",
+              "fill": "$primary-light"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "SUhAb",
+          "name": "casosHero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            80,
+            56
+          ],
+          "children": [
+            {
+              "id": "5pHpl",
+              "type": "ref",
+              "ref": "PiTng",
+              "name": "casosTag",
+              "descendants": {
+                "EQTfn": {
+                  "content": "4 INVESTIGACIONES INTERCONECTADAS"
+                }
+              }
+            },
+            {
+              "type": "text",
+              "id": "YoamY",
+              "name": "casosTitle",
+              "fill": "$text-white",
+              "content": "LOS CASOS",
+              "fontFamily": "Inter",
+              "fontSize": 96,
+              "fontWeight": "900",
+              "letterSpacing": -4
+            },
+            {
+              "type": "text",
+              "id": "QjTM3",
+              "name": "casosSubtitle",
+              "fill": "$text-muted",
+              "content": "Caso Koldo · Caso Begoña Gómez · Caso Hidrocarburos · Caso David Sánchez",
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "500",
+              "letterSpacing": 1
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "SttCp",
+          "name": "koldoSection",
+          "clip": true,
+          "width": "fill_container",
+          "height": 800,
+          "fill": "$primary",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "0geAu",
+              "x": 900,
+              "y": 200,
+              "name": "koldoBg",
+              "fill": "$primary-dark",
+              "content": "01",
+              "fontFamily": "Inter",
+              "fontSize": 500,
+              "fontWeight": "900"
+            },
+            {
+              "type": "frame",
+              "id": "sqp03",
+              "x": 56,
+              "y": 56,
+              "name": "koldoContent",
+              "width": 700,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dzjzG",
+                  "name": "koldoTag",
+                  "fill": "$text-white",
+                  "content": "CASO 01",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "7yI6A",
+                  "name": "koldoTitle",
+                  "fill": "$text-white",
+                  "content": "CASO KOLDO",
+                  "fontFamily": "Inter",
+                  "fontSize": 72,
+                  "fontWeight": "900",
+                  "letterSpacing": -3
+                },
+                {
+                  "type": "text",
+                  "id": "Rxy3g",
+                  "name": "koldoSubhead",
+                  "fill": "$primary-light",
+                  "content": "Comisiones en sobres y mascarillas defectuosas",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "cahRo",
+                  "name": "koldoDesc",
+                  "fill": "$text-white",
+                  "textGrowth": "fixed-width",
+                  "width": 600,
+                  "content": "Una empresa que facturó cero euros en 2019 recibió 54 millones en contratos públicos durante la pandemia. Las mascarillas resultaron defectuosas. Los sobres con dinero se repartían en la sede del PSOE.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "xGM0h",
+              "x": 56,
+              "y": 420,
+              "name": "koldoStats",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "7FTyM",
+                  "name": "koldoStat1",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "LX37T",
+                      "name": "koldoStat1Num",
+                      "fill": "$text-white",
+                      "content": "54M€",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "AsSow",
+                      "name": "koldoStat1Label",
+                      "fill": "$primary-light",
+                      "content": "Contratos sin experiencia",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "BE1YS",
+                  "name": "koldoStat2",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "f1Sh5",
+                      "name": "koldoStat2Num",
+                      "fill": "$text-white",
+                      "content": "24 años",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Qqk0Z",
+                      "name": "koldoStat2Label",
+                      "fill": "$primary-light",
+                      "content": "Pena para Ábalos",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "93Fo2",
+                  "name": "koldoStat3",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "rQJec",
+                      "name": "koldoStat3Num",
+                      "fill": "$text-white",
+                      "content": "95.437€",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jvtYp",
+                      "name": "koldoStat3Label",
+                      "fill": "$primary-light",
+                      "content": "En sobres de Ferraz",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "uW7gU",
+              "x": 56,
+              "y": 560,
+              "name": "koldoImputados",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Dz84Z",
+                  "name": "koldoImpTitle",
+                  "fill": "$text-white",
+                  "content": "PRINCIPALES IMPUTADOS",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "GCD62",
+                  "name": "koldoImpGrid",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "WzJDT",
+                      "name": "koldoImp1",
+                      "fill": "$bg-dark",
+                      "gap": 12,
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "aasMw",
+                          "name": "koldoImp1Name",
+                          "fill": "$text-white",
+                          "content": "José Luis Ábalos",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "id": "W6NK4",
+                          "type": "ref",
+                          "ref": "wp3Nd",
+                          "name": "koldoImp1Badge",
+                          "descendants": {
+                            "fxLKb": {
+                              "content": "PRISIÓN"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ke46M",
+                      "name": "koldoImp2",
+                      "fill": "$bg-dark",
+                      "gap": 12,
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "8HCla",
+                          "name": "koldoImp2Name",
+                          "fill": "$text-white",
+                          "content": "Koldo García",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "id": "ZtcTk",
+                          "type": "ref",
+                          "ref": "wp3Nd",
+                          "name": "koldoImp2Badge",
+                          "descendants": {
+                            "fxLKb": {
+                              "content": "PRISIÓN"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Lw6jJ",
+                      "name": "koldoImp3",
+                      "fill": "$bg-dark",
+                      "gap": 12,
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "LTfTn",
+                          "name": "koldoImp3Name",
+                          "fill": "$text-white",
+                          "content": "Víctor de Aldama",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "id": "Zw3wE",
+                          "type": "ref",
+                          "ref": "jBx3V",
+                          "name": "koldoImp3Badge",
+                          "descendants": {
+                            "I65Bc": {
+                              "content": "COLABORADOR"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "vgL7A",
+                      "name": "koldoImp4",
+                      "fill": "$bg-dark",
+                      "gap": 12,
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "khy8N",
+                          "name": "koldoImp4Name",
+                          "fill": "$text-white",
+                          "content": "Santos Cerdán",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "id": "7i9Yt",
+                          "type": "ref",
+                          "ref": "jBx3V",
+                          "name": "koldoImp4Badge",
+                          "descendants": {
+                            "I65Bc": {
+                              "content": "IMPUTADO"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ybgWB",
+              "x": 56,
+              "y": 720,
+              "name": "koldoJuicio",
+              "fill": "$bg-dark",
+              "gap": 12,
+              "padding": [
+                16,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "Fy4xG",
+                  "name": "koldoJuicioIcon",
+                  "width": 20,
+                  "height": 20,
+                  "iconFontName": "scale",
+                  "iconFontFamily": "lucide",
+                  "fill": "$primary"
+                },
+                {
+                  "type": "text",
+                  "id": "k6ub9",
+                  "name": "koldoJuicioText",
+                  "fill": "$text-white",
+                  "content": "JUICIO PREVISTO: ABRIL 2026 · TRIBUNAL SUPREMO",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "aBNJz",
+          "name": "begonaSection",
+          "clip": true,
+          "width": "fill_container",
+          "height": 800,
+          "fill": "$bg-light",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "BVHrL",
+              "x": 900,
+              "y": 200,
+              "name": "begonaBg",
+              "fill": "$bg-light-alt",
+              "content": "02",
+              "fontFamily": "Inter",
+              "fontSize": 500,
+              "fontWeight": "900"
+            },
+            {
+              "type": "frame",
+              "id": "ULW27",
+              "x": 56,
+              "y": 56,
+              "name": "begonaContent",
+              "width": 700,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "NgBqy",
+                  "name": "begonaTag",
+                  "fill": "$primary",
+                  "content": "CASO 02",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "llB8u",
+                  "name": "begonaTitle",
+                  "fill": "$text-black",
+                  "content": "CASO BEGOÑA GÓMEZ",
+                  "fontFamily": "Inter",
+                  "fontSize": 64,
+                  "fontWeight": "900",
+                  "letterSpacing": -3
+                },
+                {
+                  "type": "text",
+                  "id": "oX3QJ",
+                  "name": "begonaSubhead",
+                  "fill": "$text-muted",
+                  "content": "Cinco delitos, cero títulos universitarios",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "7AVXp",
+                  "name": "begonaDesc",
+                  "fill": "$text-black",
+                  "textGrowth": "fixed-width",
+                  "width": 600,
+                  "content": "La esposa del presidente dirige una cátedra universitaria sin tener licenciatura. Firmó cartas de apoyo para un empresario que después recibió contratos públicos por 10 millones de euros. Un software desarrollado con dinero público acabó registrado a su nombre.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ppuRJ",
+              "x": 56,
+              "y": 400,
+              "name": "begonaDelitos",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "G6SOY",
+                  "name": "begonaDelitosTitle",
+                  "fill": "$primary",
+                  "content": "5 DELITOS INVESTIGADOS",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "RURnl",
+                  "name": "begonaDelitosList",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "5VWm9",
+                      "name": "begonaD1",
+                      "fill": "$bg-dark",
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "FeMZe",
+                          "name": "begonaD1Text",
+                          "fill": "$text-white",
+                          "content": "Tráfico de influencias",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "zIrTs",
+                      "name": "begonaD2",
+                      "fill": "$bg-dark",
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mmstb",
+                          "name": "begonaD2Text",
+                          "fill": "$text-white",
+                          "content": "Corrupción en los negocios",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "MppFE",
+                      "name": "begonaD3",
+                      "fill": "$bg-dark",
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "fsiSA",
+                          "name": "begonaD3Text",
+                          "fill": "$text-white",
+                          "content": "Apropiación indebida",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "hKDVz",
+                      "name": "begonaD4",
+                      "fill": "$bg-dark",
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "KIJzl",
+                          "name": "begonaD4Text",
+                          "fill": "$text-white",
+                          "content": "Intrusismo profesional",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "7uTSc",
+                      "name": "begonaD5",
+                      "fill": "$primary",
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "caWIB",
+                          "name": "begonaD5Text",
+                          "fill": "$text-white",
+                          "content": "Malversación",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "rEPtB",
+              "x": 56,
+              "y": 520,
+              "name": "begonaImputados",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "OGvbl",
+                  "name": "begonaImpTitle",
+                  "fill": "$text-black",
+                  "content": "IMPUTADOS EN ESTE CASO",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "N3zA1",
+                  "name": "begonaImpGrid",
+                  "gap": 16,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "xsJde",
+                      "name": "begonaImp1",
+                      "fill": "$bg-light-alt",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "gap": 12,
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "GsrgL",
+                          "name": "begonaImp1Name",
+                          "fill": "$text-black",
+                          "content": "Begoña Gómez",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "id": "SLBzY",
+                          "type": "ref",
+                          "ref": "jBx3V",
+                          "name": "begonaImp1Badge",
+                          "descendants": {
+                            "I65Bc": {
+                              "content": "IMPUTADA"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "7lH1A",
+                      "name": "begonaImp2",
+                      "fill": "$bg-light-alt",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "gap": 12,
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lXyW9",
+                          "name": "begonaImp2Name",
+                          "fill": "$text-black",
+                          "content": "Carlos Barrabés",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "id": "MhyRf",
+                          "type": "ref",
+                          "ref": "jBx3V",
+                          "name": "begonaImp2Badge",
+                          "descendants": {
+                            "I65Bc": {
+                              "content": "IMPUTADO"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "QKvGm",
+                      "name": "begonaImp3",
+                      "fill": "$bg-light-alt",
+                      "stroke": {
+                        "thickness": 1,
+                        "fill": "$border-light"
+                      },
+                      "gap": 12,
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ukwqP",
+                          "name": "begonaImp3Name",
+                          "fill": "$text-black",
+                          "content": "Cristina Álvarez",
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "id": "DwDgv",
+                          "type": "ref",
+                          "ref": "jBx3V",
+                          "name": "begonaImp3Badge",
+                          "descendants": {
+                            "I65Bc": {
+                              "content": "IMPUTADA"
+                            }
+                          }
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ZMH1B",
+              "x": 56,
+              "y": 640,
+              "name": "begonaJuicio",
+              "fill": "$primary",
+              "gap": 12,
+              "padding": [
+                16,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "0Wj8J",
+                  "name": "begonaJuicioIcon",
+                  "width": 20,
+                  "height": 20,
+                  "iconFontName": "gavel",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-white"
+                },
+                {
+                  "type": "text",
+                  "id": "WpWix",
+                  "name": "begonaJuicioText",
+                  "fill": "$text-white",
+                  "content": "PROPUESTA: JUICIO CON JURADO POPULAR · JUEZ PEINADO",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "bfzEt",
+          "name": "hidroSection",
+          "clip": true,
+          "width": "fill_container",
+          "height": 700,
+          "fill": "$bg-dark",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "XGZ1g",
+              "x": 900,
+              "y": 150,
+              "name": "hidroBg",
+              "fill": "$bg-dark-alt",
+              "content": "03",
+              "fontFamily": "Inter",
+              "fontSize": 500,
+              "fontWeight": "900"
+            },
+            {
+              "type": "frame",
+              "id": "sqtwW",
+              "x": 56,
+              "y": 56,
+              "name": "hidroContent",
+              "width": 700,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "D99Oh",
+                  "name": "hidroTag",
+                  "fill": "$primary",
+                  "content": "CASO 03",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "uLP9u",
+                  "name": "hidroTitle",
+                  "fill": "$text-white",
+                  "content": "CASO HIDROCARBUROS",
+                  "fontFamily": "Inter",
+                  "fontSize": 64,
+                  "fontWeight": "900",
+                  "letterSpacing": -3
+                },
+                {
+                  "type": "text",
+                  "id": "Fguy2",
+                  "name": "hidroSubhead",
+                  "fill": "$text-muted",
+                  "content": "Un millón en sobornos para comprar gasolina sin IVA",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "dvXfN",
+                  "name": "hidroDesc",
+                  "fill": "$text-white",
+                  "textGrowth": "fixed-width",
+                  "width": 600,
+                  "content": "Una trama de fraude fiscal de 182 millones de euros intentó comprar voluntades en tres ministerios para obtener una licencia que permitía operar con combustibles sin pagar IVA.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "jf5aL",
+              "x": 56,
+              "y": 380,
+              "name": "hidroStats",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "8mV7J",
+                  "name": "hidroStat1",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "G7PLs",
+                      "name": "hidroStat1Num",
+                      "fill": "$primary",
+                      "content": "182M€",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "0A3yy",
+                      "name": "hidroStat1Label",
+                      "fill": "$text-muted",
+                      "content": "Fraude fiscal estimado",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "XoniS",
+                  "name": "hidroStat2",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dxRW5",
+                      "name": "hidroStat2Num",
+                      "fill": "$primary",
+                      "content": "1M€",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fXEYG",
+                      "name": "hidroStat2Label",
+                      "fill": "$text-muted",
+                      "content": "En sobornos",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "PBcDX",
+                  "name": "hidroStat3",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "EgI8D",
+                      "name": "hidroStat3Num",
+                      "fill": "$primary",
+                      "content": "585.000€",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Da96A",
+                      "name": "hidroStat3Label",
+                      "fill": "$text-muted",
+                      "content": "Chalé para Ábalos",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "cgAPB",
+              "x": 56,
+              "y": 520,
+              "name": "hidroMinisterios",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "LAg9c",
+                  "name": "hidroMinTitle",
+                  "fill": "$text-white",
+                  "content": "MINISTERIOS AFECTADOS",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "F7tYF",
+                  "name": "hidroMinGrid",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "BfAud",
+                      "name": "hidroMin1",
+                      "fill": "$bg-dark-alt",
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "blsWW",
+                          "name": "hidroMin1Text",
+                          "fill": "$text-white",
+                          "content": "Industria (Reyes Maroto)",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ewTwp",
+                      "name": "hidroMin2",
+                      "fill": "$bg-dark-alt",
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "iwFWh",
+                          "name": "hidroMin2Text",
+                          "fill": "$text-white",
+                          "content": "Transición Ecológica (Teresa Ribera)",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "OmqOt",
+                      "name": "hidroMin3",
+                      "fill": "$bg-dark-alt",
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "kA8JN",
+                          "name": "hidroMin3Text",
+                          "fill": "$text-white",
+                          "content": "Economía (Nadia Calviño)",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "T0WmA",
+          "name": "davidSection",
+          "clip": true,
+          "width": "fill_container",
+          "height": 700,
+          "fill": "$bg-dark-alt2",
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "SRIIL",
+              "x": 900,
+              "y": 150,
+              "name": "davidBg",
+              "fill": "$bg-dark-alt",
+              "content": "04",
+              "fontFamily": "Inter",
+              "fontSize": 500,
+              "fontWeight": "900"
+            },
+            {
+              "type": "frame",
+              "id": "nYa0o",
+              "x": 56,
+              "y": 56,
+              "name": "davidContent",
+              "width": 700,
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "47gqB",
+                  "name": "davidTag",
+                  "fill": "$primary",
+                  "content": "CASO 04",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "Y4KXh",
+                  "name": "davidTitle",
+                  "fill": "$text-white",
+                  "content": "CASO DAVID SÁNCHEZ",
+                  "fontFamily": "Inter",
+                  "fontSize": 64,
+                  "fontWeight": "900",
+                  "letterSpacing": -3
+                },
+                {
+                  "type": "text",
+                  "id": "ow7w4",
+                  "name": "davidSubhead",
+                  "fill": "$text-muted",
+                  "content": "El hermano del presidente: un puesto a medida en Badajoz",
+                  "fontFamily": "Inter",
+                  "fontSize": 24,
+                  "fontWeight": "600"
+                },
+                {
+                  "type": "text",
+                  "id": "jXYSZ",
+                  "name": "davidDesc",
+                  "fill": "$text-white",
+                  "textGrowth": "fixed-width",
+                  "width": 600,
+                  "content": "David Sánchez, hermano de Pedro Sánchez, ocupó durante 8 años un puesto creado supuestamente para él en la Diputación de Badajoz. Cobra 55.000 euros anuales pero tributa en Portugal. Su patrimonio aumentó en 600.000 euros.",
+                  "lineHeight": 1.6,
+                  "fontFamily": "Inter",
+                  "fontSize": 16,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BpdXX",
+              "x": 56,
+              "y": 380,
+              "name": "davidStats",
+              "gap": 32,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "aEqPN",
+                  "name": "davidStat1",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "twVMI",
+                      "name": "davidStat1Num",
+                      "fill": "$primary",
+                      "content": "600.000€",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "yTnU5",
+                      "name": "davidStat1Label",
+                      "fill": "$text-muted",
+                      "content": "Aumento patrimonial",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Coz5Q",
+                  "name": "davidStat2",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dLTPv",
+                      "name": "davidStat2Num",
+                      "fill": "$primary",
+                      "content": "55.760€",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "IFgqC",
+                      "name": "davidStat2Label",
+                      "fill": "$text-muted",
+                      "content": "Sueldo anual en 2024",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "RSUFB",
+                  "name": "davidStat3",
+                  "layout": "vertical",
+                  "gap": 4,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Rrw9l",
+                      "name": "davidStat3Num",
+                      "fill": "$primary",
+                      "content": "11",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EPxAc",
+                      "name": "davidStat3Label",
+                      "fill": "$text-muted",
+                      "content": "Acusados en el juicio",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Zh5a7",
+              "x": 56,
+              "y": 520,
+              "name": "davidDelitos",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Mqfvd",
+                  "name": "davidDelitosTitle",
+                  "fill": "$primary",
+                  "content": "5 DELITOS",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "frame",
+                  "id": "5VcuR",
+                  "name": "davidDelitosList",
+                  "gap": 12,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "8BpjP",
+                      "name": "davidD1",
+                      "fill": "$bg-dark",
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "sorBN",
+                          "name": "davidD1Text",
+                          "fill": "$text-white",
+                          "content": "Prevaricación",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TvSb9",
+                      "name": "davidD2",
+                      "fill": "$bg-dark",
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "n2eem",
+                          "name": "davidD2Text",
+                          "fill": "$text-white",
+                          "content": "Tráfico de influencias",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "pv9DO",
+                      "name": "davidD3",
+                      "fill": "$bg-dark",
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Bo7iz",
+                          "name": "davidD3Text",
+                          "fill": "$text-white",
+                          "content": "Malversación",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "1PPxc",
+                      "name": "davidD4",
+                      "fill": "$primary",
+                      "padding": [
+                        8,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "DxPyh",
+                          "name": "davidD4Text",
+                          "fill": "$text-white",
+                          "content": "Delitos fiscales",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "600"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "BykPb",
+              "x": 56,
+              "y": 620,
+              "name": "davidJuicio",
+              "fill": "$primary",
+              "gap": 12,
+              "padding": [
+                16,
+                24
+              ],
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "UNwkQ",
+                  "name": "davidJuicioIcon",
+                  "width": 20,
+                  "height": 20,
+                  "iconFontName": "calendar",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-white"
+                },
+                {
+                  "type": "text",
+                  "id": "KwLAr",
+                  "name": "davidJuicioText",
+                  "fill": "$text-white",
+                  "content": "JUICIO: 28 MAYO - 4 JUNIO 2026 · AUDIENCIA PROVINCIAL BADAJOZ",
+                  "fontFamily": "Inter",
+                  "fontSize": 13,
+                  "fontWeight": "600",
+                  "letterSpacing": 1
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "WgHBj",
+          "name": "casosFooter",
+          "width": "fill_container",
+          "fill": "$primary",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            80,
+            56
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "xAyQv",
+              "name": "casosFooterTitle",
+              "fill": "$text-white",
+              "content": "EXPLORA MÁS",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "letterSpacing": 2
+            },
+            {
+              "type": "frame",
+              "id": "Jo4s7",
+              "name": "casosFooterLinks",
+              "gap": 24,
+              "children": [
+                {
+                  "id": "mncCI",
+                  "type": "ref",
+                  "ref": "vwDdv",
+                  "name": "casosLink1",
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "$text-white"
+                  },
+                  "descendants": {
+                    "DSCN2": {
+                      "content": "VER IMPUTADOS",
+                      "fill": "$text-white"
+                    },
+                    "j8vUf": {
+                      "fill": "$text-white"
+                    }
+                  }
+                },
+                {
+                  "id": "oqqhx",
+                  "type": "ref",
+                  "ref": "vwDdv",
+                  "name": "casosLink2",
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "$text-white"
+                  },
+                  "descendants": {
+                    "DSCN2": {
+                      "content": "CRONOLOGÍA",
+                      "fill": "$text-white"
+                    },
+                    "j8vUf": {
+                      "fill": "$text-white"
+                    }
+                  }
+                },
+                {
+                  "id": "uxCR9",
+                  "type": "ref",
+                  "ref": "vwDdv",
+                  "name": "casosLink3",
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "$text-white"
+                  },
+                  "descendants": {
+                    "DSCN2": {
+                      "content": "DOCUMENTOS",
+                      "fill": "$text-white"
+                    },
+                    "j8vUf": {
+                      "fill": "$text-white"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "4o0vS",
+      "x": 6172,
+      "y": 0,
+      "name": "Page - Cronología Completa",
+      "width": 1440,
+      "fill": "$bg-light",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "JP56b",
+          "type": "ref",
+          "ref": "yjGZC",
+          "width": "fill_container",
+          "name": "cronoHeader",
+          "descendants": {
+            "QkDw2": {
+              "content": "CASOS",
+              "fill": "$primary-light"
+            },
+            "xxEpb": {
+              "content": "IMPUTADOS",
+              "fill": "$primary-light"
+            },
+            "C4FCl": {
+              "content": "CRONOLOGÍA",
+              "fill": "$text-white"
+            },
+            "jtL4Y": {
+              "content": "DOCUMENTOS",
+              "fill": "$primary-light"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "AEK6x",
+          "name": "cronoHero",
+          "clip": true,
+          "width": "fill_container",
+          "height": 400,
+          "layout": "none",
+          "children": [
+            {
+              "type": "text",
+              "id": "DysJk",
+              "x": 100,
+              "y": 200,
+              "name": "cronoBgText",
+              "fill": "$bg-light-alt",
+              "content": "2024—2026",
+              "fontFamily": "Inter",
+              "fontSize": 200,
+              "fontWeight": "900",
+              "letterSpacing": -10
+            },
+            {
+              "type": "frame",
+              "id": "u5P96",
+              "x": 56,
+              "y": 80,
+              "name": "cronoHeroContent",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "text",
+                  "id": "yafdl",
+                  "name": "cronoTag",
+                  "fill": "$primary",
+                  "content": "CRONOLOGÍA COMPLETA",
+                  "fontFamily": "Inter",
+                  "fontSize": 12,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                },
+                {
+                  "type": "text",
+                  "id": "tt2Lm",
+                  "name": "cronoTitle",
+                  "fill": "$text-black",
+                  "textGrowth": "fixed-width",
+                  "width": 500,
+                  "content": "Del estallido\na los juicios",
+                  "lineHeight": 0.95,
+                  "fontFamily": "Inter",
+                  "fontSize": 72,
+                  "fontWeight": "900",
+                  "letterSpacing": -3
+                },
+                {
+                  "type": "text",
+                  "id": "hiP36",
+                  "name": "cronoSubtitle",
+                  "fill": "$text-muted",
+                  "content": "Todos los acontecimientos clave desde febrero de 2024",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "f2wac",
+          "name": "year2024",
+          "width": "fill_container",
+          "fill": "$bg-light",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 56,
+          "children": [
+            {
+              "type": "frame",
+              "id": "D1e7J",
+              "name": "year2024Title",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "vWmKo",
+                  "name": "year2024Num",
+                  "fill": "$primary",
+                  "content": "2024",
+                  "fontFamily": "Inter",
+                  "fontSize": 64,
+                  "fontWeight": "900",
+                  "letterSpacing": -3
+                },
+                {
+                  "type": "frame",
+                  "id": "o2vqN",
+                  "name": "year2024Line",
+                  "width": "fill_container",
+                  "height": 2,
+                  "fill": "$border-light"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "dCoCn",
+              "name": "year2024Events",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "KREEo",
+                  "name": "event2024_1",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "MJOY9",
+                      "name": "event2024_1Date",
+                      "fill": "$primary",
+                      "content": "FEBRERO",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mj82n",
+                      "name": "event2024_1Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "SYMP8",
+                          "name": "event2024_1Title",
+                          "fill": "$text-black",
+                          "content": "Operación Delorme",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "f3MRp",
+                          "name": "event2024_1Desc",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 600,
+                          "content": "20 detenidos, incluidos Koldo García y Víctor de Aldama. Se destapa la trama de las mascarillas.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "xXgvM",
+                  "name": "event2024_2",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "M9jfV",
+                      "name": "event2024_2Date",
+                      "fill": "$primary",
+                      "content": "ABRIL",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ndQ6I",
+                      "name": "event2024_2Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wRCRH",
+                          "name": "event2024_2Title",
+                          "fill": "$text-black",
+                          "content": "Se abre investigación a Begoña Gómez",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "Szlcj",
+                          "name": "event2024_2Desc",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 600,
+                          "content": "Tras denuncia de Manos Limpias, se inicia la investigación judicial contra la esposa del presidente.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ErhqJ",
+                  "name": "event2024_3",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Fd41n",
+                      "name": "event2024_3Date",
+                      "fill": "$primary",
+                      "content": "JULIO",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "jKa2M",
+                      "name": "event2024_3Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "rfmKL",
+                          "name": "event2024_3Title",
+                          "fill": "$text-black",
+                          "content": "Primera declaración de Begoña Gómez",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "CbyBE",
+                          "name": "event2024_3Desc",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 600,
+                          "content": "Begoña Gómez declara por primera vez ante el juez Peinado en el Juzgado de Instrucción nº 41 de Madrid.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "8tCyD",
+                  "name": "event2024_4",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Fv0Fs",
+                      "name": "event2024_4Date",
+                      "fill": "$primary",
+                      "content": "OCTUBRE",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "9InrY",
+                      "name": "event2024_4Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "VPkh6",
+                          "name": "event2024_4Title",
+                          "fill": "$text-black",
+                          "content": "El Tribunal Supremo imputa a José Luis Ábalos",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "oMYbw",
+                          "name": "event2024_4Desc",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 600,
+                          "content": "El exministro de Transportes es formalmente imputado por el Alto Tribunal.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "tm1jL",
+                  "name": "event2024_5",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "u35nd",
+                      "name": "event2024_5Date",
+                      "fill": "$primary",
+                      "content": "NOVIEMBRE",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "RKmCL",
+                      "name": "event2024_5Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "l479r",
+                          "name": "event2024_5Title",
+                          "fill": "$text-black",
+                          "content": "Aldama se convierte en colaborador",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "WTcpQ",
+                          "name": "event2024_5Desc",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 600,
+                          "content": "Víctor de Aldama colabora con la justicia y acusa directamente a dirigentes del PSOE de haber recibido comisiones.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "N8kTp",
+          "name": "year2025",
+          "width": "fill_container",
+          "fill": "$bg-light-alt",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 56,
+          "children": [
+            {
+              "type": "frame",
+              "id": "OVgNJ",
+              "name": "year2025Title",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "dfH2b",
+                  "name": "year2025Num",
+                  "fill": "$primary",
+                  "content": "2025",
+                  "fontFamily": "Inter",
+                  "fontSize": 64,
+                  "fontWeight": "900",
+                  "letterSpacing": -3
+                },
+                {
+                  "type": "frame",
+                  "id": "Ky7lB",
+                  "name": "year2025Line",
+                  "width": "fill_container",
+                  "height": 2,
+                  "fill": "$border-light"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "aJvod",
+              "name": "year2025Events",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "VT6Wt",
+                  "name": "event2025_1",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "70t5n",
+                      "name": "event2025_1Date",
+                      "fill": "$primary",
+                      "content": "FEBRERO",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bnr0U",
+                      "name": "event2025_1Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "J19Kg",
+                          "name": "event2025_1Title",
+                          "fill": "$text-black",
+                          "content": "David Sánchez renuncia",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "49esF",
+                          "name": "event2025_1Desc",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 600,
+                          "content": "El hermano del presidente renuncia a su cargo en la Diputación de Badajoz tras el estallido del escándalo.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "TBE4f",
+                  "name": "event2025_2",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HptFx",
+                      "name": "event2025_2Date",
+                      "fill": "$primary",
+                      "content": "JUNIO",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TApwO",
+                      "name": "event2025_2Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "1PAU0",
+                          "name": "event2025_2Title",
+                          "fill": "$text-black",
+                          "content": "Santos Cerdán dimite e ingresa en prisión",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "4ElyD",
+                          "name": "event2025_2Desc",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 600,
+                          "content": "El Secretario de Organización del PSOE dimite y entra en prisión provisional. El TSJ Extremadura rechaza el aforamiento de Gallardo por \"fraude de ley\".",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MCdOX",
+                  "name": "event2025_3",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "y18c6",
+                      "name": "event2025_3Date",
+                      "fill": "$primary",
+                      "content": "JULIO",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "1K1xJ",
+                      "name": "event2025_3Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "01OfT",
+                          "name": "event2025_3Title",
+                          "fill": "$text-black",
+                          "content": "Imputación de Isabel Pardo de Vera",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "bQWrp",
+                          "name": "event2025_3Desc",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 600,
+                          "content": "La expresidenta de ADIF es imputada. El Supremo rechaza imputar a Félix Bolaños por falta de indicios.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "R7qJE",
+                  "name": "event2025_4",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Hx9TT",
+                      "name": "event2025_4Date",
+                      "fill": "$primary",
+                      "content": "SEPTIEMBRE",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Pvi3N",
+                      "name": "event2025_4Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vDLrx",
+                          "name": "event2025_4Title",
+                          "fill": "$text-black",
+                          "content": "Propuesta de juicio con jurado popular",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "VTton",
+                          "name": "event2025_4Desc",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 600,
+                          "content": "El juez Peinado propone juicio con jurado popular para Begoña Gómez.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "LYzjZ",
+                  "name": "event2025_5",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "gWEoy",
+                      "name": "event2025_5Date",
+                      "fill": "$primary",
+                      "content": "NOVIEMBRE",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "kA0qY",
+                      "name": "event2025_5Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vfqRs",
+                          "name": "event2025_5Title",
+                          "fill": "$text-black",
+                          "content": "Ábalos y Koldo ingresan en prisión",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "3jUoT",
+                          "name": "event2025_5Desc",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 600,
+                          "content": "El exministro y su asesor ingresan en prisión preventiva sin fianza. Santos Cerdán sale de prisión tras casi 6 meses.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "uuEuJ",
+                  "name": "event2025_6",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "o7C9N",
+                      "name": "event2025_6Date",
+                      "fill": "$primary",
+                      "content": "DICIEMBRE",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WP2Ul",
+                      "name": "event2025_6Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "UL1dm",
+                          "name": "event2025_6Title",
+                          "fill": "$text-black",
+                          "content": "Archivo de imputación a Francisco Martín",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "BUNNE",
+                          "name": "event2025_6Desc",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 600,
+                          "content": "La Audiencia Provincial de Madrid archiva la imputación del Delegado del Gobierno por basarse en \"meras suposiciones\".",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "oufnF",
+          "name": "year2026",
+          "width": "fill_container",
+          "fill": "$bg-dark",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 56,
+          "children": [
+            {
+              "type": "frame",
+              "id": "WyZub",
+              "name": "year2026Title",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "nkWc6",
+                  "name": "year2026Num",
+                  "fill": "$primary",
+                  "content": "2026",
+                  "fontFamily": "Inter",
+                  "fontSize": 64,
+                  "fontWeight": "900",
+                  "letterSpacing": -3
+                },
+                {
+                  "type": "frame",
+                  "id": "rauwc",
+                  "name": "year2026Line",
+                  "width": "fill_container",
+                  "height": 2,
+                  "fill": "$border-dark"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Mexf6",
+              "name": "year2026Events",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "csSD7",
+                  "name": "event2026_1",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "99t2n",
+                      "name": "event2026_1Date",
+                      "fill": "$primary",
+                      "content": "20 ENERO",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "O9tDd",
+                      "name": "event2026_1Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ErbFv",
+                          "name": "event2026_1Title",
+                          "fill": "$text-white",
+                          "content": "Patricia Uriz declara como imputada",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "ZcXCi",
+                          "name": "event2026_1Desc",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 600,
+                          "content": "La expareja de Koldo García declarará por blanqueo de capitales.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "QPGqK",
+                  "name": "event2026_2",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "ok920",
+                      "name": "event2026_2Date",
+                      "fill": "$primary",
+                      "content": "28 ENERO",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "icjK5",
+                      "name": "event2026_2Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ZeuHp",
+                          "name": "event2026_2Title",
+                          "fill": "$text-white",
+                          "content": "Díaz Bidart declara como testigo",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "zzfrm",
+                          "name": "event2026_2Desc",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 600,
+                          "content": "El jefe de gabinete de Reyes Maroto declarará en el caso hidrocarburos.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "w557I",
+                  "name": "event2026_3",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "U5Dpf",
+                      "name": "event2026_3Date",
+                      "fill": "$primary",
+                      "content": "FEBRERO",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "CdiQ1",
+                      "name": "event2026_3Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "0buI8",
+                          "name": "event2026_3Title",
+                          "fill": "$text-white",
+                          "content": "Audiencia preliminar juicio Ábalos-Koldo",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "8eIXp",
+                          "name": "event2026_3Desc",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 600,
+                          "content": "Vista previa del juicio oral en el Tribunal Supremo.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "SaZWY",
+                  "name": "event2026_4",
+                  "width": "fill_container",
+                  "fill": "$primary",
+                  "gap": 32,
+                  "padding": [
+                    24,
+                    32
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "dqgUK",
+                      "name": "event2026_4Date",
+                      "fill": "$text-white",
+                      "content": "ABRIL",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ge113",
+                      "name": "event2026_4Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "aROId",
+                          "name": "event2026_4Title",
+                          "fill": "$text-white",
+                          "content": "JUICIO ORAL: ÁBALOS Y KOLDO",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "azrhz",
+                          "name": "event2026_4Desc",
+                          "fill": "$primary-light",
+                          "textGrowth": "fixed-width",
+                          "width": 500,
+                          "content": "Juicio en el Tribunal Supremo. Pena solicitada: hasta 30 años para Ábalos, hasta 19,5 años para Koldo.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "q3wmV",
+                  "name": "event2026_5",
+                  "width": "fill_container",
+                  "fill": "$primary",
+                  "gap": 32,
+                  "padding": [
+                    24,
+                    32
+                  ],
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "VeKTf",
+                      "name": "event2026_5Date",
+                      "fill": "$text-white",
+                      "content": "28 MAY-4 JUN",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "P4pWA",
+                      "name": "event2026_5Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "OcP5l",
+                          "name": "event2026_5Title",
+                          "fill": "$text-white",
+                          "content": "JUICIO: DAVID SÁNCHEZ Y 10 ACUSADOS",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "zGuXp",
+                          "name": "event2026_5Desc",
+                          "fill": "$primary-light",
+                          "textGrowth": "fixed-width",
+                          "width": 500,
+                          "content": "Juicio en la Audiencia Provincial de Badajoz por el puesto a medida.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "iHQyV",
+                  "name": "event2026_6",
+                  "width": "fill_container",
+                  "gap": 32,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "mbRxL",
+                      "name": "event2026_6Date",
+                      "fill": "$primary",
+                      "content": "27 SEPT",
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "700",
+                      "letterSpacing": 2
+                    },
+                    {
+                      "type": "frame",
+                      "id": "UYfBL",
+                      "name": "event2026_6Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "6wItA",
+                          "name": "event2026_6Title",
+                          "fill": "$text-white",
+                          "content": "Jubilación del juez Peinado",
+                          "fontFamily": "Inter",
+                          "fontSize": 24,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "type": "text",
+                          "id": "1chQo",
+                          "name": "event2026_6Desc",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 600,
+                          "content": "El instructor del caso Begoña Gómez se jubilará. La causa deberá resolverse o transferirse.",
+                          "lineHeight": 1.5,
+                          "fontFamily": "Inter",
+                          "fontSize": 14,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "ZxOuX",
+          "name": "cronoFooter",
+          "width": "fill_container",
+          "fill": "$primary",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": 56,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "nKwQU",
+              "name": "cronoFooterTitle",
+              "fill": "$primary-light",
+              "content": "Información actualizada a enero 2026",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "gXSUi",
+              "name": "cronoFooterLinks",
+              "gap": 24,
+              "children": [
+                {
+                  "id": "ZMEAd",
+                  "type": "ref",
+                  "ref": "vwDdv",
+                  "name": "cronoLink1",
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "$text-white"
+                  },
+                  "descendants": {
+                    "DSCN2": {
+                      "content": "VER TODOS LOS CASOS",
+                      "fill": "$text-white"
+                    },
+                    "j8vUf": {
+                      "fill": "$text-white"
+                    }
+                  }
+                },
+                {
+                  "id": "MN0VI",
+                  "type": "ref",
+                  "ref": "vwDdv",
+                  "name": "cronoLink2",
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "$text-white"
+                  },
+                  "descendants": {
+                    "DSCN2": {
+                      "content": "VER IMPUTADOS",
+                      "fill": "$text-white"
+                    },
+                    "j8vUf": {
+                      "fill": "$text-white"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "5NNHJ",
+      "x": 7712,
+      "y": 0,
+      "name": "Page - Imputados",
+      "width": 1440,
+      "fill": "$bg-dark",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "j3ClF",
+          "type": "ref",
+          "ref": "yjGZC",
+          "width": "fill_container",
+          "name": "impHeader",
+          "descendants": {
+            "QkDw2": {
+              "content": "CASOS",
+              "fill": "$primary-light"
+            },
+            "xxEpb": {
+              "content": "IMPUTADOS",
+              "fill": "$text-white"
+            },
+            "C4FCl": {
+              "content": "CRONOLOGÍA",
+              "fill": "$primary-light"
+            },
+            "jtL4Y": {
+              "content": "DOCUMENTOS",
+              "fill": "$primary-light"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "jNhly",
+          "name": "impHero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            80,
+            56
+          ],
+          "children": [
+            {
+              "id": "qmTUq",
+              "type": "ref",
+              "ref": "PiTng",
+              "name": "impTag",
+              "descendants": {
+                "EQTfn": {
+                  "content": "QUIÉN ES QUIÉN EN LA TRAMA"
+                }
+              }
+            },
+            {
+              "type": "text",
+              "id": "7iJBN",
+              "name": "impTitle",
+              "fill": "$text-white",
+              "content": "LOS PROTAGONISTAS",
+              "fontFamily": "Inter",
+              "fontSize": 96,
+              "fontWeight": "900",
+              "letterSpacing": -4
+            },
+            {
+              "type": "frame",
+              "id": "LCJpR",
+              "name": "impStats",
+              "gap": 48,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tSC00",
+                  "name": "impStat1",
+                  "gap": 8,
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "9PKpI",
+                      "name": "impStat1Num",
+                      "fill": "$primary",
+                      "content": "+30",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "jCpdw",
+                      "name": "impStat1Label",
+                      "fill": "$text-muted",
+                      "content": "imputados",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "eY7Ra",
+                  "name": "impStat2",
+                  "gap": 8,
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "uCJ5U",
+                      "name": "impStat2Num",
+                      "fill": "$primary",
+                      "content": "2",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Vf30V",
+                      "name": "impStat2Label",
+                      "fill": "$text-muted",
+                      "content": "en prisión",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EvgAE",
+                  "name": "impStat3",
+                  "gap": 8,
+                  "alignItems": "end",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DCldT",
+                      "name": "impStat3Num",
+                      "fill": "$primary",
+                      "content": "4",
+                      "fontFamily": "Inter",
+                      "fontSize": 48,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xerwr",
+                      "name": "impStat3Label",
+                      "fill": "$text-muted",
+                      "content": "casos activos",
+                      "fontFamily": "Inter",
+                      "fontSize": 16,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "hsKyj",
+          "name": "impPrisionSection",
+          "width": "fill_container",
+          "fill": "$primary",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 56,
+          "children": [
+            {
+              "type": "frame",
+              "id": "IGcKf",
+              "name": "impPrisionTitle",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "PrsN3",
+                  "name": "impPrisionIcon",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "lock",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-white"
+                },
+                {
+                  "type": "text",
+                  "id": "q3mVQ",
+                  "name": "impPrisionText",
+                  "fill": "$text-white",
+                  "content": "EN PRISIÓN PREVENTIVA SIN FIANZA",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "IoAwS",
+              "name": "impPrisionGrid",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "wJ7sZ",
+                  "name": "abalosCard",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 400,
+                  "fill": "$bg-dark",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "7FPnX",
+                      "x": 150,
+                      "y": 180,
+                      "name": "abalosInitials",
+                      "fill": "$bg-dark-alt",
+                      "content": "JLA",
+                      "fontFamily": "Inter",
+                      "fontSize": 200,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "WpqWX",
+                      "x": 24,
+                      "y": 24,
+                      "name": "abalosContent",
+                      "width": 300,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "0p4cC",
+                          "name": "abalosName",
+                          "fill": "$text-white",
+                          "textGrowth": "fixed-width",
+                          "width": 300,
+                          "content": "JOSÉ LUIS\nÁBALOS",
+                          "lineHeight": 1,
+                          "fontFamily": "Inter",
+                          "fontSize": 32,
+                          "fontWeight": "900",
+                          "letterSpacing": -1
+                        },
+                        {
+                          "type": "text",
+                          "id": "Yashg",
+                          "name": "abalosRole",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 280,
+                          "content": "Exministro de Transportes (2018-2021)\nExsecretario de Organización PSOE",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "HF8zF",
+                      "x": 24,
+                      "y": 180,
+                      "name": "abalosPena",
+                      "fill": "$primary",
+                      "gap": 8,
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "TGAwW",
+                          "name": "abalosPenaLabel",
+                          "fill": "$primary-light",
+                          "content": "PENA SOLICITADA:",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "LPjvA",
+                          "name": "abalosPenaNum",
+                          "fill": "$text-white",
+                          "content": "24-30 AÑOS",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "700",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "U1yQk",
+                      "x": 24,
+                      "y": 260,
+                      "name": "abalosDelitos",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "WkEdg",
+                          "name": "abalosDelitosLabel",
+                          "fill": "$text-muted",
+                          "content": "DELITOS",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "p71v1",
+                          "name": "abalosDelitosList",
+                          "fill": "$text-white",
+                          "textGrowth": "fixed-width",
+                          "width": 280,
+                          "content": "Cohecho · Malversación · Tráfico de influencias · Organización criminal",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "wqGrR",
+                      "x": 24,
+                      "y": 350,
+                      "name": "abalosDato",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "4ZJDL",
+                          "name": "abalosDatoLabel",
+                          "fill": "$primary",
+                          "content": "DATO CLAVE",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "lvRTa",
+                          "name": "abalosDatoText",
+                          "fill": "$text-white",
+                          "content": "Recibió un chalé de 585.000€ y sobres con dinero",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MF9zo",
+                  "name": "koldoCard",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 400,
+                  "fill": "$bg-dark-alt",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "UwRxw",
+                      "x": 180,
+                      "y": 180,
+                      "name": "koldoInitials",
+                      "fill": "$bg-dark-alt2",
+                      "content": "KG",
+                      "fontFamily": "Inter",
+                      "fontSize": 200,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "bFzFV",
+                      "x": 24,
+                      "y": 24,
+                      "name": "koldoContent",
+                      "width": 300,
+                      "layout": "vertical",
+                      "gap": 12,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "oAcMy",
+                          "name": "koldoName",
+                          "fill": "$text-white",
+                          "textGrowth": "fixed-width",
+                          "width": 300,
+                          "content": "KOLDO\nGARCÍA",
+                          "lineHeight": 1,
+                          "fontFamily": "Inter",
+                          "fontSize": 32,
+                          "fontWeight": "900",
+                          "letterSpacing": -1
+                        },
+                        {
+                          "type": "text",
+                          "id": "4QnQ2",
+                          "name": "koldoRole",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 280,
+                          "content": "Exasesor de Ábalos en el Ministerio de Transportes",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "TiesM",
+                      "x": 24,
+                      "y": 180,
+                      "name": "koldoPena",
+                      "fill": "$primary",
+                      "gap": 8,
+                      "padding": [
+                        12,
+                        16
+                      ],
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "lqTjn",
+                          "name": "koldoPenaLabel",
+                          "fill": "$primary-light",
+                          "content": "PENA SOLICITADA:",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "kYBJc",
+                          "name": "koldoPenaNum",
+                          "fill": "$text-white",
+                          "content": "19,5-30 AÑOS",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "700",
+                          "letterSpacing": 1
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dX8Fm",
+                      "x": 24,
+                      "y": 260,
+                      "name": "koldoDelitos",
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "318St",
+                          "name": "koldoDelitosLabel",
+                          "fill": "$text-muted",
+                          "content": "DELITOS",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "uDc3S",
+                          "name": "koldoDelitosList",
+                          "fill": "$text-white",
+                          "textGrowth": "fixed-width",
+                          "width": 280,
+                          "content": "Cohecho · Malversación · Tráfico de influencias · Organización criminal",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    },
+                    {
+                      "type": "frame",
+                      "id": "qaOU2",
+                      "x": 24,
+                      "y": 350,
+                      "name": "koldoDato",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "h8ZMv",
+                          "name": "koldoDatoLabel",
+                          "fill": "$primary",
+                          "content": "DATO CLAVE",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "N4jm0",
+                          "name": "koldoDatoText",
+                          "fill": "$text-white",
+                          "content": "Cobraba 10.000€/mes de Aldama desde 2019",
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "istKk",
+          "name": "impImputadosSection",
+          "width": "fill_container",
+          "fill": "$bg-dark",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 56,
+          "children": [
+            {
+              "type": "frame",
+              "id": "NVVbP",
+              "name": "impImputadosTitle",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "TIT4N",
+                  "name": "impImputadosIcon",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "user-x",
+                  "iconFontFamily": "lucide",
+                  "fill": "$primary"
+                },
+                {
+                  "type": "text",
+                  "id": "vtDLo",
+                  "name": "impImputadosText",
+                  "fill": "$text-white",
+                  "content": "IMPUTADOS PRINCIPALES",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "ciQX7",
+              "name": "impImputadosGrid",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "nbw73",
+                  "name": "begonaCard",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 320,
+                  "fill": "$bg-light",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HJg2d",
+                      "x": 180,
+                      "y": 120,
+                      "name": "begonaInitials",
+                      "fill": "$bg-light-alt",
+                      "content": "BG",
+                      "fontFamily": "Inter",
+                      "fontSize": 200,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "gLttg",
+                      "x": 24,
+                      "y": 24,
+                      "name": "begonaContent",
+                      "width": 280,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "7VriM",
+                          "name": "begonaName",
+                          "fill": "$text-black",
+                          "textGrowth": "fixed-width",
+                          "width": 280,
+                          "content": "BEGOÑA\nGÓMEZ",
+                          "lineHeight": 1,
+                          "fontFamily": "Inter",
+                          "fontSize": 28,
+                          "fontWeight": "900",
+                          "letterSpacing": -1
+                        },
+                        {
+                          "type": "text",
+                          "id": "JoqlJ",
+                          "name": "begonaRole",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 250,
+                          "content": "Esposa del presidente\nDirectora cátedra UCM",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "BbVkm",
+                      "type": "ref",
+                      "ref": "jBx3V",
+                      "x": 24,
+                      "y": 130,
+                      "name": "begonaBadge",
+                      "descendants": {
+                        "I65Bc": {
+                          "content": "IMPUTADA"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "2VhRY",
+                      "x": 24,
+                      "y": 180,
+                      "name": "begonaDato",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "9LGRB",
+                          "name": "begonaDatoLabel",
+                          "fill": "$primary",
+                          "content": "5 DELITOS INVESTIGADOS",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "QoATO",
+                          "name": "begonaDatoText",
+                          "fill": "$text-black",
+                          "textGrowth": "fixed-width",
+                          "width": 250,
+                          "content": "Dirige cátedra universitaria sin tener licenciatura",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "3D1NE",
+                  "name": "davidCard",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 320,
+                  "fill": "$bg-dark-alt2",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "HjieT",
+                      "x": 180,
+                      "y": 120,
+                      "name": "davidInitials",
+                      "fill": "$bg-dark-alt",
+                      "content": "DS",
+                      "fontFamily": "Inter",
+                      "fontSize": 200,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "ZrqWC",
+                      "x": 24,
+                      "y": 24,
+                      "name": "davidContent",
+                      "width": 280,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "ly0UT",
+                          "name": "davidName",
+                          "fill": "$text-white",
+                          "textGrowth": "fixed-width",
+                          "width": 280,
+                          "content": "DAVID\nSÁNCHEZ",
+                          "lineHeight": 1,
+                          "fontFamily": "Inter",
+                          "fontSize": 28,
+                          "fontWeight": "900",
+                          "letterSpacing": -1
+                        },
+                        {
+                          "type": "text",
+                          "id": "eun8L",
+                          "name": "davidRole",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 250,
+                          "content": "Hermano del presidente\nExjefe Oficina Artes Escénicas",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "96Jdg",
+                      "type": "ref",
+                      "ref": "teyOS",
+                      "x": 24,
+                      "y": 130,
+                      "name": "davidBadge",
+                      "descendants": {
+                        "mUefr": {
+                          "content": "JUICIO MAY-JUN 2026"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "T7dX2",
+                      "x": 24,
+                      "y": 180,
+                      "name": "davidDato",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wncod",
+                          "name": "davidDatoLabel",
+                          "fill": "$primary",
+                          "content": "5 DELITOS",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "o0GJs",
+                          "name": "davidDatoText",
+                          "fill": "$text-white",
+                          "textGrowth": "fixed-width",
+                          "width": 250,
+                          "content": "Patrimonio aumentó 600.000€ con sueldo de 50.000€/año",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "yfvlA",
+                  "name": "santosCard",
+                  "clip": true,
+                  "width": "fill_container",
+                  "height": 320,
+                  "fill": "$bg-dark",
+                  "layout": "none",
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "DL7TA",
+                      "x": 180,
+                      "y": 120,
+                      "name": "santosInitials",
+                      "fill": "$bg-dark-alt",
+                      "content": "SC",
+                      "fontFamily": "Inter",
+                      "fontSize": 200,
+                      "fontWeight": "900"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "dgKxA",
+                      "x": 24,
+                      "y": 24,
+                      "name": "santosContent",
+                      "width": 280,
+                      "layout": "vertical",
+                      "gap": 8,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "mSHtl",
+                          "name": "santosName",
+                          "fill": "$text-white",
+                          "textGrowth": "fixed-width",
+                          "width": 280,
+                          "content": "SANTOS\nCERDÁN",
+                          "lineHeight": 1,
+                          "fontFamily": "Inter",
+                          "fontSize": 28,
+                          "fontWeight": "900",
+                          "letterSpacing": -1
+                        },
+                        {
+                          "type": "text",
+                          "id": "joek9",
+                          "name": "santosRole",
+                          "fill": "$text-muted",
+                          "textGrowth": "fixed-width",
+                          "width": 250,
+                          "content": "Exsecretario de Organización del PSOE",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    },
+                    {
+                      "id": "vp8Qq",
+                      "type": "ref",
+                      "ref": "jBx3V",
+                      "x": 24,
+                      "y": 130,
+                      "name": "santosBadge",
+                      "descendants": {
+                        "I65Bc": {
+                          "content": "IMPUTADO"
+                        }
+                      }
+                    },
+                    {
+                      "type": "frame",
+                      "id": "eV7XW",
+                      "x": 24,
+                      "y": 180,
+                      "name": "santosDato",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "vF1Ni",
+                          "name": "santosDatoLabel",
+                          "fill": "$primary",
+                          "content": "UCO: \"JEFE\" DE LA TRAMA",
+                          "fontFamily": "Inter",
+                          "fontSize": 11,
+                          "fontWeight": "600",
+                          "letterSpacing": 1
+                        },
+                        {
+                          "type": "text",
+                          "id": "bI1O9",
+                          "name": "santosDatoText",
+                          "fill": "$text-white",
+                          "textGrowth": "fixed-width",
+                          "width": 250,
+                          "content": "45% de Servinabar, que recibía contratos amañados",
+                          "lineHeight": 1.4,
+                          "fontFamily": "Inter",
+                          "fontSize": 12,
+                          "fontWeight": "500"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "p3mLS",
+          "name": "impOtrosSection",
+          "width": "fill_container",
+          "fill": "$bg-dark-alt",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 56,
+          "children": [
+            {
+              "type": "frame",
+              "id": "KUxrz",
+              "name": "impOtrosTitle",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "pvi9p",
+                  "name": "impOtrosIcon",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "users",
+                  "iconFontFamily": "lucide",
+                  "fill": "$primary"
+                },
+                {
+                  "type": "text",
+                  "id": "hBPnU",
+                  "name": "impOtrosText",
+                  "fill": "$text-white",
+                  "content": "OTROS IMPLICADOS",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "n7DMd",
+              "name": "impOtrosGrid",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "v1kNb",
+                  "name": "aldamaCard",
+                  "width": "fill_container",
+                  "fill": "$bg-dark",
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "$primary"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "m9D3R",
+                      "name": "aldamaHeader",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "LqAyc",
+                          "name": "aldamaName",
+                          "fill": "$text-white",
+                          "content": "VÍCTOR DE ALDAMA",
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "id": "9cNm8",
+                          "type": "ref",
+                          "ref": "ULosg",
+                          "name": "aldamaBadge",
+                          "descendants": {
+                            "R1fcf": {
+                              "content": "COLABORADOR"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "ZR8yh",
+                      "name": "aldamaRole",
+                      "fill": "$text-muted",
+                      "content": "Empresario · Testigo protegido",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "XU39P",
+                      "name": "aldamaDato",
+                      "fill": "$primary-light",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Confesó el sistema de comisiones. Pagó 82.298€ en alquileres para la exnovia de Ábalos. Pena rebajada a 7 años.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "IWcau",
+                  "name": "pardoCard",
+                  "width": "fill_container",
+                  "fill": "$bg-dark",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "j5Vnc",
+                      "name": "pardoHeader",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "zCthE",
+                          "name": "pardoName",
+                          "fill": "$text-white",
+                          "content": "ISABEL PARDO DE VERA",
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "id": "VG3TK",
+                          "type": "ref",
+                          "ref": "jBx3V",
+                          "name": "pardoBadge",
+                          "descendants": {
+                            "I65Bc": {
+                              "content": "IMPUTADA"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "mIOPM",
+                      "name": "pardoRole",
+                      "fill": "$text-muted",
+                      "content": "Expresidenta de ADIF (2017-2021)",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "B8NR5",
+                      "name": "pardoDato",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Grabada diciendo: \"Le hemos dado una de 700.000\". Imputada por cohecho, prevaricación, organización criminal.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "i6bT5",
+                  "name": "barrabesCard",
+                  "width": "fill_container",
+                  "fill": "$bg-dark",
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "frame",
+                      "id": "XUzPV",
+                      "name": "barrabesHeader",
+                      "width": "fill_container",
+                      "gap": 16,
+                      "justifyContent": "space_between",
+                      "alignItems": "center",
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "5BP6r",
+                          "name": "barrabesName",
+                          "fill": "$text-white",
+                          "content": "CARLOS BARRABÉS",
+                          "fontFamily": "Inter",
+                          "fontSize": 20,
+                          "fontWeight": "800"
+                        },
+                        {
+                          "id": "Y0u4o",
+                          "type": "ref",
+                          "ref": "jBx3V",
+                          "name": "barrabesBadge",
+                          "descendants": {
+                            "I65Bc": {
+                              "content": "IMPUTADO"
+                            }
+                          }
+                        }
+                      ]
+                    },
+                    {
+                      "type": "text",
+                      "id": "kgC6b",
+                      "name": "barrabesRole",
+                      "fill": "$text-muted",
+                      "content": "Empresario · Codirector cátedra UCM",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "3gfKI",
+                      "name": "barrabesDato",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Sus empresas recibieron 25 millones en contratos públicos. 99 contratos entre 2015-2024.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "US2Ez",
+          "name": "impArchivadosSection",
+          "width": "fill_container",
+          "fill": "$bg-dark",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 56,
+          "children": [
+            {
+              "type": "frame",
+              "id": "bdkJl",
+              "name": "impArchivadosTitle",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "rZyf5",
+                  "name": "impArchivadosIcon",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "file-x",
+                  "iconFontFamily": "lucide",
+                  "fill": "$text-muted"
+                },
+                {
+                  "type": "text",
+                  "id": "FMxzB",
+                  "name": "impArchivadosText",
+                  "fill": "$text-muted",
+                  "content": "IMPUTACIONES ARCHIVADAS",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "kVrxN",
+              "name": "impArchivadosDesc",
+              "fill": "$text-muted",
+              "content": "No todas las acusaciones llegaron a puerto. Varios nombres fueron descartados por los tribunales.",
+              "lineHeight": 1.5,
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "f6mA5",
+              "name": "impArchivadosGrid",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "Ge5oM",
+                  "name": "bolañosCard",
+                  "width": "fill_container",
+                  "fill": "$bg-dark-alt",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-dark"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "TYwLC",
+                      "name": "bolañosName",
+                      "fill": "$text-white",
+                      "content": "Félix Bolaños",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "6k5SJ",
+                      "name": "bolañosRole",
+                      "fill": "$text-muted",
+                      "content": "Ministro de Presidencia",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "Z6VwQ",
+                      "name": "bolañosMotivo",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "\"No existe el más mínimo indicio\" - Tribunal Supremo, julio 2025",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "qc74o",
+                  "name": "franciscoCard",
+                  "width": "fill_container",
+                  "fill": "$bg-dark-alt",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-dark"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "Eb97w",
+                      "name": "franciscoName",
+                      "fill": "$text-white",
+                      "content": "Francisco Martín",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "fwsQA",
+                      "name": "franciscoRole",
+                      "fill": "$text-muted",
+                      "content": "Delegado del Gobierno en Madrid",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "KnIrM",
+                      "name": "franciscoMotivo",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "\"Meras suposiciones\" - Audiencia Provincial Madrid, dic 2025",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "Lb9J0",
+                  "name": "goyacheCard",
+                  "width": "fill_container",
+                  "fill": "$bg-dark-alt",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-dark"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "9O3Pg",
+                      "name": "goyacheName",
+                      "fill": "$text-white",
+                      "content": "Joaquín Goyache",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "17yUX",
+                      "name": "goyacheRole",
+                      "fill": "$text-muted",
+                      "content": "Rector UCM",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "XpGlh",
+                      "name": "goyacheMotivo",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Sin indicios suficientes - Desimputado caso Begoña Gómez",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "gsvj0",
+                  "name": "guemesCard",
+                  "width": "fill_container",
+                  "fill": "$bg-dark-alt",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-dark"
+                  },
+                  "layout": "vertical",
+                  "gap": 12,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "text",
+                      "id": "5EZWl",
+                      "name": "guemesName",
+                      "fill": "$text-white",
+                      "content": "Juan José Güemes",
+                      "fontFamily": "Inter",
+                      "fontSize": 18,
+                      "fontWeight": "700"
+                    },
+                    {
+                      "type": "text",
+                      "id": "crhOk",
+                      "name": "guemesRole",
+                      "fill": "$text-muted",
+                      "content": "Presidente IE Business School",
+                      "fontFamily": "Inter",
+                      "fontSize": 13,
+                      "fontWeight": "normal"
+                    },
+                    {
+                      "type": "text",
+                      "id": "AkfVc",
+                      "name": "guemesMotivo",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Sin indicios suficientes - Desimputado caso Begoña Gómez",
+                      "lineHeight": 1.4,
+                      "fontFamily": "Inter",
+                      "fontSize": 12,
+                      "fontWeight": "500"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "3zcku",
+          "name": "impFooter",
+          "width": "fill_container",
+          "fill": "$primary",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": 56,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "AaPMn",
+              "name": "impFooterText",
+              "fill": "$primary-light",
+              "content": "Todos los imputados gozan de presunción de inocencia hasta sentencia firme",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "ORU0J",
+              "name": "impFooterLinks",
+              "gap": 24,
+              "children": [
+                {
+                  "id": "cSEOx",
+                  "type": "ref",
+                  "ref": "vwDdv",
+                  "name": "impLink1",
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "$text-white"
+                  },
+                  "descendants": {
+                    "DSCN2": {
+                      "content": "VER CRONOLOGÍA",
+                      "fill": "$text-white"
+                    },
+                    "j8vUf": {
+                      "fill": "$text-white"
+                    }
+                  }
+                },
+                {
+                  "id": "1Rkog",
+                  "type": "ref",
+                  "ref": "vwDdv",
+                  "name": "impLink2",
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "$text-white"
+                  },
+                  "descendants": {
+                    "DSCN2": {
+                      "content": "VER DOCUMENTOS",
+                      "fill": "$text-white"
+                    },
+                    "j8vUf": {
+                      "fill": "$text-white"
+                    }
+                  }
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "jfAoC",
+      "x": 9252,
+      "y": 0,
+      "name": "Page - Documentos",
+      "width": 1440,
+      "fill": "$bg-light",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "uOg88",
+          "type": "ref",
+          "ref": "yjGZC",
+          "width": "fill_container",
+          "name": "docHeader",
+          "descendants": {
+            "QkDw2": {
+              "content": "CASOS",
+              "fill": "$primary-light"
+            },
+            "xxEpb": {
+              "content": "IMPUTADOS",
+              "fill": "$primary-light"
+            },
+            "C4FCl": {
+              "content": "CRONOLOGÍA",
+              "fill": "$primary-light"
+            },
+            "jtL4Y": {
+              "content": "DOCUMENTOS",
+              "fill": "$text-white"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "J8OW0",
+          "name": "docHero",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": [
+            80,
+            56
+          ],
+          "children": [
+            {
+              "type": "text",
+              "id": "sXh9a",
+              "name": "docTag",
+              "fill": "$primary",
+              "content": "FUENTES Y DOCUMENTACIÓN",
+              "fontFamily": "Inter",
+              "fontSize": 12,
+              "fontWeight": "700",
+              "letterSpacing": 2
+            },
+            {
+              "type": "text",
+              "id": "bcEUW",
+              "name": "docTitle",
+              "fill": "$text-black",
+              "content": "Documentos",
+              "fontFamily": "Inter",
+              "fontSize": 96,
+              "fontWeight": "900",
+              "letterSpacing": -4
+            },
+            {
+              "type": "text",
+              "id": "iBO1y",
+              "name": "docSubtitle",
+              "fill": "$text-muted",
+              "textGrowth": "fixed-width",
+              "width": 700,
+              "content": "Todo el contenido procede de fuentes públicas: informes policiales, autos judiciales, declaraciones ante tribunales y cobertura periodística.",
+              "lineHeight": 1.5,
+              "fontFamily": "Inter",
+              "fontSize": 18,
+              "fontWeight": "500"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "IUhqi",
+          "name": "docFuentesSection",
+          "width": "fill_container",
+          "fill": "$bg-light-alt",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 56,
+          "children": [
+            {
+              "type": "frame",
+              "id": "58YtC",
+              "name": "docFuentesTitle",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "MIgWa",
+                  "name": "docFuentesIcon",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "file-text",
+                  "iconFontFamily": "lucide",
+                  "fill": "$primary"
+                },
+                {
+                  "type": "text",
+                  "id": "pRaRl",
+                  "name": "docFuentesText",
+                  "fill": "$text-black",
+                  "content": "ORIGEN DE LA INFORMACIÓN",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "SMLXJ",
+              "name": "docFuentesGrid",
+              "width": "fill_container",
+              "gap": 24,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "tssLs",
+                  "name": "fuenteUCO",
+                  "width": "fill_container",
+                  "fill": "$bg-light",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-light"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "QidnT",
+                      "name": "fuenteUCOIcon",
+                      "width": 32,
+                      "height": 32,
+                      "iconFontName": "shield",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "xifz1",
+                      "name": "fuenteUCOTitle",
+                      "fill": "$text-black",
+                      "content": "Informes UCO",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "EsgDp",
+                      "name": "fuenteUCODesc",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Unidad Central Operativa de la Guardia Civil. Informes de investigación filtrados a medios.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "h2Hjo",
+                  "name": "fuenteTS",
+                  "width": "fill_container",
+                  "fill": "$bg-light",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-light"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "5zc7d",
+                      "name": "fuenteTSIcon",
+                      "width": 32,
+                      "height": 32,
+                      "iconFontName": "scale",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "6eQsP",
+                      "name": "fuenteTSTitle",
+                      "fill": "$text-black",
+                      "content": "Autos Judiciales",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "3WCM1",
+                      "name": "fuenteTSDesc",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Autos del Tribunal Supremo, Juzgado de Instrucción nº 41 de Madrid y Juzgado de Instrucción nº 3 de Badajoz.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "sg8VH",
+                  "name": "fuenteIGAE",
+                  "width": "fill_container",
+                  "fill": "$bg-light",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-light"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "gjpwW",
+                      "name": "fuenteIGAEIcon",
+                      "width": 32,
+                      "height": 32,
+                      "iconFontName": "file-search",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "SKXjQ",
+                      "name": "fuenteIGAETitle",
+                      "fill": "$text-black",
+                      "content": "Informe IGAE",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "hTmDp",
+                      "name": "fuenteIGAEDesc",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Intervención General del Estado. Informe de 303 páginas sobre contratos de Red.es.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "ojM9U",
+                  "name": "fuenteTestimonios",
+                  "width": "fill_container",
+                  "fill": "$bg-light",
+                  "stroke": {
+                    "thickness": 1,
+                    "fill": "$border-light"
+                  },
+                  "layout": "vertical",
+                  "gap": 16,
+                  "padding": 24,
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "ZjMSa",
+                      "name": "fuenteTestimoniosIcon",
+                      "width": 32,
+                      "height": 32,
+                      "iconFontName": "mic",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    },
+                    {
+                      "type": "text",
+                      "id": "83ZiS",
+                      "name": "fuenteTestimoniosTitle",
+                      "fill": "$text-black",
+                      "content": "Testimonios",
+                      "fontFamily": "Inter",
+                      "fontSize": 20,
+                      "fontWeight": "800"
+                    },
+                    {
+                      "type": "text",
+                      "id": "293WF",
+                      "name": "fuenteTestimoniosDesc",
+                      "fill": "$text-muted",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container",
+                      "content": "Declaraciones de Víctor de Aldama ante el juez y otros testimonios judiciales.",
+                      "lineHeight": 1.5,
+                      "fontFamily": "Inter",
+                      "fontSize": 14,
+                      "fontWeight": "normal"
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "YVcYy",
+          "name": "docTribunalesSection",
+          "width": "fill_container",
+          "fill": "$bg-dark",
+          "layout": "vertical",
+          "gap": 32,
+          "padding": 56,
+          "children": [
+            {
+              "type": "frame",
+              "id": "wOf60",
+              "name": "docTribunalesTitle",
+              "gap": 16,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "icon_font",
+                  "id": "1g5su",
+                  "name": "docTribunalesIcon",
+                  "width": 24,
+                  "height": 24,
+                  "iconFontName": "landmark",
+                  "iconFontFamily": "lucide",
+                  "fill": "$primary"
+                },
+                {
+                  "type": "text",
+                  "id": "GYgUL",
+                  "name": "docTribunalesText",
+                  "fill": "$text-white",
+                  "content": "TRIBUNALES IMPLICADOS",
+                  "fontFamily": "Inter",
+                  "fontSize": 14,
+                  "fontWeight": "700",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "7jspt",
+              "name": "docTribunalesGrid",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": 16,
+              "children": [
+                {
+                  "type": "frame",
+                  "id": "X5YUL",
+                  "name": "tribSupremo",
+                  "width": "fill_container",
+                  "fill": "$bg-dark-alt",
+                  "gap": 24,
+                  "padding": [
+                    20,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "E9H3i",
+                      "name": "tribSupremoIcon",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "building-2",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "osjc2",
+                      "name": "tribSupremoContent",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "wdbbZ",
+                          "name": "tribSupremoName",
+                          "fill": "$text-white",
+                          "content": "Tribunal Supremo",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "REKMB",
+                          "name": "tribSupremoDesc",
+                          "fill": "$text-muted",
+                          "content": "Caso Ábalos (por su condición de aforado como diputado)",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "hu3vf",
+                  "name": "tribAN",
+                  "width": "fill_container",
+                  "fill": "$bg-dark-alt",
+                  "gap": 24,
+                  "padding": [
+                    20,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "XslWa",
+                      "name": "tribANIcon",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "building-2",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "mCScg",
+                      "name": "tribANContent",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "pg7ES",
+                          "name": "tribANName",
+                          "fill": "$text-white",
+                          "content": "Audiencia Nacional",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "R0Rgd",
+                          "name": "tribANDesc",
+                          "fill": "$text-muted",
+                          "content": "Caso Hidrocarburos (investigación principal)",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EM7Jj",
+                  "name": "tribJI41",
+                  "width": "fill_container",
+                  "fill": "$bg-dark-alt",
+                  "gap": 24,
+                  "padding": [
+                    20,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "PIAwd",
+                      "name": "tribJI41Icon",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "gavel",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "GHFKe",
+                      "name": "tribJI41Content",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "YJAkP",
+                          "name": "tribJI41Name",
+                          "fill": "$text-white",
+                          "content": "Juzgado de Instrucción nº 41 de Madrid",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "d3eZb",
+                          "name": "tribJI41Desc",
+                          "fill": "$text-muted",
+                          "content": "Caso Begoña Gómez (juez Peinado)",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "MoxEb",
+                  "name": "tribBadajoz",
+                  "width": "fill_container",
+                  "fill": "$bg-dark-alt",
+                  "gap": 24,
+                  "padding": [
+                    20,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "mwlYl",
+                      "name": "tribBadajozIcon",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "gavel",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "3GluJ",
+                      "name": "tribBadajozContent",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "oXPlp",
+                          "name": "tribBadajozName",
+                          "fill": "$text-white",
+                          "content": "Audiencia Provincial de Badajoz",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "kODub",
+                          "name": "tribBadajozDesc",
+                          "fill": "$text-muted",
+                          "content": "Caso David Sánchez",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                },
+                {
+                  "type": "frame",
+                  "id": "EsuaD",
+                  "name": "tribFE",
+                  "width": "fill_container",
+                  "fill": "$bg-dark-alt",
+                  "gap": 24,
+                  "padding": [
+                    20,
+                    24
+                  ],
+                  "alignItems": "center",
+                  "children": [
+                    {
+                      "type": "icon_font",
+                      "id": "hR1pi",
+                      "name": "tribFEIcon",
+                      "width": 24,
+                      "height": 24,
+                      "iconFontName": "globe",
+                      "iconFontFamily": "lucide",
+                      "fill": "$primary"
+                    },
+                    {
+                      "type": "frame",
+                      "id": "Pxblh",
+                      "name": "tribFEContent",
+                      "width": "fill_container",
+                      "layout": "vertical",
+                      "gap": 4,
+                      "children": [
+                        {
+                          "type": "text",
+                          "id": "Ed6Rj",
+                          "name": "tribFEName",
+                          "fill": "$text-white",
+                          "content": "Fiscalía Europea",
+                          "fontFamily": "Inter",
+                          "fontSize": 18,
+                          "fontWeight": "700"
+                        },
+                        {
+                          "type": "text",
+                          "id": "XbSgA",
+                          "name": "tribFEDesc",
+                          "fill": "$text-muted",
+                          "content": "Contratos Barrabés con fondos UE (investiga a Barrabés, NO a Begoña Gómez)",
+                          "fontFamily": "Inter",
+                          "fontSize": 13,
+                          "fontWeight": "normal"
+                        }
+                      ]
+                    }
+                  ]
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "fadNb",
+          "name": "docDisclaimerSection",
+          "width": "fill_container",
+          "fill": "$bg-light",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": 56,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "wpi3P",
+              "name": "docDisclaimerIcon",
+              "width": 32,
+              "height": 32,
+              "iconFontName": "info",
+              "iconFontFamily": "lucide",
+              "fill": "$primary"
+            },
+            {
+              "type": "text",
+              "id": "2BJOq",
+              "name": "docDisclaimerTitle",
+              "fill": "$text-black",
+              "content": "Sobre esta web",
+              "fontFamily": "Inter",
+              "fontSize": 32,
+              "fontWeight": "900",
+              "letterSpacing": -1
+            },
+            {
+              "type": "text",
+              "id": "CSU7x",
+              "name": "docDisclaimerText",
+              "fill": "$text-muted",
+              "textGrowth": "fixed-width",
+              "width": 700,
+              "content": "Esta página recopila información pública sobre los casos judiciales conocidos colectivamente como \"Trama PSOE\". Esta web no prejuzga la culpabilidad de ninguna persona. Todas las personas mencionadas tienen derecho a la presunción de inocencia hasta que exista sentencia firme.",
+              "lineHeight": 1.6,
+              "textAlign": "center",
+              "fontFamily": "Inter",
+              "fontSize": 16,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "a5dr1",
+              "name": "docDisclaimerDate",
+              "fill": "$primary",
+              "content": "Última actualización: Enero 2026",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "600"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "pSv5G",
+          "name": "docFooter",
+          "width": "fill_container",
+          "fill": "$primary",
+          "layout": "vertical",
+          "gap": 24,
+          "padding": 56,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "GO02A",
+              "name": "docFooterTitle",
+              "fill": "$primary-light",
+              "content": "Información basada en fuentes judiciales y periodísticas públicas",
+              "fontFamily": "Inter",
+              "fontSize": 14,
+              "fontWeight": "500"
+            },
+            {
+              "type": "frame",
+              "id": "Z1SOh",
+              "name": "docFooterLinks",
+              "gap": 24,
+              "children": [
+                {
+                  "id": "le3Yz",
+                  "type": "ref",
+                  "ref": "vwDdv",
+                  "name": "docLink1",
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "$text-white"
+                  },
+                  "descendants": {
+                    "DSCN2": {
+                      "content": "VER TODOS LOS CASOS",
+                      "fill": "$text-white"
+                    },
+                    "j8vUf": {
+                      "fill": "$text-white"
+                    }
+                  }
+                },
+                {
+                  "id": "2bHAH",
+                  "type": "ref",
+                  "ref": "vwDdv",
+                  "name": "docLink2",
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "$text-white"
+                  },
+                  "descendants": {
+                    "DSCN2": {
+                      "content": "VER IMPUTADOS",
+                      "fill": "$text-white"
+                    },
+                    "j8vUf": {
+                      "fill": "$text-white"
+                    }
+                  }
+                },
+                {
+                  "id": "pFBnj",
+                  "type": "ref",
+                  "ref": "vwDdv",
+                  "name": "docLink3",
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "$text-white"
+                  },
+                  "descendants": {
+                    "DSCN2": {
+                      "content": "VER CRONOLOGÍA",
+                      "fill": "$text-white"
+                    },
+                    "j8vUf": {
+                      "fill": "$text-white"
+                    }
+                  }
                 }
               ]
             }
