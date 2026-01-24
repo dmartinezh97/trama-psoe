@@ -10,8 +10,34 @@ export function getLocaleFromUrl(url: URL): Locale {
   return 'es';
 }
 
-export function getLocalizedPath(path: string, locale: Locale): string {
-  // Si el path ya tiene locale, reemplazarlo
+// Mapeo de rutas ES <-> EN
+const routeMap: Record<string, Record<string, string>> = {
+  es: {
+    'cases': 'casos',
+    'timeline': 'cronologia',
+    'defendants': 'imputados',
+    'documents': 'documentos',
+  },
+  en: {
+    'casos': 'cases',
+    'cronologia': 'timeline',
+    'imputados': 'defendants',
+    'documentos': 'documents',
+  },
+};
+
+export function getLocalizedPath(path: string, targetLocale: Locale): string {
   const pathWithoutLocale = path.replace(/^\/(es|en)/, '');
-  return `/${locale}${pathWithoutLocale || '/'}`;
+
+  // Traducir cada segmento de la ruta
+  const segments = pathWithoutLocale.split('/').filter(Boolean);
+  const translatedSegments = segments.map(segment => {
+    return routeMap[targetLocale]?.[segment] || segment;
+  });
+
+  const translatedPath = translatedSegments.length > 0
+    ? '/' + translatedSegments.join('/')
+    : '/';
+
+  return `/${targetLocale}${translatedPath}`;
 }
