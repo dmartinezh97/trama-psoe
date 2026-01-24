@@ -9939,7 +9939,7 @@
           "id": "oufnF",
           "name": "year2026",
           "width": "fill_container",
-          "fill": "$bg-dark",
+          "fill": "$bg-dark-alt2",
           "layout": "vertical",
           "gap": 32,
           "padding": 56,
