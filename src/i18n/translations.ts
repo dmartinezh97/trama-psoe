@@ -18,9 +18,9 @@ export const translations = {
       subtitle: 'EL MAYOR ESCÁNDALO DE CORRUPCIÓN\nDEL GOBIERNO SÁNCHEZ',
       cta: 'VER TODOS LOS CASOS',
       scroll: 'SCROLL',
-      stat1: { number: '+30', label: 'IMPUTADOS' },
-      stat2: { number: '54M€', label: 'COMISIONES' },
-      stat3: { number: '24', label: 'AÑOS PENA' },
+      stat1: { number: '+30', label: 'Imputados' },
+      stat2: { number: '54M€', label: 'Investigados' },
+      stat3: { number: '24', label: 'Años pena' },
     },
     stats: {
       stat1: {
