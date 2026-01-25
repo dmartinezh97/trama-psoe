@@ -58,7 +58,7 @@ defineExpose({ openMenu, closeMenu, isOpen });
   <!-- Menu Button -->
   <button
     @click="openMenu"
-    class="flex items-center justify-center w-10 h-10 text-black hover:text-trama-red transition-colors"
+    class="flex items-center justify-center w-10 h-10 text-white hover:text-trama-red-light transition-colors"
     aria-label="Abrir menú"
   >
     <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">

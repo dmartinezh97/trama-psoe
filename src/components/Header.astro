@@ -1,34 +1,46 @@
 ---
 import { getLocaleFromUrl, useTranslations, getLocalizedPath } from '../i18n/utils';
 import type { Locale } from '../i18n/translations';
+import MobileMenu from './ui/MobileMenu.vue';
 
 const locale = getLocaleFromUrl(Astro.url) as Locale;
 const t = useTranslations(locale);
 const otherLocale: Locale = locale === 'es' ? 'en' : 'es';
 ---
 
-<header class="fixed top-0 left-0 w-full h-20 bg-trama-red hidden md:flex items-center justify-between px-8 md:px-14 z-50">
-  <a href={`/${locale}`} class="flex items-center gap-3">
-    <img src="/img/version_transparente.png" alt="La Trama PSOE" class="h-14" />
-  </a>
-  <nav class="hidden md:flex items-center gap-8">
-    <a href={locale === 'es' ? '/es/casos' : '/en/cases'} class="font-secondary text-xs font-semibold tracking-[1px] text-trama-red-light hover:text-white transition-colors">
-      {t.nav.cases}
+<header class="fixed top-0 left-0 w-full z-50">
+  <!-- Desktop Header -->
+  <div class="hidden md:flex h-20 bg-trama-red items-center justify-between px-8 md:px-14">
+    <a href={`/${locale}`} class="flex items-center gap-3">
+      <img src="/img/version_transparente.png" alt="La Trama PSOE" class="h-14" />
     </a>
-    <a href={locale === 'es' ? '/es/cronologia' : '/en/timeline'} class="font-secondary text-xs font-semibold tracking-[1px] text-trama-red-light hover:text-white transition-colors">
-      {t.nav.timeline}
+    <nav class="flex items-center gap-8">
+      <a href={locale === 'es' ? '/es/casos' : '/en/cases'} class="font-secondary text-xs font-semibold tracking-[1px] text-trama-red-light hover:text-white transition-colors">
+        {t.nav.cases}
+      </a>
+      <a href={locale === 'es' ? '/es/cronologia' : '/en/timeline'} class="font-secondary text-xs font-semibold tracking-[1px] text-trama-red-light hover:text-white transition-colors">
+        {t.nav.timeline}
+      </a>
+      <a href={locale === 'es' ? '/es/imputados' : '/en/defendants'} class="font-secondary text-xs font-semibold tracking-[1px] text-trama-red-light hover:text-white transition-colors">
+        {t.nav.accused}
+      </a>
+      <a href={locale === 'es' ? '/es/documentos' : '/en/documents'} class="font-secondary text-xs font-semibold tracking-[1px] text-trama-red-light hover:text-white transition-colors">
+        {t.nav.documents}
+      </a>
+      <a
+        href={getLocalizedPath(Astro.url.pathname, otherLocale)}
+        class="font-secondary text-xs font-semibold tracking-[1px] text-white border border-white/30 px-3 py-1.5 hover:bg-white/10 transition-colors"
+      >
+        {otherLocale.toUpperCase()}
+      </a>
+    </nav>
+  </div>
+
+  <!-- Mobile Header -->
+  <div class="flex md:hidden items-center justify-between px-5 py-4 bg-trama-red">
+    <a href={`/${locale}`} class="flex items-center gap-2">
+      <img src="/img/version_transparente.png" alt="La Trama PSOE" class="h-10" />
     </a>
-    <a href={locale === 'es' ? '/es/imputados' : '/en/defendants'} class="font-secondary text-xs font-semibold tracking-[1px] text-trama-red-light hover:text-white transition-colors">
-      {t.nav.accused}
-    </a>
-    <a href={locale === 'es' ? '/es/documentos' : '/en/documents'} class="font-secondary text-xs font-semibold tracking-[1px] text-trama-red-light hover:text-white transition-colors">
-      {t.nav.documents}
-    </a>
-    <a
-      href={getLocalizedPath(Astro.url.pathname, otherLocale)}
-      class="font-secondary text-xs font-semibold tracking-[1px] text-white border border-white/30 px-3 py-1.5 hover:bg-white/10 transition-colors"
-    >
-      {otherLocale.toUpperCase()}
-    </a>
-  </nav>
+    <MobileMenu locale={locale} client:load />
+  </div>
 </header>

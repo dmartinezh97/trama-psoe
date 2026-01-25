@@ -1,6 +1,5 @@
 ---
 import ScrollHint from '../ui/ScrollHint.astro';
-import MobileMenu from '../ui/MobileMenu.vue';
 import { getLocaleFromUrl, useTranslations } from '../../i18n/utils';
 import type { Locale } from '../../i18n/translations';
 
@@ -9,14 +8,6 @@ const t = useTranslations(locale);
 ---
 
 <section data-hero class="relative h-[650px] md:h-[900px] bg-white overflow-hidden">
-  <!-- Mobile Top Bar -->
-  <div class="absolute top-0 left-0 right-0 flex md:hidden items-center justify-between px-5 py-4 z-20">
-    <a href={`/${locale}`} class="flex items-center gap-2">
-      <img src="/img/version_transparente.png" alt="La Trama PSOE" class="h-10" />
-    </a>
-    <MobileMenu locale={locale} client:load />
-  </div>
-
   <!-- Background Year -->
   <span data-hero-bg class="absolute right-[-100px] top-[-150px] font-secondary text-[400px] md:text-[600px] lg:text-[800px] font-black text-trama-50 select-none pointer-events-none tracking-[-40px] leading-none">
     26
