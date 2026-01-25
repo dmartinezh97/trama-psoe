@@ -3,9 +3,10 @@ interface Props {
   icon: string;
   title: string;
   description: string;
+  href?: string;
 }
 
-const { icon, title, description } = Astro.props;
+const { icon, title, description, href } = Astro.props;
 
 const iconMap: Record<string, string> = {
   shield: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>`,
@@ -13,13 +14,27 @@ const iconMap: Record<string, string> = {
   'file-search': `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M4.268 21a2 2 0 0 0 1.727 1H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3"/><path d="m9 18-1.5-1.5"/><circle cx="5" cy="14" r="3"/></svg>`,
   mic: `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>`,
 };
+
+const arrowIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>`;
+
+const Tag = href ? 'a' : 'div';
 ---
 
-<div
-  class="bg-white border border-trama-200 rounded-lg p-6 flex flex-col gap-4"
+<Tag
+  href={href}
+  class:list={[
+    "bg-white border border-trama-200 rounded-lg p-6 flex flex-col gap-4",
+    href && "group hover:border-trama-red hover:shadow-lg transition-all cursor-pointer"
+  ]}
   data-documentos-card
 >
   <div class="text-trama-red" set:html={iconMap[icon] || iconMap.shield} />
   <h3 class="font-secondary text-lg font-bold text-trama-950">{title}</h3>
   <p class="text-trama-600 text-sm leading-relaxed">{description}</p>
-</div>
+  {href && (
+    <div class="flex items-center gap-2 text-trama-red mt-auto pt-2 group-hover:gap-3 transition-all">
+      <span class="text-sm font-semibold">Ver documentos</span>
+      <span set:html={arrowIcon} />
+    </div>
+  )}
+</Tag>

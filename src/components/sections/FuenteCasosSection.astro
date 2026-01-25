@@ -1,0 +1,50 @@
+---
+import CasoCard from '../ui/CasoCard.astro';
+
+interface RelatedCase {
+  tag: string;
+  title: string;
+  description: string;
+  href: string;
+}
+
+interface Props {
+  header: string;
+  description: string;
+  cases: RelatedCase[];
+}
+
+const { header, description, cases } = Astro.props;
+
+const linkIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/><path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/></svg>`;
+---
+
+<section
+  class="bg-trama-950 px-5 md:px-14 py-10 md:py-14 w-full"
+  data-fuente-section
+>
+  <div class="flex flex-col gap-6 md:gap-8">
+    <!-- Section Header -->
+    <div class="flex items-center gap-4" data-fuente-section-title>
+      <div class="text-trama-red" set:html={linkIcon} />
+      <h2 class="text-white font-secondary text-sm font-bold tracking-[2px]">{header}</h2>
+    </div>
+
+    <!-- Description -->
+    <p class="text-trama-400 text-sm md:text-base leading-relaxed" data-fuente-casos-desc>
+      {description}
+    </p>
+
+    <!-- Cases Grid -->
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
+      {cases.map((caso) => (
+        <CasoCard
+          tag={caso.tag}
+          title={caso.title}
+          description={caso.description}
+          href={caso.href}
+        />
+      ))}
+    </div>
+  </div>
+</section>

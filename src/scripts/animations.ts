@@ -772,6 +772,7 @@ function initDocumentosSectionAnimations(): void {
         stagger: 0.1,
         ease: 'back.out(1.2)',
         force3D: true,
+        immediateRender: false,
         scrollTrigger: {
           trigger: section,
           start: 'top 70%',
@@ -804,6 +805,196 @@ function initDocumentosFooterAnimations(): void {
   if (!footer) return;
 
   const items = footer.querySelectorAll('[data-documentos-footer-item]');
+  if (items.length) {
+    gsap.from(items, {
+      y: 30,
+      opacity: 0,
+      duration: 0.6,
+      stagger: 0.15,
+      ease: 'power2.out',
+      scrollTrigger: {
+        trigger: footer,
+        start: 'top 85%',
+        once: true,
+      },
+    });
+  }
+}
+
+// Fuente Detail Page Animations
+export function initFuenteDetailPageAnimations(): void {
+  if (prefersReducedMotion()) {
+    gsap.set('[data-fuente-hero-item], [data-fuente-title], [data-fuente-desc-content], [data-fuente-stat-card], [data-fuente-section-title], [data-fuente-doc-row], [data-fuente-caso-card], [data-fuente-footer-item]', {
+      opacity: 1,
+      clearProps: 'all',
+    });
+    return;
+  }
+
+  initFuenteHeroAnimations();
+  initFuenteSectionAnimations();
+  initFuenteFooterAnimations();
+}
+
+function initFuenteHeroAnimations(): void {
+  const hero = document.querySelector('[data-fuente-hero]');
+  if (!hero) return;
+
+  // Header fade down
+  const header = document.querySelector('header');
+  if (header) {
+    gsap.from(header, {
+      y: -30,
+      opacity: 0,
+      duration: 0.8,
+      ease: 'power2.out',
+      force3D: true,
+    });
+  }
+
+  // Title slide from left
+  const title = hero.querySelector('[data-fuente-title]');
+  if (title) {
+    gsap.from(title, {
+      x: -80,
+      opacity: 0,
+      duration: 0.8,
+      ease: 'power3.out',
+      force3D: true,
+    });
+  }
+
+  // Hero items fade up with stagger
+  const items = hero.querySelectorAll('[data-fuente-hero-item]');
+  if (items.length) {
+    gsap.from(items, {
+      y: 30,
+      opacity: 0,
+      duration: 0.6,
+      stagger: 0.15,
+      delay: 0.2,
+      ease: 'power2.out',
+      force3D: true,
+    });
+  }
+}
+
+function initFuenteSectionAnimations(): void {
+  const sections = document.querySelectorAll('[data-fuente-section]');
+
+  sections.forEach((section) => {
+    // Section title animation
+    const title = section.querySelector('[data-fuente-section-title]');
+    if (title) {
+      gsap.from(title, {
+        x: -30,
+        opacity: 0,
+        duration: 0.6,
+        ease: 'power3.out',
+        force3D: true,
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 80%',
+          once: true,
+        },
+      });
+    }
+
+    // Description content animation
+    const descContent = section.querySelector('[data-fuente-desc-content]');
+    if (descContent) {
+      gsap.from(descContent, {
+        y: 30,
+        opacity: 0,
+        duration: 0.6,
+        ease: 'power2.out',
+        force3D: true,
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 80%',
+          once: true,
+        },
+      });
+    }
+
+    // Stat cards scale in with stagger
+    const statCards = section.querySelectorAll('[data-fuente-stat-card]');
+    if (statCards.length) {
+      gsap.from(statCards, {
+        scale: 0.9,
+        opacity: 0,
+        duration: 0.5,
+        stagger: 0.1,
+        ease: 'back.out(1.2)',
+        force3D: true,
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 70%',
+          once: true,
+        },
+      });
+    }
+
+    // Document rows slide in with stagger
+    const docRows = section.querySelectorAll('[data-fuente-doc-row]');
+    if (docRows.length) {
+      gsap.from(docRows, {
+        x: -30,
+        opacity: 0,
+        duration: 0.5,
+        stagger: 0.08,
+        ease: 'power2.out',
+        force3D: true,
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 70%',
+          once: true,
+        },
+      });
+    }
+
+    // Casos description
+    const casosDesc = section.querySelector('[data-fuente-casos-desc]');
+    if (casosDesc) {
+      gsap.from(casosDesc, {
+        y: 20,
+        opacity: 0,
+        duration: 0.5,
+        ease: 'power2.out',
+        force3D: true,
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 75%',
+          once: true,
+        },
+      });
+    }
+
+    // Caso cards scale in with stagger
+    const casoCards = section.querySelectorAll('[data-fuente-caso-card]');
+    if (casoCards.length) {
+      gsap.from(casoCards, {
+        scale: 0.9,
+        opacity: 0,
+        duration: 0.5,
+        stagger: 0.15,
+        ease: 'back.out(1.2)',
+        force3D: true,
+        scrollTrigger: {
+          trigger: section,
+          start: 'top 65%',
+          once: true,
+        },
+      });
+    }
+  });
+}
+
+function initFuenteFooterAnimations(): void {
+  const footer = document.querySelector('[data-fuente-footer]');
+  if (!footer) return;
+
+  const items = footer.querySelectorAll('[data-fuente-footer-item]');
   if (items.length) {
     gsap.from(items, {
       y: 30,

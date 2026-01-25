@@ -1,0 +1,83 @@
+---
+import LandingLayout from '../../../layouts/LandingLayout.astro';
+import FuenteHero from '../../../components/sections/FuenteHero.astro';
+import FuenteDescSection from '../../../components/sections/FuenteDescSection.astro';
+import FuenteDocsSection from '../../../components/sections/FuenteDocsSection.astro';
+import FuenteCasosSection from '../../../components/sections/FuenteCasosSection.astro';
+import FuenteFooter from '../../../components/sections/FuenteFooter.astro';
+import { translations } from '../../../i18n/translations';
+
+export function getStaticPaths() {
+  const t = translations.en.documentosPage.fuenteDetail;
+
+  return [
+    { params: { source: 'uco' }, props: { key: 'uco', icon: 'shield', title: translations.en.documentosPage.fuentes.uco.title } },
+    { params: { source: 'court-orders' }, props: { key: 'autos', icon: 'scale', title: translations.en.documentosPage.fuentes.autos.title } },
+    { params: { source: 'igae' }, props: { key: 'igae', icon: 'file-search', title: translations.en.documentosPage.fuentes.igae.title } },
+    { params: { source: 'testimonies' }, props: { key: 'testimonios', icon: 'mic', title: translations.en.documentosPage.fuentes.testimonios.title } },
+  ];
+}
+
+const { key, icon, title } = Astro.props;
+const t = translations.en.documentosPage.fuenteDetail;
+const fuente = t[key as keyof typeof t] as {
+  slug: string;
+  subtitle: string;
+  aboutText: string;
+  stats: Array<{ label: string; value: string }>;
+  documents: Array<{ title: string; meta: string; badge?: string }>;
+  relatedCases: Array<{ tag: string; title: string; description: string; href: string }>;
+};
+---
+
+<LandingLayout title={`${title} - Documents - PSOE Scandal`}>
+  <FuenteHero
+    backLink={t.backLink}
+    backHref="/en/documents"
+    icon={icon}
+    tag={t.tag}
+    title={title}
+    subtitle={fuente.subtitle}
+  />
+
+  <FuenteDescSection
+    aboutTitle={t.aboutTitle}
+    aboutText={fuente.aboutText}
+    stats={fuente.stats}
+  />
+
+  <FuenteDocsSection
+    header={t.docsHeader}
+    documents={fuente.documents}
+  />
+
+  <FuenteCasosSection
+    header={t.casosHeader}
+    description={t.casosDesc}
+    cases={fuente.relatedCases}
+  />
+
+  <FuenteFooter
+    text={t.footerText}
+    links={t.footerLinks}
+  />
+</LandingLayout>
+
+<script>
+  import { initFuenteDetailPageAnimations, cleanupAnimations } from '../../../scripts/animations';
+
+  // Initialize animations on page load
+  document.addEventListener('DOMContentLoaded', () => {
+    initFuenteDetailPageAnimations();
+  });
+
+  // Cleanup on page navigation (for View Transitions)
+  document.addEventListener('astro:before-swap', () => {
+    cleanupAnimations();
+  });
+
+  // Re-initialize on page navigation
+  document.addEventListener('astro:after-swap', () => {
+    initFuenteDetailPageAnimations();
+  });
+</script>

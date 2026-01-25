@@ -1,0 +1,37 @@
+---
+import ButtonOutline from '../ui/ButtonOutline.astro';
+
+interface Link {
+  text: string;
+  href: string;
+}
+
+interface Props {
+  text: string;
+  links: Link[];
+}
+
+const { text, links } = Astro.props;
+---
+
+<section
+  class="bg-trama-red px-5 md:px-14 py-10 md:py-14 w-full flex flex-col items-center gap-5 md:gap-6"
+  data-fuente-footer
+>
+  <!-- Text -->
+  <p
+    class="text-trama-red-light text-xs md:text-sm font-medium text-center"
+    data-fuente-footer-item
+  >
+    {text}
+  </p>
+
+  <!-- Links -->
+  <div class="flex flex-col md:flex-row flex-wrap items-center justify-center gap-3 md:gap-6 w-full md:w-auto" data-fuente-footer-item>
+    {links.map((link) => (
+      <ButtonOutline href={link.href} variant="white">
+        {link.text}
+      </ButtonOutline>
+    ))}
+  </div>
+</section>

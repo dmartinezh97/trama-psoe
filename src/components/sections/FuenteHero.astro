@@ -1,0 +1,63 @@
+---
+interface Props {
+  backLink: string;
+  backHref: string;
+  icon: string;
+  tag: string;
+  title: string;
+  subtitle: string;
+}
+
+const { backLink, backHref, icon, tag, title, subtitle } = Astro.props;
+
+const iconMap: Record<string, string> = {
+  shield: `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/></svg>`,
+  scale: `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m16 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="m2 16 3-8 3 8c-.87.65-1.92 1-3 1s-2.13-.35-3-1Z"/><path d="M7 21h10"/><path d="M12 3v18"/><path d="M3 7h2c2 0 5-1 7-2 2 1 5 2 7 2h2"/></svg>`,
+  'file-search': `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M4.268 21a2 2 0 0 0 1.727 1H18a2 2 0 0 0 2-2V7l-5-5H6a2 2 0 0 0-2 2v3"/><path d="m9 18-1.5-1.5"/><circle cx="5" cy="14" r="3"/></svg>`,
+  mic: `<svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2a3 3 0 0 0-3 3v7a3 3 0 0 0 6 0V5a3 3 0 0 0-3-3Z"/><path d="M19 10v2a7 7 0 0 1-14 0v-2"/><line x1="12" x2="12" y1="19" y2="22"/></svg>`,
+};
+
+const arrowLeftIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 19-7-7 7-7"/><path d="M19 12H5"/></svg>`;
+---
+
+<section
+  class="bg-white px-5 md:px-14 py-12 md:py-20 w-full mt-18"
+  data-fuente-hero
+>
+  <div class="flex flex-col gap-6 md:gap-8">
+    <!-- Back Link -->
+    <a
+      href={backHref}
+      class="inline-flex items-center gap-2 text-trama-red hover:text-trama-red/80 transition-colors w-fit"
+      data-fuente-hero-item
+    >
+      <span set:html={arrowLeftIcon} />
+      <span class="text-sm font-semibold">{backLink}</span>
+    </a>
+
+    <!-- Hero Content -->
+    <div class="flex flex-col md:flex-row items-start md:items-center gap-6 md:gap-8" data-fuente-hero-item>
+      <!-- Icon Container -->
+      <div class="flex items-center justify-center w-16 h-16 md:w-20 md:h-20 bg-trama-red rounded-2xl shrink-0">
+        <div class="text-white" set:html={iconMap[icon] || iconMap.shield} />
+      </div>
+
+      <!-- Text Content -->
+      <div class="flex flex-col gap-2 md:gap-3">
+        <!-- Tag -->
+        <span class="text-trama-red text-[10px] md:text-xs font-bold tracking-[2px]">{tag}</span>
+
+        <!-- Title -->
+        <h1
+          class="text-trama-950 font-secondary text-4xl md:text-6xl font-black tracking-[-2px] md:tracking-[-3px] leading-none"
+          data-fuente-title
+        >
+          {title}
+        </h1>
+
+        <!-- Subtitle -->
+        <p class="text-trama-500 text-base md:text-xl font-medium">{subtitle}</p>
+      </div>
+    </div>
+  </div>
+</section>

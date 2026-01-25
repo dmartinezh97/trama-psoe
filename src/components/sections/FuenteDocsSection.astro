@@ -1,0 +1,42 @@
+---
+import DocumentRow from '../ui/DocumentRow.astro';
+
+interface Document {
+  title: string;
+  meta: string;
+  badge?: string;
+}
+
+interface Props {
+  header: string;
+  documents: Document[];
+}
+
+const { header, documents } = Astro.props;
+
+const filesIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 7h-3a2 2 0 0 1-2-2V2"/><path d="M9 18a2 2 0 0 1-2-2V4a2 2 0 0 1 2-2h7l4 4v10a2 2 0 0 1-2 2Z"/><path d="M3 7.6v12.8A1.6 1.6 0 0 0 4.6 22h9.8"/></svg>`;
+---
+
+<section
+  class="bg-white px-5 md:px-14 py-10 md:py-14 w-full"
+  data-fuente-section
+>
+  <div class="flex flex-col gap-6 md:gap-8">
+    <!-- Section Header -->
+    <div class="flex items-center gap-4" data-fuente-section-title>
+      <div class="text-trama-red" set:html={filesIcon} />
+      <h2 class="text-trama-950 font-secondary text-sm font-bold tracking-[2px]">{header}</h2>
+    </div>
+
+    <!-- Documents List -->
+    <div class="flex flex-col gap-4">
+      {documents.map((doc) => (
+        <DocumentRow
+          title={doc.title}
+          meta={doc.meta}
+          badge={doc.badge}
+        />
+      ))}
+    </div>
+  </div>
+</section>

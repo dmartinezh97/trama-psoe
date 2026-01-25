@@ -1,0 +1,33 @@
+---
+interface Props {
+  tag: string;
+  title: string;
+  description: string;
+  href: string;
+}
+
+const { tag, title, description, href } = Astro.props;
+
+const arrowIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14"/><path d="m12 5 7 7-7 7"/></svg>`;
+---
+
+<a
+  href={href}
+  class="group block bg-trama-900 p-5 md:p-6 flex flex-col gap-3 md:gap-4 hover:bg-trama-800 transition-colors"
+  data-fuente-caso-card
+>
+  <!-- Tag -->
+  <span class="text-trama-red text-[11px] font-bold tracking-[2px]">{tag}</span>
+
+  <!-- Title -->
+  <h4 class="font-secondary text-xl md:text-2xl font-black text-white">{title}</h4>
+
+  <!-- Description -->
+  <p class="text-trama-400 text-sm leading-relaxed">{description}</p>
+
+  <!-- Link -->
+  <div class="flex items-center gap-2 text-trama-red group-hover:gap-3 transition-all">
+    <span class="text-sm font-semibold">Ver caso</span>
+    <span set:html={arrowIcon} />
+  </div>
+</a>

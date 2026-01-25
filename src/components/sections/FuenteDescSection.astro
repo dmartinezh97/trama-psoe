@@ -1,0 +1,44 @@
+---
+interface Stat {
+  label: string;
+  value: string;
+}
+
+interface Props {
+  aboutTitle: string;
+  aboutText: string;
+  stats: Stat[];
+}
+
+const { aboutTitle, aboutText, stats } = Astro.props;
+---
+
+<section
+  class="bg-trama-50 px-5 md:px-14 py-10 md:py-14 w-full"
+  data-fuente-section
+>
+  <div class="flex flex-col lg:flex-row gap-8 lg:gap-14">
+    <!-- Left: Description -->
+    <div class="flex flex-col gap-4 md:gap-6 flex-1" data-fuente-desc-content>
+      <h2 class="font-secondary text-xl md:text-2xl font-extrabold text-trama-950">
+        {aboutTitle}
+      </h2>
+      <div class="text-trama-600 text-sm md:text-base leading-relaxed whitespace-pre-line">
+        {aboutText}
+      </div>
+    </div>
+
+    <!-- Right: Stats -->
+    <div class="flex flex-col gap-4 w-full lg:w-[360px] shrink-0">
+      {stats.map((stat) => (
+        <div
+          class="bg-white border border-trama-200 p-5 md:p-6 flex flex-col gap-2"
+          data-fuente-stat-card
+        >
+          <span class="text-trama-500 text-[11px] font-bold tracking-[2px]">{stat.label}</span>
+          <span class="font-secondary text-2xl md:text-[28px] font-black text-trama-950">{stat.value}</span>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,32 @@
+---
+interface Props {
+  title: string;
+  meta: string;
+  badge?: string;
+}
+
+const { title, meta, badge } = Astro.props;
+
+const fileIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>`;
+---
+
+<div
+  class="flex items-center gap-4 md:gap-6 p-4 md:p-6 bg-trama-50 border border-trama-200 w-full"
+  data-fuente-doc-row
+>
+  <!-- Icon -->
+  <div class="text-trama-red shrink-0" set:html={fileIcon} />
+
+  <!-- Content -->
+  <div class="flex flex-col gap-1 flex-1 min-w-0">
+    <h4 class="font-secondary text-sm md:text-base font-bold text-trama-950 truncate">{title}</h4>
+    <p class="text-trama-500 text-xs md:text-sm">{meta}</p>
+  </div>
+
+  <!-- Badge (optional) -->
+  {badge && (
+    <span class="shrink-0 px-2 md:px-3 py-1 bg-trama-red text-white text-[10px] md:text-xs font-bold tracking-wider rounded-sm">
+      {badge}
+    </span>
+  )}
+</div>

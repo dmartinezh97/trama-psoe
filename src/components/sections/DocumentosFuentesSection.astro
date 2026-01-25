@@ -5,6 +5,7 @@ interface Source {
   icon: string;
   title: string;
   description: string;
+  href?: string;
 }
 
 interface Props {
@@ -35,6 +36,7 @@ const sectionIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="
           icon={source.icon}
           title={source.title}
           description={source.description}
+          href={source.href}
         />
       ))}
     </div>
