@@ -9,19 +9,19 @@ const { tag, title, subtitle } = Astro.props;
 ---
 
 <section
-  class="bg-white px-14 py-20 w-full mt-18"
+  class="bg-white px-5 md:px-14 py-12 md:py-20 w-full mt-18"
   data-documentos-hero
 >
-  <div class="flex flex-col gap-6">
+  <div class="flex flex-col gap-4 md:gap-6">
     <!-- Tag -->
     <div class="flex items-center gap-4" data-documentos-hero-item>
       <span class="w-3 h-3 rounded-full bg-trama-red"></span>
-      <span class="text-trama-red font-bold text-[12px] tracking-[2px] uppercase">{tag}</span>
+      <span class="text-trama-red font-bold text-[10px] md:text-[12px] tracking-[2px] uppercase">{tag}</span>
     </div>
 
     <!-- Title -->
     <h1
-      class="text-trama-950 font-secondary text-[96px] font-black tracking-[-4px] leading-none"
+      class="text-trama-950 font-secondary text-[48px] md:text-[96px] font-black tracking-[-2px] md:tracking-[-4px] leading-none"
       data-documentos-title
     >
       {title}
@@ -29,7 +29,7 @@ const { tag, title, subtitle } = Astro.props;
 
     <!-- Subtitle -->
     <p
-      class="text-trama-600 font-secondary text-lg leading-relaxed max-w-[700px]"
+      class="text-trama-600 font-secondary text-sm md:text-lg leading-relaxed max-w-[700px]"
       data-documentos-hero-item
     >
       {subtitle}
