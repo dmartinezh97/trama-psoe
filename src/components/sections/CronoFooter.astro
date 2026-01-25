@@ -16,17 +16,17 @@ const { updateText, casesHref, casesText, accusedHref, accusedText, documentsHre
   class="w-full bg-trama-red"
   data-crono-footer
 >
-  <div class="max-w-[1440px] mx-auto px-14 py-14 flex flex-col items-center gap-6">
+  <div class="max-w-[1440px] mx-auto px-6 py-6 md:px-14 md:py-14 flex flex-col items-center gap-6">
     <span
       class="font-secondary text-sm font-medium text-trama-red-light"
       data-crono-footer-item
     >
       {updateText}
     </span>
-    <div class="flex gap-6" data-crono-footer-item>
+    <div class="flex flex-col md:flex-row gap-3 md:gap-6 w-full md:w-auto" data-crono-footer-item>
       <a
         href={casesHref}
-        class="inline-flex items-center gap-2 px-6 py-3 border-2 border-white text-white font-secondary text-sm font-bold tracking-[1px] hover:bg-white hover:text-trama-red transition-colors"
+        class="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-white text-white font-secondary text-sm font-bold tracking-[1px] hover:bg-white hover:text-trama-red transition-colors w-full md:w-auto"
       >
         {casesText}
         <svg
@@ -46,7 +46,7 @@ const { updateText, casesHref, casesText, accusedHref, accusedText, documentsHre
       </a>
       <a
         href={accusedHref}
-        class="inline-flex items-center gap-2 px-6 py-3 border-2 border-white text-white font-secondary text-sm font-bold tracking-[1px] hover:bg-white hover:text-trama-red transition-colors"
+        class="inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-white text-white font-secondary text-sm font-bold tracking-[1px] hover:bg-white hover:text-trama-red transition-colors w-full md:w-auto"
       >
         {accusedText}
         <svg
@@ -66,7 +66,7 @@ const { updateText, casesHref, casesText, accusedHref, accusedText, documentsHre
       </a>
       <a
         href={documentsHref}
-        class="inline-flex items-center gap-2 px-6 py-3 border-2 border-white text-white font-secondary text-sm font-bold tracking-[1px] hover:bg-white hover:text-trama-red transition-colors"
+        class="hidden md:inline-flex items-center justify-center gap-2 px-6 py-3 border-2 border-white text-white font-secondary text-sm font-bold tracking-[1px] hover:bg-white hover:text-trama-red transition-colors"
       >
         {documentsText}
         <svg

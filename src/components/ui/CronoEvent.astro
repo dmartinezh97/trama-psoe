@@ -21,7 +21,7 @@ const isDark = variant === 'dark';
 
 // Styles based on variant and highlighted state
 const containerStyles = highlighted
-  ? 'bg-trama-red px-8 py-6'
+  ? 'bg-trama-red px-4 py-4 md:px-8 md:py-6'
   : '';
 
 const dateStyles = highlighted
@@ -41,7 +41,7 @@ const descStyles = highlighted
 
 <div
   class:list={[
-    "flex gap-8 w-full",
+    "flex flex-col md:flex-row gap-2 md:gap-8 w-full",
     containerStyles,
     className,
   ]}
@@ -49,7 +49,7 @@ const descStyles = highlighted
 >
   <span
     class:list={[
-      "font-secondary text-xs font-bold tracking-[2px] shrink-0 w-28",
+      "font-secondary text-xs font-bold tracking-[2px] shrink-0 md:w-28",
       dateStyles,
     ]}
   >
