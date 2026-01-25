@@ -15,7 +15,7 @@ const { disclaimer, links } = Astro.props;
 ---
 
 <section
-  class="bg-trama-red px-14 py-14 w-full flex flex-col items-center gap-6"
+  class="bg-trama-red px-6 py-6 lg:px-14 lg:py-14 w-full flex flex-col items-center gap-6"
   data-imputados-footer
 >
   <!-- Disclaimer -->
@@ -27,9 +27,9 @@ const { disclaimer, links } = Astro.props;
   </p>
 
   <!-- Links -->
-  <div class="flex items-center gap-6" data-imputados-footer-item>
+  <div class="flex flex-col lg:flex-row items-center gap-6 w-full lg:w-auto" data-imputados-footer-item>
     {links.map((link) => (
-      <ButtonOutline href={link.href} variant="white">
+      <ButtonOutline href={link.href} variant="white" class="w-full lg:w-auto">
         {link.text}
       </ButtonOutline>
     ))}
