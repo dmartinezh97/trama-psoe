@@ -8,6 +8,7 @@ import DocumentosFooter from '../../../components/sections/DocumentosFooter.astr
 import { translations } from '../../../i18n/translations';
 
 const t = translations.en.documentosPage;
+const seo = translations.en.seo.documentos;
 
 const sources = [
   { icon: 'shield', href: '/en/documents/uco', ...t.fuentes.uco },
@@ -25,7 +26,7 @@ const tribunales = [
 ];
 ---
 
-<LandingLayout title="Documents - PSOE Scandal">
+<LandingLayout title={seo.title} description={seo.description}>
   <DocumentosHero
     tag={t.hero.tag}
     title={t.hero.title}

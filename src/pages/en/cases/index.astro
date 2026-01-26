@@ -7,9 +7,10 @@ import { translations } from '../../../i18n/translations';
 
 const t = translations.en.casesPage;
 const labels = t.labels;
+const seo = translations.en.seo.casos;
 ---
 
-<LandingLayout title="Cases - The PSOE Scandal">
+<LandingLayout title={seo.title} description={seo.description}>
   <CasesHero
     tagline={t.hero.tagline}
     title={t.hero.title}

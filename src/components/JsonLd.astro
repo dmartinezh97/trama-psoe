@@ -1,0 +1,75 @@
+---
+import { getLocaleFromUrl } from '../i18n/utils';
+import type { Locale } from '../i18n/translations';
+
+interface Props {
+  title: string;
+  description: string;
+}
+
+const { title, description } = Astro.props;
+
+const locale = getLocaleFromUrl(Astro.url) as Locale;
+const siteUrl = 'https://trama-psoe.com';
+const currentUrl = `${siteUrl}${Astro.url.pathname}`;
+
+// Organization schema
+const organizationSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'Organization',
+  name: locale === 'es' ? 'La Trama PSOE' : 'The PSOE Scandal',
+  url: siteUrl,
+  description: locale === 'es'
+    ? 'Documentación sobre los casos judiciales conocidos como "Trama PSOE"'
+    : 'Documentation on the judicial cases known as "PSOE Scandal"',
+};
+
+// WebSite schema with search action
+const websiteSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebSite',
+  name: locale === 'es' ? 'La Trama PSOE' : 'The PSOE Scandal',
+  url: siteUrl,
+  inLanguage: locale === 'es' ? 'es-ES' : 'en-US',
+  description: description,
+};
+
+// Breadcrumb schema
+const pathSegments = Astro.url.pathname.split('/').filter(Boolean);
+const breadcrumbItems = pathSegments.map((segment, index) => {
+  const path = '/' + pathSegments.slice(0, index + 1).join('/');
+  const name = segment.charAt(0).toUpperCase() + segment.slice(1).replace(/-/g, ' ');
+  return {
+    '@type': 'ListItem',
+    position: index + 1,
+    name: name,
+    item: `${siteUrl}${path}`,
+  };
+});
+
+const breadcrumbSchema = breadcrumbItems.length > 0 ? {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: breadcrumbItems,
+} : null;
+
+// WebPage schema
+const webPageSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'WebPage',
+  name: title,
+  description: description,
+  url: currentUrl,
+  inLanguage: locale === 'es' ? 'es-ES' : 'en-US',
+  isPartOf: {
+    '@type': 'WebSite',
+    name: locale === 'es' ? 'La Trama PSOE' : 'The PSOE Scandal',
+    url: siteUrl,
+  },
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)} />
+<script type="application/ld+json" set:html={JSON.stringify(websiteSchema)} />
+{breadcrumbSchema && <script type="application/ld+json" set:html={JSON.stringify(breadcrumbSchema)} />}
+<script type="application/ld+json" set:html={JSON.stringify(webPageSchema)} />

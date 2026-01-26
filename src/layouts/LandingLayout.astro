@@ -3,12 +3,25 @@ import '../styles/global.css';
 import { getLocaleFromUrl } from '../i18n/utils';
 import type { Locale } from '../i18n/translations';
 import Header from '../components/Header.astro';
+import SEO from '../components/SEO.astro';
+import JsonLd from '../components/JsonLd.astro';
 
 interface Props {
   title: string;
+  description?: string;
+  image?: string;
+  type?: 'website' | 'article';
+  noindex?: boolean;
 }
 
-const { title } = Astro.props;
+const {
+  title,
+  description = 'Documentación sobre los casos judiciales conocidos como "Trama PSOE". Toda la información procede de fuentes públicas.',
+  image,
+  type = 'website',
+  noindex = false
+} = Astro.props;
+
 const locale = getLocaleFromUrl(Astro.url) as Locale;
 ---
 
@@ -18,8 +31,26 @@ const locale = getLocaleFromUrl(Astro.url) as Locale;
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta name="generator" content={Astro.generator} />
-    <meta name="description" content="Documentación sobre los casos judiciales conocidos como 'Trama PSOE'. Toda la información procede de fuentes públicas." />
+    <meta name="description" content={description} />
     <title>{title}</title>
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
+
+    <!-- SEO Component -->
+    <SEO
+      title={title}
+      description={description}
+      image={image}
+      type={type}
+      noindex={noindex}
+    />
+
+    <!-- JSON-LD Structured Data -->
+    <JsonLd title={title} description={description} />
   </head>
   <body class="min-h-screen bg-trama-950 text-trama-white">
     <Header />

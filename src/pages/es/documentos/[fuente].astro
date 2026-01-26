@@ -7,18 +7,24 @@ import FuenteCasosSection from '../../../components/sections/FuenteCasosSection.
 import FuenteFooter from '../../../components/sections/FuenteFooter.astro';
 import { translations } from '../../../i18n/translations';
 
-export function getStaticPaths() {
-  const t = translations.es.documentosPage.fuenteDetail;
+const seoKeys: Record<string, 'documentosUco' | 'documentosAutos' | 'documentosIgae' | 'documentosTestimonios'> = {
+  uco: 'documentosUco',
+  autos: 'documentosAutos',
+  igae: 'documentosIgae',
+  testimonios: 'documentosTestimonios',
+};
 
+export function getStaticPaths() {
   return [
-    { params: { fuente: 'uco' }, props: { key: 'uco', icon: 'shield', title: translations.es.documentosPage.fuentes.uco.title } },
-    { params: { fuente: 'autos' }, props: { key: 'autos', icon: 'scale', title: translations.es.documentosPage.fuentes.autos.title } },
-    { params: { fuente: 'igae' }, props: { key: 'igae', icon: 'file-search', title: translations.es.documentosPage.fuentes.igae.title } },
-    { params: { fuente: 'testimonios' }, props: { key: 'testimonios', icon: 'mic', title: translations.es.documentosPage.fuentes.testimonios.title } },
+    { params: { fuente: 'uco' }, props: { key: 'uco', icon: 'shield', title: translations.es.documentosPage.fuentes.uco.title, seoKey: 'documentosUco' } },
+    { params: { fuente: 'autos' }, props: { key: 'autos', icon: 'scale', title: translations.es.documentosPage.fuentes.autos.title, seoKey: 'documentosAutos' } },
+    { params: { fuente: 'igae' }, props: { key: 'igae', icon: 'file-search', title: translations.es.documentosPage.fuentes.igae.title, seoKey: 'documentosIgae' } },
+    { params: { fuente: 'testimonios' }, props: { key: 'testimonios', icon: 'mic', title: translations.es.documentosPage.fuentes.testimonios.title, seoKey: 'documentosTestimonios' } },
   ];
 }
 
-const { key, icon, title } = Astro.props;
+const { key, icon, title, seoKey } = Astro.props;
+const seo = translations.es.seo[seoKey as keyof typeof translations.es.seo];
 const t = translations.es.documentosPage.fuenteDetail;
 const fuente = t[key as keyof typeof t] as {
   slug: string;
@@ -30,7 +36,7 @@ const fuente = t[key as keyof typeof t] as {
 };
 ---
 
-<LandingLayout title={`${title} - Documentos - Trama PSOE`}>
+<LandingLayout title={seo.title} description={seo.description}>
   <FuenteHero
     backLink={t.backLink}
     backHref="/es/documentos"

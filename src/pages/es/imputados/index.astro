@@ -9,9 +9,10 @@ import ImputadosFooter from '../../../components/sections/ImputadosFooter.astro'
 import { translations } from '../../../i18n/translations';
 
 const t = translations.es.imputadosPage;
+const seo = translations.es.seo.imputados;
 ---
 
-<LandingLayout title="Imputados - Trama PSOE">
+<LandingLayout title={seo.title} description={seo.description}>
   <ImputadosHero
     tag={t.hero.tag}
     title={t.hero.title}

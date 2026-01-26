@@ -1,0 +1,88 @@
+---
+import { getLocaleFromUrl } from '../i18n/utils';
+import type { Locale } from '../i18n/translations';
+
+interface Props {
+  title: string;
+  description: string;
+  image?: string;
+  type?: 'website' | 'article';
+  noindex?: boolean;
+}
+
+const { title, description, image = '/og-image.png', type = 'website', noindex = false } = Astro.props;
+
+const locale = getLocaleFromUrl(Astro.url) as Locale;
+const alternateLocale = locale === 'es' ? 'en' : 'es';
+
+// Build canonical and alternate URLs
+const siteUrl = 'https://trama-psoe.com';
+const currentPath = Astro.url.pathname;
+const canonicalUrl = `${siteUrl}${currentPath}`;
+
+// Map Spanish paths to English equivalents and vice versa
+const pathMappings: Record<string, string> = {
+  '/es/': '/en/',
+  '/en/': '/es/',
+  '/es/casos': '/en/cases',
+  '/en/cases': '/es/casos',
+  '/es/cronologia': '/en/timeline',
+  '/en/timeline': '/es/cronologia',
+  '/es/imputados': '/en/defendants',
+  '/en/defendants': '/es/imputados',
+  '/es/documentos': '/en/documents',
+  '/en/documents': '/es/documentos',
+  '/es/documentos/uco': '/en/documents/uco',
+  '/en/documents/uco': '/es/documentos/uco',
+  '/es/documentos/autos': '/en/documents/court-orders',
+  '/en/documents/court-orders': '/es/documentos/autos',
+  '/es/documentos/igae': '/en/documents/igae',
+  '/en/documents/igae': '/es/documentos/igae',
+  '/es/documentos/testimonios': '/en/documents/testimonies',
+  '/en/documents/testimonies': '/es/documentos/testimonios',
+};
+
+// Find alternate URL
+let alternatePath = currentPath;
+for (const [from, to] of Object.entries(pathMappings)) {
+  if (currentPath === from || currentPath === `${from}/` || currentPath.startsWith(from)) {
+    alternatePath = currentPath.replace(from, to);
+    break;
+  }
+}
+
+const alternateUrl = `${siteUrl}${alternatePath}`;
+const imageUrl = image.startsWith('http') ? image : `${siteUrl}${image}`;
+
+// Locale mappings for Open Graph
+const ogLocale = locale === 'es' ? 'es_ES' : 'en_US';
+const ogAlternateLocale = locale === 'es' ? 'en_US' : 'es_ES';
+---
+
+<!-- Canonical URL -->
+<link rel="canonical" href={canonicalUrl} />
+
+<!-- Hreflang tags for i18n -->
+<link rel="alternate" hreflang={locale} href={canonicalUrl} />
+<link rel="alternate" hreflang={alternateLocale} href={alternateUrl} />
+<link rel="alternate" hreflang="x-default" href={`${siteUrl}/es/`} />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content={type} />
+<meta property="og:url" content={canonicalUrl} />
+<meta property="og:title" content={title} />
+<meta property="og:description" content={description} />
+<meta property="og:image" content={imageUrl} />
+<meta property="og:locale" content={ogLocale} />
+<meta property="og:locale:alternate" content={ogAlternateLocale} />
+<meta property="og:site_name" content={locale === 'es' ? 'La Trama PSOE' : 'The PSOE Scandal'} />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content={canonicalUrl} />
+<meta name="twitter:title" content={title} />
+<meta name="twitter:description" content={description} />
+<meta name="twitter:image" content={imageUrl} />
+
+<!-- Robots -->
+{noindex && <meta name="robots" content="noindex, nofollow" />}

@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://trama-psoe.com/sitemap-index.xml

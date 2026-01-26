@@ -6,9 +6,10 @@ import CronoFooter from '../../../components/sections/CronoFooter.astro';
 import { translations } from '../../../i18n/translations';
 
 const t = translations.es.timelinePage;
+const seo = translations.es.seo.cronologia;
 ---
 
-<LandingLayout title="Cronología - Trama PSOE">
+<LandingLayout title={seo.title} description={seo.description}>
   <CronoHero
     bgText={t.hero.bgText}
     tag={t.hero.tag}

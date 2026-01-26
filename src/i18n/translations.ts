@@ -1,5 +1,43 @@
 export const translations = {
   es: {
+    seo: {
+      home: {
+        title: 'La Trama PSOE | El mayor escándalo de corrupción del Gobierno Sánchez',
+        description: 'Documentación completa sobre los casos judiciales: Caso Koldo, Begoña Gómez, Hidrocarburos y David Sánchez. +30 imputados, 54M€ investigados.',
+      },
+      casos: {
+        title: 'Los Casos | Trama PSOE - 4 investigaciones interconectadas',
+        description: 'Caso Koldo, Caso Begoña Gómez, Caso Hidrocarburos y Caso David Sánchez. Contratos de mascarillas, tráfico de influencias y malversación.',
+      },
+      cronologia: {
+        title: 'Cronología | Trama PSOE - Del estallido a los juicios (2024-2026)',
+        description: 'Línea temporal completa desde la Operación Delorme (febrero 2024) hasta los juicios de 2026. Todos los acontecimientos clave.',
+      },
+      imputados: {
+        title: 'Imputados | Trama PSOE - +30 acusados en 4 casos',
+        description: 'Ábalos, Koldo García, Begoña Gómez, David Sánchez, Santos Cerdán y más. Quién es quién en la mayor trama de corrupción.',
+      },
+      documentos: {
+        title: 'Documentos | Trama PSOE - Fuentes oficiales y judiciales',
+        description: 'Informes UCO, autos judiciales, informe IGAE y testimonios. Toda la documentación pública de los casos.',
+      },
+      documentosUco: {
+        title: 'Informes UCO | Documentos Trama PSOE',
+        description: 'Informes de la Unidad Central Operativa de la Guardia Civil. +2.400 páginas de investigación sobre comisiones y pagos.',
+      },
+      documentosAutos: {
+        title: 'Autos Judiciales | Documentos Trama PSOE',
+        description: 'Resoluciones del Tribunal Supremo, Audiencia Nacional y juzgados de instrucción. Autos de imputación y prisión.',
+      },
+      documentosIgae: {
+        title: 'Informe IGAE | Documentos Trama PSOE',
+        description: 'Informe de 303 páginas de la Intervención General del Estado sobre contratos irregulares durante la pandemia.',
+      },
+      documentosTestimonios: {
+        title: 'Testimonios | Documentos Trama PSOE',
+        description: 'Declaraciones de Aldama, Koldo García, Begoña Gómez y otros implicados ante los tribunales.',
+      },
+    },
     nav: {
       home: 'Inicio',
       about: 'Sobre nosotros',
@@ -557,6 +595,44 @@ export const translations = {
     },
   },
   en: {
+    seo: {
+      home: {
+        title: 'The PSOE Scandal | Spain\'s Biggest Government Corruption Case',
+        description: 'Complete documentation on the judicial cases: Koldo Case, Begoña Gómez, Hydrocarbons, and David Sánchez. +30 accused, €54M under investigation.',
+      },
+      casos: {
+        title: 'The Cases | PSOE Scandal - 4 Interconnected Investigations',
+        description: 'Koldo Case, Begoña Gómez Case, Hydrocarbons Case, and David Sánchez Case. Mask contracts, influence peddling, and embezzlement.',
+      },
+      cronologia: {
+        title: 'Timeline | PSOE Scandal - From Outbreak to Trials (2024-2026)',
+        description: 'Complete timeline from Operation Delorme (February 2024) to the 2026 trials. All key events documented.',
+      },
+      imputados: {
+        title: 'Defendants | PSOE Scandal - +30 Accused in 4 Cases',
+        description: 'Ábalos, Koldo García, Begoña Gómez, David Sánchez, Santos Cerdán and more. Who\'s who in Spain\'s biggest corruption scandal.',
+      },
+      documentos: {
+        title: 'Documents | PSOE Scandal - Official and Judicial Sources',
+        description: 'UCO reports, court orders, IGAE report, and testimonies. All public documentation from the cases.',
+      },
+      documentosUco: {
+        title: 'UCO Reports | PSOE Scandal Documents',
+        description: 'Reports from the Civil Guard Central Operative Unit. +2,400 pages of investigation on commissions and payments.',
+      },
+      documentosAutos: {
+        title: 'Court Orders | PSOE Scandal Documents',
+        description: 'Resolutions from the Supreme Court, National Court, and courts of instruction. Indictment and detention orders.',
+      },
+      documentosIgae: {
+        title: 'IGAE Report | PSOE Scandal Documents',
+        description: '303-page report from the General State Intervention on irregular contracts during the pandemic.',
+      },
+      documentosTestimonios: {
+        title: 'Testimonies | PSOE Scandal Documents',
+        description: 'Statements from Aldama, Koldo García, Begoña Gómez, and other implicated individuals before the courts.',
+      },
+    },
     nav: {
       home: 'Home',
       about: 'About',

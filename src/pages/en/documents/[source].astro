@@ -8,17 +8,16 @@ import FuenteFooter from '../../../components/sections/FuenteFooter.astro';
 import { translations } from '../../../i18n/translations';
 
 export function getStaticPaths() {
-  const t = translations.en.documentosPage.fuenteDetail;
-
   return [
-    { params: { source: 'uco' }, props: { key: 'uco', icon: 'shield', title: translations.en.documentosPage.fuentes.uco.title } },
-    { params: { source: 'court-orders' }, props: { key: 'autos', icon: 'scale', title: translations.en.documentosPage.fuentes.autos.title } },
-    { params: { source: 'igae' }, props: { key: 'igae', icon: 'file-search', title: translations.en.documentosPage.fuentes.igae.title } },
-    { params: { source: 'testimonies' }, props: { key: 'testimonios', icon: 'mic', title: translations.en.documentosPage.fuentes.testimonios.title } },
+    { params: { source: 'uco' }, props: { key: 'uco', icon: 'shield', title: translations.en.documentosPage.fuentes.uco.title, seoKey: 'documentosUco' } },
+    { params: { source: 'court-orders' }, props: { key: 'autos', icon: 'scale', title: translations.en.documentosPage.fuentes.autos.title, seoKey: 'documentosAutos' } },
+    { params: { source: 'igae' }, props: { key: 'igae', icon: 'file-search', title: translations.en.documentosPage.fuentes.igae.title, seoKey: 'documentosIgae' } },
+    { params: { source: 'testimonies' }, props: { key: 'testimonios', icon: 'mic', title: translations.en.documentosPage.fuentes.testimonios.title, seoKey: 'documentosTestimonios' } },
   ];
 }
 
-const { key, icon, title } = Astro.props;
+const { key, icon, title, seoKey } = Astro.props;
+const seo = translations.en.seo[seoKey as keyof typeof translations.en.seo];
 const t = translations.en.documentosPage.fuenteDetail;
 const fuente = t[key as keyof typeof t] as {
   slug: string;
@@ -30,7 +29,7 @@ const fuente = t[key as keyof typeof t] as {
 };
 ---
 
-<LandingLayout title={`${title} - Documents - PSOE Scandal`}>
+<LandingLayout title={seo.title} description={seo.description}>
   <FuenteHero
     backLink={t.backLink}
     backHref="/en/documents"

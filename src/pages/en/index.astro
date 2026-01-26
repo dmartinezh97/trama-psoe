@@ -6,9 +6,12 @@ import BentoCases from '../../components/sections/BentoCases.astro';
 import TimelineVisual from '../../components/sections/TimelineVisual.astro';
 import ProtagonistsVisual from '../../components/sections/ProtagonistsVisual.astro';
 import FooterVisual from '../../components/sections/FooterVisual.astro';
+import { translations } from '../../i18n/translations';
+
+const seo = translations.en.seo.home;
 ---
 
-<LandingLayout title="The PSOE Scandal">
+<LandingLayout title={seo.title} description={seo.description}>
   <HeroCreative />
   <StatsVisual />
   <BentoCases />
