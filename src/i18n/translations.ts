@@ -482,11 +482,11 @@ export const translations = {
             { label: 'PERÍODO', value: 'Feb 2024 — Dic 2025' },
           ],
           documents: [
-            { title: 'Informe UCO sobre comisiones', meta: '156 páginas · Febrero 2024', badge: 'CLAVE' },
-            { title: 'Informe UCO sobre pagos en efectivo', meta: '89 páginas · Marzo 2024' },
+            { title: 'Informe UCO sobre comisiones', meta: '156 páginas · Febrero 2024', badge: 'CLAVE', url: 'https://fuentesinformadas.com/el-informe-integro-de-la-uco-sobre-los-chanchullos-del-caso-koldo-que-apunta-a-abalos-y-al-presidente-sanchez' },
+            { title: 'Informe UCO sobre pagos en efectivo', meta: '89 páginas · Marzo 2024', url: 'https://www.eldiario.es/politica/claves-informe-uco-apunta-intermediacion-cerdan-cobro-mordidas-abalos-koldo-garcia_1_12379117.html' },
             { title: 'Ampliación informe mascarillas', meta: '234 páginas · Abril 2024' },
-            { title: 'Informe UCO sobre Aldama', meta: '312 páginas · Julio 2024' },
-            { title: 'Informe UCO sobre Santos Cerdán', meta: '178 páginas · Diciembre 2024', badge: 'NUEVO' },
+            { title: 'Informe UCO sobre Aldama', meta: '312 páginas · Julio 2024', url: 'https://www.democrata.es/actualidad/audios-uco-santos-cerdan-koldo-abalos-completos/' },
+            { title: 'Informe UCO sobre Santos Cerdán', meta: '178 páginas · Diciembre 2024', badge: 'NUEVO', url: 'https://www.newtral.es/informe-uco-santos-cerdan/20250616/' },
           ],
           relatedCases: [
             { tag: 'CASO 01', title: 'Caso Koldo', description: 'Comisiones ilegales y contratos de mascarillas durante la pandemia.', href: '/es/casos#koldo' },
@@ -503,11 +503,11 @@ export const translations = {
             { label: 'PERÍODO', value: 'Abr 2024 — Ene 2026' },
           ],
           documents: [
-            { title: 'Auto de imputación Ábalos', meta: 'Tribunal Supremo · Octubre 2024', badge: 'CLAVE' },
-            { title: 'Auto de prisión Ábalos y Koldo', meta: 'Tribunal Supremo · Noviembre 2025', badge: 'CLAVE' },
+            { title: 'Auto de imputación Ábalos', meta: 'Tribunal Supremo · Octubre 2024', badge: 'CLAVE', url: 'https://www.newtral.es/wp-content/uploads/2024/11/auto-causa-especial-aforado.pdf' },
+            { title: 'Auto de prisión Ábalos y Koldo', meta: 'Tribunal Supremo · Noviembre 2025', badge: 'CLAVE', url: 'https://static.ecestaticos.com/file/ac8/a66/f0c/ac8a66f0cbd4c02c3e4eb1c72b115d34.pdf' },
             { title: 'Auto de procesamiento Begoña Gómez', meta: 'Juzgado Instrucción 41 · Septiembre 2025' },
             { title: 'Auto apertura juicio oral David Sánchez', meta: 'Audiencia Provincial Badajoz · Diciembre 2025' },
-            { title: 'Auto desestimación recurso Ábalos', meta: 'Tribunal Supremo · Enero 2026', badge: 'NUEVO' },
+            { title: 'Auto desestimación recurso Ábalos', meta: 'Tribunal Supremo · Enero 2026', badge: 'NUEVO', url: 'https://s1.elespanol.com/2025/01/13/actualidad/auto_130125_-002.pdf' },
           ],
           relatedCases: [
             { tag: 'CASO 01', title: 'Caso Koldo', description: 'Autos del Tribunal Supremo sobre Ábalos y Koldo García.', href: '/es/casos#koldo' },
@@ -524,8 +524,8 @@ export const translations = {
             { label: 'PERÍODO', value: 'Contratos 2020-2021' },
           ],
           documents: [
-            { title: 'Informe IGAE contratos emergencia COVID', meta: '303 páginas · Marzo 2024', badge: 'CLAVE' },
-            { title: 'Anexo I: Listado de contratos analizados', meta: '45 páginas · Marzo 2024' },
+            { title: 'Informe IGAE contratos emergencia COVID', meta: '303 páginas · Marzo 2024', badge: 'CLAVE', url: 'https://www.tcu.es/repositorio/9e3365a1-7ba7-49ec-8768-a3fe03849f0e/NR_I1542.pdf' },
+            { title: 'Anexo I: Listado de contratos analizados', meta: '45 páginas · Marzo 2024', url: 'https://www.hacienda.gob.es/RSC/OIReScon/COVID-19/ies-emergencias-2021/IES-emergencias-2021.pdf' },
             { title: 'Anexo II: Documentación justificativa', meta: '128 páginas · Marzo 2024' },
           ],
           relatedCases: [
@@ -542,9 +542,9 @@ export const translations = {
             { label: 'PERÍODO', value: 'Nov 2024 — Ene 2026' },
           ],
           documents: [
-            { title: 'Declaración Víctor de Aldama', meta: 'Audiencia Nacional · Noviembre 2024', badge: 'CLAVE' },
+            { title: 'Declaración Víctor de Aldama', meta: 'Audiencia Nacional · Noviembre 2024', badge: 'CLAVE', url: 'https://www.elespanol.com/espana/tribunales/20241122/traviata-horas-video-integro-declaracion-aldama-audiencia-nacional/902910341_0.html' },
             { title: 'Declaración Koldo García', meta: 'Tribunal Supremo · Diciembre 2024' },
-            { title: 'Declaración Begoña Gómez', meta: 'Juzgado Instrucción 41 · Julio 2024' },
+            { title: 'Declaración Begoña Gómez', meta: 'Juzgado Instrucción 41 · Julio 2024', url: 'https://theobjective.com/espana/tribunales/2024-07-11/video-declaracion-begona-gomez/' },
             { title: 'Declaración Carlos Barrabés', meta: 'Juzgado Instrucción 41 · Septiembre 2024' },
             { title: 'Declaración Patricia Uriz', meta: 'Tribunal Supremo · Enero 2026', badge: 'NUEVO' },
           ],
@@ -1039,11 +1039,11 @@ export const translations = {
             { label: 'PERIOD', value: 'Feb 2024 — Dec 2025' },
           ],
           documents: [
-            { title: 'UCO Report on commissions', meta: '156 pages · February 2024', badge: 'KEY' },
-            { title: 'UCO Report on cash payments', meta: '89 pages · March 2024' },
+            { title: 'UCO Report on commissions', meta: '156 pages · February 2024', badge: 'KEY', url: 'https://fuentesinformadas.com/el-informe-integro-de-la-uco-sobre-los-chanchullos-del-caso-koldo-que-apunta-a-abalos-y-al-presidente-sanchez' },
+            { title: 'UCO Report on cash payments', meta: '89 pages · March 2024', url: 'https://www.eldiario.es/politica/claves-informe-uco-apunta-intermediacion-cerdan-cobro-mordidas-abalos-koldo-garcia_1_12379117.html' },
             { title: 'Extended mask report', meta: '234 pages · April 2024' },
-            { title: 'UCO Report on Aldama', meta: '312 pages · July 2024' },
-            { title: 'UCO Report on Santos Cerdán', meta: '178 pages · December 2024', badge: 'NEW' },
+            { title: 'UCO Report on Aldama', meta: '312 pages · July 2024', url: 'https://www.democrata.es/actualidad/audios-uco-santos-cerdan-koldo-abalos-completos/' },
+            { title: 'UCO Report on Santos Cerdán', meta: '178 pages · December 2024', badge: 'NEW', url: 'https://www.newtral.es/informe-uco-santos-cerdan/20250616/' },
           ],
           relatedCases: [
             { tag: 'CASE 01', title: 'Koldo Case', description: 'Illegal commissions and mask contracts during the pandemic.', href: '/en/cases#koldo' },
@@ -1060,11 +1060,11 @@ export const translations = {
             { label: 'PERIOD', value: 'Apr 2024 — Jan 2026' },
           ],
           documents: [
-            { title: 'Ábalos indictment order', meta: 'Supreme Court · October 2024', badge: 'KEY' },
-            { title: 'Ábalos and Koldo detention order', meta: 'Supreme Court · November 2025', badge: 'KEY' },
+            { title: 'Ábalos indictment order', meta: 'Supreme Court · October 2024', badge: 'KEY', url: 'https://www.newtral.es/wp-content/uploads/2024/11/auto-causa-especial-aforado.pdf' },
+            { title: 'Ábalos and Koldo detention order', meta: 'Supreme Court · November 2025', badge: 'KEY', url: 'https://static.ecestaticos.com/file/ac8/a66/f0c/ac8a66f0cbd4c02c3e4eb1c72b115d34.pdf' },
             { title: 'Begoña Gómez prosecution order', meta: 'Court of Instruction 41 · September 2025' },
             { title: 'David Sánchez trial opening order', meta: 'Badajoz Provincial Court · December 2025' },
-            { title: 'Ábalos appeal dismissal order', meta: 'Supreme Court · January 2026', badge: 'NEW' },
+            { title: 'Ábalos appeal dismissal order', meta: 'Supreme Court · January 2026', badge: 'NEW', url: 'https://s1.elespanol.com/2025/01/13/actualidad/auto_130125_-002.pdf' },
           ],
           relatedCases: [
             { tag: 'CASE 01', title: 'Koldo Case', description: 'Supreme Court orders on Ábalos and Koldo García.', href: '/en/cases#koldo' },
@@ -1081,8 +1081,8 @@ export const translations = {
             { label: 'PERIOD', value: 'Contracts 2020-2021' },
           ],
           documents: [
-            { title: 'IGAE COVID emergency contracts report', meta: '303 pages · March 2024', badge: 'KEY' },
-            { title: 'Annex I: List of analyzed contracts', meta: '45 pages · March 2024' },
+            { title: 'IGAE COVID emergency contracts report', meta: '303 pages · March 2024', badge: 'KEY', url: 'https://www.tcu.es/repositorio/9e3365a1-7ba7-49ec-8768-a3fe03849f0e/NR_I1542.pdf' },
+            { title: 'Annex I: List of analyzed contracts', meta: '45 pages · March 2024', url: 'https://www.hacienda.gob.es/RSC/OIReScon/COVID-19/ies-emergencias-2021/IES-emergencias-2021.pdf' },
             { title: 'Annex II: Supporting documentation', meta: '128 pages · March 2024' },
           ],
           relatedCases: [
@@ -1099,9 +1099,9 @@ export const translations = {
             { label: 'PERIOD', value: 'Nov 2024 — Jan 2026' },
           ],
           documents: [
-            { title: 'Víctor de Aldama statement', meta: 'National Court · November 2024', badge: 'KEY' },
+            { title: 'Víctor de Aldama statement', meta: 'National Court · November 2024', badge: 'KEY', url: 'https://www.elespanol.com/espana/tribunales/20241122/traviata-horas-video-integro-declaracion-aldama-audiencia-nacional/902910341_0.html' },
             { title: 'Koldo García statement', meta: 'Supreme Court · December 2024' },
-            { title: 'Begoña Gómez statement', meta: 'Court of Instruction 41 · July 2024' },
+            { title: 'Begoña Gómez statement', meta: 'Court of Instruction 41 · July 2024', url: 'https://theobjective.com/espana/tribunales/2024-07-11/video-declaracion-begona-gomez/' },
             { title: 'Carlos Barrabés statement', meta: 'Court of Instruction 41 · September 2024' },
             { title: 'Patricia Uriz statement', meta: 'Supreme Court · January 2026', badge: 'NEW' },
           ],

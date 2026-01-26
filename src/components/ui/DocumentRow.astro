@@ -3,11 +3,13 @@ interface Props {
   title: string;
   meta: string;
   badge?: string;
+  url?: string;
 }
 
-const { title, meta, badge } = Astro.props;
+const { title, meta, badge, url } = Astro.props;
 
 const fileIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7Z"/><path d="M14 2v4a2 2 0 0 0 2 2h4"/><path d="M10 9H8"/><path d="M16 13H8"/><path d="M16 17H8"/></svg>`;
+const linkIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"/><polyline points="15 3 21 3 21 9"/><line x1="10" y1="14" x2="21" y2="3"/></svg>`;
 ---
 
 <div
@@ -19,7 +21,19 @@ const fileIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="32" height="32"
 
   <!-- Content -->
   <div class="flex flex-col gap-1 flex-1 min-w-0">
-    <h4 class="font-secondary text-sm md:text-base font-bold text-trama-950 truncate">{title}</h4>
+    {url ? (
+      <a
+        href={url}
+        target="_blank"
+        rel="noopener noreferrer"
+        class="font-secondary text-sm md:text-base font-bold text-trama-950 truncate hover:text-trama-red transition-colors inline-flex items-center gap-2 group"
+      >
+        <span class="truncate">{title}</span>
+        <span class="text-trama-400 group-hover:text-trama-red shrink-0" set:html={linkIcon} />
+      </a>
+    ) : (
+      <h4 class="font-secondary text-sm md:text-base font-bold text-trama-950 truncate">{title}</h4>
+    )}
     <p class="text-trama-500 text-xs md:text-sm">{meta}</p>
   </div>
 

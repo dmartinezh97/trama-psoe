@@ -5,6 +5,7 @@ interface Document {
   title: string;
   meta: string;
   badge?: string;
+  url?: string;
 }
 
 interface Props {
@@ -35,6 +36,7 @@ const filesIcon = `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24
           title={doc.title}
           meta={doc.meta}
           badge={doc.badge}
+          url={doc.url}
         />
       ))}
     </div>
