@@ -1,0 +1,147 @@
+---
+import { getLocaleFromUrl } from '../i18n/utils';
+import { translations, type Locale } from '../i18n/translations';
+
+const locale = getLocaleFromUrl(Astro.url) as Locale;
+const t = translations[locale].cookieBanner;
+---
+
+<div
+  id="cookie-banner"
+  class="fixed bottom-0 left-0 right-0 z-50 hidden transform transition-transform duration-300 translate-y-full"
+  role="dialog"
+  aria-labelledby="cookie-banner-title"
+  aria-describedby="cookie-banner-description"
+>
+  <div class="bg-trama-900 border-t border-trama-red/30 px-4 py-4 md:px-8 md:py-5">
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row items-start sm:items-center justify-between gap-4">
+      <div class="flex-1">
+        <p id="cookie-banner-title" class="sr-only">{t.title}</p>
+        <p id="cookie-banner-description" class="font-secondary text-sm text-trama-200">
+          {t.message}
+          <a
+            href={locale === 'es' ? '/es/legal/cookies' : '/en/legal/cookies'}
+            class="text-trama-red-light hover:text-white underline underline-offset-2 transition-colors"
+          >
+            {t.learnMore}
+          </a>
+        </p>
+      </div>
+      <div class="flex gap-3 shrink-0">
+        <button
+          id="cookie-reject"
+          class="font-secondary text-sm px-4 py-2 text-trama-300 hover:text-white border border-trama-700 hover:border-trama-500 rounded transition-colors"
+        >
+          {t.reject}
+        </button>
+        <button
+          id="cookie-accept"
+          class="font-secondary text-sm px-4 py-2 bg-trama-red hover:bg-trama-red-light text-white rounded transition-colors"
+        >
+          {t.accept}
+        </button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  const CONSENT_KEY = 'analytics-consent';
+  const CONSENT_VERSION = '1';
+  let analyticsLoaded = false;
+
+  function getConsent(): 'accepted' | 'rejected' | null {
+    const stored = localStorage.getItem(CONSENT_KEY);
+    if (!stored) return null;
+    try {
+      const { consent, version } = JSON.parse(stored);
+      if (version !== CONSENT_VERSION) return null;
+      return consent;
+    } catch {
+      return null;
+    }
+  }
+
+  function setConsent(consent: 'accepted' | 'rejected') {
+    localStorage.setItem(CONSENT_KEY, JSON.stringify({
+      consent,
+      version: CONSENT_VERSION,
+      timestamp: Date.now()
+    }));
+  }
+
+  function showBanner() {
+    const banner = document.getElementById('cookie-banner');
+    if (banner) {
+      banner.classList.remove('hidden');
+      requestAnimationFrame(() => {
+        banner.classList.remove('translate-y-full');
+      });
+    }
+  }
+
+  function hideBanner() {
+    const banner = document.getElementById('cookie-banner');
+    if (banner) {
+      banner.classList.add('translate-y-full');
+      setTimeout(() => {
+        banner.classList.add('hidden');
+      }, 300);
+    }
+  }
+
+  function loadAnalytics() {
+    if (analyticsLoaded) return;
+
+    // Load Vercel Analytics script
+    // In production on Vercel, the script is available at /_vercel/insights/script.js
+    // We also set up the va queue for any events before the script loads
+    (window as any).va = (window as any).va || function(...args: any[]) { ((window as any).vaq = (window as any).vaq || []).push(args); };
+
+    const script = document.createElement('script');
+    script.src = '/_vercel/insights/script.js';
+    script.defer = true;
+    script.dataset.sdkn = '@vercel/analytics';
+    script.dataset.sdkv = '1.6.1';
+    document.head.appendChild(script);
+
+    analyticsLoaded = true;
+  }
+
+  function init() {
+    const consent = getConsent();
+
+    if (consent === 'accepted') {
+      loadAnalytics();
+      return;
+    }
+
+    if (consent === 'rejected') {
+      return;
+    }
+
+    // No consent yet, show banner
+    showBanner();
+
+    document.getElementById('cookie-accept')?.addEventListener('click', () => {
+      setConsent('accepted');
+      hideBanner();
+      loadAnalytics();
+    });
+
+    document.getElementById('cookie-reject')?.addEventListener('click', () => {
+      setConsent('rejected');
+      hideBanner();
+    });
+  }
+
+  // Initialize on DOM ready
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', init);
+  } else {
+    init();
+  }
+
+  // Re-initialize on Astro page transitions
+  document.addEventListener('astro:after-swap', init);
+</script>

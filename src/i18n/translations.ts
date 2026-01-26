@@ -160,6 +160,13 @@ export const translations = {
         initials: 'DS',
       },
     },
+    cookieBanner: {
+      title: 'Aviso de cookies',
+      message: 'Usamos cookies de análisis (Vercel Analytics) para mejorar tu experiencia. No recopilamos datos personales identificables.',
+      learnMore: 'Más información',
+      accept: 'Aceptar',
+      reject: 'Rechazar',
+    },
     footer: {
       brand: 'LA TRAMA PSOE',
       description: 'Documentación sobre los casos judiciales conocidos como "Trama PSOE". Toda la información procede de fuentes públicas: informes de la UCO, autos judiciales y testimonios.',
@@ -176,6 +183,118 @@ export const translations = {
       infoSources: 'Fuentes',
       copyright: '© 2026 La Trama PSOE',
       lastUpdate: 'Última actualización: Enero 2026',
+      legalPrivacy: 'Privacidad',
+      legalTerms: 'Términos',
+      legalCookies: 'Cookies',
+    },
+    legal: {
+      seo: {
+        privacy: {
+          title: 'Política de Privacidad | La Trama PSOE',
+          description: 'Política de privacidad del sitio La Trama PSOE. Información sobre el tratamiento de datos personales.',
+        },
+        terms: {
+          title: 'Términos y Condiciones | La Trama PSOE',
+          description: 'Términos y condiciones de uso del sitio La Trama PSOE. Naturaleza informativa y fuentes de información.',
+        },
+        cookies: {
+          title: 'Política de Cookies | La Trama PSOE',
+          description: 'Política de cookies del sitio La Trama PSOE. Información sobre las cookies técnicas utilizadas.',
+        },
+      },
+      backToHome: 'Volver al inicio',
+      lastUpdated: 'Última actualización: Enero 2026',
+      privacy: {
+        title: 'Política de Privacidad',
+        sections: [
+          {
+            title: 'Responsable del tratamiento',
+            content: 'Este sitio web es un proyecto informativo sin personalidad jurídica propia. No existe una entidad responsable del tratamiento de datos personales en el sentido del Reglamento General de Protección de Datos (RGPD), dado que no se recopilan datos personales de los usuarios.',
+          },
+          {
+            title: 'Datos que NO recopilamos',
+            content: 'Este sitio web NO recopila ningún tipo de dato personal:\n\n• No utilizamos cookies de seguimiento ni analytics\n• No hay formularios de contacto ni registro de usuarios\n• No almacenamos direcciones IP ni datos de navegación\n• No compartimos información con terceros\n• No realizamos perfilado de usuarios',
+          },
+          {
+            title: 'Cookies técnicas',
+            content: 'Únicamente utilizamos una cookie técnica para recordar tu preferencia de idioma (español/inglés). Esta cookie está exenta del requisito de consentimiento según el artículo 22.2 de la LSSI, ya que es estrictamente necesaria para el funcionamiento del sitio.',
+          },
+          {
+            title: 'Enlaces a terceros',
+            content: 'Este sitio contiene enlaces a fuentes externas (documentos judiciales, informes oficiales, artículos de prensa). Al hacer clic en estos enlaces, abandonas nuestro sitio y quedas sujeto a las políticas de privacidad de dichos terceros. No tenemos control sobre el contenido ni las prácticas de privacidad de estos sitios externos.',
+          },
+          {
+            title: 'Derechos ARCO',
+            content: 'Dado que no recopilamos datos personales, los derechos de Acceso, Rectificación, Cancelación y Oposición (ARCO) no son aplicables. Si tienes alguna consulta sobre esta política, puedes contactarnos a través de los canales habituales.',
+          },
+        ],
+      },
+      terms: {
+        title: 'Términos y Condiciones',
+        sections: [
+          {
+            title: 'Naturaleza del sitio',
+            content: 'Este sitio web tiene carácter exclusivamente informativo y divulgativo. NO constituye asesoramiento legal, periodístico ni de ningún otro tipo. La información aquí presentada tiene como único objetivo documentar los procedimientos judiciales de interés público conocidos como "Trama PSOE".',
+          },
+          {
+            title: 'Fuentes de información',
+            content: 'Todo el contenido de este sitio procede de fuentes públicas y verificables:\n\n• Informes de la Unidad Central Operativa (UCO) de la Guardia Civil\n• Autos y resoluciones judiciales públicos\n• Informes de la Intervención General de la Administración del Estado (IGAE)\n• Testimonios y declaraciones ante tribunales\n• Cobertura periodística de medios de comunicación',
+          },
+          {
+            title: 'Presunción de inocencia',
+            content: 'IMPORTANTE: Todas las personas mencionadas en este sitio gozan de la presunción de inocencia garantizada por el artículo 24.2 de la Constitución Española. El término "imputado" se utiliza en su acepción procesal (persona contra la que se dirige un procedimiento penal) y no implica culpabilidad. Solo una sentencia firme puede determinar la responsabilidad penal.',
+            highlighted: true,
+          },
+          {
+            title: 'Propiedad intelectual',
+            content: 'El diseño, estructura y código de este sitio son propiedad de sus creadores. Los contenidos informativos proceden de fuentes públicas y se presentan con fines de interés general. Las marcas, nombres y logotipos mencionados pertenecen a sus respectivos titulares.',
+          },
+          {
+            title: 'Limitación de responsabilidad',
+            content: 'No garantizamos la exactitud, integridad o actualización de la información presentada. Los usuarios acceden al contenido bajo su propia responsabilidad. No nos hacemos responsables de:\n\n• Errores u omisiones en la información\n• Interpretaciones que los usuarios hagan del contenido\n• Daños derivados del uso de la información\n• Contenido de los sitios enlazados',
+          },
+          {
+            title: 'Modificaciones',
+            content: 'Nos reservamos el derecho de modificar estos términos en cualquier momento. Las modificaciones serán efectivas desde su publicación en el sitio. El uso continuado del sitio tras las modificaciones implica la aceptación de los nuevos términos.',
+          },
+        ],
+      },
+      cookies: {
+        title: 'Política de Cookies',
+        sections: [
+          {
+            title: '¿Qué son las cookies?',
+            content: 'Las cookies son pequeños archivos de texto que los sitios web almacenan en tu dispositivo para recordar información sobre tu visita. Pueden ser "de sesión" (se eliminan al cerrar el navegador) o "persistentes" (permanecen hasta su fecha de expiración).',
+          },
+          {
+            title: 'Cookies que utilizamos',
+            content: 'Este sitio utiliza las siguientes cookies:',
+            table: {
+              headers: ['Nombre', 'Propósito', 'Duración', 'Tipo'],
+              rows: [
+                ['locale', 'Recordar preferencia de idioma (ES/EN)', '1 año', 'Técnica'],
+                ['analytics-consent', 'Recordar tu preferencia de cookies', 'Permanente', 'Técnica'],
+              ],
+            },
+          },
+          {
+            title: 'Vercel Analytics',
+            content: 'Si aceptas las cookies de análisis, utilizamos Vercel Analytics para recopilar información anónima sobre el uso del sitio. Vercel Analytics NO usa cookies tradicionales, sino un hash del request que se descarta automáticamente tras 24 horas.\n\nDatos que recopila:\n• Páginas visitadas\n• País de origen (aproximado)\n• Dispositivo y navegador\n• Página de referencia\n\nDatos que NO recopila:\n• Información personal identificable\n• Direcciones IP\n• Datos de seguimiento entre sitios',
+          },
+          {
+            title: 'Cookies que NO utilizamos',
+            content: 'Este sitio NO utiliza:\n\n• Google Analytics ni otros servicios de estadísticas con cookies\n• Cookies de publicidad o remarketing\n• Cookies de redes sociales\n• Cookies de seguimiento de terceros\n• Cookies de perfilado de usuarios',
+          },
+          {
+            title: 'Base legal',
+            content: 'La cookie de preferencia de idioma está exenta del requisito de consentimiento según el artículo 22.2 de la LSSI. Para Vercel Analytics, solicitamos tu consentimiento mediante el banner de cookies. Puedes cambiar tu preferencia en cualquier momento eliminando la cookie "analytics-consent" de tu navegador.',
+          },
+          {
+            title: 'Cómo gestionar las cookies',
+            content: 'Puedes configurar tu navegador para bloquear o eliminar cookies:\n\n• Chrome: Configuración > Privacidad y seguridad > Cookies\n• Firefox: Opciones > Privacidad y seguridad > Cookies\n• Safari: Preferencias > Privacidad > Cookies\n• Edge: Configuración > Privacidad > Cookies\n\nPara revocar tu consentimiento de analytics, elimina la cookie "analytics-consent" y recarga la página.',
+          },
+        ],
+      },
     },
     timelinePage: {
       hero: {
@@ -755,6 +874,13 @@ export const translations = {
         initials: 'DS',
       },
     },
+    cookieBanner: {
+      title: 'Cookie notice',
+      message: 'We use analytics cookies (Vercel Analytics) to improve your experience. We do not collect personally identifiable data.',
+      learnMore: 'Learn more',
+      accept: 'Accept',
+      reject: 'Reject',
+    },
     footer: {
       brand: 'THE PSOE SCANDAL',
       description: 'Documentation on the judicial cases known as "PSOE Scandal". All information comes from public sources: UCO reports, court orders and testimonies.',
@@ -771,6 +897,118 @@ export const translations = {
       infoSources: 'Sources',
       copyright: '© 2026 The PSOE Scandal',
       lastUpdate: 'Last update: January 2026',
+      legalPrivacy: 'Privacy',
+      legalTerms: 'Terms',
+      legalCookies: 'Cookies',
+    },
+    legal: {
+      seo: {
+        privacy: {
+          title: 'Privacy Policy | The PSOE Scandal',
+          description: 'Privacy policy for The PSOE Scandal website. Information about personal data processing.',
+        },
+        terms: {
+          title: 'Terms and Conditions | The PSOE Scandal',
+          description: 'Terms and conditions for The PSOE Scandal website. Informational nature and sources.',
+        },
+        cookies: {
+          title: 'Cookie Policy | The PSOE Scandal',
+          description: 'Cookie policy for The PSOE Scandal website. Information about technical cookies used.',
+        },
+      },
+      backToHome: 'Back to home',
+      lastUpdated: 'Last updated: January 2026',
+      privacy: {
+        title: 'Privacy Policy',
+        sections: [
+          {
+            title: 'Data controller',
+            content: 'This website is an informational project without its own legal personality. There is no entity responsible for personal data processing under the General Data Protection Regulation (GDPR), as we do not collect any personal data from users.',
+          },
+          {
+            title: 'Data we DO NOT collect',
+            content: 'This website does NOT collect any personal data:\n\n• We do not use tracking or analytics cookies\n• There are no contact forms or user registration\n• We do not store IP addresses or browsing data\n• We do not share information with third parties\n• We do not perform user profiling',
+          },
+          {
+            title: 'Technical cookies',
+            content: 'We only use one technical cookie to remember your language preference (Spanish/English). This cookie is exempt from consent requirements under Article 22.2 of the Spanish LSSI law, as it is strictly necessary for the website to function.',
+          },
+          {
+            title: 'Third-party links',
+            content: 'This site contains links to external sources (court documents, official reports, press articles). When you click these links, you leave our site and become subject to those third parties\' privacy policies. We have no control over the content or privacy practices of these external sites.',
+          },
+          {
+            title: 'ARCO rights',
+            content: 'Since we do not collect personal data, the rights of Access, Rectification, Cancellation, and Opposition (ARCO) are not applicable. If you have any questions about this policy, you can contact us through the usual channels.',
+          },
+        ],
+      },
+      terms: {
+        title: 'Terms and Conditions',
+        sections: [
+          {
+            title: 'Nature of the site',
+            content: 'This website is exclusively informational and educational in nature. It does NOT constitute legal, journalistic, or any other type of advice. The information presented here has the sole purpose of documenting judicial proceedings of public interest known as the "PSOE Scandal".',
+          },
+          {
+            title: 'Sources of information',
+            content: 'All content on this site comes from public and verifiable sources:\n\n• Reports from the Central Operative Unit (UCO) of the Civil Guard\n• Public court orders and resolutions\n• Reports from the General State Intervention (IGAE)\n• Testimonies and statements before courts\n• Press coverage from media outlets',
+          },
+          {
+            title: 'Presumption of innocence',
+            content: 'IMPORTANT: All persons mentioned on this site enjoy the presumption of innocence guaranteed by Article 24.2 of the Spanish Constitution. The term "accused" or "defendant" is used in its procedural sense (a person against whom criminal proceedings are directed) and does not imply guilt. Only a final judgment can determine criminal liability.',
+            highlighted: true,
+          },
+          {
+            title: 'Intellectual property',
+            content: 'The design, structure, and code of this site are the property of its creators. Informational content comes from public sources and is presented for purposes of general interest. Trademarks, names, and logos mentioned belong to their respective owners.',
+          },
+          {
+            title: 'Limitation of liability',
+            content: 'We do not guarantee the accuracy, completeness, or currency of the information presented. Users access the content at their own risk. We are not responsible for:\n\n• Errors or omissions in the information\n• Interpretations users make of the content\n• Damages arising from the use of information\n• Content of linked sites',
+          },
+          {
+            title: 'Modifications',
+            content: 'We reserve the right to modify these terms at any time. Modifications will be effective upon publication on the site. Continued use of the site after modifications implies acceptance of the new terms.',
+          },
+        ],
+      },
+      cookies: {
+        title: 'Cookie Policy',
+        sections: [
+          {
+            title: 'What are cookies?',
+            content: 'Cookies are small text files that websites store on your device to remember information about your visit. They can be "session" cookies (deleted when you close the browser) or "persistent" cookies (remain until their expiration date).',
+          },
+          {
+            title: 'Cookies we use',
+            content: 'This site uses the following cookies:',
+            table: {
+              headers: ['Name', 'Purpose', 'Duration', 'Type'],
+              rows: [
+                ['locale', 'Remember language preference (ES/EN)', '1 year', 'Technical'],
+                ['analytics-consent', 'Remember your cookie preference', 'Permanent', 'Technical'],
+              ],
+            },
+          },
+          {
+            title: 'Vercel Analytics',
+            content: 'If you accept analytics cookies, we use Vercel Analytics to collect anonymous information about site usage. Vercel Analytics does NOT use traditional cookies, but rather a request hash that is automatically discarded after 24 hours.\n\nData collected:\n• Pages visited\n• Country of origin (approximate)\n• Device and browser\n• Referrer page\n\nData NOT collected:\n• Personally identifiable information\n• IP addresses\n• Cross-site tracking data',
+          },
+          {
+            title: 'Cookies we DO NOT use',
+            content: 'This site does NOT use:\n\n• Google Analytics or other cookie-based analytics services\n• Advertising or remarketing cookies\n• Social media cookies\n• Third-party tracking cookies\n• User profiling cookies',
+          },
+          {
+            title: 'Legal basis',
+            content: 'The language preference cookie is exempt from consent requirements under Article 22.2 of the Spanish LSSI law. For Vercel Analytics, we request your consent through the cookie banner. You can change your preference at any time by deleting the "analytics-consent" cookie from your browser.',
+          },
+          {
+            title: 'How to manage cookies',
+            content: 'You can configure your browser to block or delete cookies:\n\n• Chrome: Settings > Privacy and security > Cookies\n• Firefox: Options > Privacy and security > Cookies\n• Safari: Preferences > Privacy > Cookies\n• Edge: Settings > Privacy > Cookies\n\nTo revoke your analytics consent, delete the "analytics-consent" cookie and reload the page.',
+          },
+        ],
+      },
     },
     timelinePage: {
       hero: {

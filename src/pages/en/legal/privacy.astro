@@ -1,0 +1,18 @@
+---
+import LandingLayout from '../../../layouts/LandingLayout.astro';
+import LegalContent from '../../../components/sections/LegalContent.astro';
+import { translations } from '../../../i18n/translations';
+
+const t = translations.en.legal;
+const seo = t.seo.privacy;
+---
+
+<LandingLayout title={seo.title} description={seo.description} noindex={true}>
+  <LegalContent
+    title={t.privacy.title}
+    sections={t.privacy.sections}
+    backLink="/en"
+    backText={t.backToHome}
+    lastUpdated={t.lastUpdated}
+  />
+</LandingLayout>

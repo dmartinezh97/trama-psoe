@@ -82,11 +82,27 @@ const t = useTranslations(locale);
   </div>
 
   <!-- Footer Bottom -->
-  <div class="relative z-10 flex flex-col sm:flex-row sm:justify-between items-start sm:items-center px-5 md:px-14 pb-6 lg:absolute lg:bottom-8 lg:left-14 lg:right-14 gap-1 sm:gap-0">
+  <div class="relative z-10 flex flex-col sm:flex-row sm:justify-between items-start sm:items-center px-5 md:px-14 pb-6 lg:absolute lg:bottom-8 lg:left-14 lg:right-14 gap-2 sm:gap-0">
     <span class="font-secondary text-[10px] md:text-xs font-medium text-trama-red-light">
       {t.footer.copyright}
     </span>
-    <span class="font-secondary text-[10px] md:text-xs font-medium text-trama-red-light">
+
+    <!-- Legal links -->
+    <div class="flex gap-3 text-[10px] md:text-xs order-3 sm:order-2">
+      <a href={locale === 'es' ? '/es/legal/privacidad' : '/en/legal/privacy'} class="font-secondary text-trama-red-light hover:text-white transition-colors">
+        {t.footer.legalPrivacy}
+      </a>
+      <span class="text-trama-red-light/50">·</span>
+      <a href={locale === 'es' ? '/es/legal/terminos' : '/en/legal/terms'} class="font-secondary text-trama-red-light hover:text-white transition-colors">
+        {t.footer.legalTerms}
+      </a>
+      <span class="text-trama-red-light/50">·</span>
+      <a href={locale === 'es' ? '/es/legal/cookies' : '/en/legal/cookies'} class="font-secondary text-trama-red-light hover:text-white transition-colors">
+        {t.footer.legalCookies}
+      </a>
+    </div>
+
+    <span class="font-secondary text-[10px] md:text-xs font-medium text-trama-red-light order-2 sm:order-3">
       {t.footer.lastUpdate}
     </span>
   </div>
