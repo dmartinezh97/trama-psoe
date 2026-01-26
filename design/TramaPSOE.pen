@@ -21173,6 +21173,231 @@
           ]
         }
       ]
+    },
+    {
+      "type": "frame",
+      "id": "aa6x6",
+      "x": 573,
+      "y": 7870,
+      "name": "OG Image - Social Media",
+      "width": 1200,
+      "height": 630,
+      "fill": "$bg-dark",
+      "layout": "none",
+      "children": [
+        {
+          "type": "frame",
+          "id": "L36lw",
+          "x": 0,
+          "y": 0,
+          "name": "bgGradient",
+          "width": 1200,
+          "height": 630,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 1.5,
+              "height": 1.5
+            },
+            "colors": [
+              {
+                "color": "#DC262640",
+                "position": 0
+              },
+              {
+                "color": "#0A0A0A",
+                "position": 1
+              }
+            ],
+            "center": {
+              "x": 0.8,
+              "y": 0.3
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "42B7y",
+          "x": 0,
+          "y": 0,
+          "name": "accentLine",
+          "width": 8,
+          "height": 630,
+          "fill": "$primary"
+        },
+        {
+          "type": "frame",
+          "id": "U1syb",
+          "x": 80,
+          "y": 0,
+          "name": "contentArea",
+          "width": 1040,
+          "height": 630,
+          "layout": "vertical",
+          "gap": 32,
+          "padding": [
+            0,
+            40,
+            0,
+            0
+          ],
+          "justifyContent": "center",
+          "children": [
+            {
+              "id": "7VOSe",
+              "type": "ref",
+              "ref": "ULosg",
+              "name": "topBadge",
+              "descendants": {
+                "R1fcf": {
+                  "content": "INVESTIGACIÓN"
+                }
+              }
+            },
+            {
+              "type": "text",
+              "id": "1Ndrv",
+              "name": "headline",
+              "fill": "$text-white",
+              "content": "La Trama PSOE",
+              "fontFamily": "Inter",
+              "fontSize": 96,
+              "fontWeight": "900",
+              "letterSpacing": -2
+            },
+            {
+              "type": "text",
+              "id": "gI7RY",
+              "name": "subheadline",
+              "fill": "$text-muted-light",
+              "textGrowth": "fixed-width",
+              "width": 700,
+              "content": "Corrupción, casos judiciales e imputados del PSOE",
+              "fontFamily": "Inter",
+              "fontSize": 28
+            },
+            {
+              "type": "frame",
+              "id": "YQHJj",
+              "name": "ctaArea",
+              "gap": 24,
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "0f1ap",
+                  "type": "ref",
+                  "ref": "1HkvK",
+                  "name": "ctaButton",
+                  "descendants": {
+                    "27pKz": {
+                      "content": "EXPLORAR CASOS"
+                    }
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "d2hZT",
+                  "name": "ctaUrl",
+                  "fill": "$text-muted",
+                  "content": "trama-psoe.com",
+                  "fontFamily": "Inter",
+                  "fontSize": 18,
+                  "fontWeight": "500"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "ellipse",
+          "id": "qRA3Z",
+          "x": 950,
+          "y": 400,
+          "name": "decorCircle1",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#DC262620",
+                "position": 0
+              },
+              {
+                "color": "#DC262600",
+                "position": 1
+              }
+            ]
+          },
+          "width": 400,
+          "height": 400
+        },
+        {
+          "type": "ellipse",
+          "id": "xje0M",
+          "x": 1050,
+          "y": -100,
+          "name": "decorCircle2",
+          "fill": {
+            "type": "gradient",
+            "gradientType": "radial",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "width": 1,
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#DC262615",
+                "position": 0
+              },
+              {
+                "color": "#DC262600",
+                "position": 1
+              }
+            ]
+          },
+          "width": 300,
+          "height": 300
+        },
+        {
+          "type": "frame",
+          "id": "NUz7B",
+          "x": 800,
+          "y": 0,
+          "name": "gridPattern",
+          "width": 400,
+          "height": 630,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 90,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#33333310",
+                "position": 0
+              },
+              {
+                "color": "#33333300",
+                "position": 1
+              }
+            ]
+          }
+        }
+      ]
     }
   ],
   "variables": {
