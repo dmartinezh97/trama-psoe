@@ -5,6 +5,7 @@ import type { Locale } from '../i18n/translations';
 import Header from '../components/Header.astro';
 import SEO from '../components/SEO.astro';
 import JsonLd from '../components/JsonLd.astro';
+import Analytics from '@vercel/analytics/astro';
 
 interface Props {
   title: string;
@@ -51,6 +52,9 @@ const locale = getLocaleFromUrl(Astro.url) as Locale;
 
     <!-- JSON-LD Structured Data -->
     <JsonLd title={title} description={description} />
+
+    <!-- Vercel Analytics -->
+    <Analytics />
   </head>
   <body class="min-h-screen bg-trama-950 text-trama-white">
     <Header />
