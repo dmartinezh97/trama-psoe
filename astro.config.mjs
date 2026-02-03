@@ -17,7 +17,7 @@ export default defineConfig({
           en: 'en-US',
         },
       },
-      filter: (page) => !page.includes('/demo'),
+      filter: (page) => !page.includes('/demo') && !page.includes('/resources'),
     }),
   ],
   i18n: {
