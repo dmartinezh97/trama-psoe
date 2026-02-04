@@ -1,0 +1,74 @@
+---
+import ImputadoCardSmall from '../ui/ImputadoCardSmall.astro';
+
+interface Person {
+  name: string;
+  role: string;
+  badge: string;
+  dato: string;
+}
+
+interface Props {
+  title: string;
+  jessica: Person;
+  claudia: Person;
+  nicoleta: Person;
+}
+
+const { title, jessica, claudia, nicoleta } = Astro.props;
+---
+
+<section
+  class="bg-trama-850 px-6 py-6 lg:px-14 lg:py-14 w-full"
+  data-imputados-section
+>
+  <!-- Section Header -->
+  <div class="flex items-center gap-4 mb-8" data-imputados-section-title>
+    <svg
+      xmlns="http://www.w3.org/2000/svg"
+      width="24"
+      height="24"
+      viewBox="0 0 24 24"
+      fill="none"
+      stroke="currentColor"
+      stroke-width="2"
+      stroke-linecap="round"
+      stroke-linejoin="round"
+      class="text-trama-red"
+    >
+      <rect width="20" height="14" x="2" y="7" rx="2" ry="2"></rect>
+      <path d="M16 21V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v16"></path>
+    </svg>
+    <span class="text-white text-sm font-bold tracking-widest">
+      {title}
+    </span>
+  </div>
+
+  <!-- Cards Grid -->
+  <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+    <ImputadoCardSmall
+      name={jessica.name}
+      role={jessica.role}
+      badge={jessica.badge}
+      badgeType="light"
+      description={jessica.dato}
+      variant="implicado"
+    />
+    <ImputadoCardSmall
+      name={claudia.name}
+      role={claudia.role}
+      badge={claudia.badge}
+      badgeType="light"
+      description={claudia.dato}
+      variant="implicado"
+    />
+    <ImputadoCardSmall
+      name={nicoleta.name}
+      role={nicoleta.role}
+      badge={nicoleta.badge}
+      badgeType="light"
+      description={nicoleta.dato}
+      variant="implicado"
+    />
+  </div>
+</section>

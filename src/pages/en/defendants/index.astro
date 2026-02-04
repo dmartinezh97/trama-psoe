@@ -4,6 +4,7 @@ import ImputadosHero from '../../../components/sections/ImputadosHero.astro';
 import ImputadosPrisionSection from '../../../components/sections/ImputadosPrisionSection.astro';
 import ImputadosMainSection from '../../../components/sections/ImputadosMainSection.astro';
 import ImputadosOtrosSection from '../../../components/sections/ImputadosOtrosSection.astro';
+import ImputadosColocacionesSection from '../../../components/sections/ImputadosColocacionesSection.astro';
 import ImputadosArchivadosSection from '../../../components/sections/ImputadosArchivadosSection.astro';
 import ImputadosFooter from '../../../components/sections/ImputadosFooter.astro';
 import { translations } from '../../../i18n/translations';
@@ -37,6 +38,16 @@ const seo = translations.en.seo.imputados;
     aldama={t.otros.aldama}
     pardo={t.otros.pardo}
     barrabes={t.otros.barrabes}
+    hidalgo={t.otros.hidalgo}
+    gallardo={t.otros.gallardo}
+    sanza={t.otros.sanza}
+  />
+
+  <ImputadosColocacionesSection
+    title={t.colocaciones.title}
+    jessica={t.colocaciones.jessica}
+    claudia={t.colocaciones.claudia}
+    nicoleta={t.colocaciones.nicoleta}
   />
 
   <ImputadosArchivadosSection

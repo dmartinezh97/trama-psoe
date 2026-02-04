@@ -359,11 +359,11 @@ export const translations = {
         tag: 'CASO 01',
         title: 'CASO KOLDO',
         subtitle: 'Comisiones en sobres y mascarillas defectuosas',
-        description: 'Una empresa que facturó cero euros en 2019 recibió 54 millones en contratos públicos durante la pandemia. Las mascarillas resultaron defectuosas. Los sobres con dinero se repartían en la sede del PSOE.',
+        description: 'Una empresa que facturó cero euros en 2019 recibió 54 millones en contratos públicos durante la pandemia. Las mascarillas resultaron defectuosas. Los sobres con dinero se repartían en la sede del PSOE: 650.000€ a Ábalos, 300.000€ a Koldo, 15.000€ a Cerdán.',
         stats: [
           { number: '54M€', label: 'Contratos sin experiencia' },
           { number: '24 años', label: 'Pena para Ábalos' },
-          { number: '95.437€', label: 'En sobres de Ferraz' },
+          { number: '90.000€', label: 'Bolsa en Ferraz (notario)' },
         ],
         defendants: [
           { name: 'José Luis Ábalos', status: 'PRISIÓN' },
@@ -377,7 +377,7 @@ export const translations = {
         tag: 'CASO 02',
         title: 'CASO BEGOÑA GÓMEZ',
         subtitle: 'Cinco delitos, cero títulos universitarios',
-        description: 'La esposa del presidente dirige una cátedra universitaria sin tener licenciatura. Firmó cartas de apoyo para un empresario que después recibió contratos públicos por 10 millones de euros. Un software desarrollado con dinero público acabó registrado a su nombre.',
+        description: 'La esposa del presidente dirige una cátedra universitaria sin tener licenciatura. Creó Africa Center, que recibía 40.000€/año de Wakalua (filial de Globalia). Su jefe Javier Hidalgo se reunió con ella mientras el Gobierno rescataba Air Europa con 475M€.',
         crimes: [
           'Tráfico de influencias',
           'Corrupción en los negocios',
@@ -520,6 +520,46 @@ export const translations = {
           role: 'Empresario · Codirector cátedra UCM',
           badge: 'IMPUTADO',
           dato: 'Sus empresas recibieron 25 millones en contratos públicos. 99 contratos entre 2015-2024.',
+        },
+        hidalgo: {
+          name: 'JAVIER HIDALGO',
+          role: 'CEO de Globalia · Air Europa',
+          badge: 'INVESTIGADO',
+          dato: 'Wakalua (filial de Globalia) pagaba 40.000€/año a Africa Center de Begoña Gómez. Reuniones durante el rescate de 475M€.',
+        },
+        gallardo: {
+          name: 'M. ÁNGEL GALLARDO',
+          role: 'Expresidente Diputación Badajoz',
+          badge: 'IMPUTADO',
+          dato: 'Imputado en el caso David Sánchez. TSJ Extremadura rechazó su aforamiento por "fraude de ley".',
+        },
+        sanza: {
+          name: 'DAVID SANZA',
+          role: 'Colega de Pedro Sánchez',
+          badge: 'IMPUTADO',
+          dato: 'Vinculado a Plus Ultra. Investigado por posibles irregularidades en ayudas públicas a la aerolínea.',
+        },
+      },
+      colocaciones: {
+        icon: 'briefcase',
+        title: 'RED DE COLOCACIONES',
+        jessica: {
+          name: 'JÉSICA RODRÍGUEZ',
+          role: 'Colocada en INECO y ADIF',
+          badge: 'IMPLICADA',
+          dato: 'Figuraba en catálogo de señoritas. Piso de lujo pagado por la trama.',
+        },
+        claudia: {
+          name: 'CLAUDIA MONTES',
+          role: 'Colocada en LOGIRAIL (Renfe)',
+          badge: 'IMPLICADA',
+          dato: 'Beneficiaria de la red de enchufes en empresas públicas de transporte.',
+        },
+        nicoleta: {
+          name: 'NICOLETA',
+          role: 'Colocada en ENFESA',
+          badge: 'IMPLICADA',
+          dato: 'Sueldo de 88.724€. Otra beneficiaria de la red de colocaciones.',
         },
       },
       archivados: {
@@ -1073,11 +1113,11 @@ export const translations = {
         tag: 'CASE 01',
         title: 'KOLDO CASE',
         subtitle: 'Cash in envelopes and defective masks',
-        description: 'A company that billed zero euros in 2019 received 54 million in public contracts during the pandemic. The masks turned out to be defective. Cash envelopes were distributed at PSOE headquarters.',
+        description: 'A company that billed zero euros in 2019 received 54 million in public contracts during the pandemic. The masks turned out to be defective. Cash envelopes were distributed at PSOE headquarters: €650,000 to Ábalos, €300,000 to Koldo, €15,000 to Cerdán.',
         stats: [
           { number: '54M€', label: 'Contracts without experience' },
           { number: '24 years', label: 'Sentence for Ábalos' },
-          { number: '95,437€', label: 'In envelopes from Ferraz' },
+          { number: '90,000€', label: 'Bag at Ferraz (notary)' },
         ],
         defendants: [
           { name: 'José Luis Ábalos', status: 'PRISON' },
@@ -1091,7 +1131,7 @@ export const translations = {
         tag: 'CASE 02',
         title: 'BEGOÑA GÓMEZ CASE',
         subtitle: 'Five crimes, zero university degrees',
-        description: "The president's wife runs a university chair without having a degree. She signed letters of support for a businessman who later received 10 million euros in public contracts. Software developed with public money ended up registered in her name.",
+        description: "The president's wife runs a university chair without having a degree. She created Africa Center, which received €40,000/year from Wakalua (Globalia subsidiary). Its CEO Javier Hidalgo met with her while the Government was bailing out Air Europa with €475M.",
         crimes: [
           'Influence peddling',
           'Business corruption',
@@ -1234,6 +1274,46 @@ export const translations = {
           role: 'Businessman · UCM Chair Co-director',
           badge: 'ACCUSED',
           dato: 'His companies received 25 million in public contracts. 99 contracts between 2015-2024.',
+        },
+        hidalgo: {
+          name: 'JAVIER HIDALGO',
+          role: 'CEO of Globalia · Air Europa',
+          badge: 'UNDER INVESTIGATION',
+          dato: 'Wakalua (Globalia subsidiary) paid €40,000/year to Begoña Gómez\'s Africa Center. Meetings during €475M bailout.',
+        },
+        gallardo: {
+          name: 'M. ÁNGEL GALLARDO',
+          role: 'Former Badajoz Provincial Council President',
+          badge: 'ACCUSED',
+          dato: 'Accused in David Sánchez case. TSJ Extremadura rejected his immunity for "fraud of law".',
+        },
+        sanza: {
+          name: 'DAVID SANZA',
+          role: 'Pedro Sánchez\'s colleague',
+          badge: 'ACCUSED',
+          dato: 'Linked to Plus Ultra. Under investigation for possible irregularities in public aid to the airline.',
+        },
+      },
+      colocaciones: {
+        icon: 'briefcase',
+        title: 'PLACEMENT NETWORK',
+        jessica: {
+          name: 'JÉSICA RODRÍGUEZ',
+          role: 'Placed at INECO and ADIF',
+          badge: 'IMPLICATED',
+          dato: 'Listed in escort catalog. Luxury apartment paid by the scheme.',
+        },
+        claudia: {
+          name: 'CLAUDIA MONTES',
+          role: 'Placed at LOGIRAIL (Renfe)',
+          badge: 'IMPLICATED',
+          dato: 'Beneficiary of the cronyism network in public transport companies.',
+        },
+        nicoleta: {
+          name: 'NICOLETA',
+          role: 'Placed at ENFESA',
+          badge: 'IMPLICATED',
+          dato: 'Salary of €88,724. Another beneficiary of the placement network.',
         },
       },
       archivados: {
