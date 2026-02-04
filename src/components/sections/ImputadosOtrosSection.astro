@@ -14,9 +14,12 @@ interface Props {
   aldama: Person;
   pardo: Person;
   barrabes: Person;
+  hidalgo?: Person;
+  gallardo?: Person;
+  sanza?: Person;
 }
 
-const { title, aldama, pardo, barrabes } = Astro.props;
+const { title, aldama, pardo, barrabes, hidalgo, gallardo, sanza } = Astro.props;
 ---
 
 <section
@@ -74,5 +77,35 @@ const { title, aldama, pardo, barrabes } = Astro.props;
       description={barrabes.dato}
       variant="implicado"
     />
+    {hidalgo && (
+      <ImputadoCardSmall
+        name={hidalgo.name}
+        role={hidalgo.role}
+        badge={hidalgo.badge}
+        badgeType="light"
+        description={hidalgo.dato}
+        variant="implicado"
+      />
+    )}
+    {gallardo && (
+      <ImputadoCardSmall
+        name={gallardo.name}
+        role={gallardo.role}
+        badge={gallardo.badge}
+        badgeType="light"
+        description={gallardo.dato}
+        variant="implicado"
+      />
+    )}
+    {sanza && (
+      <ImputadoCardSmall
+        name={sanza.name}
+        role={sanza.role}
+        badge={sanza.badge}
+        badgeType="light"
+        description={sanza.dato}
+        variant="implicado"
+      />
+    )}
   </div>
 </section>

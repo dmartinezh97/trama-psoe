@@ -382,6 +382,30 @@ function initCaseSectionAnimations(): void {
     statNumbers.forEach((numEl) => {
       const element = numEl as HTMLElement;
       const text = element.textContent || '0';
+
+      // Skip animation for complex formats (date ranges like "1989-2013", text like "Feb 2026")
+      // Only animate simple numbers with optional currency symbols and separators
+      const isSimpleNumber = /^[\d.,€$M]+$/.test(text.trim());
+      if (!isSimpleNumber) {
+        // Just fade in for complex formats
+        gsap.fromTo(
+          element,
+          { opacity: 0, y: 10 },
+          {
+            opacity: 1,
+            y: 0,
+            duration: 0.6,
+            ease: 'power2.out',
+            scrollTrigger: {
+              trigger: element,
+              start: 'top 85%',
+              once: true,
+            },
+          }
+        );
+        return;
+      }
+
       const numericMatch = text.match(/[\d.,]+/);
       if (!numericMatch) return;
 

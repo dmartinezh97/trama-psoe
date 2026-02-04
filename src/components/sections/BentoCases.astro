@@ -19,17 +19,31 @@ const t = useTranslations(locale);
   </div>
 
   <!-- Bento Grid -->
-  <div class="flex flex-col lg:grid lg:grid-cols-2 gap-3 md:gap-4 lg:h-[600px]">
-    <!-- Koldo (large) -->
-    <div class="h-[200px] lg:h-full">
-      <CardCaseBento
-        number={t.cases.koldo.number}
-        title={t.cases.koldo.title}
-        description={t.cases.koldo.description}
-        status={t.cases.koldo.status}
-        variant="red"
-        size="large"
-      />
+  <div class="flex flex-col lg:grid lg:grid-cols-2 gap-3 md:gap-4 lg:h-[750px]">
+    <!-- Left Column -->
+    <div class="flex flex-col gap-3 md:gap-4 lg:h-full">
+      <!-- Koldo (large) -->
+      <div class="h-[200px] lg:h-auto lg:flex-[1.5]">
+        <CardCaseBento
+          number={t.cases.koldo.number}
+          title={t.cases.koldo.title}
+          description={t.cases.koldo.description}
+          status={t.cases.koldo.status}
+          variant="red"
+          size="large"
+        />
+      </div>
+      <!-- Saunas -->
+      <div class="h-[160px] lg:h-auto lg:flex-1">
+        <CardCaseBento
+          number={t.cases.saunas.number}
+          title={t.cases.saunas.title}
+          description={t.cases.saunas.description}
+          status={t.cases.saunas.status}
+          variant="dark"
+          size="small"
+        />
+      </div>
     </div>
 
     <!-- Right Column -->

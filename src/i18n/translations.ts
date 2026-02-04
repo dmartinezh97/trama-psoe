@@ -6,15 +6,15 @@ export const translations = {
         description: 'Documentación completa sobre los casos judiciales: Caso Koldo, Begoña Gómez, Hidrocarburos y David Sánchez. +30 imputados, 54M€ investigados.',
       },
       casos: {
-        title: 'Los Casos | Trama PSOE - 4 investigaciones interconectadas',
-        description: 'Caso Koldo, Caso Begoña Gómez, Caso Hidrocarburos y Caso David Sánchez. Contratos de mascarillas, tráfico de influencias y malversación.',
+        title: 'Los Casos | Trama PSOE - 5 investigaciones interconectadas',
+        description: 'Caso Koldo, Caso Begoña Gómez, Caso Hidrocarburos, Caso David Sánchez y Caso Saunas. Contratos de mascarillas, tráfico de influencias y malversación.',
       },
       cronologia: {
         title: 'Cronología | Trama PSOE - Del estallido a los juicios (2024-2026)',
         description: 'Línea temporal completa desde la Operación Delorme (febrero 2024) hasta los juicios de 2026. Todos los acontecimientos clave.',
       },
       imputados: {
-        title: 'Imputados | Trama PSOE - +30 acusados en 4 casos',
+        title: 'Imputados | Trama PSOE - +30 acusados en 5 casos',
         description: 'Ábalos, Koldo García, Begoña Gómez, David Sánchez, Santos Cerdán y más. Quién es quién en la mayor trama de corrupción.',
       },
       documentos: {
@@ -79,7 +79,7 @@ export const translations = {
     },
     cases: {
       title: 'LOS CASOS',
-      subtitle: '4 investigaciones interconectadas',
+      subtitle: '5 investigaciones interconectadas',
       koldo: {
         number: '01',
         title: 'CASO KOLDO',
@@ -103,6 +103,12 @@ export const translations = {
         title: 'DAVID SÁNCHEZ',
         description: 'Hermano del presidente acusado de malversación y tráfico de influencias',
         status: 'JUICIO MAYO 2026',
+      },
+      saunas: {
+        number: '05',
+        title: 'CASO SAUNAS',
+        description: 'Archivos de audio de las saunas del suegro de Pedro Sánchez en manos del PSOE',
+        status: 'EN INVESTIGACIÓN',
       },
     },
     timeline: {
@@ -176,6 +182,7 @@ export const translations = {
       caseBegona: 'Begoña Gómez',
       caseHidro: 'Hidrocarburos',
       caseDavid: 'David Sánchez',
+      caseSaunas: 'Caso Saunas',
       infoTitle: 'INFO',
       infoTimeline: 'Cronología',
       infoAccused: 'Imputados',
@@ -344,9 +351,9 @@ export const translations = {
     },
     casesPage: {
       hero: {
-        tagline: '4 INVESTIGACIONES INTERCONECTADAS',
+        tagline: '5 INVESTIGACIONES INTERCONECTADAS',
         title: 'LOS CASOS',
-        subtitle: 'Caso Koldo · Caso Begoña Gómez · Caso Hidrocarburos · Caso David Sánchez',
+        subtitle: 'Caso Koldo · Caso Begoña Gómez · Caso Hidrocarburos · Caso David Sánchez · Caso Saunas',
       },
       labels: {
         mainDefendants: 'PRINCIPALES IMPUTADOS',
@@ -354,16 +361,20 @@ export const translations = {
         crimesInvestigated: 'DELITOS INVESTIGADOS',
         crimes: 'DELITOS',
         ministriesAffected: 'MINISTERIOS AFECTADOS',
+        locations: 'ESTABLECIMIENTOS',
+        keyFigures: 'PERSONAS CLAVE',
+        judicialRecords: 'DOCUMENTACIÓN JUDICIAL',
+        timeline: 'CRONOLOGÍA',
       },
       koldo: {
         tag: 'CASO 01',
         title: 'CASO KOLDO',
         subtitle: 'Comisiones en sobres y mascarillas defectuosas',
-        description: 'Una empresa que facturó cero euros en 2019 recibió 54 millones en contratos públicos durante la pandemia. Las mascarillas resultaron defectuosas. Los sobres con dinero se repartían en la sede del PSOE.',
+        description: 'Una empresa que facturó cero euros en 2019 recibió 54 millones en contratos públicos durante la pandemia. Las mascarillas resultaron defectuosas. Los sobres con dinero se repartían en la sede del PSOE: 650.000€ a Ábalos, 300.000€ a Koldo, 15.000€ a Cerdán.',
         stats: [
           { number: '54M€', label: 'Contratos sin experiencia' },
           { number: '24 años', label: 'Pena para Ábalos' },
-          { number: '95.437€', label: 'En sobres de Ferraz' },
+          { number: '90.000€', label: 'Bolsa en Ferraz (notario)' },
         ],
         defendants: [
           { name: 'José Luis Ábalos', status: 'PRISIÓN' },
@@ -377,7 +388,7 @@ export const translations = {
         tag: 'CASO 02',
         title: 'CASO BEGOÑA GÓMEZ',
         subtitle: 'Cinco delitos, cero títulos universitarios',
-        description: 'La esposa del presidente dirige una cátedra universitaria sin tener licenciatura. Firmó cartas de apoyo para un empresario que después recibió contratos públicos por 10 millones de euros. Un software desarrollado con dinero público acabó registrado a su nombre.',
+        description: 'La esposa del presidente dirige una cátedra universitaria sin tener licenciatura. Creó Africa Center, que recibía 40.000€/año de Wakalua (filial de Globalia). Su jefe Javier Hidalgo se reunió con ella mientras el Gobierno rescataba Air Europa con 475M€.',
         crimes: [
           'Tráfico de influencias',
           'Corrupción en los negocios',
@@ -426,6 +437,50 @@ export const translations = {
         ],
         trial: 'JUICIO: 28 MAYO - 4 JUNIO 2026 · AUDIENCIA PROVINCIAL BADAJOZ',
       },
+      saunas: {
+        tag: 'CASO 05',
+        title: 'CASO SAUNAS',
+        subtitle: 'Red de establecimientos, espionaje y archivos de audio en manos del PSOE',
+        description: 'Sabiniano Gómez Serrano (fallecido 26 junio 2024), padre de Begoña Gómez y suegro de Pedro Sánchez, operó a través de San Bernardo 36 S.L. una red de 5 establecimientos donde la Policía Municipal documentó prostitución entre 1989 y 2013. El excomisario Villarejo reveló que se instalaron cámaras espía y micrófonos ocultos para grabar encuentros de personalidades con fines de extorsión. En abril 2024, el empresario Javier Pérez Dolset entregó al PSOE más de 100 archivos de Villarejo. Santos Cerdán confirmó ante el juez Zamarriego (febrero 2026) que Leire Díez "la fontanera" poseía estos audios.',
+        stats: [
+          { number: '27', label: 'Denuncias policiales' },
+          { number: '5', label: 'Establecimientos' },
+          { number: '1989-2013', label: 'Período de actividad' },
+          { number: 'Feb 2026', label: 'Cerdán declara ante juez' },
+        ],
+        locations: [
+          'Sauna Adán - C/ San Bernardo 36-38 (cerrada ~2006)',
+          'Sauna Azul - C/ Concepción Arenal, junto Gran Vía (cerrada 2013)',
+          'Sauna Princesa - C/ Mártires de Alcalá 4',
+          'TC Castellana 180 - Paseo de la Castellana 180 (operativo)',
+          'Hostal Kilómetro 80 - Carretera',
+        ],
+        keyFigures: [
+          { name: 'Sabiniano Gómez Serrano', role: 'Propietario (fallecido junio 2024)' },
+          { name: 'José Manuel Villarejo', role: 'Excomisario - Reveló sistema de espionaje' },
+          { name: 'Leire Díez "La Fontanera"', role: 'Imputada - Poseía los archivos de audio' },
+          { name: 'Javier Pérez Dolset', role: 'Empresario - Entregó material al PSOE' },
+          { name: 'Santos Cerdán', role: 'Confirmó archivos ante el juez (Feb 2026)' },
+        ],
+        judicialRecords: [
+          '9 inspecciones y 27 denuncias documentadas por Policía Municipal',
+          'TSJ Madrid (2000): Confirmó prostitución en Sauna Princesa',
+          'TSJ Madrid: Anuló licencia de Castellana 180 por "ocultación del objeto real"',
+          'Juez Zamarriego: Investiga a Leire Díez por cohecho y tráfico de influencias',
+        ],
+        timeline: [
+          { year: '1989', event: 'Inicio de actividad de las saunas' },
+          { year: '2000', event: 'TSJ Madrid confirma prostitución' },
+          { year: '2006', event: 'Cierre aproximado de Sauna Adán' },
+          { year: '2013', event: 'Cierre definitivo de Sauna Azul' },
+          { year: '2014', event: 'Villarejo elabora informe confidencial' },
+          { year: 'Abr 2024', event: 'Cerdán se reúne con Leire Díez en Ferraz' },
+          { year: 'Jun 2024', event: 'Fallece Sabiniano Gómez' },
+          { year: 'Dic 2025', event: 'Detención de Leire Díez' },
+          { year: 'Feb 2026', event: 'Santos Cerdán declara ante el juez' },
+        ],
+        status: 'EN INVESTIGACIÓN · CASO LEIRE DÍEZ · JUEZ ZAMARRIEGO',
+      },
       footer: {
         title: 'EXPLORA MÁS',
         links: [
@@ -442,7 +497,7 @@ export const translations = {
         stats: [
           { number: '+30', label: 'imputados' },
           { number: '2', label: 'en prisión' },
-          { number: '4', label: 'casos activos' },
+          { number: '5', label: 'casos activos' },
         ],
       },
       prision: {
@@ -520,6 +575,46 @@ export const translations = {
           role: 'Empresario · Codirector cátedra UCM',
           badge: 'IMPUTADO',
           dato: 'Sus empresas recibieron 25 millones en contratos públicos. 99 contratos entre 2015-2024.',
+        },
+        hidalgo: {
+          name: 'JAVIER HIDALGO',
+          role: 'CEO de Globalia · Air Europa',
+          badge: 'INVESTIGADO',
+          dato: 'Wakalua (filial de Globalia) pagaba 40.000€/año a Africa Center de Begoña Gómez. Reuniones durante el rescate de 475M€.',
+        },
+        gallardo: {
+          name: 'M. ÁNGEL GALLARDO',
+          role: 'Expresidente Diputación Badajoz',
+          badge: 'IMPUTADO',
+          dato: 'Imputado en el caso David Sánchez. TSJ Extremadura rechazó su aforamiento por "fraude de ley".',
+        },
+        sanza: {
+          name: 'DAVID SANZA',
+          role: 'Colega de Pedro Sánchez',
+          badge: 'IMPUTADO',
+          dato: 'Vinculado a Plus Ultra. Investigado por posibles irregularidades en ayudas públicas a la aerolínea.',
+        },
+      },
+      colocaciones: {
+        icon: 'briefcase',
+        title: 'RED DE COLOCACIONES',
+        jessica: {
+          name: 'JÉSICA RODRÍGUEZ',
+          role: 'Colocada en INECO y ADIF',
+          badge: 'IMPLICADA',
+          dato: 'Figuraba en catálogo de señoritas. Piso de lujo pagado por la trama.',
+        },
+        claudia: {
+          name: 'CLAUDIA MONTES',
+          role: 'Colocada en LOGIRAIL (Renfe)',
+          badge: 'IMPLICADA',
+          dato: 'Beneficiaria de la red de enchufes en empresas públicas de transporte.',
+        },
+        nicoleta: {
+          name: 'NICOLETA',
+          role: 'Colocada en ENFESA',
+          badge: 'IMPLICADA',
+          dato: 'Sueldo de 88.724€. Otra beneficiaria de la red de colocaciones.',
         },
       },
       archivados: {
@@ -720,15 +815,15 @@ export const translations = {
         description: 'Complete documentation on the judicial cases: Koldo Case, Begoña Gómez, Hydrocarbons, and David Sánchez. +30 accused, €54M under investigation.',
       },
       casos: {
-        title: 'The Cases | PSOE Scandal - 4 Interconnected Investigations',
-        description: 'Koldo Case, Begoña Gómez Case, Hydrocarbons Case, and David Sánchez Case. Mask contracts, influence peddling, and embezzlement.',
+        title: 'The Cases | PSOE Scandal - 5 Interconnected Investigations',
+        description: 'Koldo Case, Begoña Gómez Case, Hydrocarbons Case, David Sánchez Case, and Saunas Case. Mask contracts, influence peddling, and embezzlement.',
       },
       cronologia: {
         title: 'Timeline | PSOE Scandal - From Outbreak to Trials (2024-2026)',
         description: 'Complete timeline from Operation Delorme (February 2024) to the 2026 trials. All key events documented.',
       },
       imputados: {
-        title: 'Defendants | PSOE Scandal - +30 Accused in 4 Cases',
+        title: 'Defendants | PSOE Scandal - +30 Accused in 5 Cases',
         description: 'Ábalos, Koldo García, Begoña Gómez, David Sánchez, Santos Cerdán and more. Who\'s who in Spain\'s biggest corruption scandal.',
       },
       documentos: {
@@ -793,7 +888,7 @@ export const translations = {
     },
     cases: {
       title: 'THE CASES',
-      subtitle: '4 interconnected investigations',
+      subtitle: '5 interconnected investigations',
       koldo: {
         number: '01',
         title: 'KOLDO CASE',
@@ -817,6 +912,12 @@ export const translations = {
         title: 'DAVID SÁNCHEZ',
         description: "President's brother accused of embezzlement and influence peddling",
         status: 'TRIAL MAY 2026',
+      },
+      saunas: {
+        number: '05',
+        title: 'SAUNAS CASE',
+        description: "Audio files from Pedro Sánchez's father-in-law's saunas in PSOE hands",
+        status: 'UNDER INVESTIGATION',
       },
     },
     timeline: {
@@ -890,6 +991,7 @@ export const translations = {
       caseBegona: 'Begoña Gómez',
       caseHidro: 'Hydrocarbons',
       caseDavid: 'David Sánchez',
+      caseSaunas: 'Saunas Case',
       infoTitle: 'INFO',
       infoTimeline: 'Timeline',
       infoAccused: 'Accused',
@@ -1058,9 +1160,9 @@ export const translations = {
     },
     casesPage: {
       hero: {
-        tagline: '4 INTERCONNECTED INVESTIGATIONS',
+        tagline: '5 INTERCONNECTED INVESTIGATIONS',
         title: 'THE CASES',
-        subtitle: 'Koldo Case · Begoña Gómez Case · Hydrocarbons Case · David Sánchez Case',
+        subtitle: 'Koldo Case · Begoña Gómez Case · Hydrocarbons Case · David Sánchez Case · Saunas Case',
       },
       labels: {
         mainDefendants: 'MAIN DEFENDANTS',
@@ -1068,16 +1170,20 @@ export const translations = {
         crimesInvestigated: 'CRIMES INVESTIGATED',
         crimes: 'CRIMES',
         ministriesAffected: 'AFFECTED MINISTRIES',
+        locations: 'ESTABLISHMENTS',
+        keyFigures: 'KEY FIGURES',
+        judicialRecords: 'JUDICIAL RECORDS',
+        timeline: 'TIMELINE',
       },
       koldo: {
         tag: 'CASE 01',
         title: 'KOLDO CASE',
         subtitle: 'Cash in envelopes and defective masks',
-        description: 'A company that billed zero euros in 2019 received 54 million in public contracts during the pandemic. The masks turned out to be defective. Cash envelopes were distributed at PSOE headquarters.',
+        description: 'A company that billed zero euros in 2019 received 54 million in public contracts during the pandemic. The masks turned out to be defective. Cash envelopes were distributed at PSOE headquarters: €650,000 to Ábalos, €300,000 to Koldo, €15,000 to Cerdán.',
         stats: [
           { number: '54M€', label: 'Contracts without experience' },
           { number: '24 years', label: 'Sentence for Ábalos' },
-          { number: '95,437€', label: 'In envelopes from Ferraz' },
+          { number: '90,000€', label: 'Bag at Ferraz (notary)' },
         ],
         defendants: [
           { name: 'José Luis Ábalos', status: 'PRISON' },
@@ -1091,7 +1197,7 @@ export const translations = {
         tag: 'CASE 02',
         title: 'BEGOÑA GÓMEZ CASE',
         subtitle: 'Five crimes, zero university degrees',
-        description: "The president's wife runs a university chair without having a degree. She signed letters of support for a businessman who later received 10 million euros in public contracts. Software developed with public money ended up registered in her name.",
+        description: "The president's wife runs a university chair without having a degree. She created Africa Center, which received €40,000/year from Wakalua (Globalia subsidiary). Its CEO Javier Hidalgo met with her while the Government was bailing out Air Europa with €475M.",
         crimes: [
           'Influence peddling',
           'Business corruption',
@@ -1140,6 +1246,50 @@ export const translations = {
         ],
         trial: 'TRIAL: MAY 28 - JUNE 4, 2026 · BADAJOZ PROVINCIAL COURT',
       },
+      saunas: {
+        tag: 'CASE 05',
+        title: 'SAUNAS CASE',
+        subtitle: "Network of establishments, espionage and audio files in PSOE hands",
+        description: "Sabiniano Gómez Serrano (deceased June 26, 2024), Begoña Gómez's father and Pedro Sánchez's father-in-law, operated through San Bernardo 36 S.L. a network of 5 establishments where Municipal Police documented prostitution between 1989 and 2013. Former commissioner Villarejo revealed that spy cameras and hidden microphones were installed to record encounters of personalities for extortion purposes. In April 2024, businessman Javier Pérez Dolset delivered over 100 Villarejo files to PSOE. Santos Cerdán confirmed before Judge Zamarriego (February 2026) that Leire Díez 'the plumber' possessed these audio files.",
+        stats: [
+          { number: '27', label: 'Police complaints' },
+          { number: '5', label: 'Establishments' },
+          { number: '1989-2013', label: 'Activity period' },
+          { number: 'Feb 2026', label: 'Cerdán testifies before judge' },
+        ],
+        locations: [
+          'Sauna Adán - C/ San Bernardo 36-38 (closed ~2006)',
+          'Sauna Azul - C/ Concepción Arenal, near Gran Vía (closed 2013)',
+          'Sauna Princesa - C/ Mártires de Alcalá 4',
+          'TC Castellana 180 - Paseo de la Castellana 180 (operational)',
+          'Hostal Kilómetro 80 - Highway',
+        ],
+        keyFigures: [
+          { name: 'Sabiniano Gómez Serrano', role: 'Owner (deceased June 2024)' },
+          { name: 'José Manuel Villarejo', role: 'Former Commissioner - Revealed espionage system' },
+          { name: 'Leire Díez "The Plumber"', role: 'Indicted - Possessed audio files' },
+          { name: 'Javier Pérez Dolset', role: 'Businessman - Delivered material to PSOE' },
+          { name: 'Santos Cerdán', role: 'Confirmed files before judge (Feb 2026)' },
+        ],
+        judicialRecords: [
+          '9 inspections and 27 complaints documented by Municipal Police',
+          'Madrid High Court (2000): Confirmed prostitution at Sauna Princesa',
+          'Madrid High Court: Revoked Castellana 180 license for "concealment of real activity"',
+          'Judge Zamarriego: Investigating Leire Díez for bribery and influence peddling',
+        ],
+        timeline: [
+          { year: '1989', event: 'Start of sauna operations' },
+          { year: '2000', event: 'Madrid High Court confirms prostitution' },
+          { year: '2006', event: 'Approximate closure of Sauna Adán' },
+          { year: '2013', event: 'Definitive closure of Sauna Azul' },
+          { year: '2014', event: 'Villarejo prepares confidential report' },
+          { year: 'Apr 2024', event: 'Cerdán meets with Leire Díez at Ferraz' },
+          { year: 'Jun 2024', event: 'Sabiniano Gómez passes away' },
+          { year: 'Dec 2025', event: 'Arrest of Leire Díez' },
+          { year: 'Feb 2026', event: 'Santos Cerdán testifies before judge' },
+        ],
+        status: 'UNDER INVESTIGATION · LEIRE DÍEZ CASE · JUDGE ZAMARRIEGO',
+      },
       footer: {
         title: 'EXPLORE MORE',
         links: [
@@ -1156,7 +1306,7 @@ export const translations = {
         stats: [
           { number: '+30', label: 'accused' },
           { number: '2', label: 'in prison' },
-          { number: '4', label: 'active cases' },
+          { number: '5', label: 'active cases' },
         ],
       },
       prision: {
@@ -1234,6 +1384,46 @@ export const translations = {
           role: 'Businessman · UCM Chair Co-director',
           badge: 'ACCUSED',
           dato: 'His companies received 25 million in public contracts. 99 contracts between 2015-2024.',
+        },
+        hidalgo: {
+          name: 'JAVIER HIDALGO',
+          role: 'CEO of Globalia · Air Europa',
+          badge: 'UNDER INVESTIGATION',
+          dato: 'Wakalua (Globalia subsidiary) paid €40,000/year to Begoña Gómez\'s Africa Center. Meetings during €475M bailout.',
+        },
+        gallardo: {
+          name: 'M. ÁNGEL GALLARDO',
+          role: 'Former Badajoz Provincial Council President',
+          badge: 'ACCUSED',
+          dato: 'Accused in David Sánchez case. TSJ Extremadura rejected his immunity for "fraud of law".',
+        },
+        sanza: {
+          name: 'DAVID SANZA',
+          role: 'Pedro Sánchez\'s colleague',
+          badge: 'ACCUSED',
+          dato: 'Linked to Plus Ultra. Under investigation for possible irregularities in public aid to the airline.',
+        },
+      },
+      colocaciones: {
+        icon: 'briefcase',
+        title: 'PLACEMENT NETWORK',
+        jessica: {
+          name: 'JÉSICA RODRÍGUEZ',
+          role: 'Placed at INECO and ADIF',
+          badge: 'IMPLICATED',
+          dato: 'Listed in escort catalog. Luxury apartment paid by the scheme.',
+        },
+        claudia: {
+          name: 'CLAUDIA MONTES',
+          role: 'Placed at LOGIRAIL (Renfe)',
+          badge: 'IMPLICATED',
+          dato: 'Beneficiary of the cronyism network in public transport companies.',
+        },
+        nicoleta: {
+          name: 'NICOLETA',
+          role: 'Placed at ENFESA',
+          badge: 'IMPLICATED',
+          dato: 'Salary of €88,724. Another beneficiary of the placement network.',
         },
       },
       archivados: {
