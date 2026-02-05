@@ -1,43 +1,88 @@
-# Astro Starter Kit: Minimal
+# Trama PSOE
 
-```sh
-npm create astro@latest -- --template minimal
+Sitio web de documentación periodística que centraliza información sobre los casos judiciales conocidos como "Trama PSOE": Caso Koldo, Begoña Gómez, Hidrocarburos y David Sánchez.
+
+**Producción:** https://trama-psoe.com
+
+## Stack Tecnológico
+
+- **Framework:** Astro 5.16+
+- **Componentes:** Vue 3
+- **Estilos:** Tailwind CSS 4+ (Vite plugin)
+- **Lenguaje:** TypeScript
+- **Animaciones:** GSAP
+- **Iconos:** Lucide, Material Symbols
+- **Analytics:** Vercel Analytics
+- **i18n:** Español/Inglés
+
+## Instalación
+
+```bash
+# Clonar repositorio
+git clone https://github.com/dmartinezh97/trama-psoe.git
+cd trama-psoe
+
+# Instalar dependencias
+npm install
+
+# Iniciar servidor de desarrollo
+npm run dev
 ```
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+## Comandos
 
-## 🚀 Project Structure
+| Comando           | Descripción                              |
+|-------------------|------------------------------------------|
+| `npm install`     | Instalar dependencias                    |
+| `npm run dev`     | Servidor de desarrollo (localhost:4321)  |
+| `npm run build`   | Build de producción (./dist/)            |
+| `npm run preview` | Preview del build                        |
 
-Inside of your Astro project, you'll see the following folders and files:
+## Estructura del Proyecto
 
-```text
-/
-├── public/
-├── src/
-│   └── pages/
-│       └── index.astro
-└── package.json
+```
+src/
+├── components/        # Componentes Vue y Astro
+├── content/           # Content Collections
+├── i18n/              # Internacionalización
+│   ├── translations.ts    # Traducciones ES/EN
+│   └── utils.ts           # Helpers i18n
+├── img/               # Imágenes (logos, portraits)
+├── layouts/           # Layouts base
+├── pages/
+│   ├── es/            # Páginas en español
+│   ├── en/            # Páginas en inglés
+│   ├── index.astro    # Redirect a /es
+│   └── og-image.png.ts    # Generación OG images
+├── scripts/           # Scripts auxiliares
+└── styles/            # Estilos globales
+
+fuentes/
+├── 360_fuentes_trama_psoe.json  # Base de datos de fuentes
+└── trama-psoe-completa.txt      # Documentación completa
 ```
 
-Astro looks for `.astro` or `.md` files in the `src/pages/` directory. Each page is exposed as a route based on its file name.
+## Internacionalización
 
-There's nothing special about `src/components/`, but that's where we like to put any Astro/React/Vue/Svelte/Preact components.
+El sitio soporta español e inglés con rutas separadas:
 
-Any static assets, like images, can be placed in the `public/` directory.
+- `/es/` - Versión en español
+- `/en/` - Versión en inglés
 
-## 🧞 Commands
+Las traducciones están centralizadas en `src/i18n/translations.ts` con estructura tipada.
 
-All commands are run from the root of the project, from a terminal:
+## Base de Datos de Fuentes
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+El archivo `fuentes/360_fuentes_trama_psoe.json` contiene más de 360 fuentes periodísticas y judiciales verificables utilizadas para documentar los casos.
 
-## 👀 Want to learn more?
+## Páginas
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+- **Inicio** - Overview con estadísticas y casos
+- **Casos** - Detalle de los 4 casos principales
+- **Cronología** - Timeline 2024-2026
+- **Imputados** - Perfiles de +30 acusados
+- **Documentos** - Informes UCO, autos judiciales, IGAE, testimonios
+
+## Licencia
+
+Código privado. Contenido basado en fuentes públicas.
