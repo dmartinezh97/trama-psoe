@@ -25473,168 +25473,298 @@
     },
     {
       "type": "frame",
-      "id": "HYAXH",
+      "id": "LiWhj",
       "x": 24770,
       "y": 0,
       "name": "Diagrama - La Trama PSOE",
-      "width": 2800,
-      "height": 2000,
-      "fill": "#FFFFFF",
+      "width": 3200,
+      "height": 2200,
+      "fill": {
+        "type": "image",
+        "enabled": true,
+        "url": "./images/generated-1770238294253.png",
+        "mode": "fill"
+      },
       "layout": "none",
       "children": [
         {
           "type": "frame",
-          "id": "74CfV",
+          "id": "AKAyg",
           "x": 0,
           "y": 0,
-          "name": "header",
-          "width": 2800,
-          "height": 200,
-          "fill": "#000000",
-          "layout": "vertical",
-          "gap": 16,
-          "padding": [
-            40,
-            60
-          ],
+          "name": "headerOverlay",
+          "width": 3200,
+          "height": 280,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#000000FF",
+                "position": 0
+              },
+              {
+                "color": "#00000000",
+                "position": 1
+              }
+            ]
+          }
+        },
+        {
+          "type": "text",
+          "id": "4EoKD",
+          "x": 80,
+          "y": 50,
+          "name": "titleMain",
+          "fill": "#FFFFFF",
+          "content": "LA TRAMA",
+          "fontFamily": "Sora",
+          "fontSize": 120,
+          "fontWeight": "900",
+          "letterSpacing": -4
+        },
+        {
+          "type": "text",
+          "id": "t0NbU",
+          "x": 580,
+          "y": 50,
+          "name": "titlePSOE",
+          "fill": "#DC2626",
+          "content": "PSOE",
+          "fontFamily": "Sora",
+          "fontSize": 120,
+          "fontWeight": "900",
+          "letterSpacing": -4
+        },
+        {
+          "type": "text",
+          "id": "6Oy8p",
+          "x": 80,
+          "y": 190,
+          "name": "subtitleText",
+          "fill": "#FFFFFF99",
+          "content": "MAPA DE CORRUPCIÓN Y CONEXIONES — JUNIO 2025",
+          "fontFamily": "Space Mono",
+          "fontSize": 16,
+          "letterSpacing": 4
+        },
+        {
+          "type": "frame",
+          "id": "6EW5g",
+          "x": 1400,
+          "y": 80,
+          "name": "statsRow",
+          "gap": 40,
           "children": [
             {
               "type": "frame",
-              "id": "P9R5L",
-              "name": "titleRow",
-              "width": "fill_container",
-              "justifyContent": "space_between",
-              "alignItems": "end",
+              "id": "jDF4O",
+              "name": "stat1",
+              "layout": "vertical",
+              "gap": 4,
+              "alignItems": "center",
               "children": [
                 {
                   "type": "text",
-                  "id": "IToqM",
-                  "name": "titleText",
+                  "id": "YxG18",
+                  "name": "stat1Value",
                   "fill": "#FFFFFF",
-                  "content": "LA TRAMA PSOE",
+                  "content": "12",
                   "fontFamily": "Sora",
                   "fontSize": 72,
-                  "fontWeight": "800",
-                  "letterSpacing": -2
+                  "fontWeight": "900"
                 },
                 {
-                  "type": "frame",
-                  "id": "B0qFC",
-                  "name": "dateTag",
-                  "fill": "#FFFFFF",
-                  "padding": [
-                    12,
-                    24
-                  ],
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "GGH1e",
-                      "name": "dateTagText",
-                      "fill": "#000000",
-                      "content": "JUNIO 2025",
-                      "fontFamily": "Space Mono",
-                      "fontSize": 14,
-                      "fontWeight": "500",
-                      "letterSpacing": 2
-                    }
-                  ]
+                  "type": "text",
+                  "id": "rSFQZ",
+                  "name": "stat1Label",
+                  "fill": "#DC2626",
+                  "content": "IMPUTADOS",
+                  "fontFamily": "Space Mono",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
                 }
               ]
             },
             {
-              "type": "text",
-              "id": "sSTlh",
-              "name": "subtitle",
-              "fill": "#888888",
-              "content": "MAPA DE RELACIONES Y CONEXIONES — INVESTIGACIONES JUDICIALES EN CURSO",
-              "fontFamily": "Space Mono",
-              "fontSize": 13,
-              "letterSpacing": 2
+              "type": "frame",
+              "id": "zdzkZ",
+              "name": "stat2",
+              "layout": "vertical",
+              "gap": 4,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "ytSWG",
+                  "name": "stat2Value",
+                  "fill": "#FFFFFF",
+                  "content": "5",
+                  "fontFamily": "Sora",
+                  "fontSize": 72,
+                  "fontWeight": "900"
+                },
+                {
+                  "type": "text",
+                  "id": "7ErJQ",
+                  "name": "stat2Label",
+                  "fill": "#DC2626",
+                  "content": "CASOS",
+                  "fontFamily": "Space Mono",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "Nyt2z",
+              "name": "stat3",
+              "layout": "vertical",
+              "gap": 4,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "text",
+                  "id": "Zm9Ge",
+                  "name": "stat3Value",
+                  "fill": "#FFFFFF",
+                  "content": "+500M€",
+                  "fontFamily": "Sora",
+                  "fontSize": 72,
+                  "fontWeight": "900"
+                },
+                {
+                  "type": "text",
+                  "id": "oErXg",
+                  "name": "stat3Label",
+                  "fill": "#DC2626",
+                  "content": "INVESTIGADOS",
+                  "fontFamily": "Space Mono",
+                  "fontSize": 12,
+                  "fontWeight": "500",
+                  "letterSpacing": 2
+                }
+              ]
             }
           ]
         },
         {
           "type": "frame",
-          "id": "SdZlO",
-          "x": 1200,
-          "y": 500,
-          "name": "centralNucleus",
-          "width": 400,
+          "id": "MnAlc",
+          "x": 1450,
+          "y": 450,
+          "name": "sanchezNode",
+          "width": 220,
           "layout": "vertical",
           "gap": 16,
           "alignItems": "center",
           "children": [
             {
-              "type": "text",
-              "id": "bqtBW",
-              "name": "nucleusLabel",
-              "fill": "#888888",
-              "content": "NÚCLEO POLÍTICO",
-              "fontFamily": "Space Mono",
-              "fontSize": 11,
-              "fontWeight": "500",
-              "letterSpacing": 2
+              "type": "frame",
+              "id": "RqiIA",
+              "name": "sanchezPhoto",
+              "metadata": {
+                "type": "unsplash",
+                "username": "frederickjmedina",
+                "link": "https://unsplash.com/@frederickjmedina",
+                "author": "Frederick Medina"
+              },
+              "clip": true,
+              "width": 160,
+              "height": 160,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1678940807568-b089ddca2890?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzAyMzgzMTV8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 99,
+              "stroke": {
+                "align": "outside",
+                "thickness": 6,
+                "fill": "#DC2626"
+              }
             },
             {
               "type": "frame",
-              "id": "FJDiC",
-              "name": "sanchezNode",
-              "width": 200,
-              "fill": "#000000",
-              "stroke": {
-                "thickness": 4,
-                "fill": "#000000"
+              "id": "RLtE0",
+              "name": "sanchezGlow",
+              "enabled": false,
+              "width": 180,
+              "height": 180,
+              "fill": {
+                "type": "gradient",
+                "gradientType": "radial",
+                "enabled": true,
+                "rotation": 0,
+                "size": {
+                  "width": 1,
+                  "height": 1
+                },
+                "colors": [
+                  {
+                    "color": "#DC262640",
+                    "position": 0
+                  },
+                  {
+                    "color": "#DC262600",
+                    "position": 1
+                  }
+                ]
               },
-              "layout": "vertical",
-              "gap": 12,
-              "padding": 32,
-              "alignItems": "center",
+              "cornerRadius": 99
+            },
+            {
+              "type": "text",
+              "id": "G8iZq",
+              "name": "sanchezName",
+              "fill": "#FFFFFF",
+              "content": "PEDRO SÁNCHEZ",
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 20,
+              "fontWeight": "800",
+              "letterSpacing": 1
+            },
+            {
+              "type": "text",
+              "id": "oEpFa",
+              "name": "sanchezRole",
+              "fill": "#FFFFFF80",
+              "content": "PRESIDENTE DEL GOBIERNO",
+              "textAlign": "center",
+              "fontFamily": "Space Mono",
+              "fontSize": 10,
+              "letterSpacing": 1
+            },
+            {
+              "type": "frame",
+              "id": "9Z3Wg",
+              "name": "sanchezBadge",
+              "fill": "#DC2626",
+              "cornerRadius": 4,
+              "padding": [
+                8,
+                16
+              ],
               "children": [
                 {
-                  "type": "frame",
-                  "id": "sgIq9",
-                  "name": "sanchezAvatar",
-                  "width": 100,
-                  "height": 100,
-                  "fill": "#FFFFFF",
-                  "layout": "vertical",
-                  "justifyContent": "center",
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "6IasA",
-                      "name": "sanchezInitials",
-                      "fill": "#000000",
-                      "content": "PS",
-                      "fontFamily": "Sora",
-                      "fontSize": 40,
-                      "fontWeight": "800"
-                    }
-                  ]
-                },
-                {
                   "type": "text",
-                  "id": "x2Tel",
-                  "name": "sanchezName",
+                  "id": "toErI",
+                  "name": "sanchezBadgeText",
                   "fill": "#FFFFFF",
-                  "content": "PEDRO SÁNCHEZ",
-                  "textAlign": "center",
-                  "fontFamily": "Sora",
-                  "fontSize": 16,
-                  "fontWeight": "700",
-                  "letterSpacing": 1
-                },
-                {
-                  "type": "text",
-                  "id": "5N0nf",
-                  "name": "sanchezRole",
-                  "fill": "#888888",
-                  "content": "PRESIDENTE DEL GOBIERNO",
-                  "textAlign": "center",
+                  "content": "NÚCLEO CENTRAL",
                   "fontFamily": "Space Mono",
                   "fontSize": 10,
+                  "fontWeight": "600",
                   "letterSpacing": 1
                 }
               ]
@@ -25643,61 +25773,58 @@
         },
         {
           "type": "frame",
-          "id": "ECaE9",
-          "x": 900,
+          "id": "mvBCh",
+          "x": 700,
           "y": 700,
           "name": "abalosNode",
-          "width": 160,
-          "fill": "#FFFFFF",
-          "stroke": {
-            "thickness": 3,
-            "fill": "#000000"
-          },
+          "width": 180,
           "layout": "vertical",
-          "gap": 8,
-          "padding": 24,
+          "gap": 12,
           "alignItems": "center",
           "children": [
             {
               "type": "frame",
-              "id": "Y1BB3",
-              "name": "abalosAvatar",
-              "width": 60,
-              "height": 60,
-              "fill": "#000000",
-              "layout": "vertical",
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "Lb9dO",
-                  "name": "abalosInitials",
-                  "fill": "#FFFFFF",
-                  "content": "JA",
-                  "fontFamily": "Sora",
-                  "fontSize": 24,
-                  "fontWeight": "700"
-                }
-              ]
+              "id": "vZGEP",
+              "name": "abalosPhoto",
+              "metadata": {
+                "type": "unsplash",
+                "username": "unseenhistories",
+                "link": "https://unsplash.com/@unseenhistories",
+                "author": "Unseen Histories"
+              },
+              "clip": true,
+              "width": 120,
+              "height": 120,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1597953531299-73c77242fe46?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzAyMzgzMzF8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 99,
+              "stroke": {
+                "align": "outside",
+                "thickness": 4,
+                "fill": "#DC2626"
+              }
             },
             {
               "type": "text",
-              "id": "XeJVK",
+              "id": "Ru46o",
               "name": "abalosName",
-              "fill": "#000000",
-              "content": "JOSÉ LUIS\nÁBALOS",
+              "fill": "#FFFFFF",
+              "content": "JOSÉ LUIS ÁBALOS",
               "textAlign": "center",
               "fontFamily": "Sora",
-              "fontSize": 12,
+              "fontSize": 14,
               "fontWeight": "700",
               "letterSpacing": 1
             },
             {
               "type": "text",
-              "id": "vnaAe",
+              "id": "DllSN",
               "name": "abalosRole",
-              "fill": "#666666",
+              "fill": "#FFFFFF60",
               "content": "EXMINISTRO",
               "textAlign": "center",
               "fontFamily": "Space Mono",
@@ -25706,9 +25833,10 @@
             },
             {
               "type": "frame",
-              "id": "aZGD9",
+              "id": "PjnQu",
               "name": "abalosBadge",
-              "fill": "#000000",
+              "fill": "#DC2626",
+              "cornerRadius": 4,
               "padding": [
                 6,
                 12
@@ -25716,76 +25844,83 @@
               "children": [
                 {
                   "type": "text",
-                  "id": "EJD5M",
+                  "id": "ZUI79",
                   "name": "abalosBadgeText",
                   "fill": "#FFFFFF",
                   "content": "IMPUTADO",
                   "fontFamily": "Space Mono",
                   "fontSize": 9,
-                  "fontWeight": "500",
+                  "fontWeight": "600",
                   "letterSpacing": 1
                 }
               ]
+            },
+            {
+              "type": "text",
+              "id": "aqqg6",
+              "name": "abalosAmount",
+              "fill": "#22C55E",
+              "content": "650.000€",
+              "fontFamily": "Sora",
+              "fontSize": 16,
+              "fontWeight": "800"
             }
           ]
         },
         {
           "type": "frame",
-          "id": "liF0b",
-          "x": 1640,
+          "id": "n1oBs",
+          "x": 950,
           "y": 700,
           "name": "cerdanNode",
-          "width": 160,
-          "fill": "#FFFFFF",
-          "stroke": {
-            "thickness": 3,
-            "fill": "#000000"
-          },
+          "width": 180,
           "layout": "vertical",
-          "gap": 8,
-          "padding": 24,
+          "gap": 12,
           "alignItems": "center",
           "children": [
             {
               "type": "frame",
-              "id": "9pEss",
-              "name": "cerdanAvatar",
-              "width": 60,
-              "height": 60,
-              "fill": "#000000",
-              "layout": "vertical",
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "vE6zi",
-                  "name": "cerdanInitials",
-                  "fill": "#FFFFFF",
-                  "content": "SC",
-                  "fontFamily": "Sora",
-                  "fontSize": 24,
-                  "fontWeight": "700"
-                }
-              ]
+              "id": "B6JaR",
+              "name": "cerdanPhoto",
+              "metadata": {
+                "type": "unsplash",
+                "username": "joshuafernandez",
+                "link": "https://unsplash.com/@joshuafernandez",
+                "author": "Joshua Fernandez"
+              },
+              "clip": true,
+              "width": 120,
+              "height": 120,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1608879041304-1bdbf42c0125?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3NzAyMzgzMzh8&ixlib=rb-4.1.0&q=80&w=1080",
+                "mode": "fill"
+              },
+              "cornerRadius": 99,
+              "stroke": {
+                "align": "outside",
+                "thickness": 4,
+                "fill": "#DC2626"
+              }
             },
             {
               "type": "text",
-              "id": "22TIQ",
+              "id": "b0ztL",
               "name": "cerdanName",
-              "fill": "#000000",
-              "content": "SANTOS\nCERDÁN",
+              "fill": "#FFFFFF",
+              "content": "SANTOS CERDÁN",
               "textAlign": "center",
               "fontFamily": "Sora",
-              "fontSize": 12,
+              "fontSize": 14,
               "fontWeight": "700",
               "letterSpacing": 1
             },
             {
               "type": "text",
-              "id": "dSoPd",
+              "id": "N69QY",
               "name": "cerdanRole",
-              "fill": "#666666",
+              "fill": "#FFFFFF60",
               "content": "DIRIGENTE PSOE",
               "textAlign": "center",
               "fontFamily": "Space Mono",
@@ -25794,9 +25929,10 @@
             },
             {
               "type": "frame",
-              "id": "oduCr",
+              "id": "PrqQ6",
               "name": "cerdanBadge",
-              "fill": "#000000",
+              "fill": "#DC2626",
+              "cornerRadius": 4,
               "padding": [
                 6,
                 12
@@ -25804,76 +25940,77 @@
               "children": [
                 {
                   "type": "text",
-                  "id": "RVBF1",
+                  "id": "n0bjQ",
                   "name": "cerdanBadgeText",
                   "fill": "#FFFFFF",
                   "content": "IMPUTADO",
                   "fontFamily": "Space Mono",
                   "fontSize": 9,
-                  "fontWeight": "500",
+                  "fontWeight": "600",
                   "letterSpacing": 1
                 }
               ]
+            },
+            {
+              "type": "text",
+              "id": "znTfw",
+              "name": "cerdanAmount",
+              "fill": "#22C55E",
+              "content": "15.000€",
+              "fontFamily": "Sora",
+              "fontSize": 16,
+              "fontWeight": "800"
             }
           ]
         },
         {
           "type": "frame",
-          "id": "LAaUY",
-          "x": 700,
+          "id": "uQ2PK",
+          "x": 500,
           "y": 950,
           "name": "koldoNode",
-          "width": 160,
-          "fill": "#FFFFFF",
-          "stroke": {
-            "thickness": 3,
-            "fill": "#000000"
-          },
+          "width": 180,
           "layout": "vertical",
-          "gap": 8,
-          "padding": 24,
+          "gap": 12,
           "alignItems": "center",
           "children": [
             {
               "type": "frame",
-              "id": "QkfWt",
-              "name": "koldoAvatar",
-              "width": 60,
-              "height": 60,
-              "fill": "#000000",
-              "layout": "vertical",
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "ebLQd",
-                  "name": "koldoInitials",
-                  "fill": "#FFFFFF",
-                  "content": "KG",
-                  "fontFamily": "Sora",
-                  "fontSize": 24,
-                  "fontWeight": "700"
-                }
-              ]
+              "id": "MBS8q",
+              "name": "koldoPhoto",
+              "clip": true,
+              "width": 120,
+              "height": 120,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1770238358577.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 99,
+              "stroke": {
+                "align": "outside",
+                "thickness": 4,
+                "fill": "#DC2626"
+              }
             },
             {
               "type": "text",
-              "id": "OMj05",
+              "id": "TYTPg",
               "name": "koldoName",
-              "fill": "#000000",
-              "content": "KOLDO\nGARCÍA",
+              "fill": "#FFFFFF",
+              "content": "KOLDO GARCÍA",
               "textAlign": "center",
               "fontFamily": "Sora",
-              "fontSize": 12,
+              "fontSize": 14,
               "fontWeight": "700",
               "letterSpacing": 1
             },
             {
               "type": "text",
-              "id": "sDmfl",
+              "id": "QKNwg",
               "name": "koldoRole",
-              "fill": "#666666",
+              "fill": "#FFFFFF60",
               "content": "EXASESOR",
               "textAlign": "center",
               "fontFamily": "Space Mono",
@@ -25882,9 +26019,10 @@
             },
             {
               "type": "frame",
-              "id": "7M0A7",
+              "id": "5VOZv",
               "name": "koldoBadge",
-              "fill": "#000000",
+              "fill": "#DC2626",
+              "cornerRadius": 4,
               "padding": [
                 6,
                 12
@@ -25892,1445 +26030,1641 @@
               "children": [
                 {
                   "type": "text",
-                  "id": "SS6Vg",
+                  "id": "biHsx",
                   "name": "koldoBadgeText",
                   "fill": "#FFFFFF",
                   "content": "IMPUTADO",
                   "fontFamily": "Space Mono",
                   "fontSize": 9,
-                  "fontWeight": "500",
+                  "fontWeight": "600",
                   "letterSpacing": 1
                 }
               ]
+            },
+            {
+              "type": "text",
+              "id": "MyRK7",
+              "name": "koldoAmount",
+              "fill": "#22C55E",
+              "content": "300.000€",
+              "fontFamily": "Sora",
+              "fontSize": 16,
+              "fontWeight": "800"
             }
           ]
         },
         {
           "type": "frame",
-          "id": "cKJhd",
-          "x": 1120,
+          "id": "IEqgt",
+          "x": 800,
           "y": 950,
           "name": "aldamaNode",
-          "width": 160,
-          "fill": "#FFFFFF",
-          "stroke": {
-            "thickness": 3,
-            "fill": "#000000"
-          },
+          "width": 180,
           "layout": "vertical",
-          "gap": 8,
-          "padding": 24,
+          "gap": 12,
           "alignItems": "center",
           "children": [
             {
               "type": "frame",
-              "id": "011s1",
-              "name": "aldamaAvatar",
-              "width": 60,
-              "height": 60,
-              "fill": "#000000",
-              "layout": "vertical",
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "sp2oh",
-                  "name": "aldamaInitials",
-                  "fill": "#FFFFFF",
-                  "content": "VA",
-                  "fontFamily": "Sora",
-                  "fontSize": 24,
-                  "fontWeight": "700"
-                }
-              ]
+              "id": "vnGP9",
+              "name": "aldamaPhoto",
+              "clip": true,
+              "width": 120,
+              "height": 120,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1770238445716.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 99,
+              "stroke": {
+                "align": "outside",
+                "thickness": 4,
+                "fill": "#DC2626"
+              }
             },
             {
               "type": "text",
-              "id": "Pqabo",
+              "id": "enbHN",
               "name": "aldamaName",
-              "fill": "#000000",
-              "content": "VÍCTOR DE\nALDAMA",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": 180,
+              "content": "VÍCTOR DE ALDAMA",
               "textAlign": "center",
               "fontFamily": "Sora",
-              "fontSize": 12,
-              "fontWeight": "700",
-              "letterSpacing": 1
+              "fontSize": 14,
+              "fontWeight": "700"
             },
             {
               "type": "text",
-              "id": "Vf40T",
+              "id": "e8go3",
               "name": "aldamaRole",
-              "fill": "#666666",
+              "fill": "#9CA3AF",
               "content": "EMPRESARIO",
               "textAlign": "center",
               "fontFamily": "Space Mono",
-              "fontSize": 9,
-              "letterSpacing": 1
-            },
-            {
-              "type": "frame",
-              "id": "jT1cr",
-              "name": "aldamaBadge",
-              "fill": "#000000",
-              "padding": [
-                6,
-                12
-              ],
-              "children": [
-                {
-                  "type": "text",
-                  "id": "m55x3",
-                  "name": "aldamaBadgeText",
-                  "fill": "#FFFFFF",
-                  "content": "IMPUTADO",
-                  "fontFamily": "Space Mono",
-                  "fontSize": 9,
-                  "fontWeight": "500",
-                  "letterSpacing": 1
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "PpQeX",
-          "x": 60,
-          "y": 280,
-          "name": "ferrazCase",
-          "width": 400,
-          "fill": "#FFFFFF",
-          "stroke": {
-            "thickness": 3,
-            "fill": "#000000"
-          },
-          "layout": "vertical",
-          "gap": 20,
-          "padding": 32,
-          "children": [
-            {
-              "type": "text",
-              "id": "DF0rQ",
-              "name": "ferrazLabel",
-              "fill": "#CCCCCC",
-              "content": "01",
-              "fontFamily": "Sora",
-              "fontSize": 48,
-              "fontWeight": "800"
-            },
-            {
-              "type": "text",
-              "id": "abfqD",
-              "name": "ferrazTitle",
-              "fill": "#000000",
-              "content": "BOLSA DE BILLETES\nEN FERRAZ",
-              "lineHeight": 1.1,
-              "fontFamily": "Sora",
-              "fontSize": 24,
-              "fontWeight": "800",
-              "letterSpacing": 1
-            },
-            {
-              "type": "text",
-              "id": "tollQ",
-              "name": "ferrazDesc",
-              "fill": "#666666",
-              "textGrowth": "fixed-width",
-              "width": 340,
-              "content": "Dinero en efectivo + sobres con repartos de comisiones",
-              "lineHeight": 1.5,
-              "fontFamily": "Space Mono",
-              "fontSize": 11
-            },
-            {
-              "type": "frame",
-              "id": "I8FRx",
-              "name": "ferrazDivider",
-              "width": "fill_container",
-              "height": 2,
-              "fill": "#000000"
-            },
-            {
-              "type": "frame",
-              "id": "Ih1in",
-              "name": "ferrazMetric",
-              "width": "fill_container",
-              "layout": "vertical",
-              "gap": 8,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "y6yvH",
-                  "name": "ferrazMetricLabel",
-                  "fill": "#888888",
-                  "content": "EFECTIVO ENTREGADO",
-                  "fontFamily": "Space Mono",
-                  "fontSize": 9,
-                  "fontWeight": "500",
-                  "letterSpacing": 2
-                },
-                {
-                  "type": "text",
-                  "id": "jyZ2X",
-                  "name": "ferrazMetricValue",
-                  "fill": "#000000",
-                  "content": "90.000€",
-                  "fontFamily": "Sora",
-                  "fontSize": 40,
-                  "fontWeight": "800"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "SUuiq",
-              "name": "ferrazInfo",
-              "width": "fill_container",
-              "fill": "#F5F5F5",
-              "layout": "vertical",
-              "gap": 12,
-              "padding": 20,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "aH7Qa",
-                  "name": "ferrazInfoTitle",
-                  "fill": "#000000",
-                  "content": "COMISIONES EN SOBRE (según Aldama)",
-                  "fontFamily": "Space Mono",
-                  "fontSize": 10,
-                  "fontWeight": "500",
-                  "letterSpacing": 1
-                },
-                {
-                  "type": "frame",
-                  "id": "Ik7BS",
-                  "name": "ferrazInfoList",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 8,
-                  "children": [
-                    {
-                      "type": "frame",
-                      "id": "e1QGy",
-                      "name": "ferrazItem1",
-                      "width": "fill_container",
-                      "justifyContent": "space_between",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "QieNL",
-                          "name": "ferrazItem1Name",
-                          "fill": "#000000",
-                          "content": "ÁBALOS",
-                          "fontFamily": "Sora",
-                          "fontSize": 12,
-                          "fontWeight": "700"
-                        },
-                        {
-                          "type": "text",
-                          "id": "eRhYy",
-                          "name": "ferrazItem1Value",
-                          "fill": "#000000",
-                          "content": "650.000€",
-                          "fontFamily": "Sora",
-                          "fontSize": 12,
-                          "fontWeight": "700"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "9Ua0j",
-                      "name": "ferrazItem2",
-                      "width": "fill_container",
-                      "justifyContent": "space_between",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "71HHW",
-                          "name": "ferrazItem2Name",
-                          "fill": "#000000",
-                          "content": "KOLDO",
-                          "fontFamily": "Sora",
-                          "fontSize": 12,
-                          "fontWeight": "700"
-                        },
-                        {
-                          "type": "text",
-                          "id": "zHPKs",
-                          "name": "ferrazItem2Value",
-                          "fill": "#000000",
-                          "content": "300.000€",
-                          "fontFamily": "Sora",
-                          "fontSize": 12,
-                          "fontWeight": "700"
-                        }
-                      ]
-                    },
-                    {
-                      "type": "frame",
-                      "id": "nwEFV",
-                      "name": "ferrazItem3",
-                      "width": "fill_container",
-                      "justifyContent": "space_between",
-                      "children": [
-                        {
-                          "type": "text",
-                          "id": "Ek6lI",
-                          "name": "ferrazItem3Name",
-                          "fill": "#000000",
-                          "content": "CERDÁN",
-                          "fontFamily": "Sora",
-                          "fontSize": 12,
-                          "fontWeight": "700"
-                        },
-                        {
-                          "type": "text",
-                          "id": "LbWA6",
-                          "name": "ferrazItem3Value",
-                          "fill": "#000000",
-                          "content": "15.000€",
-                          "fontFamily": "Sora",
-                          "fontSize": 12,
-                          "fontWeight": "700"
-                        }
-                      ]
-                    }
-                  ]
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "ZBqQv",
-              "name": "ferrazDelitos",
-              "width": "fill_container",
-              "fill": "#000000",
-              "layout": "vertical",
-              "gap": 8,
-              "padding": 20,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "N2mBp",
-                  "name": "ferrazDelitosTitle",
-                  "fill": "#FFFFFF",
-                  "content": "DELITOS INVESTIGADOS",
-                  "fontFamily": "Space Mono",
-                  "fontSize": 9,
-                  "fontWeight": "500",
-                  "letterSpacing": 2
-                },
-                {
-                  "type": "text",
-                  "id": "WEjTc",
-                  "name": "ferrazDelitosList",
-                  "fill": "#CCCCCC",
-                  "textGrowth": "fixed-width",
-                  "width": 300,
-                  "content": "Tráfico de influencias · Cohecho · Blanqueo de capitales · Organización criminal",
-                  "lineHeight": 1.5,
-                  "fontFamily": "Space Mono",
-                  "fontSize": 10
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "RLXde",
-          "x": 840,
-          "y": 280,
-          "name": "hidroCase",
-          "width": 380,
-          "fill": "#FFFFFF",
-          "stroke": {
-            "thickness": 3,
-            "fill": "#000000"
-          },
-          "layout": "vertical",
-          "gap": 20,
-          "padding": 32,
-          "children": [
-            {
-              "type": "text",
-              "id": "b646S",
-              "name": "hidroLabel",
-              "fill": "#CCCCCC",
-              "content": "02",
-              "fontFamily": "Sora",
-              "fontSize": 48,
-              "fontWeight": "800"
-            },
-            {
-              "type": "text",
-              "id": "YnBGU",
-              "name": "hidroTitle",
-              "fill": "#000000",
-              "content": "CASO\nHIDROCARBUROS",
-              "lineHeight": 1.1,
-              "fontFamily": "Sora",
-              "fontSize": 24,
-              "fontWeight": "800",
-              "letterSpacing": 1
-            },
-            {
-              "type": "text",
-              "id": "ize4R",
-              "name": "hidroDesc",
-              "fill": "#666666",
-              "textGrowth": "fixed-width",
-              "width": 320,
-              "content": "Presuntos sobornos y dádivas para obtener un título que permitía comprar gasolina sin IVA",
-              "lineHeight": 1.5,
-              "fontFamily": "Space Mono",
-              "fontSize": 11
-            },
-            {
-              "type": "frame",
-              "id": "8Twga",
-              "name": "hidroDivider",
-              "width": "fill_container",
-              "height": 2,
-              "fill": "#000000"
-            },
-            {
-              "type": "frame",
-              "id": "jtJxT",
-              "name": "hidroStatus",
-              "gap": 12,
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "ytcu3",
-                  "name": "hidroStatusDot",
-                  "width": 12,
-                  "height": 12,
-                  "fill": "#000000"
-                },
-                {
-                  "type": "text",
-                  "id": "Vba9l",
-                  "name": "hidroStatusText",
-                  "fill": "#000000",
-                  "content": "INVESTIGACIÓN AUDIENCIA NACIONAL",
-                  "fontFamily": "Space Mono",
-                  "fontSize": 10,
-                  "fontWeight": "500",
-                  "letterSpacing": 1
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "U7dvf",
-          "x": 1900,
-          "y": 280,
-          "name": "airEuropaCase",
-          "width": 420,
-          "fill": "#FFFFFF",
-          "stroke": {
-            "thickness": 3,
-            "fill": "#000000"
-          },
-          "layout": "vertical",
-          "gap": 20,
-          "padding": 32,
-          "children": [
-            {
-              "type": "text",
-              "id": "2V7tV",
-              "name": "airEuropaLabel",
-              "fill": "#CCCCCC",
-              "content": "03",
-              "fontFamily": "Sora",
-              "fontSize": 48,
-              "fontWeight": "800"
-            },
-            {
-              "type": "text",
-              "id": "8IBCj",
-              "name": "airEuropaTitle",
-              "fill": "#000000",
-              "content": "RESCATE\nAIR EUROPA",
-              "lineHeight": 1.1,
-              "fontFamily": "Sora",
-              "fontSize": 24,
-              "fontWeight": "800",
-              "letterSpacing": 1
-            },
-            {
-              "type": "frame",
-              "id": "ahm20",
-              "name": "airEuropaDivider",
-              "width": "fill_container",
-              "height": 2,
-              "fill": "#000000"
-            },
-            {
-              "type": "frame",
-              "id": "yqeaE",
-              "name": "airEuropaMetric",
-              "width": "fill_container",
-              "layout": "vertical",
-              "gap": 8,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "EIBXT",
-                  "name": "airEuropaMetricLabel",
-                  "fill": "#888888",
-                  "content": "RESCATE PÚBLICO",
-                  "fontFamily": "Space Mono",
-                  "fontSize": 9,
-                  "fontWeight": "500",
-                  "letterSpacing": 2
-                },
-                {
-                  "type": "text",
-                  "id": "IM6vg",
-                  "name": "airEuropaMetricValue",
-                  "fill": "#000000",
-                  "content": "475M€",
-                  "fontFamily": "Sora",
-                  "fontSize": 48,
-                  "fontWeight": "800"
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "Xy57d",
-              "name": "airEuropaInfo",
-              "width": "fill_container",
-              "fill": "#F5F5F5",
-              "layout": "vertical",
-              "gap": 12,
-              "padding": 20,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "LmIOD",
-                  "name": "airEuropaInfoTitle",
-                  "fill": "#000000",
-                  "content": "CONEXIONES",
-                  "fontFamily": "Space Mono",
-                  "fontSize": 10,
-                  "fontWeight": "500",
-                  "letterSpacing": 1
-                },
-                {
-                  "type": "frame",
-                  "id": "gcCoP",
-                  "name": "airEuropaInfoList",
-                  "width": "fill_container",
-                  "layout": "vertical",
-                  "gap": 8,
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "b0upv",
-                      "name": "airEuropaItem1",
-                      "fill": "#666666",
-                      "textGrowth": "fixed-width",
-                      "width": 320,
-                      "content": "→ Reuniones con Begoña Gómez durante el rescate",
-                      "lineHeight": 1.4,
-                      "fontFamily": "Space Mono",
-                      "fontSize": 10
-                    },
-                    {
-                      "type": "text",
-                      "id": "MXXxt",
-                      "name": "airEuropaItem2",
-                      "fill": "#666666",
-                      "textGrowth": "fixed-width",
-                      "width": 320,
-                      "content": "→ Wakalu (filial Globalia) paga 40.000€/año al Africa Center",
-                      "lineHeight": 1.4,
-                      "fontFamily": "Space Mono",
-                      "fontSize": 10
-                    },
-                    {
-                      "type": "text",
-                      "id": "TsNba",
-                      "name": "airEuropaItem3",
-                      "fill": "#666666",
-                      "textGrowth": "fixed-width",
-                      "width": 320,
-                      "content": "→ Begoña dirigía el Africa Center",
-                      "lineHeight": 1.4,
-                      "fontFamily": "Space Mono",
-                      "fontSize": 10
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "8rqPI",
-          "x": 2080,
-          "y": 780,
-          "name": "masterCase",
-          "width": 420,
-          "fill": "#FFFFFF",
-          "stroke": {
-            "thickness": 3,
-            "fill": "#000000"
-          },
-          "layout": "vertical",
-          "gap": 20,
-          "padding": 32,
-          "children": [
-            {
-              "type": "text",
-              "id": "QYvym",
-              "name": "masterLabel",
-              "fill": "#CCCCCC",
-              "content": "04",
-              "fontFamily": "Sora",
-              "fontSize": 48,
-              "fontWeight": "800"
-            },
-            {
-              "type": "text",
-              "id": "WsKFU",
-              "name": "masterTitle",
-              "fill": "#000000",
-              "content": "CASO MÁSTER\nCÁTEDRA",
-              "lineHeight": 1.1,
-              "fontFamily": "Sora",
-              "fontSize": 24,
-              "fontWeight": "800",
-              "letterSpacing": 1
-            },
-            {
-              "type": "frame",
-              "id": "deM5Z",
-              "name": "masterDivider",
-              "width": "fill_container",
-              "height": 2,
-              "fill": "#000000"
-            },
-            {
-              "type": "frame",
-              "id": "BIGgV",
-              "name": "masterInfo",
-              "width": "fill_container",
-              "layout": "vertical",
-              "gap": 12,
-              "children": [
-                {
-                  "type": "text",
-                  "id": "a8NpF",
-                  "name": "masterItem1",
-                  "fill": "#666666",
-                  "textGrowth": "fixed-width",
-                  "width": 360,
-                  "content": "→ Cartas de apoyo a Barrabés para contratos de 10M€",
-                  "lineHeight": 1.4,
-                  "fontFamily": "Space Mono",
-                  "fontSize": 10
-                },
-                {
-                  "type": "text",
-                  "id": "esuN6",
-                  "name": "masterItem2",
-                  "fill": "#666666",
-                  "textGrowth": "fixed-width",
-                  "width": 360,
-                  "content": "→ Directora de cátedra sin titulación universitaria",
-                  "lineHeight": 1.4,
-                  "fontFamily": "Space Mono",
-                  "fontSize": 10
-                },
-                {
-                  "type": "text",
-                  "id": "HVmRI",
-                  "name": "masterItem3",
-                  "fill": "#666666",
-                  "textGrowth": "fixed-width",
-                  "width": 360,
-                  "content": "→ Software de 200.000€ registrado a su nombre",
-                  "lineHeight": 1.4,
-                  "fontFamily": "Space Mono",
-                  "fontSize": 10
-                }
-              ]
-            },
-            {
-              "type": "frame",
-              "id": "hwSGz",
-              "name": "masterFiscalia",
-              "width": "fill_container",
-              "fill": "#000000",
-              "gap": 12,
-              "padding": 16,
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "icon_font",
-                  "id": "uxLMA",
-                  "name": "masterFiscaliaIcon",
-                  "width": 16,
-                  "height": 16,
-                  "iconFontName": "triangle-alert",
-                  "iconFontFamily": "lucide",
-                  "fill": "#FFFFFF"
-                },
-                {
-                  "type": "text",
-                  "id": "U3T6r",
-                  "name": "masterFiscaliaText",
-                  "fill": "#FFFFFF",
-                  "content": "FISCALÍA EUROPEA INVESTIGANDO",
-                  "fontFamily": "Space Mono",
-                  "fontSize": 10,
-                  "fontWeight": "500",
-                  "letterSpacing": 1
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "VCFPP",
-          "x": 960,
-          "y": 1400,
-          "name": "mascarillasCase",
-          "width": 480,
-          "fill": "#FFFFFF",
-          "stroke": {
-            "thickness": 3,
-            "fill": "#000000"
-          },
-          "layout": "vertical",
-          "gap": 20,
-          "padding": 32,
-          "children": [
-            {
-              "type": "text",
-              "id": "vM7pN",
-              "name": "mascarillasLabel",
-              "fill": "#CCCCCC",
-              "content": "05",
-              "fontFamily": "Sora",
-              "fontSize": 48,
-              "fontWeight": "800"
-            },
-            {
-              "type": "text",
-              "id": "sXyPX",
-              "name": "mascarillasTitle",
-              "fill": "#000000",
-              "content": "CASO MASCARILLAS",
-              "fontFamily": "Sora",
-              "fontSize": 24,
-              "fontWeight": "800",
-              "letterSpacing": 1
-            },
-            {
-              "type": "text",
-              "id": "eYjd9",
-              "name": "mascarillasDesc",
-              "fill": "#666666",
-              "textGrowth": "fixed-width",
-              "width": 420,
-              "content": "Comisiones y mascarillas defectuosas durante la pandemia",
-              "lineHeight": 1.5,
-              "fontFamily": "Space Mono",
-              "fontSize": 11
-            },
-            {
-              "type": "frame",
-              "id": "Xu1bm",
-              "name": "mascarillasDivider",
-              "width": "fill_container",
-              "height": 2,
-              "fill": "#000000"
-            },
-            {
-              "type": "frame",
-              "id": "vlosb",
-              "name": "mascarillasPersons",
-              "width": "fill_container",
-              "gap": 24,
-              "children": [
-                {
-                  "type": "frame",
-                  "id": "xT121",
-                  "name": "mascarillasPerson1",
-                  "layout": "vertical",
-                  "gap": 4,
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "xv28Q",
-                      "name": "mascarillasPerson1Name",
-                      "fill": "#000000",
-                      "content": "SALVADOR ILLA",
-                      "textAlign": "center",
-                      "fontFamily": "Sora",
-                      "fontSize": 11,
-                      "fontWeight": "700"
-                    },
-                    {
-                      "type": "text",
-                      "id": "S2v8m",
-                      "name": "mascarillasPerson1Role",
-                      "fill": "#888888",
-                      "content": "Min. Sanidad",
-                      "textAlign": "center",
-                      "fontFamily": "Space Mono",
-                      "fontSize": 9,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "P9Aer",
-                  "name": "mascarillasPerson2",
-                  "layout": "vertical",
-                  "gap": 4,
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "139cK",
-                      "name": "mascarillasPerson2Name",
-                      "fill": "#000000",
-                      "content": "ÁNGEL V. TORRES",
-                      "textAlign": "center",
-                      "fontFamily": "Sora",
-                      "fontSize": 11,
-                      "fontWeight": "700"
-                    },
-                    {
-                      "type": "text",
-                      "id": "qd18Y",
-                      "name": "mascarillasPerson2Role",
-                      "fill": "#888888",
-                      "content": "Gob. Canarias",
-                      "textAlign": "center",
-                      "fontFamily": "Space Mono",
-                      "fontSize": 9,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                },
-                {
-                  "type": "frame",
-                  "id": "vvWQZ",
-                  "name": "mascarillasPerson3",
-                  "layout": "vertical",
-                  "gap": 4,
-                  "alignItems": "center",
-                  "children": [
-                    {
-                      "type": "text",
-                      "id": "5uLL4",
-                      "name": "mascarillasPerson3Name",
-                      "fill": "#000000",
-                      "content": "F. ARMENGOL",
-                      "textAlign": "center",
-                      "fontFamily": "Sora",
-                      "fontSize": 11,
-                      "fontWeight": "700"
-                    },
-                    {
-                      "type": "text",
-                      "id": "50UbV",
-                      "name": "mascarillasPerson3Role",
-                      "fill": "#888888",
-                      "content": "Gob. Baleares",
-                      "textAlign": "center",
-                      "fontFamily": "Space Mono",
-                      "fontSize": 9,
-                      "fontWeight": "normal"
-                    }
-                  ]
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "1eHXz",
-          "x": 1900,
-          "y": 660,
-          "name": "begonaNode",
-          "width": 160,
-          "fill": "#FFFFFF",
-          "stroke": {
-            "thickness": 3,
-            "fill": "#000000"
-          },
-          "layout": "vertical",
-          "gap": 8,
-          "padding": 24,
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "frame",
-              "id": "1ajS4",
-              "name": "begonaAvatar",
-              "width": 60,
-              "height": 60,
-              "fill": "#000000",
-              "layout": "vertical",
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "OKthb",
-                  "name": "begonaInitials",
-                  "fill": "#FFFFFF",
-                  "content": "BG",
-                  "fontFamily": "Sora",
-                  "fontSize": 24,
-                  "fontWeight": "700"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "id": "29Iv7",
-              "name": "begonaName",
-              "fill": "#000000",
-              "content": "BEGOÑA\nGÓMEZ",
-              "textAlign": "center",
-              "fontFamily": "Sora",
-              "fontSize": 12,
-              "fontWeight": "700",
-              "letterSpacing": 1
-            },
-            {
-              "type": "text",
-              "id": "ObwxT",
-              "name": "begonaRole",
-              "fill": "#666666",
-              "content": "ESPOSA DEL PRESIDENTE",
-              "textAlign": "center",
-              "fontFamily": "Space Mono",
-              "fontSize": 8,
-              "letterSpacing": 1
-            },
-            {
-              "type": "frame",
-              "id": "16JiK",
-              "name": "begonaBadge",
-              "fill": "#000000",
-              "padding": [
-                6,
-                12
-              ],
-              "children": [
-                {
-                  "type": "text",
-                  "id": "yCReC",
-                  "name": "begonaBadgeText",
-                  "fill": "#FFFFFF",
-                  "content": "IMPUTADA",
-                  "fontFamily": "Space Mono",
-                  "fontSize": 9,
-                  "fontWeight": "500",
-                  "letterSpacing": 1
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "KAJFg",
-          "x": 2380,
-          "y": 880,
-          "name": "barrabesNode",
-          "width": 150,
-          "fill": "#FFFFFF",
-          "stroke": {
-            "thickness": 2,
-            "fill": "#666666"
-          },
-          "layout": "vertical",
-          "gap": 8,
-          "padding": 24,
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "frame",
-              "id": "c0Jg9",
-              "name": "barrabesAvatar",
-              "width": 50,
-              "height": 50,
-              "stroke": {
-                "thickness": 2,
-                "fill": "#666666"
-              },
-              "layout": "vertical",
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "iij7U",
-                  "name": "barrabesInitials",
-                  "fill": "#666666",
-                  "content": "CB",
-                  "fontFamily": "Sora",
-                  "fontSize": 20,
-                  "fontWeight": "700"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "id": "MT49C",
-              "name": "barrabesName",
-              "fill": "#000000",
-              "content": "CARLOS\nBARRABÉS",
-              "textAlign": "center",
-              "fontFamily": "Sora",
-              "fontSize": 11,
-              "fontWeight": "700",
-              "letterSpacing": 1
-            },
-            {
-              "type": "text",
-              "id": "DOWn8",
-              "name": "barrabesRole",
-              "fill": "#888888",
-              "content": "EMPRESARIO",
-              "textAlign": "center",
-              "fontFamily": "Space Mono",
-              "fontSize": 8,
-              "letterSpacing": 1
-            },
-            {
-              "type": "frame",
-              "id": "W2UVi",
-              "name": "barrabesBadge",
-              "fill": "#000000",
-              "padding": [
-                6,
-                12
-              ],
-              "children": [
-                {
-                  "type": "text",
-                  "id": "K4OZK",
-                  "name": "barrabesBadgeText",
-                  "fill": "#FFFFFF",
-                  "content": "IMPUTADO",
-                  "fontFamily": "Space Mono",
-                  "fontSize": 8,
-                  "fontWeight": "500",
-                  "letterSpacing": 1
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "N2Pm3",
-          "x": 1540,
-          "y": 950,
-          "name": "davidSanchezNode",
-          "width": 160,
-          "fill": "#FFFFFF",
-          "stroke": {
-            "thickness": 3,
-            "fill": "#000000"
-          },
-          "layout": "vertical",
-          "gap": 8,
-          "padding": 24,
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "frame",
-              "id": "PUX15",
-              "name": "davidSanchezAvatar",
-              "width": 60,
-              "height": 60,
-              "fill": "#000000",
-              "layout": "vertical",
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "XmdCM",
-                  "name": "davidSanchezInitials",
-                  "fill": "#FFFFFF",
-                  "content": "DS",
-                  "fontFamily": "Sora",
-                  "fontSize": 24,
-                  "fontWeight": "700"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "id": "wmiOo",
-              "name": "davidSanchezName",
-              "fill": "#000000",
-              "content": "DAVID\nSÁNCHEZ",
-              "textAlign": "center",
-              "fontFamily": "Sora",
-              "fontSize": 12,
-              "fontWeight": "700",
-              "letterSpacing": 1
-            },
-            {
-              "type": "text",
-              "id": "Ozl74",
-              "name": "davidSanchezRole",
-              "fill": "#666666",
-              "content": "HERMANO PRESIDENTE",
-              "textAlign": "center",
-              "fontFamily": "Space Mono",
-              "fontSize": 8,
-              "letterSpacing": 1
-            },
-            {
-              "type": "frame",
-              "id": "McI5Y",
-              "name": "davidSanchezBadge",
-              "fill": "#000000",
-              "padding": [
-                6,
-                12
-              ],
-              "children": [
-                {
-                  "type": "text",
-                  "id": "icTQz",
-                  "name": "davidSanchezBadgeText",
-                  "fill": "#FFFFFF",
-                  "content": "IMPUTADO",
-                  "fontFamily": "Space Mono",
-                  "fontSize": 9,
-                  "fontWeight": "500",
-                  "letterSpacing": 1
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "gfWxk",
-          "x": 2380,
-          "y": 400,
-          "name": "hidalgoNode",
-          "width": 140,
-          "fill": "#FFFFFF",
-          "stroke": {
-            "thickness": 2,
-            "fill": "#666666"
-          },
-          "layout": "vertical",
-          "gap": 8,
-          "padding": 20,
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "frame",
-              "id": "SPii8",
-              "name": "hidalgoAvatar",
-              "width": 50,
-              "height": 50,
-              "stroke": {
-                "thickness": 2,
-                "fill": "#666666"
-              },
-              "layout": "vertical",
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "8GuiQ",
-                  "name": "hidalgoInitials",
-                  "fill": "#666666",
-                  "content": "JH",
-                  "fontFamily": "Sora",
-                  "fontSize": 20,
-                  "fontWeight": "700"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "id": "p9WH5",
-              "name": "hidalgoName",
-              "fill": "#000000",
-              "content": "JAVIER\nHIDALGO",
-              "textAlign": "center",
-              "fontFamily": "Sora",
-              "fontSize": 11,
-              "fontWeight": "700",
-              "letterSpacing": 1
-            },
-            {
-              "type": "text",
-              "id": "iB9J0",
-              "name": "hidalgoRole",
-              "fill": "#888888",
-              "content": "CEO GLOBALIA",
-              "textAlign": "center",
-              "fontFamily": "Space Mono",
-              "fontSize": 8,
-              "letterSpacing": 1
-            }
-          ]
-        },
-        {
-          "type": "frame",
-          "id": "dqIpV",
-          "x": 300,
-          "y": 850,
-          "name": "pardoVeraNode",
-          "width": 130,
-          "fill": "#FFFFFF",
-          "stroke": {
-            "thickness": 2,
-            "fill": "#000000"
-          },
-          "layout": "vertical",
-          "gap": 6,
-          "padding": 16,
-          "alignItems": "center",
-          "children": [
-            {
-              "type": "frame",
-              "id": "5EpJ3",
-              "name": "pardoVeraAvatar",
-              "width": 40,
-              "height": 40,
-              "fill": "#000000",
-              "layout": "vertical",
-              "justifyContent": "center",
-              "alignItems": "center",
-              "children": [
-                {
-                  "type": "text",
-                  "id": "KbD90",
-                  "name": "pardoVeraInitials",
-                  "fill": "#FFFFFF",
-                  "content": "IP",
-                  "fontFamily": "Sora",
-                  "fontSize": 16,
-                  "fontWeight": "700"
-                }
-              ]
-            },
-            {
-              "type": "text",
-              "id": "7QReE",
-              "name": "pardoVeraName",
-              "fill": "#000000",
-              "content": "ISABEL PARDO\nDE VERA",
-              "textAlign": "center",
-              "fontFamily": "Sora",
               "fontSize": 10,
-              "fontWeight": "700",
-              "letterSpacing": 1
-            },
-            {
-              "type": "text",
-              "id": "VyRFQ",
-              "name": "pardoVeraRole",
-              "fill": "#888888",
-              "content": "ADIF",
-              "textAlign": "center",
-              "fontFamily": "Space Mono",
-              "fontSize": 8,
               "fontWeight": "normal"
             },
             {
               "type": "frame",
-              "id": "0jtrr",
-              "name": "pardoVeraBadge",
-              "fill": "#000000",
+              "id": "reB2u",
+              "name": "aldamaBadge",
+              "fill": "#DC2626",
+              "cornerRadius": 4,
               "padding": [
                 4,
-                8
+                12
               ],
               "children": [
                 {
                   "type": "text",
-                  "id": "G1gOX",
-                  "name": "pardoVeraBadgeText",
+                  "id": "NaLKQ",
+                  "name": "aldamaBadgeText",
+                  "fill": "#FFFFFF",
+                  "content": "IMPUTADO",
+                  "fontFamily": "Space Mono",
+                  "fontSize": 10,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "WT7zR",
+              "name": "aldamaMoney",
+              "fill": "#22C55E",
+              "content": "+100M€",
+              "fontFamily": "Space Mono",
+              "fontSize": 16,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "XDJ7q",
+          "x": 1700,
+          "y": 350,
+          "name": "begonaNode",
+          "width": 180,
+          "layout": "vertical",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "lshFl",
+              "name": "begonaPhoto",
+              "clip": true,
+              "width": 120,
+              "height": 120,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1770238449381.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 99,
+              "stroke": {
+                "align": "outside",
+                "thickness": 4,
+                "fill": "#DC2626"
+              }
+            },
+            {
+              "type": "text",
+              "id": "3Gs7v",
+              "name": "begonaName",
+              "fill": "#FFFFFF",
+              "content": "BEGOÑA GÓMEZ",
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 14,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "EQIPH",
+              "name": "begonaRole",
+              "fill": "#9CA3AF",
+              "textGrowth": "fixed-width",
+              "width": 180,
+              "content": "ESPOSA DEL PRESIDENTE",
+              "textAlign": "center",
+              "fontFamily": "Space Mono",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "dTaQc",
+              "name": "begonaBadge",
+              "fill": "#DC2626",
+              "cornerRadius": 4,
+              "padding": [
+                4,
+                12
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "4vYom",
+                  "name": "begonaBadgeText",
                   "fill": "#FFFFFF",
                   "content": "IMPUTADA",
                   "fontFamily": "Space Mono",
-                  "fontSize": 7,
-                  "fontWeight": "500",
-                  "letterSpacing": 1
+                  "fontSize": 10,
+                  "fontWeight": "700"
                 }
               ]
             }
           ]
         },
         {
-          "type": "line",
-          "id": "vd1mO",
-          "x": 1060,
-          "y": 620,
-          "name": "lineSanchezAbalos",
-          "width": 160,
-          "height": 80,
-          "stroke": {
-            "thickness": 3,
-            "fill": "#000000"
-          }
+          "type": "frame",
+          "id": "oKgeO",
+          "x": 1950,
+          "y": 350,
+          "name": "davidNode",
+          "width": 180,
+          "layout": "vertical",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "iBOpO",
+              "name": "davidPhoto",
+              "clip": true,
+              "width": 120,
+              "height": 120,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1770238451887.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 99,
+              "stroke": {
+                "align": "outside",
+                "thickness": 4,
+                "fill": "#DC2626"
+              }
+            },
+            {
+              "type": "text",
+              "id": "l5OxE",
+              "name": "davidName",
+              "fill": "#FFFFFF",
+              "content": "DAVID SÁNCHEZ",
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 14,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "HmzlL",
+              "name": "davidRole",
+              "fill": "#9CA3AF",
+              "textGrowth": "fixed-width",
+              "width": 180,
+              "content": "HERMANO DEL PRESIDENTE",
+              "textAlign": "center",
+              "fontFamily": "Space Mono",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "awh4T",
+              "name": "davidBadge",
+              "fill": "#DC2626",
+              "cornerRadius": 4,
+              "padding": [
+                4,
+                12
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "3bNzb",
+                  "name": "davidBadgeText",
+                  "fill": "#FFFFFF",
+                  "content": "IMPUTADO",
+                  "fontFamily": "Space Mono",
+                  "fontSize": 10,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
         },
         {
-          "type": "line",
-          "id": "j6qbT",
-          "x": 1500,
-          "y": 620,
-          "name": "lineSanchezCerdan",
-          "width": 140,
-          "height": 80,
-          "stroke": {
-            "thickness": 3,
-            "fill": "#000000"
-          }
+          "type": "frame",
+          "id": "6bNX7",
+          "x": 2200,
+          "y": 450,
+          "name": "barrabesNode",
+          "width": 180,
+          "layout": "vertical",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "6VjVG",
+              "name": "barrabesPhoto",
+              "clip": true,
+              "width": 120,
+              "height": 120,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1770238465723.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 99,
+              "stroke": {
+                "align": "outside",
+                "thickness": 4,
+                "fill": "#F59E0B"
+              }
+            },
+            {
+              "type": "text",
+              "id": "siO0n",
+              "name": "barrabesName",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": 180,
+              "content": "JUAN CARLOS BARRABÉS",
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "pzmZj",
+              "name": "barrabesRole",
+              "fill": "#9CA3AF",
+              "content": "EMPRESARIO",
+              "textAlign": "center",
+              "fontFamily": "Space Mono",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "uVSoB",
+              "name": "barrabesBadge",
+              "fill": "#F59E0B",
+              "cornerRadius": 4,
+              "padding": [
+                4,
+                12
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "MmVGL",
+                  "name": "barrabesBadgeText",
+                  "fill": "#000000",
+                  "content": "TESTIGO",
+                  "fontFamily": "Space Mono",
+                  "fontSize": 10,
+                  "fontWeight": "700"
+                }
+              ]
+            },
+            {
+              "type": "text",
+              "id": "zkWhg",
+              "name": "barrabesMoney",
+              "fill": "#22C55E",
+              "content": "10M€",
+              "fontFamily": "Space Mono",
+              "fontSize": 14,
+              "fontWeight": "700"
+            }
+          ]
         },
         {
-          "type": "line",
-          "id": "2fNpt",
-          "x": 1500,
-          "y": 620,
-          "name": "lineSanchezBegona",
-          "width": 400,
-          "height": 40,
-          "stroke": {
-            "thickness": 3,
-            "fill": "#000000"
-          }
+          "type": "frame",
+          "id": "8LwUF",
+          "x": 1100,
+          "y": 950,
+          "name": "hidalgoNode",
+          "width": 180,
+          "layout": "vertical",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "DFu6z",
+              "name": "hidalgoPhoto",
+              "clip": true,
+              "width": 120,
+              "height": 120,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1770238469684.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 99,
+              "stroke": {
+                "align": "outside",
+                "thickness": 4,
+                "fill": "#3B82F6"
+              }
+            },
+            {
+              "type": "text",
+              "id": "KEl2o",
+              "name": "hidalgoName",
+              "fill": "#FFFFFF",
+              "content": "JAVIER HIDALGO",
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 14,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "IG70m",
+              "name": "hidalgoRole",
+              "fill": "#9CA3AF",
+              "content": "CEO GLOBALIA",
+              "textAlign": "center",
+              "fontFamily": "Space Mono",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "easxm",
+              "name": "hidalgoMoney",
+              "fill": "#22C55E",
+              "content": "475M€",
+              "fontFamily": "Space Mono",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "Z38a0",
+              "name": "hidalgoLabel",
+              "fill": "#3B82F6",
+              "content": "RESCATE AIR EUROPA",
+              "fontFamily": "Space Mono",
+              "fontSize": 10,
+              "fontWeight": "700"
+            }
+          ]
         },
         {
-          "type": "line",
-          "id": "x4rG8",
-          "x": 860,
-          "y": 920,
-          "name": "lineAbalosKoldo",
-          "width": 160,
-          "height": 30,
-          "stroke": {
-            "thickness": 2,
-            "fill": "#000000"
-          }
-        },
-        {
-          "type": "line",
-          "id": "lxFur",
-          "x": 980,
-          "y": 920,
-          "name": "lineAbalosAldama",
-          "width": 140,
-          "height": 30,
-          "stroke": {
-            "thickness": 2,
-            "fill": "#000000"
-          }
-        },
-        {
-          "type": "line",
-          "id": "b4gse",
+          "type": "frame",
+          "id": "23jV3",
           "x": 1400,
+          "y": 950,
+          "name": "pardoNode",
+          "width": 180,
+          "layout": "vertical",
+          "gap": 12,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "QcIpc",
+              "name": "pardoPhoto",
+              "clip": true,
+              "width": 120,
+              "height": 120,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "./images/generated-1770238473633.png",
+                "mode": "fill"
+              },
+              "cornerRadius": 99,
+              "stroke": {
+                "align": "outside",
+                "thickness": 4,
+                "fill": "#DC2626"
+              }
+            },
+            {
+              "type": "text",
+              "id": "VMTq5",
+              "name": "pardoName",
+              "fill": "#FFFFFF",
+              "textGrowth": "fixed-width",
+              "width": 180,
+              "content": "PILAR SÁNCHEZ ACERA",
+              "textAlign": "center",
+              "fontFamily": "Sora",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "tC4Ni",
+              "name": "pardoRole",
+              "fill": "#9CA3AF",
+              "textGrowth": "fixed-width",
+              "width": 180,
+              "content": "ASESORA PSOE MADRID",
+              "textAlign": "center",
+              "fontFamily": "Space Mono",
+              "fontSize": 10,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "frame",
+              "id": "E4SZT",
+              "name": "pardoBadge",
+              "fill": "#DC2626",
+              "cornerRadius": 4,
+              "padding": [
+                4,
+                12
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "SNYpQ",
+                  "name": "pardoBadgeText",
+                  "fill": "#FFFFFF",
+                  "content": "IMPUTADA",
+                  "fontFamily": "Space Mono",
+                  "fontSize": 10,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "5BxD0",
+          "x": 80,
+          "y": 400,
+          "name": "case1-ferraz",
+          "width": 280,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#1F2937",
+                "position": 0
+              },
+              {
+                "color": "#111827",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 16,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#DC2626"
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "QzQWa",
+              "name": "case1Num",
+              "fill": "#DC2626",
+              "content": "01",
+              "fontFamily": "Sora",
+              "fontSize": 48,
+              "fontWeight": "900",
+              "letterSpacing": -2
+            },
+            {
+              "type": "text",
+              "id": "OJEuq",
+              "name": "case1Title",
+              "fill": "#FFFFFF",
+              "content": "BOLSAS DE FERRAZ",
+              "fontFamily": "Sora",
+              "fontSize": 20,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "ReY1U",
+              "name": "case1Desc",
+              "fill": "#9CA3AF",
+              "textGrowth": "fixed-width",
+              "width": 232,
+              "content": "Entrega de bolsas con dinero en efectivo en la sede del PSOE",
+              "lineHeight": 1.4,
+              "fontFamily": "Space Mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "FJG2p",
+              "name": "case1Money",
+              "fill": "#22C55E",
+              "content": "90.000€",
+              "fontFamily": "Space Mono",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "fv95F",
+              "name": "case1Status",
+              "fill": "#DC262633",
+              "cornerRadius": 8,
+              "padding": [
+                8,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "iTsWl",
+                  "name": "case1StatusText",
+                  "fill": "#DC2626",
+                  "content": "CONFESIÓN DE ALDAMA",
+                  "fontFamily": "Space Mono",
+                  "fontSize": 10,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "yl454",
+          "x": 80,
+          "y": 800,
+          "name": "case2-hidrocarburos",
+          "width": 280,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#1F2937",
+                "position": 0
+              },
+              {
+                "color": "#111827",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 16,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#F59E0B"
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "cYgve",
+              "name": "case2Num",
+              "fill": "#F59E0B",
+              "content": "02",
+              "fontFamily": "Sora",
+              "fontSize": 48,
+              "fontWeight": "900",
+              "letterSpacing": -2
+            },
+            {
+              "type": "text",
+              "id": "Irr49",
+              "name": "case2Title",
+              "fill": "#FFFFFF",
+              "content": "HIDROCARBUROS",
+              "fontFamily": "Sora",
+              "fontSize": 20,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "jRGHs",
+              "name": "case2Desc",
+              "fill": "#9CA3AF",
+              "textGrowth": "fixed-width",
+              "width": 232,
+              "content": "Fraude fiscal en importación de combustible con facturas falsas",
+              "lineHeight": 1.4,
+              "fontFamily": "Space Mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "P7dtD",
+              "name": "case2Money",
+              "fill": "#22C55E",
+              "content": "+100M€",
+              "fontFamily": "Space Mono",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "hFqzL",
+              "name": "case2Status",
+              "fill": "#F59E0B33",
+              "cornerRadius": 8,
+              "padding": [
+                8,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "gfZeM",
+                  "name": "case2StatusText",
+                  "fill": "#F59E0B",
+                  "content": "INVESTIGACIÓN JUDICIAL",
+                  "fontFamily": "Space Mono",
+                  "fontSize": 10,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "dbza4",
+          "x": 80,
+          "y": 1200,
+          "name": "case3-aireuropa",
+          "width": 280,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#1F2937",
+                "position": 0
+              },
+              {
+                "color": "#111827",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 16,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#3B82F6"
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "3uxvx",
+              "name": "case3Num",
+              "fill": "#3B82F6",
+              "content": "03",
+              "fontFamily": "Sora",
+              "fontSize": 48,
+              "fontWeight": "900",
+              "letterSpacing": -2
+            },
+            {
+              "type": "text",
+              "id": "sbR4h",
+              "name": "case3Title",
+              "fill": "#FFFFFF",
+              "content": "RESCATE AIR EUROPA",
+              "fontFamily": "Sora",
+              "fontSize": 20,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "5VEG3",
+              "name": "case3Desc",
+              "fill": "#9CA3AF",
+              "textGrowth": "fixed-width",
+              "width": 232,
+              "content": "Rescate público de Globalia con posibles comisiones y tráfico de influencias",
+              "lineHeight": 1.4,
+              "fontFamily": "Space Mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "nGFfj",
+              "name": "case3Money",
+              "fill": "#22C55E",
+              "content": "475M€",
+              "fontFamily": "Space Mono",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "oQl7I",
+              "name": "case3Status",
+              "fill": "#3B82F633",
+              "cornerRadius": 8,
+              "padding": [
+                8,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "I61ih",
+                  "name": "case3StatusText",
+                  "fill": "#3B82F6",
+                  "content": "DINERO PÚBLICO",
+                  "fontFamily": "Space Mono",
+                  "fontSize": 10,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "1LShY",
+          "x": 80,
+          "y": 1600,
+          "name": "case4-master",
+          "width": 280,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#1F2937",
+                "position": 0
+              },
+              {
+                "color": "#111827",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 16,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#8B5CF6"
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "25akr",
+              "name": "case4Num",
+              "fill": "#8B5CF6",
+              "content": "04",
+              "fontFamily": "Sora",
+              "fontSize": 48,
+              "fontWeight": "900",
+              "letterSpacing": -2
+            },
+            {
+              "type": "text",
+              "id": "MlBme",
+              "name": "case4Title",
+              "fill": "#FFFFFF",
+              "content": "MÁSTER Y CÁTEDRA",
+              "fontFamily": "Sora",
+              "fontSize": 20,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "f8McG",
+              "name": "case4Desc",
+              "fill": "#9CA3AF",
+              "textGrowth": "fixed-width",
+              "width": 232,
+              "content": "Cátedra de Begoña Gómez en UCM y contratos con empresas patrocinadoras",
+              "lineHeight": 1.4,
+              "fontFamily": "Space Mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "594R5",
+              "name": "case4Money",
+              "fill": "#22C55E",
+              "content": "10M€+",
+              "fontFamily": "Space Mono",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "43BOm",
+              "name": "case4Status",
+              "fill": "#8B5CF633",
+              "cornerRadius": 8,
+              "padding": [
+                8,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "l5zcH",
+                  "name": "case4StatusText",
+                  "fill": "#8B5CF6",
+                  "content": "TRÁFICO DE INFLUENCIAS",
+                  "fontFamily": "Space Mono",
+                  "fontSize": 10,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "YIhRM",
+          "x": 80,
+          "y": 2000,
+          "name": "case5-mascarillas",
+          "width": 280,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 180,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#1F2937",
+                "position": 0
+              },
+              {
+                "color": "#111827",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 16,
+          "stroke": {
+            "align": "inside",
+            "thickness": 2,
+            "fill": "#EC4899"
+          },
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "75BRZ",
+              "name": "case5Num",
+              "fill": "#EC4899",
+              "content": "05",
+              "fontFamily": "Sora",
+              "fontSize": 48,
+              "fontWeight": "900",
+              "letterSpacing": -2
+            },
+            {
+              "type": "text",
+              "id": "GREpU",
+              "name": "case5Title",
+              "fill": "#FFFFFF",
+              "content": "MASCARILLAS",
+              "fontFamily": "Sora",
+              "fontSize": 20,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "Z1BhL",
+              "name": "case5Desc",
+              "fill": "#9CA3AF",
+              "textGrowth": "fixed-width",
+              "width": 232,
+              "content": "Comisiones ilegales en contratos de mascarillas durante la pandemia COVID-19",
+              "lineHeight": 1.4,
+              "fontFamily": "Space Mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "VpG3v",
+              "name": "case5Money",
+              "fill": "#22C55E",
+              "content": "53M€",
+              "fontFamily": "Space Mono",
+              "fontSize": 24,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "oxGst",
+              "name": "case5Status",
+              "fill": "#EC489933",
+              "cornerRadius": 8,
+              "padding": [
+                8,
+                16
+              ],
+              "children": [
+                {
+                  "type": "text",
+                  "id": "5PJuV",
+                  "name": "case5StatusText",
+                  "fill": "#EC4899",
+                  "content": "CONTRATOS PÚBLICOS",
+                  "fontFamily": "Space Mono",
+                  "fontSize": 10,
+                  "fontWeight": "700"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "UHbVv",
+          "x": 1580,
+          "y": 430,
+          "name": "rel-esposa",
+          "fill": "#00000099",
+          "cornerRadius": 20,
+          "gap": 8,
+          "padding": [
+            6,
+            12
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "ERcUf",
+              "name": "relEsposaText",
+              "fill": "#FFFFFF",
+              "content": "ESPOSA",
+              "fontFamily": "Space Mono",
+              "fontSize": 10,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "rO7DD",
+          "x": 1830,
+          "y": 430,
+          "name": "rel-hermano",
+          "fill": "#00000099",
+          "cornerRadius": 20,
+          "gap": 8,
+          "padding": [
+            6,
+            12
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "acxmM",
+              "name": "relHermanoText",
+              "fill": "#FFFFFF",
+              "content": "HERMANO",
+              "fontFamily": "Space Mono",
+              "fontSize": 10,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "kUM57",
+          "x": 600,
+          "y": 850,
+          "name": "rel-comision",
+          "fill": "#DC262699",
+          "cornerRadius": 20,
+          "gap": 8,
+          "padding": [
+            6,
+            12
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "Sj6NN",
+              "name": "relComisionText",
+              "fill": "#FFFFFF",
+              "content": "COMISIONES",
+              "fontFamily": "Space Mono",
+              "fontSize": 10,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "6xemu",
+          "x": 820,
+          "y": 780,
+          "name": "rel-asesor",
+          "fill": "#00000099",
+          "cornerRadius": 20,
+          "gap": 8,
+          "padding": [
+            6,
+            12
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "uMBxU",
+              "name": "relAsesorText",
+              "fill": "#FFFFFF",
+              "content": "ASESOR",
+              "fontFamily": "Space Mono",
+              "fontSize": 10,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "line",
+          "id": "tkHSz",
+          "x": 1570,
+          "y": 430,
+          "name": "line-sanchez-begona",
+          "width": 130,
+          "height": 0,
+          "stroke": {
+            "thickness": 2,
+            "fill": "#FFFFFF66"
+          }
+        },
+        {
+          "type": "line",
+          "id": "Vn7Jz",
+          "x": 1570,
+          "y": 430,
+          "name": "line-sanchez-david",
+          "width": 380,
+          "height": 0,
+          "stroke": {
+            "thickness": 2,
+            "fill": "#FFFFFF66"
+          }
+        },
+        {
+          "type": "line",
+          "id": "HnpmZ",
+          "x": 1540,
           "y": 620,
-          "name": "lineSanchezDavid",
-          "width": 140,
-          "height": 330,
+          "name": "line-sanchez-abalos",
+          "width": 0,
+          "height": 80,
           "stroke": {
-            "thickness": 2,
-            "fill": "#666666"
+            "thickness": 3,
+            "fill": "#DC262699"
           }
         },
         {
-          "type": "line",
-          "id": "LtaWb",
-          "x": 2060,
-          "y": 750,
-          "name": "lineBegonaBarrabes",
+          "type": "frame",
+          "id": "mPOsw",
+          "x": 2800,
+          "y": 400,
+          "name": "legend",
           "width": 320,
-          "height": 130,
-          "stroke": {
-            "thickness": 2,
-            "fill": "#666666"
-          }
+          "fill": "#111827DD",
+          "cornerRadius": 16,
+          "layout": "vertical",
+          "gap": 16,
+          "padding": 24,
+          "children": [
+            {
+              "type": "text",
+              "id": "8hzPD",
+              "name": "legendTitle",
+              "fill": "#FFFFFF",
+              "content": "LEYENDA",
+              "fontFamily": "Sora",
+              "fontSize": 18,
+              "fontWeight": "700"
+            },
+            {
+              "type": "frame",
+              "id": "oKrcV",
+              "name": "legendItem1",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "W6p5R",
+                  "name": "legendDot1",
+                  "fill": "#DC2626",
+                  "width": 16,
+                  "height": 16
+                },
+                {
+                  "type": "text",
+                  "id": "Re9LW",
+                  "name": "legendText1",
+                  "fill": "#FFFFFF",
+                  "content": "Imputado",
+                  "fontFamily": "Space Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "VutZJ",
+              "name": "legendItem2",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "gCJtd",
+                  "name": "legendDot2",
+                  "fill": "#F59E0B",
+                  "width": 16,
+                  "height": 16
+                },
+                {
+                  "type": "text",
+                  "id": "WsV54",
+                  "name": "legendText2",
+                  "fill": "#FFFFFF",
+                  "content": "Investigado / Testigo",
+                  "fontFamily": "Space Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "NnS8Z",
+              "name": "legendItem3",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "DLt5I",
+                  "name": "legendDot3",
+                  "fill": "#3B82F6",
+                  "width": 16,
+                  "height": 16
+                },
+                {
+                  "type": "text",
+                  "id": "sJX6Z",
+                  "name": "legendText3",
+                  "fill": "#FFFFFF",
+                  "content": "Empresario beneficiado",
+                  "fontFamily": "Space Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "PUbiw",
+              "name": "legendItem4",
+              "gap": 12,
+              "alignItems": "center",
+              "children": [
+                {
+                  "type": "ellipse",
+                  "id": "QlbIx",
+                  "name": "legendDot4",
+                  "width": 16,
+                  "height": 16,
+                  "stroke": {
+                    "thickness": 2,
+                    "fill": "#FFFFFF"
+                  }
+                },
+                {
+                  "type": "text",
+                  "id": "XBmhS",
+                  "name": "legendText4",
+                  "fill": "#FFFFFF",
+                  "content": "Centro de la trama",
+                  "fontFamily": "Space Mono",
+                  "fontSize": 12,
+                  "fontWeight": "normal"
+                }
+              ]
+            }
+          ]
         },
         {
-          "type": "line",
-          "id": "KAjUc",
-          "x": 2060,
-          "y": 700,
-          "name": "lineBegonaHidalgo",
+          "type": "frame",
+          "id": "wqFXo",
+          "x": 2800,
+          "y": 800,
+          "name": "total-money",
           "width": 320,
-          "height": -200,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 135,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#22C55E33",
+                "position": 0
+              },
+              {
+                "color": "#11182700",
+                "position": 1
+              }
+            ]
+          },
+          "cornerRadius": 16,
           "stroke": {
+            "align": "inside",
             "thickness": 2,
-            "fill": "#666666"
+            "fill": "#22C55E"
+          },
+          "layout": "vertical",
+          "gap": 8,
+          "padding": 32,
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "9Crn3",
+              "name": "totalLabel",
+              "fill": "#22C55E",
+              "content": "TOTAL ESTIMADO",
+              "fontFamily": "Space Mono",
+              "fontSize": 12,
+              "fontWeight": "700"
+            },
+            {
+              "type": "text",
+              "id": "RcC9t",
+              "name": "totalAmount",
+              "fill": "#22C55E",
+              "content": "+500M€",
+              "fontFamily": "Sora",
+              "fontSize": 64,
+              "fontWeight": "900",
+              "letterSpacing": -3
+            },
+            {
+              "type": "text",
+              "id": "4enJN",
+              "name": "totalSub",
+              "fill": "#9CA3AF",
+              "content": "en dinero público comprometido",
+              "textAlign": "center",
+              "fontFamily": "Space Mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "O1I8k",
+          "x": 0,
+          "y": 2100,
+          "name": "footer",
+          "width": 3200,
+          "height": 100,
+          "fill": {
+            "type": "gradient",
+            "gradientType": "linear",
+            "enabled": true,
+            "rotation": 0,
+            "size": {
+              "height": 1
+            },
+            "colors": [
+              {
+                "color": "#00000000",
+                "position": 0
+              },
+              {
+                "color": "#000000FF",
+                "position": 1
+              }
+            ]
+          },
+          "padding": [
+            0,
+            80
+          ],
+          "justifyContent": "space_between",
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "NLd8D",
+              "name": "footerLeft",
+              "fill": "#6B7280",
+              "content": "LA TRAMA PSOE • JUNIO 2025",
+              "fontFamily": "Space Mono",
+              "fontSize": 12,
+              "fontWeight": "normal"
+            },
+            {
+              "type": "text",
+              "id": "QpQgh",
+              "name": "footerRight",
+              "fill": "#6B7280",
+              "content": "Datos basados en documentos judiciales y declaraciones públicas",
+              "fontFamily": "Space Mono",
+              "fontSize": 11,
+              "fontWeight": "normal"
+            }
+          ]
+        },
+        {
+          "type": "path",
+          "id": "X5uxO",
+          "x": 580,
+          "y": 870,
+          "name": "line-abalos-koldo",
+          "geometry": "M0 0q100 50 200 100",
+          "width": 200,
+          "height": 100,
+          "stroke": {
+            "thickness": 3,
+            "fill": "#DC2626"
           }
         },
         {
-          "type": "line",
-          "id": "glSCt",
-          "x": 430,
-          "y": 900,
-          "name": "lineKoldoPardo",
-          "width": 270,
+          "type": "path",
+          "id": "W5QoH",
+          "x": 620,
+          "y": 1000,
+          "name": "line-koldo-aldama",
+          "geometry": "M0 30q90-30 180 0",
+          "width": 180,
+          "height": 30,
+          "stroke": {
+            "thickness": 3,
+            "fill": "#22C55E"
+          }
+        },
+        {
+          "type": "path",
+          "id": "xtHhU",
+          "x": 980,
+          "y": 1000,
+          "name": "line-aldama-hidalgo",
+          "geometry": "M0 30q60-30 120 0",
+          "width": 120,
+          "height": 30,
+          "stroke": {
+            "thickness": 3,
+            "fill": "#3B82F6"
+          }
+        },
+        {
+          "type": "path",
+          "id": "iy8V9",
+          "x": 900,
+          "y": 870,
+          "name": "line-cerdan-comision",
+          "geometry": "M100 0q-50 40-100 80",
+          "width": 100,
+          "height": 80,
+          "stroke": {
+            "thickness": 2,
+            "fill": "#DC2626"
+          }
+        },
+        {
+          "type": "path",
+          "id": "v1flB",
+          "x": 1880,
+          "y": 430,
+          "name": "line-begona-barrabes",
+          "geometry": "M0 0q160 50 320 0",
+          "width": 320,
           "height": 50,
           "stroke": {
             "thickness": 2,
-            "fill": "#666666"
+            "fill": "#8B5CF6"
           }
         },
         {
-          "type": "line",
-          "id": "s0k5P",
-          "x": 460,
-          "y": 600,
-          "name": "lineFerrazCase",
-          "width": 240,
-          "height": 100,
-          "stroke": {
-            "thickness": 2,
-            "fill": "#000000"
-          }
+          "type": "frame",
+          "id": "n0xY8",
+          "x": 1350,
+          "y": 280,
+          "name": "axis-politicos",
+          "fill": "#1F293799",
+          "cornerRadius": 8,
+          "gap": 8,
+          "padding": [
+            8,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "tFUVq",
+              "name": "axisIcon1",
+              "width": 16,
+              "height": 16,
+              "iconFontName": "crown",
+              "iconFontFamily": "lucide",
+              "fill": "#DC2626"
+            },
+            {
+              "type": "text",
+              "id": "1vrl5",
+              "name": "axisText1",
+              "fill": "#FFFFFF",
+              "content": "NÚCLEO POLÍTICO",
+              "fontFamily": "Sora",
+              "fontSize": 12,
+              "fontWeight": "700"
+            }
+          ]
         },
         {
-          "type": "line",
-          "id": "lwcFe",
-          "x": 1200,
-          "y": 1100,
-          "name": "lineCenterMascarillas",
-          "width": 0,
-          "height": 300,
-          "stroke": {
-            "thickness": 2,
-            "fill": "#000000"
-          }
+          "type": "frame",
+          "id": "EHwRR",
+          "x": 600,
+          "y": 620,
+          "name": "axis-entorno",
+          "fill": "#1F293799",
+          "cornerRadius": 8,
+          "gap": 8,
+          "padding": [
+            8,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "pvkHW",
+              "name": "axisIcon2",
+              "width": 16,
+              "height": 16,
+              "iconFontName": "users",
+              "iconFontFamily": "lucide",
+              "fill": "#F59E0B"
+            },
+            {
+              "type": "text",
+              "id": "QZLNo",
+              "name": "axisText2",
+              "fill": "#FFFFFF",
+              "content": "ENTORNO Y ASESORES",
+              "fontFamily": "Sora",
+              "fontSize": 12,
+              "fontWeight": "700"
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "7pGyM",
+          "x": 600,
+          "y": 1200,
+          "name": "axis-empresarios",
+          "fill": "#1F293799",
+          "cornerRadius": 8,
+          "gap": 8,
+          "padding": [
+            8,
+            16
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "icon_font",
+              "id": "XS7aQ",
+              "name": "axisIcon3",
+              "width": 16,
+              "height": 16,
+              "iconFontName": "briefcase",
+              "iconFontFamily": "lucide",
+              "fill": "#3B82F6"
+            },
+            {
+              "type": "text",
+              "id": "m7BVk",
+              "name": "axisText3",
+              "fill": "#FFFFFF",
+              "content": "EMPRESARIOS",
+              "fontFamily": "Sora",
+              "fontSize": 12,
+              "fontWeight": "700"
+            }
+          ]
         }
       ]
     }

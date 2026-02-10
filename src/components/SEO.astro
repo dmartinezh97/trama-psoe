@@ -24,30 +24,39 @@ const canonicalUrl = `${siteUrl}${currentPath}`;
 const pathMappings: Record<string, string> = {
   '/es/': '/en/',
   '/en/': '/es/',
-  '/es/casos': '/en/cases',
-  '/en/cases': '/es/casos',
-  '/es/cronologia': '/en/timeline',
-  '/en/timeline': '/es/cronologia',
-  '/es/imputados': '/en/defendants',
-  '/en/defendants': '/es/imputados',
-  '/es/documentos': '/en/documents',
-  '/en/documents': '/es/documentos',
-  '/es/documentos/uco': '/en/documents/uco',
-  '/en/documents/uco': '/es/documentos/uco',
-  '/es/documentos/autos': '/en/documents/court-orders',
-  '/en/documents/court-orders': '/es/documentos/autos',
-  '/es/documentos/igae': '/en/documents/igae',
-  '/en/documents/igae': '/es/documentos/igae',
-  '/es/documentos/testimonios': '/en/documents/testimonies',
-  '/en/documents/testimonies': '/es/documentos/testimonios',
+  '/es/casos/': '/en/cases/',
+  '/en/cases/': '/es/casos/',
+  '/es/cronologia/': '/en/timeline/',
+  '/en/timeline/': '/es/cronologia/',
+  '/es/imputados/': '/en/defendants/',
+  '/en/defendants/': '/es/imputados/',
+  '/es/documentos/': '/en/documents/',
+  '/en/documents/': '/es/documentos/',
+  '/es/documentos/uco/': '/en/documents/uco/',
+  '/en/documents/uco/': '/es/documentos/uco/',
+  '/es/documentos/autos/': '/en/documents/court-orders/',
+  '/en/documents/court-orders/': '/es/documentos/autos/',
+  '/es/documentos/igae/': '/en/documents/igae/',
+  '/en/documents/igae/': '/es/documentos/igae/',
+  '/es/documentos/testimonios/': '/en/documents/testimonies/',
+  '/en/documents/testimonies/': '/es/documentos/testimonios/',
+  '/es/legal/privacidad/': '/en/legal/privacy/',
+  '/en/legal/privacy/': '/es/legal/privacidad/',
+  '/es/legal/terminos/': '/en/legal/terms/',
+  '/en/legal/terms/': '/es/legal/terminos/',
 };
 
-// Find alternate URL
+// Find alternate URL - exact match first, then longest prefix match
 let alternatePath = currentPath;
-for (const [from, to] of Object.entries(pathMappings)) {
-  if (currentPath === from || currentPath === `${from}/` || currentPath.startsWith(from)) {
-    alternatePath = currentPath.replace(from, to);
-    break;
+if (pathMappings[currentPath]) {
+  alternatePath = pathMappings[currentPath];
+} else {
+  const sortedKeys = Object.keys(pathMappings).sort((a, b) => b.length - a.length);
+  for (const from of sortedKeys) {
+    if (currentPath.startsWith(from)) {
+      alternatePath = currentPath.replace(from, pathMappings[from]);
+      break;
+    }
   }
 }
 
