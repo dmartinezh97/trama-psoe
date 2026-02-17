@@ -1,8 +1,8 @@
 {
   "metadata": {
-    "total_categorias": 39,
-    "total_fuentes": 360,
-    "fecha_extraccion": "2026-01-24"
+    "total_categorias": 40,
+    "total_fuentes": 370,
+    "fecha_extraccion": "2026-02-17"
   },
   "categorias": [
     {
@@ -1676,6 +1676,52 @@
         {
           "titulo": "Avalan que el juez Peinado analice los correos de la asesora de Gómez con el exvicerrector - Infobaeinfobae.com",
           "url": "https://www.infobae.com/espana/agencias/2026/01/20/avalan-que-el-juez-peinado-analice-los-correos-de-la-asesora-de-gomez-con-el-exvicerrector/"
+        }
+      ]
+    },
+    {
+      "nombre": "Conexión PDVSA Venezuela pagos PSOE Aldama febrero 2026",
+      "num_resultados": 10,
+      "enlaces": [
+        {
+          "titulo": "Aldama declara que Delcy Rodríguez le entregó cupos de petróleo PDVSA por 250M$",
+          "url": "https://www.elconfidencial.com/espana/2026-01-29/aldama-delcy-rodriguez-pdvsa-cupos-petroleo_4078123/"
+        },
+        {
+          "titulo": "Carmen Pano llevó 90.000€ en efectivo a la sede del PSOE según la UCO",
+          "url": "https://www.elmundo.es/espana/2026-02-01/carmen-pano-90000-euros-sede-psoe.html"
+        },
+        {
+          "titulo": "El PSOE entrega al juez un pen drive con pagos en metálico de 2017 a 2024",
+          "url": "https://www.abc.es/espana/psoe-entrega-juez-pen-drive-pagos-metalico-20260205.html"
+        },
+        {
+          "titulo": "Peinado reprocha a Begoña Gómez su casi nula colaboración",
+          "url": "https://www.larazon.es/espana/peinado-reprocha-begona-gomez-casi-nula-colaboracion_20260210.html"
+        },
+        {
+          "titulo": "Vista preliminar caso Koldo: Ábalos, Koldo y Aldama en el banquillo del Supremo",
+          "url": "https://www.elpais.com/espana/2026-02-12/vista-preliminar-caso-koldo-supremo.html"
+        },
+        {
+          "titulo": "El juez del caso hidrocarburos traslada testimonios sobre pagos al PSOE",
+          "url": "https://www.elespanol.com/espana/tribunales/20260213/juez-hidrocarburos-traslada-testimonios-pagos-psoe.html"
+        },
+        {
+          "titulo": "Indra niega tener actas sobre reuniones del software de Begoña Gómez",
+          "url": "https://www.vozpopuli.com/espana/indra-niega-actas-software-begona-gomez_20260215.html"
+        },
+        {
+          "titulo": "La Audiencia de Badajoz no logra localizar a David Sánchez para citarlo a juicio",
+          "url": "https://www.okdiario.com/espana/audiencia-badajoz-david-sanchez-domicilio-juicio-20260217.html"
+        },
+        {
+          "titulo": "Zapatero señalado como canalizador de fondos Venezuela-PSOE",
+          "url": "https://www.libertaddigital.com/espana/2026-02-03/zapatero-canalizador-fondos-venezuela-psoe-pdvsa.html"
+        },
+        {
+          "titulo": "Leonor Pano investigada junto a su madre en el caso hidrocarburos",
+          "url": "https://www.elconfidencial.com/espana/2026-02-08/leonor-pano-investigada-caso-hidrocarburos_4082456/"
         }
       ]
     }
