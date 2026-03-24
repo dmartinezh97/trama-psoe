@@ -8,7 +8,7 @@
 La Trama PSOE
 
 ### Subtítulo
-El mayor escándalo de corrupción del gobierno Sánchez | Actualizado a enero 2026
+El mayor escándalo de corrupción del gobierno Sánchez | Actualizado a marzo 2026
 
 ### Texto introductorio
 Más de 30 imputados. Tres casos interconectados. Comisiones millonarias. Mascarillas defectuosas. Contratos amañados. La esposa del presidente investigada. Su hermano procesado. Dos exaltos cargos en prisión sin fianza.
@@ -97,9 +97,19 @@ Patricia Uriz, expareja de Koldo, escribió en un mensaje interceptado: "Ya teng
 - Delito investigado: Blanqueo de capitales
 
 ### Juicio
-Fecha prevista: Abril 2026
+Fecha: 7 de abril de 2026 (sesiones de mañana y tarde durante todo abril)
 Tribunal: Tribunal Supremo
-Audiencia preliminar: Febrero 2026
+75 testigos confirmados (incluidos el ministro Torres y la presidenta del Congreso Armengol)
+Pedro Sánchez, Illa y Marlaska excluidos de la lista de testigos
+Armengol y Torres pidieron declarar por escrito (Fiscalía y defensas se oponen)
+
+### Novedades marzo 2026
+- Koldo intentó suspender el juicio alegando filtraciones → Supremo lo rechazó (20 marzo)
+- Ábalos y Koldo recurrieron al Tribunal Constitucional como último recurso
+- El Supremo investiga el patrimonio de Ábalos y Koldo por no pagar la fianza de 60.000€ cada uno (impuesta en diciembre, impagada) → posible embargo de bienes
+- Acciona admite irregularidades en contratos con Servinabar y cifra pagos en 6,8M€ (vs 10,2M€ según la UCO: discrepancia de 3,4M€)
+- Santos Cerdán absuelto de la querella por mentir en el Senado (Audiencia de Madrid, febrero 2026)
+- UCO ultima informes sobre Armengol y patrimonio de Santos Cerdán
 
 ---
 
@@ -163,9 +173,15 @@ El CEO de Globalia, Javier Hidalgo, llamó a Begoña Gómez el 3 de septiembre d
 ### Estado judicial
 - Juez instructor: Juan Carlos Peinado (Juzgado Instrucción nº 41 Madrid)
 - El juez se jubila: 27 septiembre 2026
-- Propuesta: Juicio con jurado popular
+- Propuesta: Juicio con jurado popular (segundo intento, tras anulación del primero por la Audiencia Provincial en febrero 2026)
+- Citación 1 de abril de 2026: Begoña Gómez, Cristina Álvarez y Carlos Barrabés
+- Unificación de las dos investigaciones: los 5 delitos se acumulan en un solo procedimiento
 - Posición Fiscalía: Pide archivo (solo "irregularidades administrativas")
 - Fiscalía Europea: Investiga a Barrabés, NO a Begoña Gómez
+
+### Novedades marzo 2026
+- CGPJ (24 marzo): Archiva 4 denuncias contra el juez Peinado por unanimidad
+- CGPJ (24 marzo): NO archiva la denuncia del ministro Bolaños contra Peinado → ordena nuevas diligencias al Promotor de la Acción Disciplinaria
 
 ---
 
@@ -207,6 +223,15 @@ Las acusaciones han pedido citar como testigos a:
 - Pedro Sánchez
 
 Motivo: Una reunión documentada el 15 de julio de 2020 entre Ábalos, Sánchez y Calviño. Los mensajes interceptados dicen: "Está hablando con Nadia, lo está arreglando".
+
+### Novedades marzo 2026 - El sobre de PDVSA
+- Aldama entrega al juez Ismael Moreno el "sobre de PDVSA" (12-18 marzo): cupo de petróleo por 250 millones de dólares con membrete de PDVSA dirigido a Delcy Rodríguez
+- Aldama dice que se lo entregó Delcy Rodríguez en 2020
+- Aldama lo vincula con la financiación ilegal del PSOE y la Internacional Socialista
+- El juez da credibilidad al documento y lo incorpora a la pieza de financiación del PSOE (23 marzo)
+- UCO ordenada a analizar "punto por punto" el contenido → posibles comisiones rogatorias internacionales
+- Carmen Pano confirmó al juez que la trama pagó "un kilo" (1M€) a Ábalos: "la casa, efectivo y otras cosas"
+- Aldama teme por su seguridad tras filtrarse la entrega de pruebas
 
 ---
 
@@ -255,9 +280,14 @@ David Sánchez renunció al cargo el 5 de febrero de 2025, tras estallar el esc�
 Gallardo intentó un aforamiento fraudulento haciéndose diputado autonómico mediante dimisiones escalonadas de otros socialistas. El TSJ de Extremadura lo rechazó como "fraude de ley" en junio de 2025.
 
 ### Juicio
-- Fecha: 28 mayo - 4 junio 2026
+- Fecha: 28-29 mayo y 1-4 junio 2026
 - Tribunal: Audiencia Provincial de Badajoz
 - Acusados: 11 personas
+
+### Novedades marzo 2026
+- 5 testigos clave ilocalizables: un inspector de Hacienda y 4 funcionarios de la Diputación de Badajoz → domicilios registrados obsoletos
+- David Sánchez cobró 340.567€ totales de la Diputación (2017-2025)
+- Preocupación en la Audiencia de Badajoz por la localización del propio David Sánchez antes del juicio
 
 ---
 
@@ -377,7 +407,19 @@ Cronología: del estallido a los juicios
 | 20 enero 2026 | Patricia Uriz declarará como imputada |
 | 28 enero 2026 | Díaz Bidart declarará como testigo (caso hidrocarburos) |
 | Febrero 2026 | Audiencia preliminar juicio Ábalos-Koldo |
-| Abril 2026 | Juicio oral Ábalos-Koldo en Tribunal Supremo |
+| 4 marzo 2026 | Supremo cierra lista de 75 testigos para juicio Koldo. Sin Sánchez, Illa ni Marlaska, pero con Torres y Armengol |
+| 4 marzo 2026 | 5 testigos clave del caso David Sánchez resultan ilocalizables |
+| 15 marzo 2026 | Ábalos y Koldo recurren al Tribunal Constitucional como último intento para evitar el juicio |
+| 16 marzo 2026 | Armengol pide declarar por escrito en juicio Koldo. Fiscalía y defensas se oponen |
+| 18 marzo 2026 | Aldama entrega el sobre de PDVSA al juez Moreno: cupos de petróleo por 250M$ vinculados a financiación ilegal del PSOE |
+| 18 marzo 2026 | Acciona admite irregularidades en contratos con Servinabar: 3,4M€ de discrepancia con la UCO |
+| 20 marzo 2026 | Supremo rechaza suspender juicio Koldo (último recurso de Koldo García) |
+| 20 marzo 2026 | Supremo investiga patrimonio de Ábalos y Koldo por no pagar fianza de 60.000€ → posible embargo |
+| 20 marzo 2026 | Peinado insiste en jurado popular para Begoña (2º intento). Cita a las partes el 1 de abril |
+| 23 marzo 2026 | Juez da credibilidad al sobre de PDVSA e incorpora a pieza de financiación del PSOE |
+| 24 marzo 2026 | CGPJ archiva 4 denuncias contra Peinado pero NO archiva la del ministro Bolaños |
+| 1 abril 2026 | Citación de Begoña Gómez, Barrabés y Cristina Álvarez ante juez Peinado |
+| 7 abril 2026 | Juicio oral Ábalos-Koldo en Tribunal Supremo (sesiones mañana y tarde, todo abril) |
 | 28 mayo - 4 junio 2026 | Juicio David Sánchez y otros 10 acusados |
 | 27 septiembre 2026 | Jubilación juez Peinado |
 
@@ -483,7 +525,7 @@ Todo el contenido procede de fuentes públicas: informes policiales filtrados a 
 
 Esta web no prejuzga la culpabilidad de ninguna persona. Todas las personas mencionadas tienen derecho a la presunción de inocencia hasta que exista sentencia firme.
 
-Última actualización: Enero 2026
+Última actualización: Marzo 2026
 
 ---
 
@@ -511,7 +553,7 @@ Ver todos los casos
 Información basada en fuentes judiciales y periodísticas públicas. Todos los imputados gozan de presunción de inocencia.
 
 ### Mensajes de actualización
-- "Caso en desarrollo - información actualizada a enero 2026"
+- "Caso en desarrollo - información actualizada a marzo 2026"
 - "Pendiente de juicio oral"
 - "Archivado"
 - "En prisión preventiva"

@@ -49,7 +49,7 @@ export const translations = {
     },
     hero: {
       brand: 'LA TRAMA',
-      tagline: 'ACTUALIZADO FEBRERO 2026',
+      tagline: 'ACTUALIZADO MARZO 2026',
       titleLine1: 'LA',
       titleLine2: 'TRAMA',
       titleLine3: 'PSOE',
@@ -182,7 +182,7 @@ export const translations = {
       infoDocs: 'Documentos',
       infoSources: 'Fuentes',
       copyright: '© 2026 La Trama PSOE',
-      lastUpdate: 'Última actualización: Febrero 2026',
+      lastUpdate: 'Última actualización: Marzo 2026',
       legalPrivacy: 'Privacidad',
       legalTerms: 'Términos',
       legalCookies: 'Cookies',
@@ -203,7 +203,7 @@ export const translations = {
         },
       },
       backToHome: 'Volver al inicio',
-      lastUpdated: 'Última actualización: Febrero 2026',
+      lastUpdated: 'Última actualización: Marzo 2026',
       privacy: {
         title: 'Política de Privacidad',
         sections: [
@@ -335,13 +335,24 @@ export const translations = {
           { date: '13 FEBRERO', title: 'Juez traslada testimonios sobre pagos al PSOE', description: 'El juez del caso hidrocarburos envía declaraciones de Aldama y Carmen Pano a la causa de pagos en metálico.' },
           { date: '15 FEBRERO', title: 'Indra niega actas sobre software de Begoña', description: 'Indra comunica al juez que no tiene ningún acta sobre reuniones del software de Begoña Gómez.' },
           { date: '17 FEBRERO', title: 'Audiencia busca domicilio de David Sánchez', description: 'La Audiencia de Badajoz no logra localizar al hermano del presidente para citarlo a juicio.' },
-          { date: 'ABRIL', title: 'JUICIO ORAL: ÁBALOS Y KOLDO', description: 'Juicio en el Tribunal Supremo. Pena solicitada: hasta 30 años para Ábalos, hasta 19,5 años para Koldo.', highlighted: true },
+          { date: '4 MARZO', title: 'Supremo cierra lista de 75 testigos', description: 'Se fija el juicio para el 7 de abril con 75 testigos. Sin Pedro Sánchez, Illa ni Marlaska, pero con el ministro Torres y Armengol.' },
+          { date: '4 MARZO', title: '5 testigos desaparecidos caso David Sánchez', description: 'Un inspector de Hacienda y 4 funcionarios de la Diputación de Badajoz resultan ilocalizables para el tribunal.' },
+          { date: '15 MARZO', title: 'Ábalos y Koldo acuden al Constitucional', description: 'Presentan recurso ante el TC como último intento para evitar el juicio tras agotar vías en el Supremo.' },
+          { date: '16 MARZO', title: 'Armengol pide declarar por escrito', description: 'La presidenta del Congreso solicita testificar por escrito en el juicio del caso Koldo. Fiscalía y defensas se oponen.' },
+          { date: '18 MARZO', title: 'Aldama entrega el sobre de PDVSA al juez', description: 'Entrega al juez Ismael Moreno un sobre con membrete de PDVSA: cupos de petróleo por 250M$ que vincula a la financiación ilegal del PSOE.', highlighted: true },
+          { date: '18 MARZO', title: 'Acciona admite irregularidades con Servinabar', description: 'Acciona cifra pagos a Servinabar en 6,8M€ frente a los 10,2M€ de la UCO: 3,4M€ de discrepancia.' },
+          { date: '20 MARZO', title: 'Supremo rechaza suspender juicio Koldo', description: 'Desestima el incidente de nulidad de Koldo García. Se agota la última vía para frenar la vista oral.' },
+          { date: '20 MARZO', title: 'Embargo patrimonial a Ábalos y Koldo', description: 'El Supremo investiga sus bienes por no pagar la fianza de 60.000€ cada uno impuesta en diciembre.' },
+          { date: '20 MARZO', title: 'Peinado insiste en jurado popular para Begoña', description: 'Segundo intento tras la anulación de febrero. Cita a Begoña, Barrabés y Cristina Álvarez el 1 de abril.' },
+          { date: '23 MARZO', title: 'Juez da credibilidad al sobre de PDVSA', description: 'Incorpora el documento a la pieza de financiación del PSOE. Ordena a la UCO analizarlo punto por punto.' },
+          { date: '24 MARZO', title: 'CGPJ archiva denuncias contra Peinado', description: 'Archiva 4 denuncias por unanimidad pero NO archiva la del ministro Bolaños y ordena nuevas diligencias.' },
+          { date: '7 ABRIL', title: 'JUICIO ORAL: ÁBALOS Y KOLDO', description: 'Juicio en el Tribunal Supremo. Sesiones de mañana y tarde durante todo abril. 75 testigos. Pena: hasta 30 años para Ábalos.', highlighted: true },
           { date: '28 MAY-4 JUN', title: 'JUICIO: DAVID SÁNCHEZ Y 10 ACUSADOS', description: 'Juicio en la Audiencia Provincial de Badajoz por el puesto a medida.', highlighted: true },
           { date: '27 SEPT', title: 'Jubilación del juez Peinado', description: 'El instructor del caso Begoña Gómez se jubilará. La causa deberá resolverse o transferirse.' },
         ],
       },
       footer: {
-        updateText: 'Información actualizada a febrero 2026',
+        updateText: 'Información actualizada a marzo 2026',
         casesText: 'VER TODOS LOS CASOS',
         accusedText: 'VER IMPUTADOS',
         documentsText: 'VER DOCUMENTOS',
@@ -364,7 +375,7 @@ export const translations = {
         tag: 'CASO 01',
         title: 'CASO KOLDO',
         subtitle: 'Comisiones en sobres y mascarillas defectuosas',
-        description: 'Una empresa que facturó cero euros en 2019 recibió 54 millones en contratos públicos durante la pandemia. Las mascarillas resultaron defectuosas. Los sobres con dinero se repartían en la sede del PSOE: 650.000€ a Ábalos, 300.000€ a Koldo, 15.000€ a Cerdán.',
+        description: 'Una empresa que facturó cero euros en 2019 recibió 54 millones en contratos públicos durante la pandemia. Juicio fijado para el 7 de abril con 75 testigos (incluidos Torres y Armengol). El Supremo investiga el patrimonio de Ábalos y Koldo por no pagar la fianza de 60.000€. Acciona admite irregularidades en 6,8M€ pagados a Servinabar (empresa de Cerdán).',
         stats: [
           { number: '54M€', label: 'Contratos sin experiencia' },
           { number: '24 años', label: 'Pena para Ábalos' },
@@ -376,7 +387,7 @@ export const translations = {
           { name: 'Víctor de Aldama', status: 'COLABORADOR' },
           { name: 'Santos Cerdán', status: 'LIBRE CON MEDIDAS' },
         ],
-        trial: 'JUICIO PREVISTO: ABRIL 2026 · TRIBUNAL SUPREMO',
+        trial: 'JUICIO: 7 ABRIL 2026 · TRIBUNAL SUPREMO · 75 TESTIGOS',
       },
       begona: {
         tag: 'CASO 02',
@@ -395,13 +406,13 @@ export const translations = {
           { name: 'Carlos Barrabés', status: 'IMPUTADO' },
           { name: 'Cristina Álvarez', status: 'IMPUTADA' },
         ],
-        trial: 'JUICIO CON JURADO POPULAR · 5 DELITOS ACUMULADOS · PLAZO: 16 ABRIL 2026',
+        trial: 'JURADO POPULAR (2º INTENTO) · 5 DELITOS ACUMULADOS · CITACIÓN: 1 ABRIL 2026',
       },
       hidrocarburos: {
         tag: 'CASO 03',
         title: 'CASO HIDROCARBUROS',
         subtitle: 'De los sobornos al petróleo venezolano',
-        description: 'Una trama de fraude fiscal de 182 millones de euros que ha derivado en la mayor conexión Venezuela-PSOE. Aldama declaró que Delcy Rodríguez le entregó un sobre con cupos de petróleo de PDVSA por 250M$, canalizados presuntamente a través de Zapatero. Carmen Pano llevó 2 bolsas con 90.000€ en efectivo a la sede del PSOE. El partido entregó al juez un pen drive con justificantes de pagos en metálico entre 2017 y 2024.',
+        description: 'Una trama de fraude fiscal de 182 millones de euros que ha derivado en la mayor conexión Venezuela-PSOE. En marzo 2026, Aldama entregó al juez el sobre de PDVSA con cupos de petróleo por 250M$ que vincula a la financiación ilegal del PSOE. El juez lo consideró "muy verosímil" y lo incorporó a la causa. Carmen Pano confirmó que la trama pagó "un kilo" (1M€) a Ábalos: "la casa, efectivo y otras cosas".',
         stats: [
           { number: '250M$', label: 'Cupos PDVSA' },
           { number: '182M€', label: 'Fraude fiscal estimado' },
@@ -417,7 +428,7 @@ export const translations = {
         tag: 'CASO 04',
         title: 'CASO DAVID SÁNCHEZ',
         subtitle: 'El hermano del presidente: un puesto a medida en Badajoz',
-        description: 'David Sánchez, hermano de Pedro Sánchez, ocupó durante 8 años un puesto creado supuestamente para él en la Diputación de Badajoz. Cobra 55.000 euros anuales pero tributa en Portugal. Su patrimonio aumentó en 600.000 euros. 7 acusaciones populares irán separadas, cada una con su abogado. El TSJ rechazó la recusación de jueces.',
+        description: 'David Sánchez, hermano de Pedro Sánchez, cobró 340.567€ de la Diputación de Badajoz (2017-2025) en un puesto creado a medida. Su patrimonio aumentó 600.000€. A un mes del juicio, 5 testigos clave resultan ilocalizables: un inspector de Hacienda y 4 funcionarios. El tribunal tiene dificultades para localizar al propio David Sánchez.',
         stats: [
           { number: '600.000€', label: 'Aumento patrimonial' },
           { number: '55.760€', label: 'Sueldo anual en 2024' },
@@ -560,7 +571,7 @@ export const translations = {
           name: 'CARMEN PANO',
           role: 'Empresaria',
           badge: 'INVESTIGADA',
-          dato: 'Llevó 2 bolsas con 90.000€ en efectivo a la sede del PSOE. Investigada en el caso hidrocarburos.',
+          dato: 'Confirmó al juez que la trama pagó "un kilo" (1M€) a Ábalos: "la casa, efectivo y otras cosas". Llevó 90.000€ en efectivo a Ferraz.',
         },
         leonorPano: {
           name: 'LEONOR PANO',
@@ -681,7 +692,7 @@ export const translations = {
       disclaimer: {
         title: 'Sobre esta web',
         text: 'Esta página recopila información pública sobre los casos judiciales conocidos como "Trama PSOE". No se realizan juicios de valor ni se prejuzga la culpabilidad de ningún imputado. Todos los acusados gozan de presunción de inocencia hasta que exista sentencia firme.',
-        date: 'Última actualización: Febrero 2026',
+        date: 'Última actualización: Marzo 2026',
       },
       footer: {
         text: 'Información basada en fuentes judiciales y periodísticas públicas',
@@ -771,7 +782,7 @@ export const translations = {
           stats: [
             { label: 'TESTIMONIOS', value: '17 declaraciones' },
             { label: 'TESTIGOS CLAVE', value: '5 personas' },
-            { label: 'PERÍODO', value: 'Nov 2024 — Feb 2026' },
+            { label: 'PERÍODO', value: 'Nov 2024 — Mar 2026' },
           ],
           documents: [
             { title: 'Declaración Víctor de Aldama', meta: 'Audiencia Nacional · Noviembre 2024', badge: 'CLAVE', url: 'https://www.elespanol.com/espana/tribunales/20241122/traviata-horas-video-integro-declaracion-aldama-audiencia-nacional/902910341_0.html' },
@@ -779,8 +790,10 @@ export const translations = {
             { title: 'Declaración Begoña Gómez', meta: 'Juzgado Instrucción 41 · Julio 2024', url: 'https://theobjective.com/espana/tribunales/2024-07-11/video-declaracion-begona-gomez/' },
             { title: 'Declaración Carlos Barrabés', meta: 'Juzgado Instrucción 41 · Septiembre 2024' },
             { title: 'Declaración Patricia Uriz', meta: 'Tribunal Supremo · Enero 2026' },
-            { title: 'Declaración Aldama sobre PDVSA', meta: 'Audiencia Nacional · 29 Enero 2026', badge: 'NUEVO', },
-            { title: 'Pen drive PSOE: pagos en metálico 2017-2024', meta: 'Entregado al juzgado · Febrero 2026', badge: 'NUEVO' },
+            { title: 'Declaración Aldama sobre PDVSA', meta: 'Audiencia Nacional · 29 Enero 2026' },
+            { title: 'Pen drive PSOE: pagos en metálico 2017-2024', meta: 'Entregado al juzgado · Febrero 2026' },
+            { title: 'Entrega sobre PDVSA al juez Moreno', meta: 'Audiencia Nacional · 18 Marzo 2026', badge: 'NUEVO' },
+            { title: 'Declaración Carmen Pano: "un kilo" a Ábalos', meta: 'Audiencia Nacional · Marzo 2026', badge: 'NUEVO' },
           ],
           relatedCases: [
             { tag: 'CASO 01', title: 'Caso Koldo', description: 'Testimonios de Aldama y Koldo García sobre las comisiones.', href: '/es/casos#koldo' },
@@ -841,7 +854,7 @@ export const translations = {
     },
     hero: {
       brand: 'THE SCANDAL',
-      tagline: 'UPDATED FEBRUARY 2026',
+      tagline: 'UPDATED MARCH 2026',
       titleLine1: 'THE',
       titleLine2: 'PSOE',
       titleLine3: 'SCANDAL',
@@ -974,7 +987,7 @@ export const translations = {
       infoDocs: 'Documents',
       infoSources: 'Sources',
       copyright: '© 2026 The PSOE Scandal',
-      lastUpdate: 'Last update: February 2026',
+      lastUpdate: 'Last update: March 2026',
       legalPrivacy: 'Privacy',
       legalTerms: 'Terms',
       legalCookies: 'Cookies',
@@ -995,7 +1008,7 @@ export const translations = {
         },
       },
       backToHome: 'Back to home',
-      lastUpdated: 'Last updated: February 2026',
+      lastUpdated: 'Last updated: March 2026',
       privacy: {
         title: 'Privacy Policy',
         sections: [
@@ -1127,13 +1140,24 @@ export const translations = {
           { date: 'FEB 13', title: 'Judge forwards testimonies on PSOE payments', description: 'The hydrocarbons case judge sends Aldama and Carmen Pano\'s statements to the cash payments case.' },
           { date: 'FEB 15', title: 'Indra denies records on Begoña\'s software', description: 'Indra informs the judge it has no records of meetings about Begoña Gómez\'s software.' },
           { date: 'FEB 17', title: 'Court seeks David Sánchez\'s address', description: 'The Badajoz Court fails to locate the president\'s brother to summon him to trial.' },
-          { date: 'APRIL', title: 'ORAL TRIAL: ÁBALOS AND KOLDO', description: 'Trial at the Supreme Court. Sentence requested: up to 30 years for Ábalos, up to 19.5 years for Koldo.', highlighted: true },
+          { date: 'MAR 4', title: 'Supreme Court finalizes 75-witness list', description: 'Trial set for April 7 with 75 witnesses. Without Pedro Sánchez, Illa or Marlaska, but including minister Torres and Armengol.' },
+          { date: 'MAR 4', title: '5 witnesses missing in David Sánchez case', description: 'A tax inspector and 4 Badajoz Provincial Council officials cannot be located by the court.' },
+          { date: 'MAR 15', title: 'Ábalos and Koldo appeal to Constitutional Court', description: 'File appeal as last resort to avoid trial after exhausting options at the Supreme Court.' },
+          { date: 'MAR 16', title: 'Armengol requests written testimony', description: 'Congress president requests to testify in writing at Koldo case trial. Prosecution and defenses oppose.' },
+          { date: 'MAR 18', title: 'Aldama delivers PDVSA envelope to judge', description: 'Delivers to judge Ismael Moreno an envelope with PDVSA letterhead: oil quotas worth $250M linked to alleged illegal PSOE financing.', highlighted: true },
+          { date: 'MAR 18', title: 'Acciona admits irregularities with Servinabar', description: 'Acciona reports €6.8M in payments to Servinabar vs UCO\'s €10.2M: €3.4M discrepancy.' },
+          { date: 'MAR 20', title: 'Supreme Court rejects Koldo trial suspension', description: 'Dismisses nullity petition by Koldo García. Last avenue to halt the oral hearing is exhausted.' },
+          { date: 'MAR 20', title: 'Asset investigation on Ábalos and Koldo', description: 'Supreme Court investigates their assets for failing to pay the €60,000 bail each, imposed in December.' },
+          { date: 'MAR 20', title: 'Peinado insists on jury trial for Begoña', description: 'Second attempt after February annulment. Summons Begoña, Barrabés and Cristina Álvarez for April 1.' },
+          { date: 'MAR 23', title: 'Judge validates PDVSA envelope', description: 'Incorporates document into PSOE financing case. Orders UCO to analyze it point by point.' },
+          { date: 'MAR 24', title: 'CGPJ dismisses complaints against Peinado', description: 'Dismisses 4 complaints unanimously but does NOT dismiss minister Bolaños\'s complaint, ordering new proceedings.' },
+          { date: 'APR 7', title: 'ORAL TRIAL: ÁBALOS AND KOLDO', description: 'Trial at the Supreme Court. Morning and afternoon sessions throughout April. 75 witnesses. Sentence: up to 30 years for Ábalos.', highlighted: true },
           { date: 'MAY 28-JUN 4', title: 'TRIAL: DAVID SÁNCHEZ AND 10 DEFENDANTS', description: 'Trial at the Badajoz Provincial Court for the tailor-made position.', highlighted: true },
           { date: 'SEPT 27', title: 'Judge Peinado\'s retirement', description: 'The instructor of the Begoña Gómez case will retire. The case must be resolved or transferred.' },
         ],
       },
       footer: {
-        updateText: 'Information updated February 2026',
+        updateText: 'Information updated March 2026',
         casesText: 'VIEW ALL CASES',
         accusedText: 'VIEW ACCUSED',
         documentsText: 'VIEW DOCUMENTS',
@@ -1156,7 +1180,7 @@ export const translations = {
         tag: 'CASE 01',
         title: 'KOLDO CASE',
         subtitle: 'Cash in envelopes and defective masks',
-        description: 'A company that billed zero euros in 2019 received 54 million in public contracts during the pandemic. The masks turned out to be defective. Cash envelopes were distributed at PSOE headquarters: €650,000 to Ábalos, €300,000 to Koldo, €15,000 to Cerdán.',
+        description: 'A company that billed zero euros in 2019 received 54 million in public contracts during the pandemic. Trial set for April 7 with 75 witnesses (including Torres and Armengol). Supreme Court investigating assets of Ábalos and Koldo for failing to pay €60,000 bail. Acciona admits irregularities in €6.8M paid to Servinabar (Cerdán\'s company).',
         stats: [
           { number: '54M€', label: 'Contracts without experience' },
           { number: '24 years', label: 'Sentence for Ábalos' },
@@ -1168,7 +1192,7 @@ export const translations = {
           { name: 'Víctor de Aldama', status: 'COLLABORATOR' },
           { name: 'Santos Cerdán', status: 'FREE WITH CONDITIONS' },
         ],
-        trial: 'TRIAL SCHEDULED: APRIL 2026 · SUPREME COURT',
+        trial: 'TRIAL: APRIL 7, 2026 · SUPREME COURT · 75 WITNESSES',
       },
       begona: {
         tag: 'CASE 02',
@@ -1187,13 +1211,13 @@ export const translations = {
           { name: 'Carlos Barrabés', status: 'ACCUSED' },
           { name: 'Cristina Álvarez', status: 'ACCUSED' },
         ],
-        trial: 'JURY TRIAL · 5 CHARGES CONSOLIDATED · DEADLINE: APRIL 16, 2026',
+        trial: 'JURY TRIAL (2ND ATTEMPT) · 5 CHARGES CONSOLIDATED · HEARING: APRIL 1, 2026',
       },
       hidrocarburos: {
         tag: 'CASE 03',
         title: 'HYDROCARBONS CASE',
         subtitle: 'From bribes to Venezuelan oil',
-        description: 'A 182 million euro tax fraud scheme that has uncovered the biggest Venezuela-PSOE connection. Aldama testified that Delcy Rodríguez gave him an envelope with PDVSA oil quotas worth $250M, allegedly channeled through Zapatero. Carmen Pano delivered 2 bags with €90,000 in cash to PSOE headquarters. The party handed the judge a pen drive with cash payment receipts from 2017 to 2024.',
+        description: 'A 182 million euro tax fraud scheme that has uncovered the biggest Venezuela-PSOE connection. In March 2026, Aldama delivered the PDVSA envelope to the judge containing oil quotas worth $250M linked to alleged illegal PSOE financing. The judge deemed it "highly credible" and incorporated it into the case. Carmen Pano confirmed the scheme paid Ábalos "one kilo" (€1M): "the house, cash, and other things".',
         stats: [
           { number: '$250M', label: 'PDVSA quotas' },
           { number: '182M€', label: 'Estimated tax fraud' },
@@ -1209,7 +1233,7 @@ export const translations = {
         tag: 'CASE 04',
         title: 'DAVID SÁNCHEZ CASE',
         subtitle: "The president's brother: a tailor-made position in Badajoz",
-        description: "David Sánchez, Pedro Sánchez's brother, held a position supposedly created for him at the Badajoz Provincial Council for 8 years. He earns 55,000 euros annually but pays taxes in Portugal. His assets increased by 600,000 euros. 7 private prosecutions will proceed separately, each with their own lawyer. The TSJ rejected the judges' recusal.",
+        description: "David Sánchez, Pedro Sánchez's brother, received €340,567 from the Badajoz Provincial Council (2017-2025) in a tailor-made position. His assets increased by €600,000. With the trial a month away, 5 key witnesses are missing: a tax inspector and 4 council officials. The court is also struggling to locate David Sánchez himself.",
         stats: [
           { number: '600,000€', label: 'Asset increase' },
           { number: '55,760€', label: 'Annual salary in 2024' },
@@ -1352,7 +1376,7 @@ export const translations = {
           name: 'CARMEN PANO',
           role: 'Businesswoman',
           badge: 'UNDER INVESTIGATION',
-          dato: 'Delivered 2 bags with €90,000 in cash to PSOE headquarters. Under investigation in the hydrocarbons case.',
+          dato: 'Confirmed to the judge the scheme paid Ábalos "one kilo" (€1M): "the house, cash, and other things". Delivered €90,000 in cash to Ferraz.',
         },
         leonorPano: {
           name: 'LEONOR PANO',
@@ -1473,7 +1497,7 @@ export const translations = {
       disclaimer: {
         title: 'About this website',
         text: 'This page compiles public information about the judicial cases known as the "PSOE Scandal". No value judgments are made nor is the guilt of any defendant prejudged. All accused are presumed innocent until final conviction.',
-        date: 'Last update: February 2026',
+        date: 'Last update: March 2026',
       },
       footer: {
         text: 'Information based on public judicial and press sources',
@@ -1563,7 +1587,7 @@ export const translations = {
           stats: [
             { label: 'TESTIMONIES', value: '17 statements' },
             { label: 'KEY WITNESSES', value: '5 people' },
-            { label: 'PERIOD', value: 'Nov 2024 — Feb 2026' },
+            { label: 'PERIOD', value: 'Nov 2024 — Mar 2026' },
           ],
           documents: [
             { title: 'Víctor de Aldama statement', meta: 'National Court · November 2024', badge: 'KEY', url: 'https://www.elespanol.com/espana/tribunales/20241122/traviata-horas-video-integro-declaracion-aldama-audiencia-nacional/902910341_0.html' },
@@ -1571,8 +1595,10 @@ export const translations = {
             { title: 'Begoña Gómez statement', meta: 'Court of Instruction 41 · July 2024', url: 'https://theobjective.com/espana/tribunales/2024-07-11/video-declaracion-begona-gomez/' },
             { title: 'Carlos Barrabés statement', meta: 'Court of Instruction 41 · September 2024' },
             { title: 'Patricia Uriz statement', meta: 'Supreme Court · January 2026' },
-            { title: 'Aldama statement on PDVSA', meta: 'National Court · January 29, 2026', badge: 'NEW' },
-            { title: 'PSOE pen drive: cash payments 2017-2024', meta: 'Submitted to court · February 2026', badge: 'NEW' },
+            { title: 'Aldama statement on PDVSA', meta: 'National Court · January 29, 2026' },
+            { title: 'PSOE pen drive: cash payments 2017-2024', meta: 'Submitted to court · February 2026' },
+            { title: 'PDVSA envelope delivered to judge Moreno', meta: 'National Court · March 18, 2026', badge: 'NEW' },
+            { title: 'Carmen Pano statement: "one kilo" to Ábalos', meta: 'National Court · March 2026', badge: 'NEW' },
           ],
           relatedCases: [
             { tag: 'CASE 01', title: 'Koldo Case', description: 'Testimonies from Aldama and Koldo García about the commissions.', href: '/en/cases#koldo' },
