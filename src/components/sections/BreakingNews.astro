@@ -5,49 +5,73 @@ import type { Locale } from '../../i18n/translations';
 const locale = getLocaleFromUrl(Astro.url) as Locale;
 const t = useTranslations(locale);
 const breaking = t.breakingNews;
+const items = breaking.items;
 ---
 
 <section
   data-breaking-news
-  class="relative bg-black text-white border-y border-trama-red/40 overflow-hidden"
+  class="relative bg-black text-white border-t border-trama-red/40 h-9 md:h-10 overflow-hidden flex items-stretch"
   aria-label={breaking.title}
 >
-  <div class="flex flex-col md:flex-row md:items-stretch">
-    <!-- Tag con pulse -->
-    <div class="flex items-center gap-3 bg-trama-red px-5 md:px-6 py-3 md:py-4 shrink-0">
-      <span class="relative flex h-2.5 w-2.5">
-        <span class="absolute inline-flex h-full w-full rounded-full bg-white opacity-75 animate-ping"></span>
-        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"></span>
-      </span>
-      <span class="font-secondary text-[11px] md:text-xs font-bold tracking-[2px] uppercase">
-        {breaking.tag}
-      </span>
-    </div>
+  <!-- Tag con pulse -->
+  <div class="flex items-center gap-2 md:gap-3 bg-trama-red px-4 md:px-6 shrink-0 z-10">
+    <span class="relative flex h-2 w-2">
+      <span class="absolute inline-flex h-full w-full rounded-full bg-white opacity-75 animate-ping"></span>
+      <span class="relative inline-flex rounded-full h-2 w-2 bg-white"></span>
+    </span>
+    <span class="font-secondary text-[10px] md:text-xs font-bold tracking-[1.5px] md:tracking-[2px] uppercase whitespace-nowrap">
+      {breaking.tag}
+    </span>
+  </div>
 
-    <!-- Lista de hitos -->
-    <div class="flex-1 overflow-x-auto md:overflow-hidden">
-      <ul class="flex items-stretch gap-0 px-5 md:px-6 whitespace-nowrap md:whitespace-normal md:flex-wrap">
-        {breaking.items.map((item, index) => (
-          <li class="flex items-center gap-3 py-3 md:py-4 shrink-0 md:shrink min-h-full">
-            {index > 0 && (
-              <span class="hidden md:inline-block w-px h-4 bg-white/20 mx-4" aria-hidden="true"></span>
-            )}
-            <span class="font-secondary text-[10px] md:text-[11px] font-bold tracking-[1.5px] text-trama-red">
-              {item.date}
-            </span>
-            <span class="font-secondary text-xs md:text-sm font-medium tracking-[0.3px] text-white/90">
-              {item.text}
-            </span>
+  <!-- Marquee -->
+  <div class="relative flex-1 overflow-hidden">
+    <!-- Fade lateral izquierdo -->
+    <div class="pointer-events-none absolute inset-y-0 left-0 w-6 bg-gradient-to-r from-black to-transparent z-10"></div>
+    <!-- Fade lateral derecho -->
+    <div class="pointer-events-none absolute inset-y-0 right-0 w-6 bg-gradient-to-l from-black to-transparent z-10"></div>
+
+    <div class="marquee-track flex items-center h-full" aria-hidden="false">
+      {[0, 1].map(() => (
+        <ul class="marquee-group flex items-center shrink-0 px-4 md:px-6">
+          {items.map((item, index) => (
+            <li class="flex items-center gap-2.5 md:gap-3 shrink-0">
+              {index > 0 && (
+                <span class="inline-block w-px h-3 md:h-4 bg-white/20 mx-4 md:mx-6" aria-hidden="true"></span>
+              )}
+              <span class="font-secondary text-[10px] md:text-[11px] font-bold tracking-[1.5px] text-trama-red">
+                {item.date}
+              </span>
+              <span class="font-secondary text-[11px] md:text-sm font-medium tracking-[0.3px] text-white/90">
+                {item.text}
+              </span>
+            </li>
+          ))}
+          <!-- Separador entre repeticiones -->
+          <li class="shrink-0" aria-hidden="true">
+            <span class="inline-block w-px h-3 md:h-4 bg-white/20 mx-4 md:mx-6"></span>
           </li>
-        ))}
-      </ul>
-    </div>
-
-    <!-- Título de contexto (solo desktop) -->
-    <div class="hidden lg:flex items-center px-6 border-l border-white/10 shrink-0">
-      <span class="font-secondary text-[10px] font-semibold tracking-[1.5px] uppercase text-white/50">
-        {breaking.title}
-      </span>
+        </ul>
+      ))}
     </div>
   </div>
 </section>
+
+<style>
+  .marquee-track {
+    width: max-content;
+    animation: marquee 60s linear infinite;
+  }
+  .marquee-track:hover {
+    animation-play-state: paused;
+  }
+  @keyframes marquee {
+    0% { transform: translateX(0); }
+    100% { transform: translateX(-50%); }
+  }
+  @media (prefers-reduced-motion: reduce) {
+    .marquee-track {
+      animation: none;
+    }
+  }
+</style>

@@ -2,6 +2,7 @@
 import { getLocaleFromUrl, useTranslations, getLocalizedPath } from '../i18n/utils';
 import type { Locale } from '../i18n/translations';
 import MobileMenu from './ui/MobileMenu.vue';
+import BreakingNews from './sections/BreakingNews.astro';
 
 const locale = getLocaleFromUrl(Astro.url) as Locale;
 const t = useTranslations(locale);
@@ -43,4 +44,7 @@ const otherLocale: Locale = locale === 'es' ? 'en' : 'es';
     </a>
     <MobileMenu locale={locale} client:load />
   </div>
+
+  <!-- Breaking news strip (forma parte de la topbar fija) -->
+  <BreakingNews />
 </header>
