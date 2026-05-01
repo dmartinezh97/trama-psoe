@@ -8,7 +8,20 @@
 La Trama PSOE
 
 ### Subtítulo
-El mayor escándalo de corrupción del gobierno Sánchez | Actualizado a marzo 2026
+El mayor escándalo de corrupción del gobierno Sánchez | Actualizado a mayo 2026
+
+---
+
+## ÚLTIMA HORA
+
+### Título
+Juicio del Caso Koldo · Tribunal Supremo
+
+### Hitos destacados
+- **4 MAY**: Ábalos declara el lunes — cierre de la fase de acusados.
+- **30 ABR**: Koldo admite que el PSOE le entregó dinero en efectivo durante 3 años.
+- **29 ABR**: Aldama sitúa a Sánchez como "número uno" de la trama y cifra en 4M€ lo entregado a Ábalos y Koldo (1,8M€ al PSOE).
+- **13 ABR**: Begoña Gómez procesada por 4 delitos — irá a jurado popular.
 
 ### Texto introductorio
 Más de 30 imputados. Tres casos interconectados. Comisiones millonarias. Mascarillas defectuosas. Contratos amañados. La esposa del presidente investigada. Su hermano procesado. Dos exaltos cargos en prisión sin fianza.
@@ -111,6 +124,25 @@ Armengol y Torres pidieron declarar por escrito (Fiscalía y defensas se oponen)
 - Santos Cerdán absuelto de la querella por mentir en el Senado (Audiencia de Madrid, febrero 2026)
 - UCO ultima informes sobre Armengol y patrimonio de Santos Cerdán
 
+### Novedades abril 2026 — el juicio en el Supremo
+
+- **31 marzo**: Koldo presenta recurso de amparo al Tribunal Constitucional alegando vulneración de 11 derechos fundamentales. Pide suspender el juicio.
+- **7 abril**: Arranca el juicio oral en el Tribunal Supremo. Sesiones de mañana y tarde durante todo abril.
+- **9 abril**: Leonor González Pano, ex de Aldama, declara que vio a Aldama recoger una bolsa con 500.000€ en casa de Juan José Hidalgo (Air Europa) en presencia de Koldo García.
+- **13 abril**: Patricia Uriz, expareja de Koldo, declara como testigo. Admite cobros en efectivo en Ferraz pero niega recordar los mensajes con "txistorras". Solo responde a la defensa de Koldo (su abogado).
+- **13 abril**: Claudio Rivas (Villafuel) se acoge a su derecho a no declarar en el juicio Koldo por estar imputado en la Audiencia Nacional en el caso Hidrocarburos.
+- **19 abril**: Se publican los informes UCO que dejan tocados a Armengol (presidenta del Congreso) y a 8 ministros de Sánchez por contratos de la pandemia y otras irregularidades.
+- **21 abril**: Javier Hidalgo (expresidente de Globalia/Air Europa) niega haber pagado a Ábalos y Koldo. Señala a Calviño y Montero como las que más intervinieron en el rescate de 475M€.
+- **23 abril**: Exgerente del PSOE admite ante el juez nuevas fuentes de ingreso opacas. Delcy Rodríguez vuelve a salpicar la pieza de financiación ilegal.
+- **27 abril**: Siete agentes de la UCO declaran en el Supremo. Confirman que Ábalos facilitó a Hidalgo negociar con Calviño el rescate de Air Europa. Detallan la nota de prensa pactada y el chalé de Marbella.
+- **28-29 abril**: Aldama declara durante dos jornadas. Cifra en hasta 4M€ lo entregado a Ábalos y Koldo y en 1,8M€ lo entregado al PSOE entre 2019-2020. Sitúa a Pedro Sánchez como "número uno" de la organización criminal. Implica a Begoña Gómez con la propiedad "Campo Velázquez".
+- **30 abril**: Koldo declara durante 7,5 horas. Niega cobrar 10.000€/mes pero admite que "es verdad que el PSOE me estuvo entregando dinero en efectivo durante tres años". El PSOE niega haber entregado billetes de 500€ y defiende que sus cuentas son "transparentes".
+- **4 mayo (previsto)**: Declaración de José Luis Ábalos, último acusado en comparecer. Cierre de la fase de declaración de los acusados.
+
+### Reacción política
+
+Pedro Sánchez guardó silencio público tras las acusaciones de Aldama el 29 de abril (sorprendió con un tuit sobre jazz). El PP, a través de Feijóo y Ayuso, exigió una querella si las acusaciones son falsas: "si no hay querella, de inventada no tiene nada".
+
 ---
 
 ## SECCIÓN: CASO BEGOÑA GÓMEZ
@@ -183,6 +215,18 @@ El CEO de Globalia, Javier Hidalgo, llamó a Begoña Gómez el 3 de septiembre d
 - CGPJ (24 marzo): Archiva 4 denuncias contra el juez Peinado por unanimidad
 - CGPJ (24 marzo): NO archiva la denuncia del ministro Bolaños contra Peinado → ordena nuevas diligencias al Promotor de la Acción Disciplinaria
 
+### Novedades abril 2026 — procesada por cuatro delitos
+
+- **1 abril (Miércoles Santo)**: Begoña Gómez NO comparece a la citación del juez Peinado para ser notificada del pase a jurado popular. La acusación popular Hazte Oír habla de "falta de respeto a los españoles".
+- **13 abril**: El juez Peinado cierra la instrucción y la procesa por cuatro delitos:
+  1. Tráfico de influencias
+  2. Corrupción en los negocios
+  3. Malversación de caudales públicos
+  4. Apropiación indebida
+  Deja FUERA el delito de intrusismo profesional, que inicialmente le había atribuido.
+- **30 abril**: La Audiencia Provincial de Madrid emite tres resoluciones sobre la instrucción: avala la declaración de un empresario que se reunió con Gómez y rechaza una petición de informe a la Asociación de Abogados del Estado.
+- La acusación popular unificada pide **24 años de prisión** para Begoña Gómez. La Fiscalía sigue pidiendo el archivo (solo "irregularidades administrativas").
+
 ---
 
 ## SECCIÓN: CASO HIDROCARBUROS
@@ -232,6 +276,12 @@ Motivo: Una reunión documentada el 15 de julio de 2020 entre Ábalos, Sánchez 
 - UCO ordenada a analizar "punto por punto" el contenido → posibles comisiones rogatorias internacionales
 - Carmen Pano confirmó al juez que la trama pagó "un kilo" (1M€) a Ábalos: "la casa, efectivo y otras cosas"
 - Aldama teme por su seguridad tras filtrarse la entrega de pruebas
+
+### Novedades abril 2026
+
+- **13 abril**: Claudio Rivas, dueño de Villafuel SL, se niega a declarar en el juicio del caso mascarillas en el Supremo. Se acoge a su derecho como imputado en la Audiencia Nacional por el caso hidrocarburos.
+- **23 abril**: El exgerente del PSOE admite ante el juez nuevas fuentes de ingreso opacas del partido. Delcy Rodríguez vuelve a aparecer en la pieza de financiación ilegal.
+- **27 abril**: La UCO confirma en el Supremo que Ábalos facilitó a Hidalgo negociar el rescate de Air Europa con la entonces vicepresidenta Calviño, conectando hidrocarburos, Air Europa y la red Koldo en una sola estructura de presunto cobro de comisiones.
 
 ---
 
@@ -418,8 +468,20 @@ Cronología: del estallido a los juicios
 | 20 marzo 2026 | Peinado insiste en jurado popular para Begoña (2º intento). Cita a las partes el 1 de abril |
 | 23 marzo 2026 | Juez da credibilidad al sobre de PDVSA e incorpora a pieza de financiación del PSOE |
 | 24 marzo 2026 | CGPJ archiva 4 denuncias contra Peinado pero NO archiva la del ministro Bolaños |
-| 1 abril 2026 | Citación de Begoña Gómez, Barrabés y Cristina Álvarez ante juez Peinado |
-| 7 abril 2026 | Juicio oral Ábalos-Koldo en Tribunal Supremo (sesiones mañana y tarde, todo abril) |
+| 31 marzo 2026 | Koldo presenta recurso de amparo al Tribunal Constitucional (11 derechos fundamentales) |
+| 1 abril 2026 | Begoña Gómez planta a Peinado: no comparece a la citación de notificación del jurado popular |
+| 7 abril 2026 | JUICIO ORAL Ábalos-Koldo en Tribunal Supremo (sesiones mañana y tarde, todo abril) |
+| 9 abril 2026 | Leonor González Pano declara haber visto una bolsa con 500.000€ en casa de Hidalgo |
+| 13 abril 2026 | Peinado procesa a Begoña Gómez por 4 delitos (descarta intrusismo profesional) |
+| 13 abril 2026 | Patricia Uriz declara como testigo en el Supremo: admite cobros en Ferraz |
+| 13 abril 2026 | Claudio Rivas (Villafuel) se acoge al derecho a no declarar |
+| 19 abril 2026 | Informes UCO publicados sobre Armengol y 8 ministros de Sánchez |
+| 21 abril 2026 | Hidalgo (Air Europa) niega pagos a Ábalos y Koldo. Señala a Calviño y Montero |
+| 23 abril 2026 | Exgerente del PSOE admite ingresos opacos. Delcy Rodríguez vuelve al foco |
+| 27 abril 2026 | 7 agentes UCO declaran en el Supremo. Confirman conexión Air Europa-Calviño |
+| 28-29 abril 2026 | Aldama declara: 4M€ a Ábalos y Koldo, 1,8M€ al PSOE; Sánchez "número uno" |
+| 30 abril 2026 | Koldo (7,5h): "El PSOE me estuvo entregando dinero en efectivo durante 3 años" |
+| 4 mayo 2026 | Declaración de Ábalos en el Supremo: cierre de la fase de los acusados |
 | 28 mayo - 4 junio 2026 | Juicio David Sánchez y otros 10 acusados |
 | 27 septiembre 2026 | Jubilación juez Peinado |
 
@@ -525,7 +587,7 @@ Todo el contenido procede de fuentes públicas: informes policiales filtrados a 
 
 Esta web no prejuzga la culpabilidad de ninguna persona. Todas las personas mencionadas tienen derecho a la presunción de inocencia hasta que exista sentencia firme.
 
-Última actualización: Marzo 2026
+Última actualización: Mayo 2026
 
 ---
 
@@ -553,7 +615,7 @@ Ver todos los casos
 Información basada en fuentes judiciales y periodísticas públicas. Todos los imputados gozan de presunción de inocencia.
 
 ### Mensajes de actualización
-- "Caso en desarrollo - información actualizada a marzo 2026"
+- "Caso en desarrollo - información actualizada a mayo 2026"
 - "Pendiente de juicio oral"
 - "Archivado"
 - "En prisión preventiva"

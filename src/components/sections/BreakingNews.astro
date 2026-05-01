@@ -1,0 +1,53 @@
+---
+import { getLocaleFromUrl, useTranslations } from '../../i18n/utils';
+import type { Locale } from '../../i18n/translations';
+
+const locale = getLocaleFromUrl(Astro.url) as Locale;
+const t = useTranslations(locale);
+const breaking = t.breakingNews;
+---
+
+<section
+  data-breaking-news
+  class="relative bg-black text-white border-y border-trama-red/40 overflow-hidden"
+  aria-label={breaking.title}
+>
+  <div class="flex flex-col md:flex-row md:items-stretch">
+    <!-- Tag con pulse -->
+    <div class="flex items-center gap-3 bg-trama-red px-5 md:px-6 py-3 md:py-4 shrink-0">
+      <span class="relative flex h-2.5 w-2.5">
+        <span class="absolute inline-flex h-full w-full rounded-full bg-white opacity-75 animate-ping"></span>
+        <span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-white"></span>
+      </span>
+      <span class="font-secondary text-[11px] md:text-xs font-bold tracking-[2px] uppercase">
+        {breaking.tag}
+      </span>
+    </div>
+
+    <!-- Lista de hitos -->
+    <div class="flex-1 overflow-x-auto md:overflow-hidden">
+      <ul class="flex items-stretch gap-0 px-5 md:px-6 whitespace-nowrap md:whitespace-normal md:flex-wrap">
+        {breaking.items.map((item, index) => (
+          <li class="flex items-center gap-3 py-3 md:py-4 shrink-0 md:shrink min-h-full">
+            {index > 0 && (
+              <span class="hidden md:inline-block w-px h-4 bg-white/20 mx-4" aria-hidden="true"></span>
+            )}
+            <span class="font-secondary text-[10px] md:text-[11px] font-bold tracking-[1.5px] text-trama-red">
+              {item.date}
+            </span>
+            <span class="font-secondary text-xs md:text-sm font-medium tracking-[0.3px] text-white/90">
+              {item.text}
+            </span>
+          </li>
+        ))}
+      </ul>
+    </div>
+
+    <!-- Título de contexto (solo desktop) -->
+    <div class="hidden lg:flex items-center px-6 border-l border-white/10 shrink-0">
+      <span class="font-secondary text-[10px] font-semibold tracking-[1.5px] uppercase text-white/50">
+        {breaking.title}
+      </span>
+    </div>
+  </div>
+</section>
