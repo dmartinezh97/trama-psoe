@@ -15,16 +15,16 @@ El mayor escándalo de corrupción del gobierno Sánchez | Actualizado a mayo 20
 ## ÚLTIMA HORA
 
 ### Título
-Juicio del Caso Koldo · Tribunal Supremo
+Zapatero imputado · Juicio mascarillas visto para sentencia
 
 ### Hitos destacados
-- **4 MAY**: Ábalos declara el lunes — cierre de la fase de acusados.
-- **30 ABR**: Koldo admite que el PSOE le entregó dinero en efectivo durante 3 años.
-- **29 ABR**: Aldama sitúa a Sánchez como "número uno" de la trama y cifra en 4M€ lo entregado a Ábalos y Koldo (1,8M€ al PSOE).
-- **13 ABR**: Begoña Gómez procesada por 4 delitos — irá a jurado popular.
+- **19 MAY**: Zapatero imputado en la Audiencia Nacional — primera vez en democracia que se imputa a un expresidente del Gobierno.
+- **20 MAY**: Operación "Tíbet" de la UDEF: registros en la oficina de Zapatero en Ferraz y en la agencia de sus hijas.
+- **6 MAY**: El juicio del caso mascarillas queda visto para sentencia tras 14 jornadas en el Supremo.
+- **4-5 MAY**: Ábalos declara 6 horas y niega comisiones: "¡10.000 euros! Qué barato soy".
 
 ### Texto introductorio
-Más de 30 imputados. Tres casos interconectados. Comisiones millonarias. Mascarillas defectuosas. Contratos amañados. La esposa del presidente investigada. Su hermano procesado. Dos exaltos cargos en prisión sin fianza.
+Más de 30 imputados. Cuatro casos interconectados. Comisiones millonarias. Mascarillas defectuosas. Contratos amañados. La esposa del presidente investigada. Su hermano procesado. Dos exaltos cargos en prisión sin fianza. Un expresidente imputado por primera vez en la democracia.
 
 Esta web documenta la red de presunta corrupción que rodea al gobierno de Pedro Sánchez, basándose en informes de la UCO, autos judiciales y testimonios ante el juez.
 
@@ -36,8 +36,8 @@ Esta web documenta la red de presunta corrupción que rodea al gobierno de Pedro
 | 54 M€ | Contratos a empresa sin experiencia |
 | 24 años | Pena solicitada para Ábalos |
 | 475 M€ | Rescate Air Europa bajo sospecha |
-| 5 delitos | Investigados contra Begoña Gómez |
-| 600.000€ | Aumento patrimonial del hermano de Sánchez |
+| 53 M€ | Rescate Plus Ultra bajo sospecha de blanqueo |
+| 231 M€ | Fraude fiscal en el caso Hidrocarburos |
 
 ---
 
@@ -139,6 +139,24 @@ Armengol y Torres pidieron declarar por escrito (Fiscalía y defensas se oponen)
 - **30 abril**: Koldo declara durante 7,5 horas. Niega cobrar 10.000€/mes pero admite que "es verdad que el PSOE me estuvo entregando dinero en efectivo durante tres años". El PSOE niega haber entregado billetes de 500€ y defiende que sus cuentas son "transparentes".
 - **4 mayo (previsto)**: Declaración de José Luis Ábalos, último acusado en comparecer. Cierre de la fase de declaración de los acusados.
 
+### Novedades mayo 2026 — juicio visto para sentencia
+
+- **4-5 mayo**: José Luis Ábalos declara como último acusado durante 6 horas. Niega haber cobrado comisión alguna ("¡10.000 euros! Qué barato soy"), ataca la credibilidad de Aldama, carga contra el fiscal y el juez instructor y afirma que su preocupación siempre fue "no ser estafado". El fiscal Alejandro Luzón atribuye un papel "decisivo" a Koldo García como articulador de la organización criminal.
+
+- **6 mayo**: **El juicio queda visto para sentencia** tras 14 jornadas. El tribunal, presidido por el magistrado Andrés Martínez Arrieta, no fija fecha para dictar resolución. La Fiscalía concedió 24 horas adicionales a las defensas por cambios de última hora en sus conclusiones definitivas. El tribunal tiene sobre la mesa versiones diametralmente opuestas sobre la existencia de organización criminal.
+
+- **Petición de libertad de Koldo rechazada**: El Supremo deniega la excarcelación de Koldo García (riesgo de fuga ante la proximidad de la sentencia).
+
+- **8-12 mayo**: La Audiencia Nacional incorpora las declaraciones de Aldama y Koldo García prestadas en el Supremo a dos causas abiertas:
+  - **Pieza 8**: Adjudicaciones irregulares de contratos de obra pública en el Ministerio de Transportes (2018-2021). Empresas investigadas: Acciona, Levantina Ingeniería y Obras Públicas y Regadíos.
+  - **Pieza 9**: Pagos en efectivo del PSOE (2017-2024), bajo secreto de sumario.
+
+- **13 mayo**: Koldo García pide al juez Moreno el archivo del caso mascarillas en la Audiencia Nacional argumentando doble enjuiciamiento (non bis in idem). El juez Moreno lo rechaza y mantiene su citación como investigado.
+
+- **13 mayo**: El Supremo "blinda" la instrucción del caso Koldo en la Audiencia Nacional, resolviendo la duplicidad de competencias entre ambos tribunales.
+
+- **Investigación de contratos ADIF**: El juez Moreno ordena al Ministerio de Transportes aportar los expedientes de 10 contratos de ADIF y Carreteras bajo sospecha de adjudicación irregular.
+
 ### Reacción política
 
 Pedro Sánchez guardó silencio público tras las acusaciones de Aldama el 29 de abril (sorprendió con un tuit sobre jazz). El PP, a través de Feijóo y Ayuso, exigió una querella si las acusaciones son falsas: "si no hay querella, de inventada no tiene nada".
@@ -227,6 +245,10 @@ El CEO de Globalia, Javier Hidalgo, llamó a Begoña Gómez el 3 de septiembre d
 - **30 abril**: La Audiencia Provincial de Madrid emite tres resoluciones sobre la instrucción: avala la declaración de un empresario que se reunió con Gómez y rechaza una petición de informe a la Asociación de Abogados del Estado.
 - La acusación popular unificada pide **24 años de prisión** para Begoña Gómez. La Fiscalía sigue pidiendo el archivo (solo "irregularidades administrativas").
 
+### Novedades mayo 2026 — intento de paralizar la causa
+
+- **13-14 mayo**: La defensa de Begoña Gómez, a cargo del exministro del Interior **Antonio Camacho**, presenta un escrito al juez Peinado solicitando la paralización de todos los plazos procesales hasta que la Audiencia Provincial de Madrid resuelva los recursos pendientes contra la decisión de dirigir el caso a jurado popular. El argumento: avanzar con el procedimiento mientras están pendientes esos recursos generaría una "situación procesalmente insostenible". Peinado rechaza la suspensión y mantiene el proceso activo, reiterando que ha podido "verificar la concurrencia de indicios de elementos de delitos" dentro de la competencia del tribunal del jurado.
+
 ---
 
 ## SECCIÓN: CASO HIDROCARBUROS
@@ -235,12 +257,12 @@ El CEO de Globalia, Javier Hidalgo, llamó a Begoña Gómez el 3 de septiembre d
 El Caso Hidrocarburos: un millón en sobornos para comprar gasolina sin IVA
 
 ### Resumen
-Una trama de fraude fiscal de 182 millones de euros intentó comprar voluntades en tres ministerios para obtener una licencia que permitía operar con combustibles sin pagar IVA.
+Una trama de fraude fiscal de más de 231 millones de euros intentó comprar voluntades en tres ministerios para obtener una licencia que permitía operar con combustibles sin pagar IVA. El caso tiene conexiones directas con Venezuela, PDVSA y, ahora, con el caso Plus Ultra.
 
 ### Los hechos
 
 **El fraude fiscal**
-La empresa Villafuel SL, con ventas superiores a 815 millones de euros en 2022, operaba un sistema de impago sistemático de IVA en la distribución de carburantes. El fraude estimado supera los 182 millones de euros.
+La empresa Villafuel SL, con ventas superiores a 815 millones de euros en 2022, operaba un sistema de impago sistemático de IVA en la distribución de carburantes. El fraude estimado inicialmente en 182 millones de euros ha sido revisado al alza: **la cifra asciende a 231 millones de euros** tras ampliar el análisis de cuentas desde 2021.
 
 **Los sobornos**
 Para obtener la licencia de operadora de hidrocarburos, la trama destinó cerca de un millón de euros en sobornos a responsables de tres ministerios:
@@ -282,6 +304,63 @@ Motivo: Una reunión documentada el 15 de julio de 2020 entre Ábalos, Sánchez 
 - **13 abril**: Claudio Rivas, dueño de Villafuel SL, se niega a declarar en el juicio del caso mascarillas en el Supremo. Se acoge a su derecho como imputado en la Audiencia Nacional por el caso hidrocarburos.
 - **23 abril**: El exgerente del PSOE admite ante el juez nuevas fuentes de ingreso opacas del partido. Delcy Rodríguez vuelve a aparecer en la pieza de financiación ilegal.
 - **27 abril**: La UCO confirma en el Supremo que Ábalos facilitó a Hidalgo negociar el rescate de Air Europa con la entonces vicepresidenta Calviño, conectando hidrocarburos, Air Europa y la red Koldo en una sola estructura de presunto cobro de comisiones.
+
+### Novedades mayo 2026
+
+- **Cifra del fraude revisada**: La investigación eleva el fraude de IVA a **231 millones de euros** (antes 182 M€) tras analizar las cuentas desde 2021.
+- El juez Pedraz envió las declaraciones de Aldama y de Carmen Pano al juez que instruye la causa sobre los pagos en efectivo al PSOE, al considerar que aportan datos relevantes sobre el origen y destino del dinero.
+- El caso tiene **frente abierto en EE.UU.**, donde se investiga el caso Plus Ultra con conexión directa a Venezuela y PDVSA — la misma red que el juez Calama vincula ahora a Zapatero (ver sección Caso Plus Ultra).
+
+---
+
+## SECCIÓN: CASO PLUS ULTRA / ZAPATERO
+
+### Título
+El Caso Plus Ultra: un expresidente imputado, Venezuela y 53 millones en sospecha
+
+### Resumen
+La Audiencia Nacional imputó el 19 de mayo de 2026 al expresidente José Luis Rodríguez Zapatero por organización criminal, tráfico de influencias y falsedad documental. Es la primera vez en la democracia española que se imputa a un expresidente del Gobierno. El caso investiga el rescate de 53 millones de euros a la aerolínea Plus Ultra durante la pandemia y si parte de ese dinero se usó para blanquear fondos ilícitos procedentes de Venezuela.
+
+### Los hechos
+
+**El rescate de Plus Ultra**
+En 2021, el Gobierno concedió un rescate de 53 millones de euros a la pequeña aerolínea Plus Ultra a través del Fondo de Apoyo a la Solvencia de Empresas Estratégicas (FASEE). La Fiscalía Anticorrupción sostiene que la aerolínea realizó un "uso impropio" de esos fondos: parte del dinero habría servido para saldar préstamos ficticios y "limpiar" capital de procedencia ilícita de Venezuela, integrándolo en circuitos legales gracias al dinero público recibido.
+
+**El papel de Zapatero**
+El expresidente reconoció cobrar aproximadamente 70.000 euros anuales como consultor geopolítico de Plus Ultra. El auto judicial del juez Calama le atribuye un papel mucho más activo: "liderazgo estratégico" y "función de coordinación superior" dentro de una red organizada desde su oficina en la calle Ferraz de Madrid, que actuaba como "centro de coordinación". Desde allí se emitían instrucciones, se preparaban documentos y se ordenaban actuaciones en favor de terceros con conexiones en Venezuela, China y Emiratos Árabes Unidos. Las operaciones abarcaban petróleo, oro, acciones y divisas.
+
+**La Operación Tíbet (20 mayo 2026)**
+La UDEF (Unidad Central de Delincuencia Económica y Fiscal) de la Policía Nacional llevó a cabo registros simultáneos en:
+- La oficina personal de Zapatero en la calle Ferraz, Madrid
+- La agencia **Whathefav S.L.**, empresa de comunicación propiedad de sus hijas Laura y Alba Rodríguez Espinosa
+- La empresa venezolana **Inteligencia Prospectiva S.L.**
+
+Zapatero canceló "in extremis" un viaje a Venezuela cuando comenzaron los registros.
+
+**La conexión Venezuela**
+La Fiscalía sostiene que los fondos ilícitos tendrían su origen en malversaciones del régimen chavista: programas de distribución subsidiada de alimentos y ventas de oro del Banco de Venezuela. Un presunto contrato hallado durante los registros establecería una comisión del 1% sobre el rescate de Plus Ultra para el empresario Julio Martínez Martínez, amigo personal de Zapatero.
+
+**EE.UU. en la investigación**
+El 21 de mayo de 2026, se confirmó que las autoridades estadounidenses cooperan con la Policía española para seguir la pista de Zapatero en Venezuela. El caso tiene frente abierto también en EE.UU., donde se investiga el asunto Plus Ultra de manera paralela.
+
+### Estado judicial
+
+**Imputación**: 19 mayo de 2026 — por el juez José Luis Calama (Juzgado Central de Instrucción nº 4 de la Audiencia Nacional).
+
+| Delito imputado | Descripción |
+|-----------------|-------------|
+| Integración en organización criminal | Liderazgo de la red desde su oficina de Ferraz |
+| Tráfico de influencias | Intermediación con autoridades venezolanas y operadores económicos |
+| Falsedad documental | Documentos preparados en el marco de las operaciones |
+
+**Citación a declarar**: 2 de junio de 2026 ante el juez Calama.
+
+**Posible detención**: La UDEF espera órdenes del juez. Fuentes policiales afirman que "hay carga probatoria para hacerlo". La detención solo se produciría por orden judicial expresa si el juez aprecia riesgo de destrucción de pruebas, fuga o reiteración delictiva.
+
+**Antecedentes del caso**: En diciembre de 2025, la UDEF ya detuvo al presidente de Plus Ultra, Julio Martínez Sola, y al empresario Julio Martínez Martínez en el marco de una operación por blanqueo de capitales.
+
+### Dato histórico
+José Luis Rodríguez Zapatero, presidente del Gobierno entre 2004 y 2011 y expresidente del PSOE, se convierte en el **primer expresidente de la democracia española en ser imputado** en una causa penal.
 
 ---
 
@@ -481,8 +560,21 @@ Cronología: del estallido a los juicios
 | 27 abril 2026 | 7 agentes UCO declaran en el Supremo. Confirman conexión Air Europa-Calviño |
 | 28-29 abril 2026 | Aldama declara: 4M€ a Ábalos y Koldo, 1,8M€ al PSOE; Sánchez "número uno" |
 | 30 abril 2026 | Koldo (7,5h): "El PSOE me estuvo entregando dinero en efectivo durante 3 años" |
-| 4 mayo 2026 | Declaración de Ábalos en el Supremo: cierre de la fase de los acusados |
-| 28 mayo - 4 junio 2026 | Juicio David Sánchez y otros 10 acusados |
+| 4-5 mayo 2026 | Ábalos declara 6 horas en el Supremo como último acusado. Niega comisiones: "¡10.000 euros! Qué barato soy". Cierra la fase de declaración de los acusados |
+| 6 mayo 2026 | El juicio del caso mascarillas queda visto para sentencia tras 14 jornadas. Sin fecha de resolución |
+| 6 mayo 2026 | El fiscal destaca el papel de Isabel Pardo de Vera en el enchufismo de la exnovia de Ábalos |
+| 8-12 mayo 2026 | La AN incorpora las declaraciones de Aldama y Koldo del Supremo a las piezas de obra pública (Pieza 8) y financiación del PSOE (Pieza 9) |
+| 13 mayo 2026 | Koldo pide archivo en la AN por doble enjuiciamiento → juez Moreno lo rechaza |
+| 13 mayo 2026 | El Supremo blinda la instrucción del caso Koldo en la AN, resolviendo la duplicidad de competencias |
+| 13-14 mayo 2026 | Begoña Gómez pide paralizar la causa hasta que la AP Madrid resuelva recursos contra el jurado popular. Peinado se niega |
+| 15 mayo 2026 | Comunicaciones intervenidas de Isabel Pardo de Vera con el imputado Michaux: "Lo tengo claro, te derivé esos contactos" |
+| 19 mayo 2026 | La Audiencia Nacional imputa a José Luis Rodríguez Zapatero por organización criminal, tráfico de influencias y falsedad documental en el caso Plus Ultra. Primera vez en democracia que se imputa a un expresidente |
+| 20 mayo 2026 | Operación "Tíbet" de la UDEF: registros en la oficina de Zapatero en Ferraz, en la agencia Whathefav (de sus hijas) y en Inteligencia Prospectiva S.L. Zapatero cancela "in extremis" un viaje a Venezuela |
+| 20 mayo 2026 | La UDEF afirma tener "carga probatoria para detener a Zapatero"; a la espera de orden judicial |
+| 21 mayo 2026 | EE.UU. coopera con la Policía española para seguir la pista de Zapatero en Venezuela |
+| 28-29 mayo 2026 | Juicio David Sánchez y otros 10 acusados (1ª semana, Audiencia Provincial Badajoz) |
+| 2 junio 2026 | Zapatero declarará ante el juez Calama como investigado |
+| 1-4 junio 2026 | Juicio David Sánchez (2ª semana) |
 | 27 septiembre 2026 | Jubilación juez Peinado |
 
 ---
@@ -550,6 +642,14 @@ Quién es quién en la Trama PSOE
 - Delitos: Prevaricación, tráfico de influencias
 - Dato clave: Intentó aforamiento fraudulento rechazado por "fraude de ley"
 
+**JOSÉ LUIS RODRÍGUEZ ZAPATERO**
+- Cargo: Expresidente del Gobierno (2004-2011), expresidente del PSOE
+- Situación actual: Imputado (19 mayo 2026)
+- Tribunal: Audiencia Nacional — Juzgado Central de Instrucción nº 4 (juez José Luis Calama)
+- Delitos: Organización criminal, tráfico de influencias, falsedad documental
+- Caso: Plus Ultra
+- Dato clave: Primer expresidente del Gobierno imputado en la democracia española. Cobró ~70.000€/año como consultor de Plus Ultra. La UDEF afirma tener "carga probatoria para detenerle". Declarará el 2 de junio de 2026.
+
 ---
 
 ## SECCIÓN: DOCUMENTOS Y FUENTES
@@ -567,11 +667,12 @@ Fuentes y documentación
 - Testimonios judiciales y mediáticos
 
 ### Tribunales implicados
-- Tribunal Supremo (caso Ábalos por su condición de aforado)
-- Audiencia Nacional (caso hidrocarburos, investigación principal)
+- Tribunal Supremo (caso Ábalos por su condición de aforado; juicio visto para sentencia)
+- Audiencia Nacional (caso hidrocarburos, financiación PSOE, obra pública, caso Plus Ultra/Zapatero)
 - Juzgado Instrucción nº 41 Madrid (caso Begoña Gómez)
 - Audiencia Provincial de Badajoz (caso David Sánchez)
 - Fiscalía Europea (contratos Barrabés con fondos UE)
+- EE.UU. (investigación paralela caso Plus Ultra)
 
 ---
 
@@ -643,12 +744,12 @@ Información basada en fuentes judiciales y periodísticas públicas. Todos los 
 La Trama PSOE | Todos los casos de corrupción del gobierno Sánchez
 
 ### Meta description
-Documentación completa sobre los casos Koldo, Begoña Gómez, Hidrocarburos y David Sánchez. Más de 30 imputados, comisiones millonarias y juicios en 2026.
+Documentación completa sobre los casos Koldo, Begoña Gómez, Hidrocarburos, David Sánchez y Plus Ultra. Más de 30 imputados, Zapatero imputado por primera vez en democracia, juicios en 2026.
 
 ### Keywords
-trama psoe, caso koldo, begoña gomez imputada, abalos prision, santos cerdan, david sanchez badajoz, corrupcion psoe, aldama, mascarillas, hidrocarburos
+trama psoe, caso koldo, begoña gomez imputada, abalos prision, santos cerdan, david sanchez badajoz, corrupcion psoe, aldama, mascarillas, hidrocarburos, zapatero imputado, plus ultra, venezuela blanqueo
 
 ### Open Graph
 - og:title: La Trama PSOE - El mayor escándalo del gobierno Sánchez
-- og:description: Más de 30 imputados. Comisiones millonarias. Mascarillas defectuosas. La esposa y el hermano del presidente investigados.
+- og:description: Más de 30 imputados. Zapatero imputado. Comisiones millonarias. Mascarillas defectuosas. La esposa y el hermano del presidente investigados.
 - og:type: website

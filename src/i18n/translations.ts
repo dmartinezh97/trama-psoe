@@ -49,12 +49,12 @@ export const translations = {
     },
     breakingNews: {
       tag: 'ÚLTIMA HORA',
-      title: 'Juicio del Caso Koldo · Tribunal Supremo',
+      title: 'Zapatero imputado · Juicio mascarillas visto para sentencia',
       items: [
-        { date: '4 MAY', text: 'Ábalos declara el lunes: cierre de la fase de acusados' },
-        { date: '30 ABR', text: 'Koldo admite cobros en efectivo del PSOE durante 3 años' },
-        { date: '29 ABR', text: 'Aldama sitúa a Sánchez como "número uno" de la trama' },
-        { date: '13 ABR', text: 'Begoña Gómez procesada por 4 delitos: irá a jurado popular' },
+        { date: '19 MAY', text: 'Zapatero imputado en la AN — primera vez en democracia que se imputa a un expresidente' },
+        { date: '20 MAY', text: 'Operación "Tíbet": registros en la oficina de Zapatero en Ferraz y en la agencia de sus hijas' },
+        { date: '6 MAY', text: 'El juicio del caso mascarillas queda visto para sentencia tras 14 jornadas en el Supremo' },
+        { date: '4-5 MAY', text: 'Ábalos declara 6 horas y niega comisiones: "¡10.000 euros! Qué barato soy"' },
       ],
     },
     hero: {
@@ -94,7 +94,7 @@ export const translations = {
         number: '01',
         title: 'CASO KOLDO',
         description: 'Red de corrupción en contratos de mascarillas durante la pandemia',
-        status: 'JUICIO EN CURSO',
+        status: 'VISTO PARA SENTENCIA',
       },
       begona: {
         number: '02',
@@ -369,8 +369,18 @@ export const translations = {
           { date: '27 ABRIL', title: '7 agentes UCO declaran en el Supremo', description: 'Confirman que Ábalos facilitó a Hidalgo negociar con Calviño el rescate de Air Europa. Detallan la nota de prensa pactada y el chalé de Marbella.' },
           { date: '29 ABRIL', title: 'Aldama: 4M€ a Ábalos y Sánchez "número uno"', description: 'Declara haber entregado hasta 4 millones a Ábalos y Koldo, y 1,8M€ al PSOE entre 2019-2020. Sitúa a Sánchez como "número uno" de la organización criminal.', highlighted: true },
           { date: '30 ABRIL', title: 'Koldo: "El PSOE me entregó dinero en efectivo durante 3 años"', description: 'Tras 7,5 horas de declaración, Koldo niega cobrar 10.000€/mes pero admite que el PSOE le entregaba dinero en efectivo durante tres años. El PSOE lo niega.', highlighted: true },
-          { date: '4 MAYO', title: 'Declaración de Ábalos en el Supremo', description: 'El exministro será el último acusado en declarar. Cierre de la fase de declaración de los acusados.', highlighted: true },
-          { date: '28 MAY-4 JUN', title: 'JUICIO: DAVID SÁNCHEZ Y 10 ACUSADOS', description: 'Juicio en la Audiencia Provincial de Badajoz por el puesto a medida.', highlighted: true },
+          { date: '4-5 MAYO', title: 'Ábalos declara 6 horas en el Supremo', description: 'Niega todas las comisiones: "¡10.000 euros! Qué barato soy". Ataca a Aldama, al fiscal y al juez instructor. Cierra la fase de los acusados.', highlighted: true },
+          { date: '6 MAYO', title: 'Juicio mascarillas: visto para sentencia', description: 'Tras 14 jornadas en el Tribunal Supremo, el caso Ábalos-Koldo queda visto para sentencia. Sin fecha de resolución anunciada.', highlighted: true },
+          { date: '8-12 MAYO', title: 'AN incorpora declaraciones del Supremo a obras públicas y PSOE', description: 'El juez Moreno añade los testimonios de Aldama y Koldo del juicio del Supremo a las piezas de adjudicación irregular de obra pública y financiación del PSOE (secreto de sumario).' },
+          { date: '13 MAYO', title: 'Koldo pide archivo en la AN: rechazado', description: 'Alega doble enjuiciamiento (non bis in idem). El juez Moreno lo rechaza y mantiene su citación como investigado. El Supremo blinda la instrucción de la AN.' },
+          { date: '13-14 MAYO', title: 'Begoña pide paralizar la causa', description: 'La defensa (exministro Antonio Camacho) solicita suspender el procedimiento hasta que la AP Madrid resuelva los recursos contra el jurado popular. Peinado se niega.' },
+          { date: '15 MAYO', title: 'Comunicaciones de Pardo de Vera con Michaux', description: 'Se conocen mensajes intervenidos entre Isabel Pardo de Vera y el imputado Michaux: "Lo tengo claro, te derivé esos contactos. Los medios son pendencieros."' },
+          { date: '19 MAYO', title: 'ZAPATERO IMPUTADO: primera vez en democracia', description: 'La Audiencia Nacional imputa al expresidente José Luis Rodríguez Zapatero por organización criminal, tráfico de influencias y falsedad documental en el caso Plus Ultra. Es la primera vez en la democracia española que se imputa a un expresidente del Gobierno.', highlighted: true },
+          { date: '20 MAYO', title: 'Operación "Tíbet": registros en Ferraz y Whathefav', description: 'La UDEF registra la oficina de Zapatero en Ferraz, la agencia de sus hijas (Whathefav S.L.) y la empresa venezolana Inteligencia Prospectiva S.L. La UDEF afirma: "Hay carga probatoria para detener a Zapatero". Zapatero cancela un viaje a Venezuela.', highlighted: true },
+          { date: '21 MAYO', title: 'EE.UU. coopera en la investigación de Zapatero', description: 'Las autoridades estadounidenses colaboran con la Policía española para seguir la pista de Zapatero en Venezuela.' },
+          { date: '28-29 MAYO', title: 'JUICIO: DAVID SÁNCHEZ Y 10 ACUSADOS (1ª semana)', description: 'Juicio en la Audiencia Provincial de Badajoz por el puesto a medida creado en 2017.', highlighted: true },
+          { date: '2 JUNIO', title: 'Zapatero declara ante el juez Calama', description: 'El expresidente del Gobierno declarará como investigado ante el juez José Luis Calama de la Audiencia Nacional.' },
+          { date: '1-4 JUNIO', title: 'Juicio David Sánchez (2ª semana)', description: 'Continúa el juicio en Badajoz con los 11 acusados.' },
           { date: '27 SEPT', title: 'Jubilación del juez Peinado', description: 'El instructor del caso Begoña Gómez se jubilará. La causa deberá resolverse o transferirse.' },
         ],
       },
@@ -398,11 +408,11 @@ export const translations = {
         tag: 'CASO 01',
         title: 'CASO KOLDO',
         subtitle: 'Comisiones en sobres y mascarillas defectuosas',
-        description: 'Juicio en marcha en el Tribunal Supremo desde el 7 de abril. Tras 13 jornadas y 80 testigos, Aldama declaró haber entregado hasta 4M€ a Ábalos y Koldo y 1,8M€ al PSOE; situó a Sánchez como "número uno" de la organización criminal. Koldo admitió que "el PSOE me estuvo entregando dinero en efectivo durante tres años". Hidalgo (Air Europa) negó pagos pero la UCO confirma que Ábalos facilitó las negociaciones del rescate con Calviño. Ábalos declara el 4 de mayo.',
+        description: 'El juicio en el Tribunal Supremo concluyó el 6 de mayo tras 14 jornadas y quedó visto para sentencia. Ábalos declaró 6 horas negando comisiones ("¡10.000 euros! Qué barato soy") y atacando a Aldama y al fiscal. El Supremo blinda la instrucción paralela en la Audiencia Nacional, que en mayo incorporó las declaraciones del juicio a las piezas de obra pública y financiación del PSOE. Penas solicitadas: 24 años (Ábalos), 19,5 años (Koldo), 7 años (Aldama).',
         stats: [
           { number: '54M€', label: 'Contratos sin experiencia' },
           { number: '4M€', label: 'Aldama: total entregado' },
-          { number: '80', label: 'Testigos en el Supremo' },
+          { number: '14', label: 'Jornadas de juicio' },
         ],
         defendants: [
           { name: 'José Luis Ábalos', status: 'PRISIÓN' },
@@ -410,13 +420,13 @@ export const translations = {
           { name: 'Víctor de Aldama', status: 'COLABORADOR' },
           { name: 'Santos Cerdán', status: 'LIBRE CON MEDIDAS' },
         ],
-        trial: 'JUICIO EN CURSO · TRIBUNAL SUPREMO · ÁBALOS DECLARA EL 4 MAYO',
+        trial: 'VISTO PARA SENTENCIA · TRIBUNAL SUPREMO · SIN FECHA DE RESOLUCIÓN',
       },
       begona: {
         tag: 'CASO 02',
         title: 'CASO BEGOÑA GÓMEZ',
-        subtitle: 'Procesada por cuatro delitos · Jurado popular',
-        description: 'El 13 de abril el juez Peinado cerró la instrucción y la procesó por tráfico de influencias, corrupción en los negocios, malversación y apropiación indebida (descartado el intrusismo profesional). Doce días antes había plantado al juez al no acudir a la citación del 1 de abril. La acusación popular pide 24 años. Begoña dirige una cátedra universitaria sin tener licenciatura y su entorno se cruzó con el rescate de Air Europa (475M€).',
+        subtitle: 'Procesada por cuatro delitos · Batalla por el jurado popular',
+        description: 'El 13 de abril el juez Peinado cerró la instrucción y la procesó por tráfico de influencias, corrupción en los negocios, malversación y apropiación indebida. En mayo, su defensa (el exministro Antonio Camacho) pidió paralizar la causa hasta que la AP Madrid resuelva los recursos contra el jurado popular; Peinado se negó. La acusación popular pide 24 años. Begoña dirige una cátedra universitaria sin tener licenciatura y su entorno se cruzó con el rescate de Air Europa (475M€).',
         crimes: [
           'Tráfico de influencias',
           'Corrupción en los negocios',
@@ -434,10 +444,10 @@ export const translations = {
         tag: 'CASO 03',
         title: 'CASO HIDROCARBUROS',
         subtitle: 'De los sobornos al petróleo venezolano',
-        description: 'Una trama de fraude fiscal de 182 millones de euros que ha derivado en la mayor conexión Venezuela-PSOE. En marzo 2026, Aldama entregó al juez el sobre de PDVSA con cupos de petróleo por 250M$ que vincula a la financiación ilegal del PSOE. El juez lo consideró "muy verosímil" y lo incorporó a la causa. Carmen Pano confirmó que la trama pagó "un kilo" (1M€) a Ábalos: "la casa, efectivo y otras cosas". El 13 de abril, Claudio Rivas (Villafuel) se acogió a su derecho a no declarar en el juicio Koldo. El 23 de abril, el exgerente del PSOE admitió nuevas fuentes de ingreso opacas que vuelven a salpicar a Delcy Rodríguez.',
+        description: 'Una trama de fraude fiscal de 231 millones de euros (revisado de 182M€ tras ampliar el análisis desde 2021) con conexión directa a Venezuela, PDVSA y el caso Plus Ultra. En marzo 2026, Aldama entregó al juez el sobre de PDVSA con cupos de petróleo por 250M$ vinculado a la financiación ilegal del PSOE. En mayo 2026, el juez Pedraz envió las declaraciones de Aldama y Carmen Pano a la causa de pagos al PSOE. El caso tiene frente abierto en EE.UU., conectado a la misma red venezolana que el juez Calama vincula ahora a Zapatero.',
         stats: [
           { number: '250M$', label: 'Cupos PDVSA' },
-          { number: '182M€', label: 'Fraude fiscal estimado' },
+          { number: '231M€', label: 'Fraude fiscal revisado' },
           { number: '90.000€', label: 'Bolsas a sede PSOE' },
         ],
         ministries: [
@@ -884,12 +894,12 @@ export const translations = {
     },
     breakingNews: {
       tag: 'BREAKING',
-      title: 'Koldo Case Trial · Supreme Court',
+      title: 'Zapatero indicted · Mask trial awaiting verdict',
       items: [
-        { date: 'MAY 4', text: 'Ábalos testifies Monday: end of defendants phase' },
-        { date: 'APR 30', text: 'Koldo admits PSOE handed him cash for three years' },
-        { date: 'APR 29', text: 'Aldama places Sánchez as "number one" of the scheme' },
-        { date: 'APR 13', text: 'Begoña Gómez indicted on 4 counts: jury trial confirmed' },
+        { date: 'MAY 19', text: 'Zapatero indicted — first former Spanish PM ever charged in democracy' },
+        { date: 'MAY 20', text: 'Operation "Tibet": police raids at Zapatero\'s Ferraz office and daughters\' agency' },
+        { date: 'MAY 6', text: 'Mask case trial closes after 14 sessions; awaiting Supreme Court verdict' },
+        { date: 'MAY 4-5', text: 'Ábalos testifies 6 hours denying bribes: "€10,000! How cheap I am"' },
       ],
     },
     hero: {
@@ -1233,11 +1243,11 @@ export const translations = {
         tag: 'CASE 01',
         title: 'KOLDO CASE',
         subtitle: 'Cash in envelopes and defective masks',
-        description: 'Trial ongoing at the Supreme Court since April 7. After 13 sessions and 80 witnesses, Aldama testified he handed up to €4M to Ábalos and Koldo and €1.8M to PSOE; placed Sánchez as "number one" of the criminal organisation. Koldo admitted that "PSOE handed me cash for three years". Hidalgo (Air Europa) denied payments but the UCO confirms Ábalos enabled the bailout negotiations with Calviño. Ábalos testifies on May 4.',
+        description: 'The Supreme Court trial concluded on May 6 after 14 sessions and is now awaiting verdict. Ábalos testified for 6 hours denying all bribes ("€10,000! How cheap I am") and attacked Aldama, the prosecutor and the investigating judge. The Supreme Court shields the parallel investigation at the National Court, which in May added trial testimonies to the public works and PSOE financing cases. Sentences requested: 24 years (Ábalos), 19.5 years (Koldo), 7 years (Aldama).',
         stats: [
           { number: '54M€', label: 'Contracts without experience' },
           { number: '4M€', label: 'Aldama: total handed' },
-          { number: '80', label: 'Supreme Court witnesses' },
+          { number: '14', label: 'Trial sessions' },
         ],
         defendants: [
           { name: 'José Luis Ábalos', status: 'PRISON' },
@@ -1245,7 +1255,7 @@ export const translations = {
           { name: 'Víctor de Aldama', status: 'COLLABORATOR' },
           { name: 'Santos Cerdán', status: 'FREE WITH CONDITIONS' },
         ],
-        trial: 'TRIAL ONGOING · SUPREME COURT · ÁBALOS TESTIFIES MAY 4',
+        trial: 'AWAITING VERDICT · SUPREME COURT · NO SENTENCING DATE SET',
       },
       begona: {
         tag: 'CASE 02',
@@ -1268,11 +1278,11 @@ export const translations = {
       hidrocarburos: {
         tag: 'CASE 03',
         title: 'HYDROCARBONS CASE',
-        subtitle: 'From bribes to Venezuelan oil',
-        description: 'A 182 million euro tax fraud scheme that has uncovered the biggest Venezuela-PSOE connection. In March 2026, Aldama delivered the PDVSA envelope to the judge containing oil quotas worth $250M linked to alleged illegal PSOE financing. The judge deemed it "highly credible" and incorporated it into the case. Carmen Pano confirmed the scheme paid Ábalos "one kilo" (€1M): "the house, cash, and other things". On April 13, Claudio Rivas (Villafuel) refused to testify in the Koldo trial. On April 23, the former PSOE manager admitted new opaque sources of party income that again splash onto Delcy Rodríguez.',
+        subtitle: 'From bribes to Venezuelan oil — now linked to Zapatero',
+        description: 'A tax fraud scheme now revised upward to 231 million euros (from 182M€ after extending analysis from 2021), with direct links to Venezuela, PDVSA and the Plus Ultra case. In March 2026, Aldama delivered the PDVSA envelope with $250M oil quotas linked to PSOE financing. In May 2026, judge Pedraz sent Aldama and Pano\'s testimonies to the PSOE payments case. The case has an open front in the US, tied to the same Venezuelan network now linked to Zapatero.',
         stats: [
           { number: '$250M', label: 'PDVSA quotas' },
-          { number: '182M€', label: 'Estimated tax fraud' },
+          { number: '231M€', label: 'Revised tax fraud' },
           { number: '90,000€', label: 'Bags to PSOE HQ' },
         ],
         ministries: [
