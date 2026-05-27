@@ -8,20 +8,20 @@
 La Trama PSOE
 
 ### Subtítulo
-El mayor escándalo de corrupción del gobierno Sánchez | Actualizado a mayo 2026
+El mayor escándalo de corrupción del gobierno Sánchez | Actualizado a 27 mayo 2026
 
 ---
 
 ## ÚLTIMA HORA
 
 ### Título
-Zapatero imputado · Juicio mascarillas visto para sentencia
+Juicios en marcha · Zapatero declara el 17-18 junio · Begoña citada el 9 junio
 
 ### Hitos destacados
+- **28 MAY**: Arranca el juicio a David Sánchez en la Audiencia de Badajoz (42 testigos, 11 acusados).
+- **26 MAY**: Peinado cita a Begoña Gómez el 9 de junio ante el jurado — "conducida por la fuerza pública" si no acude.
+- **26 MAY**: Declaración de Zapatero aplazada al 17-18 junio · UDEF accede a sus correos · Caja fuerte con 103 joyas incautada.
 - **19 MAY**: Zapatero imputado en la Audiencia Nacional — primera vez en democracia que se imputa a un expresidente del Gobierno.
-- **20 MAY**: Operación "Tíbet" de la UDEF: registros en la oficina de Zapatero en Ferraz y en la agencia de sus hijas.
-- **6 MAY**: El juicio del caso mascarillas queda visto para sentencia tras 14 jornadas en el Supremo.
-- **4-5 MAY**: Ábalos declara 6 horas y niega comisiones: "¡10.000 euros! Qué barato soy".
 
 ### Texto introductorio
 Más de 30 imputados. Cuatro casos interconectados. Comisiones millonarias. Mascarillas defectuosas. Contratos amañados. La esposa del presidente investigada. Su hermano procesado. Dos exaltos cargos en prisión sin fianza. Un expresidente imputado por primera vez en la democracia.
@@ -145,7 +145,7 @@ Armengol y Torres pidieron declarar por escrito (Fiscalía y defensas se oponen)
 
 - **6 mayo**: **El juicio queda visto para sentencia** tras 14 jornadas. El tribunal, presidido por el magistrado Andrés Martínez Arrieta, no fija fecha para dictar resolución. La Fiscalía concedió 24 horas adicionales a las defensas por cambios de última hora en sus conclusiones definitivas. El tribunal tiene sobre la mesa versiones diametralmente opuestas sobre la existencia de organización criminal.
 
-- **Petición de libertad de Koldo rechazada**: El Supremo deniega la excarcelación de Koldo García (riesgo de fuga ante la proximidad de la sentencia).
+- **Peticiones de libertad rechazadas**: El Supremo deniega la excarcelación tanto de Koldo García como de José Luis Ábalos (riesgo de fuga ante la proximidad de la sentencia). Ambos permanecerán en prisión provisional mientras el tribunal delibera.
 
 - **8-12 mayo**: La Audiencia Nacional incorpora las declaraciones de Aldama y Koldo García prestadas en el Supremo a dos causas abiertas:
   - **Pieza 8**: Adjudicaciones irregulares de contratos de obra pública en el Ministerio de Transportes (2018-2021). Empresas investigadas: Acciona, Levantina Ingeniería y Obras Públicas y Regadíos.
@@ -248,6 +248,8 @@ El CEO de Globalia, Javier Hidalgo, llamó a Begoña Gómez el 3 de septiembre d
 ### Novedades mayo 2026 — intento de paralizar la causa
 
 - **13-14 mayo**: La defensa de Begoña Gómez, a cargo del exministro del Interior **Antonio Camacho**, presenta un escrito al juez Peinado solicitando la paralización de todos los plazos procesales hasta que la Audiencia Provincial de Madrid resuelva los recursos pendientes contra la decisión de dirigir el caso a jurado popular. El argumento: avanzar con el procedimiento mientras están pendientes esos recursos generaría una "situación procesalmente insostenible". Peinado rechaza la suspensión y mantiene el proceso activo, reiterando que ha podido "verificar la concurrencia de indicios de elementos de delitos" dentro de la competencia del tribunal del jurado.
+
+- **26 mayo**: El juez Peinado cita a **Begoña Gómez, Cristina Álvarez y Juan Carlos Barrabés** a una **audiencia previa el 9 de junio** para escuchar las acusaciones formales que pesan contra ellos. Es el trámite procesal previo al juicio por jurado, y se produce con la instrucción ya cerrada y los escritos de acusación y defensa formulados. El juez advierte expresamente que si alguno de los tres no comparece podrá ser detenido y *"conducido por la fuerza pública"*.
 
 ---
 
@@ -353,7 +355,7 @@ El 21 de mayo de 2026, se confirmó que las autoridades estadounidenses cooperan
 | Tráfico de influencias | Intermediación con autoridades venezolanas y operadores económicos |
 | Falsedad documental | Documentos preparados en el marco de las operaciones |
 
-**Citación a declarar**: 2 de junio de 2026 ante el juez Calama.
+**Citación a declarar**: ~~2 de junio de 2026~~ → aplazada al **17 y 18 de junio de 2026** ante el juez Calama (la defensa pidió el aplazamiento por no haber tenido acceso al sumario hasta el 25 de mayo).
 
 **Posible detención**: La UDEF espera órdenes del juez. Fuentes policiales afirman que "hay carga probatoria para hacerlo". La detención solo se produciría por orden judicial expresa si el juez aprecia riesgo de destrucción de pruebas, fuga o reiteración delictiva.
 
@@ -361,6 +363,20 @@ El 21 de mayo de 2026, se confirmó que las autoridades estadounidenses cooperan
 
 ### Dato histórico
 José Luis Rodríguez Zapatero, presidente del Gobierno entre 2004 y 2011 y expresidente del PSOE, se convierte en el **primer expresidente de la democracia española en ser imputado** en una causa penal.
+
+### Novedades 22–26 mayo 2026
+
+- **23 mayo**: La UDEF intercepta comunicaciones en las que la secretaria de Zapatero coordina con el empresario Cristóbal Cano la fabricación de facturas sin prestación real de servicios. Un mensaje dice literalmente: *"¿Ponemos más importe?"*
+
+- **25 mayo**: La Audiencia Nacional autoriza a la UDEF el **acceso al correo oficial** de Zapatero y de sus hijas Laura y Alba, a través del proveedor Acens Technologies SLU, desde el 20 de marzo de 2020 hasta el presente.
+
+- **25 mayo**: Durante los registros de la Operación Tíbet se **incauta una caja fuerte** en la oficina de Zapatero que contenía **103 joyas de valor**, además de documentos.
+
+- **25–26 mayo**: El auto del juez Calama **cuantifica los pagos** al entorno del expresidente: aproximadamente **1,95 M€ en total** — 1,52 M€ habrían ido al propio Zapatero y 423.779 € a sus hijas Laura y Alba a través de la empresa de comunicación **Whathefav S.L.**
+
+- **26 mayo**: La declaración de Zapatero se **aplaza del 2 de junio al 17 y 18 de junio** a petición de la defensa, que alegó no haber tenido acceso al sumario hasta el 25 de mayo.
+
+- **26 mayo**: La Audiencia Nacional **veta las filtraciones** del sumario del caso Plus Ultra.
 
 ---
 
@@ -417,6 +433,15 @@ Gallardo intentó un aforamiento fraudulento haciéndose diputado autonómico me
 - 5 testigos clave ilocalizables: un inspector de Hacienda y 4 funcionarios de la Diputación de Badajoz → domicilios registrados obsoletos
 - David Sánchez cobró 340.567€ totales de la Diputación (2017-2025)
 - Preocupación en la Audiencia de Badajoz por la localización del propio David Sánchez antes del juicio
+
+### Novedades mayo 2026 — el juicio arranca
+
+- **24 mayo**: Comienza formalmente el juicio en la Audiencia Provincial de Badajoz.
+- **28-29 mayo**: Arrancan las sesiones formales con la vista de **cuestiones previas** (mañana y tarde a partir de las 10:00).
+- **1–4 junio**: Sesiones de testimonio de los **42 testigos** propuestos por las partes.
+- **Acusados**: David Sánchez Pérez-Castejón y Miguel Ángel Gallardo junto a **9 coacusados más** (11 en total) por delitos de prevaricación y tráfico de influencias relacionados con la contratación en la Diputación de Badajoz en 2017.
+- **Penas solicitadas**: Las acusaciones populares (Manos Limpias, Vox, HazteOir) piden **3 años de cárcel** por prevaricación y tráfico de influencias continuado.
+- El TSJ de Extremadura avaló la imparcialidad de los jueces que presidirán el juicio, rechazando la recusación de la defensa.
 
 ---
 
@@ -572,9 +597,16 @@ Cronología: del estallido a los juicios
 | 20 mayo 2026 | Operación "Tíbet" de la UDEF: registros en la oficina de Zapatero en Ferraz, en la agencia Whathefav (de sus hijas) y en Inteligencia Prospectiva S.L. Zapatero cancela "in extremis" un viaje a Venezuela |
 | 20 mayo 2026 | La UDEF afirma tener "carga probatoria para detener a Zapatero"; a la espera de orden judicial |
 | 21 mayo 2026 | EE.UU. coopera con la Policía española para seguir la pista de Zapatero en Venezuela |
-| 28-29 mayo 2026 | Juicio David Sánchez y otros 10 acusados (1ª semana, Audiencia Provincial Badajoz) |
-| 2 junio 2026 | Zapatero declarará ante el juez Calama como investigado |
-| 1-4 junio 2026 | Juicio David Sánchez (2ª semana) |
+| 23 mayo 2026 | UDEF capta mensajes de la secretaria de Zapatero creando facturas falsas: "¿Ponemos más importe?" |
+| 24 mayo 2026 | Comienza el juicio a David Sánchez y 10 acusados en la Audiencia Provincial de Badajoz |
+| 25 mayo 2026 | AN autoriza a la UDEF el acceso al correo de Zapatero y sus hijas. Caja fuerte con 103 joyas incautada en su oficina |
+| 25-26 mayo 2026 | Juez Calama cuantifica pagos al entorno de Zapatero: ~1,95 M€ (1,52 M€ a él; 423.779 € a hijas vía Whathefav S.L.) |
+| 26 mayo 2026 | Declaración de Zapatero aplazada al 17-18 junio. La AN veta filtraciones del sumario Plus Ultra |
+| 26 mayo 2026 | Peinado cita a Begoña Gómez, Cristina Álvarez y Barrabés el 9 de junio: audiencia previa al juicio por jurado |
+| 28-29 mayo 2026 | Juicio David Sánchez (cuestiones previas, 1ª semana, Audiencia Provincial Badajoz) |
+| 9 junio 2026 | Audiencia previa jurado popular: Begoña Gómez, Cristina Álvarez y Barrabés escucharán las acusaciones formales |
+| 1-4 junio 2026 | Juicio David Sánchez (42 testigos, 2ª semana) |
+| 17-18 junio 2026 | Zapatero declarará ante el juez Calama como investigado |
 | 27 septiembre 2026 | Jubilación juez Peinado |
 
 ---
@@ -648,7 +680,7 @@ Quién es quién en la Trama PSOE
 - Tribunal: Audiencia Nacional — Juzgado Central de Instrucción nº 4 (juez José Luis Calama)
 - Delitos: Organización criminal, tráfico de influencias, falsedad documental
 - Caso: Plus Ultra
-- Dato clave: Primer expresidente del Gobierno imputado en la democracia española. Cobró ~70.000€/año como consultor de Plus Ultra. La UDEF afirma tener "carga probatoria para detenerle". Declarará el 2 de junio de 2026.
+- Dato clave: Primer expresidente del Gobierno imputado en la democracia española. El juez Calama cuantifica ~1,95 M€ recibidos por su entorno. Caja fuerte con 103 joyas incautada en su oficina. UDEF con acceso a sus correos desde 2020. Declarará el 17-18 de junio de 2026.
 
 ---
 
@@ -688,7 +720,7 @@ Todo el contenido procede de fuentes públicas: informes policiales filtrados a 
 
 Esta web no prejuzga la culpabilidad de ninguna persona. Todas las personas mencionadas tienen derecho a la presunción de inocencia hasta que exista sentencia firme.
 
-Última actualización: Mayo 2026
+Última actualización: 27 de mayo de 2026
 
 ---
 
